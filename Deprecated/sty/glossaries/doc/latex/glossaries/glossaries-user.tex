@@ -1,0 +1,917 @@
+\documentclass[report,inlinetitle]{nlctdoc}
+
+\usepackage[inner=0.5in,includemp]{geometry}
+
+\usepackage{array}
+\usepackage{alltt}
+\usepackage{pifont}
+\ifpdf
+ \usepackage{lmodern}
+ \usepackage{mathpazo}
+ \usepackage[scaled=.88]{helvet}
+ \usepackage{courier}
+ \usepackage{metalogo}
+\else
+ \newcommand{\grimace}{{\fontencoding {U}\fontfamily{futs}\selectfont \char77}}
+ \providecommand{\XeLaTeX}{XeLaTeX}
+ \providecommand{\XeTeX}{XeTeX}
+\fi
+\usepackage[colorlinks,
+            bookmarks,
+            hyperindex=false,
+            pdfauthor={Nicola L.C. Talbot},
+            pdftitle={User Manual for glossaries.sty},
+            pdfkeywords={LaTeX,package,glossary,acronyms}]{hyperref}
+\usepackage{xr-hyper}
+\usepackage[
+  xindy,
+  nonumberlist,
+  toc,
+  nopostdot,
+  nogroupskip,
+  style=altlist
+]{glossaries}
+\usepackage{glossary-inline}
+
+\pagestyle{headings}
+
+\glsnoexpandfields
+
+\renewcommand*{\glsseeformat}[3][\seename]{%
+  (\xmakefirstuc{#1} \glsseelist{#2}.)%
+}
+
+\renewcommand*{\glossarypreamble}{%
+\emph{This glossary style was setup using:}
+\begin{ttfamily}
+\begin{tabbing}
+\cs{usepackage}[\=xindy,\\
+\+\>nonumberlist,\\
+  toc,\\
+  nopostdot,\\
+  style=altlist,\\
+  nogroupskip]\{glossaries\}
+\end{tabbing}
+\end{ttfamily}
+}
+
+\ifpdf
+\else
+  % Need an extra line break in the html version
+  % (Don't have time to fiddle with cfg files!)
+  \renewcommand*{\glossentry}[2]{%
+    \item[\glsentryitem{#1}\glstarget{#1}{\glossentryname{#1}}]\mbox{}\newline
+      \glossentrydesc{#1}\glspostdescription\space #2\newline}%
+\fi
+
+\makeglossaries
+
+\renewcommand*{\main}[1]{\hyperpage{#1}}
+\newcommand*{\htextbf}[1]{\textbf{\hyperpage{#1}}}
+\newcommand*{\itermdef}[1]{\index{#1|htextbf}}
+
+\newcommand{\itempar}[1]{\item[{#1}]\mbox{}\par}
+
+\newcommand{\glslike}{\hyperref[sec:gls-like]{\cs{gls}-like}}
+\newcommand{\glstextlike}{\hyperref[sec:glstext-like]{\cs{glstext}-like}}
+
+\IndexPrologue{\chapter*{\indexname}
+ \markboth{\indexname}{\indexname}}
+
+\longnewglossaryentry{indexingapp}%
+{
+  name={Indexing application},
+  text={indexing application}
+}%
+{%
+  An application (piece of software) separate from
+  \TeX/\LaTeX\ that collates and sorts information that has an
+  associated page reference. Generally the information is an index
+  entry but in this case the information is a glossary entry.
+  There are two main indexing applications that are used with \TeX:
+  \gls{makeindex} and \gls{xindy}. These are both 
+  \gls{cli} applications.
+}
+
+\longnewglossaryentry{cli}
+{
+  name={Command Line Interface (CLI)},
+  first={command line interface (CLI)},
+  text={CLI}
+}
+{%
+  An application that doesn't have a graphical user
+  interface. That is, an application that doesn't have any windows,
+  buttons or menus and can be run in 
+  \href{http://www.dickimaw-books.com/latex/novices/html/terminal.html}{a command
+  prompt or terminal}.
+}
+
+\longnewglossaryentry{xindy}{%
+  name={\appfmt{xindy}\index{xindy=\appfmt{xindy}|htextbf}},
+  sort={xindy},
+  text={\appfmt{xindy}\iapp{xindy}}
+}%
+{%
+  A flexible \gls{indexingapp} with multilingual
+  support written in Perl.
+}
+
+\newglossaryentry{makeindex}{%
+name={\appfmt{makeindex}\index{makeindex=\appfmt{makeindex}|htextbf}},%
+sort={makeindex},%
+text={\appfmt{makeindex}\iapp{makeindex}},%
+description={An \gls{indexingapp}.},
+}
+
+\newglossaryentry{makeglossaries}{%
+name={\appfmt{makeglossaries}\index{makeglossaries=\appfmt{makeglossaries}|htextbf}},%
+sort={makeglossaries},%
+text={\appfmt{makeglossaries}\iapp{makeglossaries}},%
+description={A custom designed Perl script interface 
+to \gls{xindy} and \gls{makeindex} provided with the \styfmt{glossaries}
+package.}
+}
+
+\longnewglossaryentry{makeglossariesgui}{%
+name={\appfmt{makeglossariesgui}\index{makeglossariesgui=\appfmt{makeglossariesgui}|htextbf}},%
+sort={makeglossariesgui},%
+text={\appfmt{makeglossariesgui}\iapp{makeglossariesgui}}%
+}%
+{%
+  A Java GUI alternative to \gls{makeglossaries} that
+  also provides diagnostic tools. Available separately on CTAN.
+}
+
+\newglossaryentry{numberlist}{%
+name={Number list\itermdef{number list}},%
+sort={number list},%
+text={number list\iterm{number list}},%
+description={A list of \glslink{entrylocation}{entry locations} (also 
+called a location list). The number list can be suppressed using the 
+\pkgopt{nonumberlist} package option.}
+}
+
+\newglossaryentry{entrylocation}{%
+name={Entry location\itermdef{entry location}},%
+sort={entry location},%
+text={entry location\iterm{entry location}},%
+description={The location of the entry in the document. This
+defaults to the page number on which the entry appears. An entry may
+have multiple locations.}
+}
+
+\newglossaryentry{locationlist}{%
+name={Location list},%
+text={location list},
+sort={location list},%
+description={A list of \glslink{entrylocation}{entry locations}.
+See \gls{numberlist}.}%
+}
+
+\newglossaryentry{linktext}{%
+name={Link text\itermdef{link text}},
+sort={link text},%
+text={link text\iterm{link text}},
+description={The text produced by commands such as \ics{gls}. It may
+or may not be a hyperlink to the glossary.}
+}
+
+\let\glsd\glsuseri
+\let\glsation\glsuserii
+
+\longnewglossaryentry{firstuse}{%
+name={First use\ifirstuse},
+sort={first use},%
+text={first use},%
+user1={first used}}
+{%
+  The first time a glossary entry is used (from the start of the 
+  document or after a reset) with one of the
+  following commands: \ics{gls}, \ics{Gls}, \ics{GLS}, \ics{glspl},
+  \ics{Glspl}, \ics{GLSpl} or \ics{glsdisp}.
+  \glsseeformat{firstuseflag,firstusetext}{}
+}
+
+\longnewglossaryentry{firstuseflag}{%
+name={First use flag\ifirstuseflag},
+sort={first use flag},%
+text={first use flag}%
+}
+{%
+  A conditional that determines whether or not the entry
+  has been used according to the rules of \gls{firstuse}. Commands
+  to unset or reset this conditional are described in 
+  \sectionref{sec:glsunset}.
+}
+
+\newglossaryentry{firstusetext}{%
+name={First use text\ifirstusetext},
+sort={first use text},%
+text={first use text},%
+description={The text that is displayed on \gls{firstuse}, which is
+governed by the \gloskey{first} and \gloskey{firstplural} keys of
+\ics{newglossaryentry}. (May be overridden by
+\ics{glsdisp} or by \ics{defglsentry}.)}%
+}
+
+\longnewglossaryentry{sanitize}{%
+name={Sanitize\itermdef{sanitize}},%
+sort={sanitize},
+text={sanitize\iterm{sanitize}},%
+user1={sanitized\protect\iterm{sanitize}},%
+user2={sanitization\protect\iterm{sanitize}}%
+}%
+{%
+  Converts command names into character sequences. That is, a command called,
+  say, \cs{foo}, is converted into the sequence of characters:
+  \cs{}, \texttt{f}, \texttt{o}, \texttt{o}. Depending on the font,
+  the backslash character may appear as a dash when used in the
+  main document text, so \cs{foo} will appear as: ---foo.
+
+  Earlier versions of \styfmt{glossaries} used this technique to write
+  information to the files used by the indexing applications to
+  prevent problems caused by fragile commands. Now, this is only used
+  for the \gloskey{sort} key.
+}
+
+\newglossaryentry{latinchar}{%
+  name={Latin Character\itermdef{Latin character}},
+  text={Latin character\iterm{Latin character}},
+  sort={Latin character},
+  description={One of the letters \texttt{a}, \ldots, \texttt{z}, 
+  \texttt{A}, \ldots, \texttt{Z}\@.
+  See also \gls{exlatinchar}.}
+}
+
+\newglossaryentry{exlatinchar}{%
+  name={Extended Latin Character\itermdef{extended Latin character}},
+  text={extended Latin character\iterm{extended Latin character}},
+  sort={extended Latin character},
+  description={A character that's created by combining \glspl{latinchar}
+  to form ligatures (e.g.\ \ae) or by applying diacritical marks
+  to a~\gls*{latinchar} or characters (e.g.\ \'a or \o). 
+  See also \gls{nonlatinchar}.}
+}
+
+\newglossaryentry{latexexlatinchar}{%
+  name={Standard \LaTeX\ Extended Latin Character\itermdef{standard
+\LaTeX\ extended Latin character}},
+  text={standard \LaTeX\ extended Latin character\iterm{standard
+\LaTeX\ extended Latin character}},
+  sort={standard LaTeX extended Latin character},
+  description={An \gls{exlatinchar} that can be created by a~core
+\LaTeX\ command, such as \cs{o} (\o) or \cs{'}\texttt{e} (\'e). 
+  That is, the character can be produced without the need to load 
+  a~particular package.}
+}
+
+\newglossaryentry{nonlatinchar}{%
+  name={Non-Latin Character\itermdef{non-Latin character}},
+  text={non-Latin character\iterm{non-Latin character}},
+  sort={non-Latin character},
+  description={An \gls{exlatinchar} or a~character that isn't
+  a~\gls{latinchar}.}
+}
+
+\newglossaryentry{latinalph}{%
+  name={Latin Alphabet\itermdef{Latin alphabet}},
+  text={Latin alphabet\iterm{Latin alphabet}},
+  sort={Latin alphabet},
+  description={The alphabet consisting of \glspl{latinchar}.
+  See also \gls{exlatinalph}.}
+}
+
+\newglossaryentry{exlatinalph}{%
+  name={Extended Latin Alphabet\itermdef{Extended Latin Alphabet}},
+  text={extended Latin alphabet},
+  sort={extended Latin alphabet},
+  description={An alphabet consisting of \glspl{latinchar}
+  and \glspl{exlatinchar}.}
+}
+
+\newglossaryentry{nonlatinalph}{%
+  name={Non-Latin Alphabet\itermdef{Non-Latin Alphabet}},
+  text={non-Latin alphabet},
+  sort={non-Latin alphabet},
+  description={An alphabet consisting of \glspl{nonlatinchar}.}
+}
+
+\ifpdf
+\externaldocument{glossaries-code}
+\fi
+
+\doxitem{Option}{option}{package options}
+\doxitem{GlsKey}{key}{glossary keys}
+\doxitem{Style}{style}{glossary styles}
+\doxitem{Counter}{counter}{glossary counters}
+
+\setcounter{IndexColumns}{2}
+
+\newcommand*{\tick}{\ding{51}}
+
+\newcommand*{\yes}{\ding{52}}
+\newcommand*{\no}{\ding{56}}
+
+\makeatletter
+\newcommand*{\optionlabel}[1]{%
+ \@glstarget{option#1}{}\textbf{Option~#1}}
+\makeatother
+
+\newcommand*{\opt}[1]{\hyperlink{option#1}{Option~#1}}
+\newcommand*{\optsor}[2]{Options~\hyperlink{option#1}{#1}
+or~\hyperlink{option#2}{#2}}
+\newcommand*{\optsand}[2]{Options~\hyperlink{option#1}{#1}
+and~\hyperlink{option#2}{#2}}
+
+
+\newcommand*{\ifirstuse}{\iterm{first use}}
+\newcommand*{\ifirstuseflag}{\iterm{first use>flag}}
+\newcommand*{\ifirstusetext}{\iterm{first use>text}}
+
+\newcommand*{\firstuse}{\gls{firstuse}}
+\newcommand*{\firstuseflag}{\gls{firstuseflag}}
+\newcommand*{\firstusetext}{\gls{firstusetext}}
+
+
+\newcommand*{\istkey}[1]{\appfmt{#1}\index{makeindex=\appfmt{makeindex}>#1=\texttt{#1}|hyperpage}}
+\newcommand*{\locfmt}[1]{\texttt{#1}\SpecialMainIndex{#1}}
+\newcommand*{\mkidxspch}{\index{makeindex=\appfmt{makeindex}>special characters|hyperpage}}
+
+\newcommand*{\igloskey}[2][newglossaryentry]{\icsopt{#1}{#2}}
+\newcommand*{\gloskey}[2][newglossaryentry]{\csopt{#1}{#2}}
+
+\newcommand*{\glostyle}[1]{\textsf{#1}\index{glossary styles:>#1={\protect\ttfamily#1}|main}}
+
+\newcommand*{\acrstyle}[1]{\textsf{#1}\index{acronym styles:>#1={\protect\ttfamily#1}|main}}
+
+\newcounter{sample}
+\newcommand{\exitem}[2][sample]{%
+  \item[\texttt{#1#2.tex}]%
+  \refstepcounter{sample}\label{ex:#1#2}}
+
+\newenvironment{samplelist}%
+{\begin{description}}%
+{\end{description}}
+
+\newcommand*{\samplefile}[2][sample]{%
+  \hyperref[ex:#1#2]{\texttt{#1#2.tex}}}
+
+\ifpdf
+  \newcommand*{\htmldoc}[2]{\qt{#1}}
+\else
+  \newcommand*{\htmldoc}[2]{\href{#2.html}{\qt{#1}}}
+\fi
+
+\begin{document}
+\MakeShortVerb{"}
+\DeleteShortVerb{\|}
+
+ \title{User Manual for glossaries.sty v4.11}
+ \author{Nicola L.C. Talbot\\%
+  \url{http://www.dickimaw-books.com/}}
+
+ \date{2014-09-01}
+ \maketitle
+
+\begin{abstract}
+The \styfmt{glossaries} package provides a means to define terms or
+acronyms or symbols that can be referenced within your document.
+Sorted lists with collated \glslink{entrylocation}{locations} can be 
+generated either using \TeX\ or using a supplementary \gls{indexingapp}.
+\end{abstract}
+
+\begin{important}
+Documents have various styles when it comes to presenting glossaries
+or lists of terms or notation. People have their own preferences and
+to a large extent this is determined by the kind of information that
+needs to go in the glossary. They may just have symbols with
+terse descriptions or they may have long technical words with
+complicated descriptions. The \styfmt{glossaries} package is
+flexible enough to accommodate such varied requirements, but this
+flexibility comes at a price: a~big manual.
+
+\aargh\ If you're freaking out at the size of this manual, start with
+\texttt{glossariesbegin.pdf} (\qt{The glossaries package: a guide
+for beginnners}). You should find it in the same directory as this
+document or try \texttt{texdoc glossariesbegin.pdf}. Once you've got
+to grips with the basics, then come back to this manual to find out
+how to adjust the settings.
+\end{important}
+
+\noindent
+The \styfmt{glossaries} bundle comes with the following documentation:
+\begin{description}
+\item[\url{glossariesbegin.pdf}] 
+If you are a complete beginner, start with 
+\htmldoc{The glossaries package: a guide for
+beginners}{glossariesbegin}.
+
+\item[\url{glossary2glossaries.pdf}] 
+If you are moving over from the obsolete \sty{glossary} package,
+read \htmldoc{Upgrading from the glossary package to the
+glossaries package}{glossary2glossaries}.
+
+\item[glossaries-user.pdf]
+This document is the main user guide for the \styfmt{glossaries}
+package.
+
+\item[\url{mfirstuc-manual.pdf}]
+The commands provided by the \sty{mfirstuc} package are briefly
+described in \htmldoc{mfirstuc.sty: uppercasing first
+letter}{mfirstuc-manual}.
+
+\item[\url{glossaries-code.pdf}]
+Advanced users wishing to know more about the inner workings of all the
+packages provided in the \styfmt{glossaries} bundle should read
+\qt{Documented Code for glossaries v4.11}.
+This includes the documented code for the \sty{mfirstuc} package.
+
+\item[INSTALL] Installation instructions.
+
+\item[CHANGES] Change log.
+
+\item[README] Package summary.
+
+\end{description}
+
+\begin{important}
+If you use \sty{hyperref} and \styfmt{glossaries}, you must load
+\sty{hyperref} \emph{first}. Similarly the \sty{doc} package must
+also be loaded before \styfmt{glossaries}. (If \sty{doc} is loaded,
+the file extensions for the default main glossary are changed to
+\filetype{gls2}, \filetype{glo2} and \filetype{.glg2} to avoid
+conflict with \sty{doc}'s changes
+glossary.)\hypertarget{pdflatexnote}{}%
+
+If you are using \sty{hyperref}, it's best to use \app{pdflatex}
+rather than \app{latex} (DVI format) as \appfmt{pdflatex} deals with
+hyperlinks much better. If you use the DVI format, you will
+encounter problems where you have long hyperlinks or hyperlinks in
+subscripts or superscripts. This is an issue with the DVI format not
+with \styfmt{glossaries}.
+\end{important}
+
+Other documents that describe using the \styfmt{glossaries} package include:
+\href{http://www.dickimaw-books.com/latex/thesis/}{Using LaTeX to Write a PhD Thesis}
+and
+\href{http://www.latex-community.org/know-how/latex/55-latex-general/263-glossaries-nomenclature-lists-of-symbols-and-acronyms}{Glossaries,
+Nomenclature, Lists of Symbols and Acronyms}.
+
+\clearpage
+\pdfbookmark[0]{Contents}{contents}
+\tableofcontents
+\clearpage
+\pdfbookmark[0]{List of Examples}{examples}
+\listofexamples
+\clearpage
+\pdfbookmark[0]{List of Tables}{tables}
+\listoftables
+
+\clearpage
+\printglossaries
+
+\glsresetall
+
+ \chapter{Introduction}
+\label{sec:intro}
+
+The \styfmt{glossaries} package is provided to assist generating
+lists of terms, symbols or abbreviations (glossaries). It has a certain amount of flexibility, allowing the
+user to customize the format of the glossary and define multiple
+glossaries. It also supports glossary styles that
+include symbols (in addition to a name and description) for glossary
+entries. There is provision for loading a database of glossary
+terms. Only those terms used\footnote{That is, if the term has been
+referenced using any of the commands described in
+\sectionref{sec:glslink} and \sectionref{sec:glsadd} or via
+\ics{glssee} (or the \gloskey{see} key) or commands such as
+\ics{acrshort}.}\ in the document will be added to the glossary.
+
+\textbf{This package replaces the \sty{glossary} package which is
+now obsolete.} Please see the document \qtdocref{Upgrading from the
+glossary package to the glossaries package}{glossary2glossaries} for
+assistance in upgrading.
+
+One of the strengths of this package is its flexibility, however
+the drawback of this is the necessity of having a large manual
+that can cover all the various settings. If you are daunted by the
+size of the manual, try starting off with the much shorter
+\docref{guide for beginners}{glossariesbegin}.
+
+\begin{important}
+There's a~common misconception that you have to have Perl installed
+in order to use the \styfmt{glossaries} package. Perl is \emph{not}
+a~requirement but it does increase the available options,
+particularly if you use an \gls{exlatinalph} or a~\gls{nonlatinalph}.
+\end{important}
+
+The basic idea behind the \styfmt{glossaries} package is that you
+first define your entries (terms, symbols or abbreviations). Then
+you can reference these within your document (like \cs{cite} or
+\cs{ref}).  You can also, optionally, display a~list of the entries
+you have referenced in your document (the glossary). This last part,
+displaying the glossary, is the part that most new users find
+difficult. There are three options:
+
+\begin{description}
+\item[]\optionlabel1: 
+
+ This is the simplest option but it's slow and if
+ you want a sorted list, it doesn't work well for \glspl{exlatinalph} or 
+ \glspl{nonlatinalph}. However, if you use the
+ \pkgopt[false]{sanitizesort} package option (the default for
+ Option~1) then the \glslink{latexexlatinchar}{standard \LaTeX\ accent commands} will be
+ ignored, so if an entry's name is set to \verb|{\'e}lite| then the
+ sort will default to \texttt{elite} if 
+ \pkgopt[false]{sanitizesort} is used
+ and will default to \verb|\'elite| if \pkgopt[true]{sanitizesort}
+ is used.
+
+  \begin{enumerate}
+    \item Add \cs{makenoidxglossaries} to your preamble (before you
+    start defining your entries, as described in
+    \sectionref{sec:newglosentry}).
+
+    \item Put
+\begin{definition}
+\cs{printnoidxglossary}
+\end{definition}
+    where you want your list of entries to appear (described in
+    \sectionref{sec:printglossary}).
+
+    \item Run \LaTeX\ twice on your document. (As you would do to
+    make a~table of contents appear.) For example, click twice on
+    the \qt{typeset} or \qt{build} or \qt{PDF\LaTeX} button in your editor.
+  \end{enumerate}
+
+\item\optionlabel2:
+
+   This option uses a~\gls{cli} application called \gls{makeindex} to sort 
+   the entries. This application comes with all modern \TeX\ distributions, 
+   but it's hard-coded for the non-extended \gls{latinalph}, so 
+   it doesn't work well for \glspl{exlatinalph} or
+   \glspl{nonlatinalph}. This process involves making \LaTeX\ write the 
+   glossary information to a temporary file which \gls{makeindex} reads. 
+   Then \gls{makeindex} writes a~new file containing the code to typeset 
+   the glossary. \LaTeX\ then reads this file in on the next run.
+
+   \begin{enumerate}
+    \item Add \cs{makeglossaries} to your preamble (before you start
+    defining your entries, as described in
+    \sectionref{sec:newglosentry}).
+
+    \item Put
+\begin{definition}
+\cs{printglossary}
+\end{definition}
+    where you want your list of entries to appear (described in
+    \sectionref{sec:printglossary}).
+
+    \item Run \LaTeX\ on your document. This creates files with the
+    extensions \texttt{.glo} and \texttt{.ist} (for example, if your 
+    \LaTeX\ document is called \texttt{myDoc.tex}, then you'll have 
+    two extra files called \texttt{myDoc.glo} and \texttt{myDoc.ist}).
+    If you look at your document at this point, you won't see the 
+    glossary as it hasn't been created yet.
+
+    \item Run \gls{makeindex} with the \texttt{.glo} file as the
+    input file and the \texttt{.ist} file as the style so that
+    it creates an output file with the extension \texttt{.gls}. If
+    you have access to a terminal or a command prompt (for example, the
+    MSDOS command prompt for Windows users or the bash console for
+    Unix-like users) then you need to run the command:
+\begin{verbatim}
+makeindex -s myDoc.ist -o myDoc.gls myDoc.glo
+\end{verbatim}
+   (Replace \texttt{myDoc} with the base name of your \LaTeX\
+    document file. Avoid spaces in the file name.) If you don't know
+    how to use the command prompt, then you can probably access
+    \gls{makeindex} via your text editor, but each editor has a
+    different method of doing this, so I~can't give a~general
+    description. You will have to check your editor's manual.
+
+    The default sort is word order (\qt{sea lion} comes before
+\qt{seal}). 
+    If you want letter ordering you need to add the \texttt{-l}
+    switch:
+\begin{verbatim}
+makeindex -l -s myDoc.ist -o myDoc.gls myDoc.glo
+\end{verbatim}
+    (See \sectionref{sec:makeindexapp} for further details on using 
+    \gls*{makeindex} explicitly.)
+
+    \item Once you have successfully completed the previous step,
+    you can now run \LaTeX\ on your document again.
+   \end{enumerate}
+
+   This is the default option (although you still need to use
+   \cs{makeglossaries} to ensure the glossary files are created).
+
+\item\optionlabel3:
+
+   This option uses a~\gls{cli} application called
+   \gls{xindy} to sort the entries. This application is more flexible than 
+   \texttt{makeindex} and is able to sort \glspl{exlatinalph} or 
+   \glspl{nonlatinalph}. The \gls{xindy} application comes with \TeX~Live 
+   but not with MiK\TeX.  Since \gls{xindy} is a Perl script, if you are
+   using MiK\TeX\ you will not only need to install \gls{xindy}, you
+   will also need to install Perl. In a~similar way to \opt2, this 
+   option involves making \LaTeX\ write the glossary information to 
+   a~temporary file which \gls{xindy} reads. Then \gls{xindy} 
+   writes a~new file containing the code to typeset the glossary. 
+   \LaTeX\ then reads this file in on the next run.
+
+   \begin{enumerate}
+     \item Add the \pkgopt{xindy} option to the \styfmt{glossaries}
+package option list:
+\begin{verbatim}
+\usepackage[xindy]{glossaries}
+\end{verbatim}
+
+     \item Add \cs{makeglossaries} to your preamble (before you start
+     defining your entries, as described in \sectionref{sec:newglosentry}).
+
+    \item Run \LaTeX\ on your document. This creates files with the
+    extensions \texttt{.glo} and \texttt{.xdy} (for example, if your 
+    \LaTeX\ document is called \texttt{myDoc.tex}, then you'll have 
+    two extra files called \texttt{myDoc.glo} and \texttt{myDoc.xdy}).
+    If you look at your document at this point, you won't see the 
+    glossary as it hasn't been created yet.
+
+    \item Run \gls{xindy} with the \texttt{.glo} file as the
+    input file and the \texttt{.xdy} file as a~module so that
+    it creates an output file with the extension \texttt{.gls}. You 
+    also need to set the language name and input encoding. If
+    you have access to a terminal or a command prompt (for example, the
+    MSDOS command prompt for Windows users or the bash console for
+    Unix-like users) then you need to run the command (all on one
+    line):
+\begin{verbatim}
+xindy  -L english -C utf8 -I xindy -M myDoc 
+-t myDoc.glg -o myDoc.gls myDoc.glo
+\end{verbatim}
+    (Replace \texttt{myDoc} with the base name of your \LaTeX\
+    document file. Avoid spaces in the file name. If necessary, also replace
+    \texttt{english} with the name of your language and \texttt{utf8}
+    with your input encoding.) If you don't know
+    how to use the command prompt, then you can probably access
+    \gls{xindy} via your text editor, but each editor has a
+    different method of doing this, so I~can't give a~general
+    description. You will have to check your editor's manual.
+
+    The default sort is word order (\qt{sea lion} comes before
+\qt{seal}). 
+    If you want letter ordering you need to add the
+    \pkgopt[letter]{order} package option:
+\begin{verbatim}
+\usepackage[xindy,order=letter]{glossaries}
+\end{verbatim}
+    (See \sectionref{sec:xindyapp} for further details on using 
+    \gls*{xindy} explicitly.)
+
+    \item Once you have successfully completed the previous step,
+    you can now run \LaTeX\ on your document again.
+
+   \end{enumerate}
+
+\end{description}
+
+For \optsand23, it can be difficult to remember all the
+parameters required for \gls{makeindex} or \gls{xindy}, so the
+\styfmt{glossaries} package provides a~script called
+\gls{makeglossaries} that reads the \texttt{.aux} file to
+determine what settings you have used and will then run
+\gls{makeindex} or \gls{xindy}. Again, this is a~command line
+application and can be run in a~terminal or command prompt. For
+example, if your \LaTeX\ document is in the file \texttt{myDoc.tex},
+then run:
+\begin{verbatim}
+makeglossaries myDoc
+\end{verbatim}
+(Replace \texttt{myDoc} with the base name of your \LaTeX\ document
+file. Avoid spaces in the file name.) This is described in more
+detail in \sectionref{sec:makeglossaries}.
+
+\begin{important}
+The \texttt{.gls} and \texttt{.glo} are temporary files
+created to help build your document. You should not edit or explicitly input
+them. However, you may need to delete them if something goes wrong
+and you need to do a fresh build.
+\end{important}
+
+An overview of these three options is given in
+\tableref{tab:options}.
+
+\begin{table}[htbp]
+ \caption{Glossary Options: Pros and Cons}
+ \label{tab:options}
+ {%
+ \centering
+ \begin{tabular}{>{\raggedright}p{0.35\textwidth}ccc}
+   & \bfseries \opt1 & \bfseries \opt2 & \bfseries \opt3\\
+   Requires an external application? &
+   \no & \yes & \yes\\
+   Requires Perl? &
+   \no & \no & \yes\\
+   Can sort \glspl{exlatinalph}
+   or \glspl{nonlatinalph}? &
+   \no\textsuperscript{\textdagger} & \no & \yes\\
+   Efficient sort algorithm? &
+   \no & \yes & \yes\\
+   Can use a different sort method for each glossary? &
+   \yes & \no & \no\\
+   Can form ranges in the location lists? &
+   \no & \yes & \yes\\
+   Can have non-standard locations in the location lists? &
+   \yes & \no & \yes\\
+   Maximum hierarchical depth &
+   Unlimited & 3 & Unlimited\\
+   \ics{glsdisplaynumberlist} reliable? &
+   \yes & \no & \no\\
+   \ics{newglossaryentry} restricted to preamble? &
+   \yes & \no & \no\\
+   Requires additional write registers? &
+   \no & \yes & \yes\\
+   Default value of \pkgopt{sanitizesort} package option &
+   \texttt{false} & \texttt{true} & \texttt{true}
+ \end{tabular}
+ \par
+ }\textsuperscript{\textdagger} Strips standard \LaTeX\ accents
+(that is, accents generated by core \LaTeX\ commands) so,
+for example, \ics{AA} is treated the same as A.
+\end{table}
+
+This document uses the \styfmt{glossaries} package. For example,
+when viewing the PDF version of this document in a
+hyperlinked-enabled PDF viewer (such as Adobe Reader or Okular) if
+you click on the word \qt{\gls{xindy}} you'll be taken to the entry
+in the glossary where there's a brief description of
+the term \qt{\gls*{xindy}}.
+
+The remainder of this introductory section covers the following:
+\begin{itemize}
+\item \sectionref{sec:samples} lists the sample documents provided 
+with this package.
+
+\item \sectionref{sec:languages} provides information for users who
+wish to write in a language other than English.
+
+\item \sectionref{sec:makeglossaries} describes how to use an
+\gls{indexingapp} to create the sorted glossaries for your document
+(\optsor23).
+
+\end{itemize}
+
+\section{Sample Documents}
+\label{sec:samples}
+
+The \styfmt{glossaries} package is provided with some sample
+documents that illustrate the various functions. These should
+be located in the \texttt{samples} subdirectory (folder) of the
+\styfmt{glossaries} documentation directory. This location varies
+according to your operating system and \TeX\ distribution. You
+can use \texttt{texdoc} to locate the main glossaries documentation.
+For example, in a
+\href{http://www.dickimaw-books.com/latex/novices/html/terminal.html}{terminal or command prompt}, type:
+\begin{prompt}
+texdoc -l glossaries
+\end{prompt}
+This should display a list of all the files in the glossaries
+documentation directory with their full pathnames.
+
+If you can't find the sample files on your computer, they are also available
+from your nearest CTAN mirror at
+\url{http://mirror.ctan.org/macros/latex/contrib/glossaries/samples/}.
+
+The sample documents are as follows\footnote{Note that although I've written
+\texttt{latex} in this section, it's better to use \texttt{pdflatex}, where
+possible, for the reasons given \hyperlink{pdflatexnote}{earlier}.}:
+\begin{samplelist}
+\exitem[minimal]{gls} This document is a
+minimal working example. You can test your installation using this
+file. To create the complete document you will need to do the
+following steps:
+  \begin{enumerate}
+  \item Run \texttt{minimalgls.tex} through \LaTeX\ either by 
+  typing
+\begin{prompt}
+latex minimalgls
+\end{prompt}
+  in a terminal or by using the relevant button or menu item in
+  your text editor or front-end. This will create the required 
+  associated files but you will not see the glossary. If you use 
+  PDF\LaTeX\ you will also get warnings about non-existent 
+  references that look something like:
+\begin{verbatim}
+pdfTeX warning (dest): name{glo:aca} has been 
+referenced but does not exist, 
+replaced by a fixed one
+\end{verbatim}
+  These warnings may be ignored on the first run.
+
+  If you get a \verb"Missing \begin{document}" error, then 
+  it's most likely that your version of \sty{xkeyval} is 
+  out of date. Check the log file for a warning of that nature. 
+  If this is the case, you will need to update the \styfmt{xkeyval}
+  package.
+
+  \item Run \gls{makeglossaries} on the document (\sectionref{sec:makeglossaries}). This can
+  be done on a terminal either by typing
+\begin{prompt}
+makeglossaries minimalgls
+\end{prompt}
+  or by typing
+\begin{prompt}
+perl makeglossaries minimalgls
+\end{prompt}
+  If your system doesn't recognise the command \texttt{perl} then
+  it's likely you don't have Perl installed. In which case you
+  will need to use \gls{makeindex} directly. You can do this
+  in a terminal by typing (all on one line):
+\begin{prompt}
+makeindex -s minimalgls.ist -t minimalgls.glg -o minimalgls.gls minimalgls.glo
+\end{prompt}
+  (See \sectionref{sec:makeindexapp} for further details on using 
+   \gls*{makeindex} explicitly.)
+
+  Note that if you need to specify the full path and the path
+  contains spaces, you will need to delimit the file names with
+  the double-quote character.
+
+  \item Run \texttt{minimalgls.tex} through \LaTeX\ again (as step~1)
+  \end{enumerate}
+You should now have a complete document. The number following
+each entry in the glossary is the location number. By default, this 
+is the page number where the entry was referenced.
+
+\exitem{-noidx} This document illustrates how to use the
+\styfmt{glossaries} package without an external \gls{indexingapp} (\opt1).
+To create the complete document, you need to do:
+\begin{prompt}
+latex sample-noidx
+latex sample-noidx
+\end{prompt}
+
+\exitem{-noidx-utf8} As the previous example, except that it uses
+the \sty{inputenc} package.
+To create the complete document, you need to do:
+\begin{prompt}
+latex sample-noidx-utf8
+latex sample-noidx-utf8
+\end{prompt}
+
+\exitem{4col} This document illustrates
+a four column glossary where the entries have a symbol in addition
+to the name and description. To create the complete document, you
+need to do:
+\begin{prompt}
+latex sample4col
+makeglossaries sample4col
+latex sample4col
+\end{prompt}
+As before, if you don't have Perl installed, you will need to use
+\gls{makeindex} directly instead of using
+\gls{makeglossaries}. The vertical gap between entries is the
+gap created at the start of each group. This can be suppressed
+using the \pkgopt{nogroupskip} package option.
+
+\exitem{Acr} This document has some
+sample acronyms. It also adds the glossary to the table of contents,
+so an extra run through \LaTeX\ is required to ensure the document
+is up to date:
+\begin{prompt}
+latex sampleAcr
+makeglossaries sampleAcr
+latex sampleAcr
+latex sampleAcr
+\end{prompt}
+
+\exitem{AcrDesc} This is similar to
+the previous example, except that the acronyms have an associated
+description. As with the previous example, the glossary is added to
+the table of contents, so an extra run through \LaTeX\ is required:
+\begin{prompt}
+latex sampleAcrDesc
+makeglossaries sampleAcrDesc
+latex sampleAcrDesc
+latex sampleAcrDesc
+\end{prompt}
+
+\exitem{Desc} This is similar to the
+previous example, except that it defines the acronyms using
+\ics{newglossaryentry} instead of \ics{newacronym}. As with the
+previous example, the glossary is added to the table of contents, so
+an extra run through \LaTeX\ is required:
+\begin{prompt}
+latex sampleDesc
+makeglossaries sampleDesc
+latex sampleDesc
+latex sampleDesc
+\end{prompt}
+
+\exitem{CustomAcr} This document has some sample acronyms with a
+custom acronym style. It also adds the glossary to the table of
+contents, so an extra run through \LaTeX\ is required:
+\begin{prompt}
+late
