@@ -1,107 +1,35 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% 
-% Generic template for the anteproyectos of TFC/TFM/TFGs
-% 
-% $Id: anteproyecto.tex,v 1.6 2018/09/11 12:23:48 macias Exp $
-% 
-% By:
-%  + Javier Macías-Guarasa. 
-%    Departamento de Electrónica
-%    Universidad de Alcalá
-%  + Roberto Barra-Chicote. 
-%    Departamento de Ingeniería Electrónica
-%    Universidad Politécnica de Madrid   
-% 
-% Based on original sources by Roberto Barra, Manuel Ocaña, Jesús Nuevo,
-% Pedro Revenga, Fernando Herránz and Noelia Hernández. Thanks a lot to
-% all of them, and to the many anonymous contributors found (thanks to
-% google) that provided help in setting all this up.
-% 
-% See also the additionalContributors.txt file to check the name of
-% additional contributors to this work.
-% 
-% If you think you can add pieces of relevant/useful examples,
-% improvements, please contact us at (macias@depeca.uah.es)
-% 
-% You can freely use this template and please contribute with
-% comments or suggestions!!!
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\input{../Config/preamble-anteproyecto.tex}  
+\input{../Config/myconfig.tex} 
+\input{../Config/postamble.tex} 
 
-% This is for rubber to clean additional files
-% rubber: clean anteproyecto.acn anteproyecto.acr anteproyecto.alg anteproyecto.cod anteproyecto.ist anteproyecto.out anteproyecto.sbl anteproyecto.slg anteproyecto.sym anteproyecto.lor
+%ruta a los directorios que contienen imagenes, figuras, diagramas...
+\graphicspath{{../Book/logos/}{../Book/figures/}{../Book/diagrams/}{../Book/photos/}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% BEGIN Preamble and configuration section
-% 
-\input{../Config/preamble-anteproyecto.tex}    % DO NOT TOUCH THIS LINE. You can edit
-% the file to modify some default settings
 
-\input{../Config/myconfig.tex}    % DO NOT TOUCH THIS LINE, but EDIT THIS FILE 
-                                  % to set your specific settings (related
-                                  % to the document language, your degree,
-                                  % document details (such as title, author
-                                  % (you), your email, name of the tribunal
-                                  % members, document year, keyword and
-                                  % palabras clave) and link colors), and
-                                  % define your commonly used commands
-                                  % (some examples are provided).
-
-\input{../Config/postamble.tex}   % DO NOT TOUCH THIS LINE. Yes, I know,
-                                  % "postamble" is not a valid word... :-)
-
-% path to directories containing images
-\graphicspath{{../Book/logos/}{../Book/figures/}{../Book/diagrams/}{../Book/photos/}} % Edit this to your
-                                  % needs. Only logos is really required
-                                  % when you generate your own content.
-% 
-% END Preamble and configuration section
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
-\title{Anteproyecto de \mybookworktypefull}        % DO NOT TOUCH THIS LINE
-\date{\myanteproyectodate}                         % DO NOT TOUCH THIS LINE
+\title{Anteproyecto de \mybookworktypefull}     
+\date{\myanteproyectodate}          
 \author{\mybookauthor}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Let's start with the real stuff
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{document}                                   % DO NOT TOUCH THIS LINE
+%comenzamos
+\begin{document}                               
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% BEGIN within-document configuration, frontpage and cover pages generation
-% 
-
-% Set Language dependent issues that must be set after \begin{document}
-\input{../Config/setlanguagedependentissues.tex} % DO NOT TOUCH THIS LINE
-                                                 % NOR THE FILE
-
-% 
-% END within-document configuration, frontpage and cover pages generation
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\input{../Config/setlanguagedependentissues.tex}
 
 \maketitle
 
-\begin{description}                               % DO NOT TOUCH THIS LINE
-\item[Título:] \mybooktitlespanish                % DO NOT TOUCH THIS LINE
-  \ifthenelse{\equal{\mybooklanguage}{english}}   % DO NOT TOUCH THIS LINE
-  {                                               % DO NOT TOUCH THIS LINE
-  \item[Título en inglés:] \mybooktitleenglish    % DO NOT TOUCH THIS LINE
-  }                                               % DO NOT TOUCH THIS LINE
-  {                                               % DO NOT TOUCH THIS LINE
-  }                                               % DO NOT TOUCH THIS LINE
-\item[Departamento:] \mybookdepartment            % DO NOT TOUCH THIS LINE
-\item[\expandafter\makefirstuc\expandafter{\mybookAutorOrAutora}:] \mybookauthor                       % DO NOT TOUCH THIS LINE
-\item[\expandafter\makefirstuc\expandafter{\mybookTutorOrTutores}:] \mybookadvisors                   % DO NOT TOUCH THIS LINE
-\end{description}                                 % DO NOT TOUCH THIS LINE
+\begin{description}                             
+\item[Título:] \mybooktitlespanish            
+  \ifthenelse{\equal{\mybooklanguage}{english}}
+  {                                              
+  \item[Título en inglés:] \mybooktitleenglish 
+  }                                              
+  {                                             
+  }                                             
+\item[Departamento:] \mybookdepartment          
+\item[\expandafter\makefirstuc\expandafter{\mybookAutorOrAutora}:] \mybookauthor                  
+\item[\expandafter\makefirstuc\expandafter{\mybookTutorOrTutores}:] \mybookadvisors                   
+\end{description}                                 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% BEGIN Normal sections. Edit/modify all within this section
 
 \section{Introducción}
 \label{sec:introduccion}
@@ -256,25 +184,8 @@ concretamente en su versión para Windows.\cite{miktext}. Además, como se prete
 se deberá utilizar el componente Sweave. \cite{Sweave}.
 
 
-
-
-
-
-% 
-% END Normal sections. Edit/modify all within this section
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Bibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\input{../Book/biblio/bibliography.tex}               % EDIT this file if required
+% Bibliografia
+\input{../Book/biblio/bibliography.tex}             
 
 
 
