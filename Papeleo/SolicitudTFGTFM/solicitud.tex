@@ -34,10 +34,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % BEGIN Preamble and configuration section
 % 
-\input{../../Config/preamble-solicitud.tex}    % DO NOT TOUCH THIS LINE. You can edit
+\input{../../config/preamble-solicitud.tex}    % DO NOT TOUCH THIS LINE. You can edit
                                                % the file to modify some default settings
 
-\input{../../Config/myconfig.tex}    % DO NOT TOUCH THIS LINE, but EDIT THIS FILE 
+\input{../../config/myconfig.tex}    % DO NOT TOUCH THIS LINE, but EDIT THIS FILE 
                                      % to set your specific settings (related
                                      % to the document language, your degree,
                                      % document details (such as title, author
@@ -47,10 +47,10 @@
                                      % define your commonly used commands
                                      % (some examples are provided).
 
-\input{../../Config/postamble.tex}   % DO NOT TOUCH THIS LINE. Yes, I know,
+\input{../../config/postamble.tex}   % DO NOT TOUCH THIS LINE. Yes, I know,
                                      % "postamble" is not a valid word... :-)
 
-\input{../../Config/postamble-solicitud.tex}   % DO NOT TOUCH THIS LINE. 
+\input{../../config/postamble-solicitud.tex}   % DO NOT TOUCH THIS LINE. 
                                                % Yes, I know, "postamble" 
                                                % is not a valid word... :-)
                                                % This is just to remove
@@ -85,7 +85,7 @@
 % 
 
 % Set Language dependent issues that must be set after \begin{document}
-\input{../Config/setlanguagedependentissues.tex} % DO NOT TOUCH THIS LINE
+\input{../config/setlanguagedependentissues.tex} % DO NOT TOUCH THIS LINE
                                                  % NOR THE FILE
 
 % 
@@ -97,23 +97,23 @@
 
   \Large\textbf{SOLICITUD DE ANTEPROYECTO \MakeUppercase{\mybookworktypefull}}
 
-  \mybookdepartment
+  Departamento de Ciencias de la Computación
 
 \end{center}
 \end{spacing}
 \vspace{0.5cm}
 
-\underline{\textbf{Datos personales \mybookDelOrDeLa{} \mybookAlumnoOrAlumna}}
+\underline{\textbf{Datos personales \mybookDelOrDeLa{} Estudiante}}
 \small
 \begin{spacing}{1.0}
   \begin{tabularx}{\textwidth}{lXr}
     % & & \\
 %    \MakeUppercase{\mybookAlumnoOrAlumna}: \mybookauthor & & DNI: \mybookDNIOpenPublishing \\
-    \MakeUppercase{NOMBRE Y APELLIDOS}: \mybookauthor & & DNI: \mybookDNIOpenPublishing \\
-    \multicolumn{2}{l}{DIRECCIÓN: \mystreet}  & CÓDIGO POSTAL: \mypostalcode\\ 
+    \MakeUppercase{NOMBRE Y APELLIDOS}: David Marquez Minguez & & DNI: 47319570-Z \\
+    \multicolumn{2}{l}{DIRECCIÓN: C/de la Ilustración n3, Bloque 6, 1 izq }  & CÓDIGO POSTAL:28902\\ 
     POBLACIÓN: \mycity         & PROVINCIA: \myprovince     & TELÉFONO: \mytelephone \\
     EMAIL: \mybookemail & & \\
-    \multicolumn{2}{l}{ESTUDIOS: \mydegreefull} & ESPECIALIDAD: \myspecialty\\
+    \multicolumn{2}{l}{ESTUDIOS: Grado en Ingeniería Informática} & ESPECIALIDAD: \myspecialty\\
     & & \\
     \multicolumn{3}{l}{IDIOMA ESCOGIDO PARA DESARROLLAR EL TRABAJO: [\xUseSpanish] ESPAÑOL ~~ [\xUseEnglish] INGLÉS}\\
     & &
@@ -121,12 +121,12 @@
 \end{spacing}
 
 \normalsize
-\underline{\textbf{Datos de la propuesta de anteproyecto}}
+\underline{\textbf{Datos de la propuesta de Anteproyecto}}
 \small
 
 \begin{tabularx}{\textwidth}{|X|}
   \hline
-  TÍTULO DEL \mybookworktype: \mybooktitlespanish \\
+  TÍTULO DEL \mybookworktype: Análisis de datos en redes sociales: Caso de estudio aplicado en Twitter \\
   \ifthenelse{\equal{\mybooklanguage}{english}}   
   {                                               
   TÍTULO EN INGLÉS: \mybooktitleenglish \\
@@ -140,8 +140,8 @@
 \begin{spacing}{1.0}
   \begin{tabularx}{\textwidth}{X}
 %    \MakeUppercase{\mybookDirectorOrDirectores}: \mybookadvisors \\
-    TUTOR ACADÉMICO: \mybookNameFirstAdvisor\\
-    COTUTOR (si procede): \mybookNameSecondAdvisor\\
+    TUTOR ACADÉMICO: Juan José Cuadrado Gallego\\
+    COTUTOR (si procede): \\
     \begin{center}
       Alcalá de Henares, \myanteproyectodate
     \end{center}
