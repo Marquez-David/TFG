@@ -1,96 +1,26 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% 
-% Generic template for TFC/TFM/TFGs requests
-% 
-% $Id: solicitud.tex,v 1.10 2020/03/24 17:18:37 macias Exp $
-% 
-% By:
-% + Javier Macías-Guarasa. 
-% Departamento de Electrónica
-% Universidad de Alcalá
-% + Roberto Barra-Chicote. 
-% Departamento de Ingeniería Electrónica
-% Universidad Politécnica de Madrid   
-% 
-% Based on original sources by Roberto Barra, Manuel Ocaña, Jesús Nuevo,
-% Pedro Revenga, Fernando Herránz and Noelia Hernández. Thanks a lot to
-% all of them, and to the many anonymous contributors found (thanks to
-% google) that provided help in setting all this up.
-% 
-% See also the additionalContributors.txt file to check the name of
-% additional contributors to this work.
-% 
-% If you think you can add pieces of relevant/useful examples,
-% improvements, please contact us at (macias@depeca.uah.es)
-% 
-% You can freely use this template and please contribute with
-% comments or suggestions!!!
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
 
 % This is for rubber to clean additional files
 % rubber: clean anteproyecto.acn anteproyecto.acr anteproyecto.alg anteproyecto.cod anteproyecto.ist anteproyecto.out anteproyecto.sbl anteproyecto.slg anteproyecto.sym anteproyecto.lor
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% BEGIN Preamble and configuration section
-% 
-\input{../../config/preamble-solicitud.tex}    % DO NOT TOUCH THIS LINE. You can edit
-                                               % the file to modify some default settings
+\input{../../config/preamble-solicitud.tex} 
 
-\input{../../config/myconfig.tex}    % DO NOT TOUCH THIS LINE, but EDIT THIS FILE 
-                                     % to set your specific settings (related
-                                     % to the document language, your degree,
-                                     % document details (such as title, author
-                                     % (you), your email, name of the tribunal
-                                     % members, document year, keyword and
-                                     % palabras clave) and link colors), and
-                                     % define your commonly used commands
-                                     % (some examples are provided).
+\input{../../config/myconfig.tex}  
+\input{../../config/postamble.tex}
+\input{../../config/postamble-solicitud.tex}
 
-\input{../../config/postamble.tex}   % DO NOT TOUCH THIS LINE. Yes, I know,
-                                     % "postamble" is not a valid word... :-)
-
-\input{../../config/postamble-solicitud.tex}   % DO NOT TOUCH THIS LINE. 
-                                               % Yes, I know, "postamble" 
-                                               % is not a valid word... :-)
-                                               % This is just to remove
-                                               % jury members in case the
-                                               % work is a TFG
-
-% path to directories containing images
-\graphicspath{{../../logos/}{../../figures/}{../../diagrams/}} % Edit this to your
-                                                               % needs. Only
-                                                               % logos 
-                                                               % is really required
-                                                               % when you
-                                                               % generate 
-                                                               % your own content.
+\graphicspath{{../../logos/}{../../figures/}{../../diagrams/}}
  
-% END Preamble and configuration section
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\title{Solicitud de anteproyecto de \mybookworktypefull} % DO NOT TOUCH THIS LINE
-\date{\myanteproyectodate}                               % DO NOT TOUCH THIS LINE
+\title{Solicitud de anteproyecto de \mybookworktypefull} 
+\date{\myanteproyectodate
 \author{\mybookauthor}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Let's start with the real stuff
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{document}                                   % DO NOT TOUCH THIS LINE
+\begin{document}
 
 \pagestyle{empty}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% BEGIN within-document configuration, frontpage and cover pages generation
-% 
-
-% Set Language dependent issues that must be set after \begin{document}
-\input{../config/setlanguagedependentissues.tex} % DO NOT TOUCH THIS LINE
-                                                 % NOR THE FILE
-
-% 
-% END within-document configuration, frontpage and cover pages generation
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\input{../config/setlanguagedependentissues.tex}
 
 \begin{spacing}{1.0}
 \begin{center}
@@ -201,30 +131,6 @@
     \hline
  \end{tabularx}
 \end{spacing}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% BEGIN Normal sections. Edit/modify all within this section
-
-
-
-% 
-% END Normal sections. Edit/modify all within this section
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
 
 \end{document}
 
