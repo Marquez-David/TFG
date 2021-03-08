@@ -1,0 +1,34 @@
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\chapter{Ejemplo práctico: Text Mining con R}
+\label{cha:Text-mining-r}
+
+En este capítulo se va a desarrollar un caso práctico sobre minería de textos, con el fin de corroborar 
+su gran utilidad en el mundo actual. Para dicho análisis necesitaremos una fuente de información de donde 
+extraer los textos a analizar, Twitter es actualmente una dinámica e ingente fuente de contenidos que, 
+dada su popularidad e impacto, se ha convertido en la principal fuente de información para estudios de 
+Social Media Analytics.
+
+Además de R existen otros lenguajes de programación como Python el cual domina este ámbito, existen 
+algunos paquetes en R que facilitan y extienden sus capacidades como herramienta de análisis de texto.
+
+\section{Introducción}
+\label{sec:introduccion}
+
+Tal y como ocurre en muchas redes sociales, Twitter otorga la posibilidad de compartir sus datos tanto 
+con empresas como con desarrolladores y/o usuarios particulares. Aunque en la mayoría de casos se trata 
+de web Services API, con frecuencia existen librerías que permiten interactuar con la API desde diversos 
+lenguajes de programación. En este caso, se empleará la librería “rtweet”, un Wrapper R que es capaz de 
+comunicarse con dicha API de Twitter.
+
+Para poder extraer datos de Twitter es necesario estar registrado en la plataforma, una vez registrado se 
+debe crear una Twitter App asociada a dicha cuenta. Dicha Twitter App, proporcionará una serie de claves 
+y tokens con la que se podrá acceder a la aplicación, y de esta forma extraer toda la información 
+necesaria.
+
+Para este ejemplo práctico, se han seleccionado una serie de cuentas de Twitter como herramienta de 
+análisis. Los tweets a analizar pertenecen a cuentas de distintos partidos políticos españoles: @PSOE, 
+@populares, @PODEMOS, @vox_es y @MasPais_Es.
+
+
