@@ -1,5 +1,3 @@
-\usepackage[spanish]{babel}
-\usepackage[utf8]{inputenc}
 
 \chapter{Ejemplo práctico: Text Mining con R}
 \label{cha:Text-mining-r}
@@ -43,22 +41,40 @@ evitar ser sancionado por la organización.
 \section{Acceso a la API}
 \label{sec:acceso-api}
 
-Para acceder a la API de Twitter, como se indica en la documentación de la misma existen dos métodos de 
-acceso Oauth2 y Oauth1a, los cuales dependerán del tipo de información que se desee extraer.
+Para acceder a la API de Twitter, como se indica en la documentación de la misma, existen dos métodos de 
+acceso Oauth2 y Oauth1a. El acceso con cada uno de ellos dependerá del tipo de información que se desee 
+extraer \cite{oauth1a}. Como veremos a continuación, nosotros nos centraremos en Oauth1a.
 
-Como veremos a continuación el metodo de acceso será a través de Oauth1a puesto que se desea extraer 
-información específica de algunos usuarios de la plataforma. Así pues, OAuth 1a para funcionar requiere 
-de cuatro elementos que provienen de la aplicación de Twitter creada por el usuario desarrollador, clave 
-del consumidor, clave del consumidor secreta, token de acceso y token de acceso secreto.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=4.5in]{Oauth1a.png}
+  		   \caption{Funcionamiento de Oauth1a}
+  		   \label{img:oauth1a}
+\end{figure}
 
-Todos estos recursos deberán ser proporcionados por la plataforma de Twitter parea desarrolladores una 
-vez creada la aplicación con la cual se pretende acceder a la API.
+Puesto que se desea extraer información específica de algunos usuarios de la plataforma, el metodo de 
+acceso será a través de Oauth1a. Así pues, OAuth1a para funcionar requiere 
+de cuatro elementos que provienen de la aplicación de Twitter creada por el usuario desarrollador, estos elementos son:
 
-<<results=hide>>=
-  library(rtweet)
-  library(tidyverse)
-  library(knitr)
-@
+\begin{enumerate}
+\item Clave del consumidor
+\item Clave del consumidor secreta
+\item Token de acceso
+\item Token de acceso secreto
+\end{enumerate}
+
+
+Todos estos recursos deberán ser proporcionados por la plataforma de Twitter para desarrolladores. Una 
+vez se disponen de dichos recursos, realizamos el proceso de identificación y obtención de tokens \cite{error_oauth1a}, 
+no sin antes cargar las librerías necesarias para el desarrollo de dicho caso práctico.
+
+\input{chapters/Rnw/importar-librerias.tex}
+
+Ahora que las librerías necesarias están cargadas, se procede a crear las variables que almacenarán los 
+recursos de acceso. A conitnuación, solo debemos llamar a la función de acceso. Esta funcion, se encargará de enviar 
+una solicitud para generar tokens OAuth 1.0, dichos tokens solo se podrán utilizar para solicitar información \cite{create_token}.
+
+\input{chapters/Rnw/acceso-api.tex}
 
 
 
