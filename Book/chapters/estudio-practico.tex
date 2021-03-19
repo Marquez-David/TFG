@@ -57,10 +57,10 @@ acceso será a través de Oauth1a. Así pues, OAuth1a para funcionar requiere
 de cuatro elementos que provienen de la aplicación de Twitter creada por el usuario desarrollador, estos elementos son:
 
 \begin{enumerate}
-\item Clave del consumidor
-\item Clave del consumidor secreta
-\item Token de acceso
-\item Token de acceso secreto
+	\item Clave del consumidor
+	\item Clave del consumidor secreta
+	\item Token de acceso
+	\item Token de acceso secreto
 \end{enumerate}
 
 
@@ -75,6 +75,34 @@ recursos de acceso. A conitnuación, solo debemos llamar a la función de acceso
 una solicitud para generar tokens OAuth 1.0, dichos tokens solo se podrán utilizar para solicitar información \cite{create_token}.
 
 \input{chapters/Rnw/acceso-api.tex}
+
+\section{Extracción y carga de datos}
+\label{sec:extraccion-carga-datos}
+
+Una vez que se ha conseguido acceder a la API a través de la aplicación para desarrolladores proporcionada por Twitter, se procede 
+con la fase de extracción de datos. Como se ha indicado en la sección \ref{sec:introduccion}, en Twitter existe una normativa 
+que regula la frecuencia máxima de peticiones, así como la cantidad máxima de tweets que se pueden extraer \cite{rate_limit}. Para 
+el tipo de análisis que se quiere realizar en este trabajo, se pretenden obtener la mayor cantidad de tweets posible, puesto que el 
+número máximo de publicaciones que se pueden extraer por consulta son 200, se sigue la siguiente estrategia:
+
+\begin{enumerate}
+	\item Toda publicación  tiene un identificador numérico global;, que sigue un orden temporal. Esto permitirá identificar y distinguir 
+	los tweets mas recientes de los más antiguos.
+
+	\item Es posible recuperar y trabajar solo con publicaciones antiguas, empelando como parámetro de la función el identificador de 
+	cada tweet.
+
+	\item Antes de cada consulta, se lee el fichero donde se almacenan las publicaciones y se identifica el ID del ultimo tweets
+	recuperado. Si no existe dicho fichero de almacenamiento para el usuario en cuestión, se crea uno.
+
+	\item Se realiza una nueva consulta empleando como argumento maxId el ID recuperado en el paso anterior.
+
+	\item Se incorporan los nuevos datos al archivo de almacenamiento.
+\end{enumerate} 
+
+En cuanto a las publicaciones a analizar, estas serán de distintos partidos políticos más importantes en España. Los datos serán extraídos 
+de las propias cuentas del partido, no de las cuentas personales de sus representantes.
+
 
 
 
