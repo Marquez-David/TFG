@@ -5,8 +5,9 @@
 En este capítulo se va a desarrollar un caso práctico sobre minería de textos, con el fin de corroborar 
 su utilidad y su importancia en el mundo actual. Para dicho análisis necesitaremos una fuente de 
 información de donde extraer los textos a analizar, dicha fuente bien podría ser un artículo de opinión, 
-discursos transcritos… Durante este capítulo, se procederá a realizar el proceso de minería de textos 
-sobre publicaciones en redes sociales, en este caso Twitter.
+discursos transcritos…El conjunto de textos a analizar, serán publicaciones de los últimos tres presidentes 
+de Estados Unidos, en este caso en Twitter, con el fin de analizar dichas publicaciones y realizar un estudio
+sobre las mismas.
 
 Twitter es actualmente una dinámica e ingente fuente de contenidos que, dada su popularidad e impacto, 
 se ha convertido en la principal fuente de información para estudios de Social Media Analytics. Multitud 
@@ -43,7 +44,7 @@ evitar ser sancionado por la organización.
 
 Para acceder a la API de Twitter, como se indica en la documentación de la misma, existen dos métodos de 
 acceso Oauth2 y Oauth1a. El acceso con cada uno de ellos dependerá del tipo de información que se desee 
-extraer \cite{oauth1a}. Como veremos a continuación, nosotros nos centraremos en Oauth1a.
+extraer \cite{oauth1a}. Como veremos a continuación, el metodo de acceso elegido será Oauth1a.
 
 \begin{figure}[tphb]
   		   \centering
@@ -68,13 +69,14 @@ Todos estos recursos deberán ser proporcionados por la plataforma de Twitter pa
 vez se disponen de dichos recursos, realizamos el proceso de identificación y obtención de tokens \cite{error_oauth1a}, 
 no sin antes cargar las librerías necesarias para el desarrollo de dicho caso práctico.
 
-\input{chapters/Rnw/importar-librerias.tex}
+\input{chapters/recursos/importar-librerias.tex}
 
-Ahora que las librerías necesarias están cargadas, se procede a crear las variables que almacenarán los 
-recursos de acceso. A conitnuación, solo debemos llamar a la función de acceso. Esta funcion, se encargará de enviar 
-una solicitud para generar tokens OAuth 1.0, dichos tokens solo se podrán utilizar para solicitar información \cite{create_token}.
+Una vez que las librerías necesarias están cargadas, se procede a crear las variables que almacenarán los 
+recursos de acceso. A conitnuación, se llama a la función de acceso, proporcionando los parametros anteriormente definidos.
+Esta función envuelve las funciones de protocolo de enlace de autenticación OAuth 1.0 del paquete httr para una sesión de Twitter 
+en concreto. \cite{create_token}.
 
-\input{chapters/Rnw/acceso-api.tex}
+\input{chapters/recursos/acceso-api.tex}
 
 \section{Extracción y carga de datos}
 \label{sec:extraccion-carga-datos}
@@ -86,7 +88,7 @@ el tipo de análisis que se quiere realizar en este trabajo, se pretenden obtene
 número máximo de publicaciones que se pueden extraer por consulta son 200, se sigue la siguiente estrategia:
 
 \begin{enumerate}
-	\item Toda publicación  tiene un identificador numérico global;, que sigue un orden temporal. Esto permitirá identificar y distinguir 
+	\item Toda publicación  tiene un identificador numérico global, que sigue un orden temporal. Esto permitirá identificar y distinguir 
 	los tweets mas recientes de los más antiguos.
 
 	\item Es posible recuperar y trabajar solo con publicaciones antiguas, empelando como parámetro de la función el identificador de 
@@ -95,13 +97,16 @@ número máximo de publicaciones que se pueden extraer por consulta son 200, se 
 	\item Antes de cada consulta, se lee el fichero donde se almacenan las publicaciones y se identifica el ID del ultimo tweets
 	recuperado. Si no existe dicho fichero de almacenamiento para el usuario en cuestión, se crea uno.
 
-	\item Se realiza una nueva consulta empleando como argumento maxId el ID recuperado en el paso anterior.
+	\item Se realiza una nueva consulta empleando como argumento maxID el identificador recuperado en el paso anterior.
 
 	\item Se incorporan los nuevos datos al archivo de almacenamiento.
 \end{enumerate} 
 
-En cuanto a las publicaciones a analizar, estas serán de distintos partidos políticos más importantes en España. Los datos serán extraídos 
-de las propias cuentas del partido, no de las cuentas personales de sus representantes.
+Una vez ha quedado claro el proceso de extracción, se pasa a crear una función que se encargue de dicha tarea \footnote{Se puede consultar 
+más información sobre la implementación de dicha función en el apéndice \ref{sec:funcion-extraccion}, donde se detalla el funcionamiento y uso 
+de la misma.}. Cada vez que se ejecute dicha función, se recuperan nuevo tweets y se almacenan junto a los ya extraídos previamente.
+
+\input{chapters/recursos/extraccion-datos.tex}
 
 
 

@@ -1,0 +1,12 @@
+\usepackage[utf8]{inputenc}
+
+<<results=hide>>=
+  #En primer lugar se cargan las librerias necesarias.
+  library(twitteR)
+  library(tidyverse)
+  library(knitr)
+@
+
+
+
+
