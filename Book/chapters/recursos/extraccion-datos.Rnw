@@ -1,7 +1,0 @@
-\usepackage[utf8]{inputenc}
-
-<<results=hide>>=
-  extraccion_tweets(usuario  = "JoeBiden", maxtweets  = 200)
-  extraccion_tweets(usuario  = "DonaldTrump", maxtweets  = 200)
-  extraccion_tweets(usuario  = "BarckObama", maxtweets  = 200)
-@
