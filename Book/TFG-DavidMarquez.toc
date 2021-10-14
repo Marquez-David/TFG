@@ -1,0 +1,18 @@
+\babel@toc {english}{}
+\babel@toc {spanish}{}
+\contentsline {chapter}{Resumen}{vii}{chapter*.2}%
+\contentsline {chapter}{Abstract}{ix}{chapter*.3}%
+\contentsline {chapter}{Resumen extendido}{xi}{chapter*.4}%
+\contentsline {chapter}{\'{I}ndice general}{xiii}{chapter*.5}%
+\contentsline {chapter}{\'{I}ndice de figuras}{xv}{chapter*.6}%
+\contentsline {chapter}{Índice de tablas}{xvii}{chapter*.7}%
+\contentsline {chapter}{Índice de listados de código fuente}{xix}{chapter*.8}%
+\contentsline {chapter}{Índice de algoritmos}{xxi}{chapter*.9}%
+\contentsline {chapter}{Lista de acrónimos}{xxi}{chapter*.9}%
+\contentsline {chapter}{Lista de símbolos}{xxi}{chapter*.9}%
+\contentsline {chapter}{\numberline {1}Introducción al scraping en la web: Marco teórico}{1}{chapter.10}%
+\contentsline {section}{\numberline {1.1}¿Que es el web scraping?}{1}{section.11}%
+\contentsline {chapter}{\numberline {2}Presupuesto}{3}{chapter.13}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{5}{chapter*.14}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funciones implementadas}{7}{Appendix.15}%
+\contentsline {section}{\numberline {A.1}Función de extracción de Tweets}{8}{section.16}%
