@@ -21,9 +21,8 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{oauth1a}
-D.~Spring, ``Service provider 'connect' framework,''
-  \url{https://docs.spring.io/spring-social/docs/1.0.0.RC1/reference/html/serviceprovider.html}
-  [Ultimo acceso 16/marzo/2021].
+\bibitem{web-scraping-wikipedia}
+Wikipedia, ``Web scraping,'' \url{https://es.wikipedia.org/wiki/Web_scraping.}
+  [Ultimo acceso 14/octubre/2021].
 
 \end{thebibliography}

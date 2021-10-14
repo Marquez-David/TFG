@@ -11,7 +11,7 @@
 \contentsline {chapter}{Lista de acrónimos}{xxi}{chapter*.9}%
 \contentsline {chapter}{Lista de símbolos}{xxi}{chapter*.9}%
 \contentsline {chapter}{\numberline {1}Introducción al scraping en la web: Marco teórico}{1}{chapter.10}%
-\contentsline {section}{\numberline {1.1}¿Que es el web scraping?}{1}{section.11}%
+\contentsline {section}{\numberline {1.1}¿Que es realmente el web scraping?}{1}{section.11}%
 \contentsline {chapter}{\numberline {2}Presupuesto}{3}{chapter.13}%
 \contentsline {chapter}{Bibliograf\'{\i }a}{5}{chapter*.14}%
 \contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funciones implementadas}{7}{Appendix.15}%

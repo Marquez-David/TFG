@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  19 AUG 2021 01:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  14 OCT 2021 12:42
 entering extended mode
 **c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
 (c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
@@ -1268,7 +1268,7 @@ Cap\'{\i }tulo 1.
 <./photos//Oauth1a.png, id=212, 1147.28625pt x 1129.21875pt>
 File: ./photos//Oauth1a.png Graphic file (type png)
 <use ./photos//Oauth1a.png>
-Package pdftex.def Info: ./photos//Oauth1a.png  used on input line 17.
+Package pdftex.def Info: ./photos//Oauth1a.png  used on input line 22.
 (pdftex.def)             Requested size: 325.215pt x 320.09041pt.
 ) (presupuesto/presupuesto.tex [1
 
@@ -1346,20 +1346,20 @@ LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
 )
 Package rerunfilecheck Info: File `TFG-DavidMarquez.out' has not changed.
-(rerunfilecheck)             Checksum: DE4E73C1E42BC6798C704129DB5C2237;993.
+(rerunfilecheck)             Checksum: 26DFE4605AD0ACB311B96304C74F62D7;1003.
  ) 
 Here is how much of TeX's memory you used:
- 31913 strings out of 480236
- 550576 string characters out of 2896605
- 1240032 words of memory out of 3000000
- 47530 multiletter control sequences out of 15000+200000
- 615808 words of font info for 90 fonts, out of 3000000 for 9000
+ 31921 strings out of 480236
+ 550726 string characters out of 2896605
+ 1240000 words of memory out of 3000000
+ 47537 multiletter control sequences out of 15000+200000
+ 620071 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,12n,124p,1069b,2297s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MikText/fonts/enc/dvips/base/8r.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ec.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ts1.enc}<D:/MikText/fonts/type1/public/lm/lmbx10.pfb><D:/MikText/fonts/type1/public/lm/lmbx12.pfb><D:/MikText/fonts/type1/public/lm/lmbx9.pfb><D:/MikText/fonts/type1/public/lm/lmr10.pfb><D:/MikText/fonts/type1/public/lm/lmr12.pfb><D:/MikText/fonts/type1/public/lm/lmr17.pfb><D:/MikText/fonts/type1/public/lm/lmr7.pfb><D:/MikText/fonts/type1/public/lm/lmr9.pfb><D:/MikText/fonts/type1/public/lm/lmri9.pfb><D:/MikText/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on TFG-DavidMarquez.pdf (34 pages, 590274 bytes).
+{D:/MikText/fonts/enc/dvips/base/8r.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ec.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ts1.enc}<D:/MikText/fonts/type1/public/lm/lmbx10.pfb><D:/MikText/fonts/type1/public/lm/lmbx12.pfb><D:/MikText/fonts/type1/public/lm/lmbx9.pfb><D:/MikText/fonts/type1/public/lm/lmr10.pfb><D:/MikText/fonts/type1/public/lm/lmr12.pfb><D:/MikText/fonts/type1/public/lm/lmr17.pfb><D:/MikText/fonts/type1/public/lm/lmr7.pfb><D:/MikText/fonts/type1/public/lm/lmr9.pfb><D:/MikText/fonts/type1/public/lm/lmri10.pfb><D:/MikText/fonts/type1/public/lm/lmri9.pfb><D:/MikText/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on TFG-DavidMarquez.pdf (34 pages, 608839 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
+ 379 PDF objects out of 1000 (max. 8388607)
  92 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
