@@ -8,11 +8,13 @@
 \contentsline {chapter}{Índice de tablas}{xvii}{chapter*.7}%
 \contentsline {chapter}{Índice de listados de código fuente}{xix}{chapter*.8}%
 \contentsline {chapter}{Índice de algoritmos}{xxi}{chapter*.9}%
-\contentsline {chapter}{Lista de acrónimos}{xxi}{chapter*.9}%
-\contentsline {chapter}{Lista de símbolos}{xxi}{chapter*.9}%
-\contentsline {chapter}{\numberline {1}Introducción al scraping en la web: Marco teórico}{1}{chapter.10}%
-\contentsline {section}{\numberline {1.1}¿Que es realmente el web scraping?}{1}{section.11}%
-\contentsline {chapter}{\numberline {2}Presupuesto}{3}{chapter.13}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{5}{chapter*.14}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funciones implementadas}{7}{Appendix.15}%
-\contentsline {section}{\numberline {A.1}Función de extracción de Tweets}{8}{section.16}%
+\contentsline {chapter}{\numberline {1}Introducción y objetivos}{1}{chapter.10}%
+\contentsline {section}{\numberline {1.1}Contexto}{1}{section.11}%
+\contentsline {section}{\numberline {1.2}Motivación}{1}{section.12}%
+\contentsline {section}{\numberline {1.3}Objetivo y limitaciones}{2}{section.13}%
+\contentsline {section}{\numberline {1.4}Estructura del documento}{2}{section.14}%
+\contentsline {chapter}{\numberline {2}Web scraping, extracción de datos en la web: Marco teórico}{3}{chapter.19}%
+\contentsline {section}{\numberline {2.1}En que consiste el web scraping}{3}{section.20}%
+\contentsline {section}{\numberline {2.2}¿Como funciona el web scraping?}{3}{section.21}%
+\contentsline {chapter}{\numberline {3}Presupuesto}{5}{chapter.22}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{7}{chapter*.23}%

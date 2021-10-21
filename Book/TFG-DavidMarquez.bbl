@@ -23,6 +23,13 @@
 
 \bibitem{web-scraping-wikipedia}
 Wikipedia, ``Web scraping,'' \url{https://es.wikipedia.org/wiki/Web_scraping.}
-  [Ultimo acceso 14/octubre/2021].
+  [Ultimo acceso 18/octubre/2021].
+
+\bibitem{web-scraping-bozhao}
+B.~Zhao, \emph{Web Scraping}, 05 2017, pp. 1--3.
+
+\bibitem{api-wikipedia}
+Wikipedia, ``Interfaz de programaci\'on de aplicaciones,''
+  \url{https://en.wikipedia.org/wiki/API.} [Ultimo acceso 18/octubre/2021].
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  14 OCT 2021 12:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  20 OCT 2021 14:05
 entering extended mode
 **c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
 (c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
@@ -1146,7 +1146,7 @@ LaTeX Info: Redefining \selectfont on input line 126.
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 ) (cover/cover.tex (cover/portada-tfg-uah.tex
-<logos/logoEPS-UAH.jpg, id=68, 401.5pt x 292.09125pt>
+<logos/logoEPS-UAH.jpg, id=78, 401.5pt x 292.09125pt>
 File: logos/logoEPS-UAH.jpg Graphic file (type jpg)
 <use logos/logoEPS-UAH.jpg>
 Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 114.
@@ -1257,109 +1257,70 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@loa=\write14
 \openout14 = `TFG-DavidMarquez.loa'.
 
-) (acronyms/acronymsgl.tex
-No file TFG-DavidMarquez.acr.
-) (symbols/symbolsgl.tex
-No file TFG-DavidMarquez.sym.
 ) [21] [22
 
-] (chapters/introduccion.tex
+] (chapters/introduccion-objetivos.tex
 Cap\'{\i }tulo 1.
-<./photos//Oauth1a.png, id=212, 1147.28625pt x 1129.21875pt>
-File: ./photos//Oauth1a.png Graphic file (type png)
-<use ./photos//Oauth1a.png>
-Package pdftex.def Info: ./photos//Oauth1a.png  used on input line 22.
-(pdftex.def)             Requested size: 325.215pt x 320.09041pt.
-) (presupuesto/presupuesto.tex [1
+[1
 
-]
+]) (chapters/web-scraping-marco-teorico.tex
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [2 <./photos//Oauth1a.png>]
+ [2]
 Cap\'{\i }tulo 2.
-) (biblio/bibliography.tex (D:\MikText\tex/latex/base\latin1.def
-File: latin1.def 2020/08/01 v1.3d Input encoding file
-) (TFG-DavidMarquez.bbl [3
+) (presupuesto/presupuesto.tex [3
 
 ] [4
 
+]
+Cap\'{\i }tulo 3.
+) (biblio/bibliography.tex (D:\MikText\tex/latex/base\latin1.def
+File: latin1.def 2020/08/01 v1.3d Input encoding file
+) (TFG-DavidMarquez.bbl [5] [6
+
 ]) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-)) (appendix/funcion-extraccion.tex [5] [6
+)) [7] [8
+
+] (cover/backpage.tex (cover/backpage-tfg-uah.tex [9
 
 ]
-Ap\'{e}ndice A.
-(D:\MikText\tex/latex/base\latin1.def
-File: latin1.def 2020/08/01 v1.3d Input encoding file
-) (D:\MikText\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (D:\MikText\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (D:\MikText\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) (appendix/function.c
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 5.
- (D:\MikText\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 9.
-
-Overfull \hbox (49.80478pt too wide) in paragraph at lines 23--24
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (D:\MikText\tex/latex/base\utf8.def
-File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-)
-Package hyperref Info: bookmark level for unknown codefloat defaults to 0 on input line 12.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Overfull \vbox (38.65227pt too high) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
- [8])
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
- [9] [10
-
-] (cover/backpage.tex (cover/backpage-tfg-uah.tex [11
-
-]
-<./logos//uah/01_logo-vA_pant293.pdf, id=304, 607.48354pt x 209.12729pt>
+<./logos//uah/01_logo-vA_pant293.pdf, id=276, 607.48354pt x 209.12729pt>
 File: ./logos//uah/01_logo-vA_pant293.pdf Graphic file (type pdf)
 <use ./logos//uah/01_logo-vA_pant293.pdf>
 Package pdftex.def Info: ./logos//uah/01_logo-vA_pant293.pdf  used on input line 40.
-(pdftex.def)             Requested size: 364.1963pt x 71.13104pt.
+(pdftex.def)             Requested size: 364.1963pt x 99.58537pt.
 ))
+
+Package glossaries Warning: No \printglossary or \printglossaries found. 
+(Remove \makeglossaries if you don't want any glossaries.) 
+This document will not have a glossary.
+
 File: logos/logoEPS-UAH.jpg Graphic file (type jpg)
 <use logos/logoEPS-UAH.jpg>
-Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 119.
+Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 121.
 (pdftex.def)             Requested size: 418.25368pt x 304.29808pt.
- [12
+[10
 
  <./logos//uah/01_logo-vA_pant293.pdf>] (TFG-DavidMarquez.aux
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
 )
 Package rerunfilecheck Info: File `TFG-DavidMarquez.out' has not changed.
-(rerunfilecheck)             Checksum: 26DFE4605AD0ACB311B96304C74F62D7;1003.
+(rerunfilecheck)             Checksum: CE640B8EEE2BAF8FE86889E632AAC592;1150.
  ) 
 Here is how much of TeX's memory you used:
- 31921 strings out of 480236
- 550726 string characters out of 2896605
- 1240000 words of memory out of 3000000
- 47537 multiletter control sequences out of 15000+200000
- 620071 words of font info for 91 fonts, out of 3000000 for 9000
+ 31249 strings out of 480236
+ 543503 string characters out of 2896605
+ 1014345 words of memory out of 3000000
+ 46932 multiletter control sequences out of 15000+200000
+ 618415 words of font info for 85 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,12n,124p,1069b,2297s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MikText/fonts/enc/dvips/base/8r.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ec.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ts1.enc}<D:/MikText/fonts/type1/public/lm/lmbx10.pfb><D:/MikText/fonts/type1/public/lm/lmbx12.pfb><D:/MikText/fonts/type1/public/lm/lmbx9.pfb><D:/MikText/fonts/type1/public/lm/lmr10.pfb><D:/MikText/fonts/type1/public/lm/lmr12.pfb><D:/MikText/fonts/type1/public/lm/lmr17.pfb><D:/MikText/fonts/type1/public/lm/lmr7.pfb><D:/MikText/fonts/type1/public/lm/lmr9.pfb><D:/MikText/fonts/type1/public/lm/lmri10.pfb><D:/MikText/fonts/type1/public/lm/lmri9.pfb><D:/MikText/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on TFG-DavidMarquez.pdf (34 pages, 608839 bytes).
+ 88i,12n,90p,1069b,972s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/MikText/fonts/enc/dvips/lm/lm-ts1.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ec.enc}<D:/MikText/fonts/type1/public/lm/lmbx10.pfb><D:/MikText/fonts/type1/public/lm/lmbx12.pfb><D:/MikText/fonts/type1/public/lm/lmr10.pfb><D:/MikText/fonts/type1/public/lm/lmr12.pfb><D:/MikText/fonts/type1/public/lm/lmr17.pfb><D:/MikText/fonts/type1/public/lm/lmr6.pfb><D:/MikText/fonts/type1/public/lm/lmr7.pfb><D:/MikText/fonts/type1/public/lm/lmr8.pfb><D:/MikText/fonts/type1/public/lm/lmr9.pfb><D:/MikText/fonts/type1/public/lm/lmri10.pfb><D:/MikText/fonts/type1/public/lm/lmri9.pfb>
+Output written on TFG-DavidMarquez.pdf (32 pages, 345344 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

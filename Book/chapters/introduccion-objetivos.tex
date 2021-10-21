@@ -1,0 +1,94 @@
+\chapter{Introducción y objetivos}
+\label{cha:introduccion y objetivos}
+
+\section{Contexto}
+\label{sec:contexto}
+
+La \textit{World Wide Web} o lo que comúnmente se conoce como la web, es la estructura de datos más
+grande en la actualidad, y continúa creciendo de forma exponencial. Este gran crecimiento se debe a que el
+proceso de publicación de dicha información se ha ido facilitando con el tiempo.
+
+Tradicionalmente el proceso de inserción y extracción de la información se realizaba a través del
+copy-paste. Aunque este método en ocasiones pueda ser la única opción, esta es una técnica muy ineficiente
+y poco productiva, pues provoca que el conjunto final de datos no esté bien estructurado. El web scraping 
+o minado web trata precisamente de eso, de automatizar la extracción y almacenamiento de la información
+extraída de un sitio web \cite{web-scraping-wikipedia}.
+
+La forma en la que se extraen datos de internet puede ser muy diversa, aunque comúnmente se emplea el
+protocolo HTTP, existen otras formas de extraer datos de una web de forma automática
+\cite{web-scraping-bozhao}. Este proyecto, se centra en la metodología existente de obtención de
+información, de como se tratan los datos y la forma en la que se almacenan. Durante los siguientes
+apartados se realizará una especificación mas concreta del objetivo del proyecto, así como de la
+estructura y motivación del mismo.
+
+\section{Motivación}
+\label{sec:motivacion}
+
+El proceso de extracción y recopilación de datos no estructurados en la web es un área interesante en
+muchos contextos, ya sea para uso científico o personal. En ciencia por ejemplo, los conjuntos de datos
+se comparten y utilizan por múltiples investigadores, y a menudo también  son compartidos públicamente.
+Dichos conjuntos de datos se proporcionan a través de una API \footnote{Conjunto de subrutinas, funciones
+y procedimientos que ofrece cierta biblioteca para ser utilizada por otro software como una capa de
+abstracción. \cite{api-wikipedia}} estructurada, pero puede suceder que solo sea posible acceder a ellos 
+a través de formularios de búsqueda y documentos HTML. En el uso personal también ha crecido a medida 
+que han comenzado a surgir servicios que proporcionan a los usuarios herramientas para combinar información 
+de diferentes sitios web en su propias colección de páginas.
+
+Además de ser un ambito interesante, el minado web también es un area muy requerida, algunos de las campos 
+de mayor demanda tienen relacion con la venta minorista, mercado de valores, análisis de las redes sociales, 
+investigaciónes biomédicas, psicológia...
+
+\section{Objetivo y limitaciones}
+\label{sec:objetivo y limitaciones}
+
+Existen muchos tipos de técnicas y herramientas para realizar web scraping, desde programas con interfaz
+gráfica, hasta bibliotecas software de desarrollo. El objetivo de esta tesis es realizar un análisis
+cuantitativo de las diferentes técnicas y paquetes software para el desarrollo de web scraping en R.
+
+¿Cuál es la solución más rentable para el minado web? ¿Cuál de las soluciones tiene un mejor rendimiento?
+Para responder a esta pregunta, se realizará un estudio comparando las diferentes características de los
+paquetes software, con el objetivo finalmente de poder determinar cuál es el más óptimo en términos de
+memoria, rendimiento...
+
+En cuanto a las restricciones para el funcionamiento de un scraper, estas pueden ser varias, ya sean legales 
+o por la incapacidad de acceder a una gran parte del contenido no indexado en internet. Aunque el uso de 
+los scrapers está generalmente permitido, en algunos países como en Estados Unidos, las cortes en múltiples
+ocasiones han reconocido que ciertos usos no deberían estar autorizados \cite{web-scraping-wikipedia}.
+El desarrollo de este proyecto no se verá perjudicado por este tipo de cuestiones, pues solo se limitará
+al estudio y análisis de los mismos.
+
+\section{Estructura del documento}
+\label{sec:estructura del documento}
+
+Para poder facilitar la composición de la memoria se detalla a continuación la estructura de la misma:
+\begin{enumerate}
+  \item {\bfseries Bloque I: Introducción. }
+        \begin{itemize}
+          \item {\bfseries Capítulo 1: Introducción. \justify}
+                En la introducción se especifica tanto el contexto como la motivación a realizar el 
+                proyecto, así como las limitaciones esperadas durante la realización del mismo.
+        \end{itemize}
+  \item {\bfseries Bloque II: Marco teórico. }
+        \begin{itemize}
+          \item {\bfseries Capítulo 2: Web scraping, extracción de datos en la web. \justify}
+                Durante este capítulo se explica en que consiste el web scraping, sus posibilidades 
+                prácticas y aspectos más generales.
+          \item {\bfseries Capítulo 3: Introducción a los paquetes seleccionados y proceso de búsqueda. \justify}
+                Se realiza la selección de paquetes y se dictamina cuál ha sido la razón por la que los 
+                paquetes han sido seleccionados. Además, se especifican las características principales 
+                de cada uno, así como una visión general de sus funcionalidades.
+        \end{itemize}
+  \item {\bfseries Bloque III: Marco práctico. }
+        \begin{itemize}
+          \item {\bfseries Capítulo 4: Selección de variables de análisis y proceso de estudio. \justify}
+                Durante este capítulo se especifica el proceso de análisis a realizar, cuáles son los test 
+                a los que los paquetes serán sometidos y que variables se tomarán a estudio para los 
+                mismos.
+          \item {\bfseries Capítulo 5: Análisis y comparativa de paquetes. \justify}
+                Una vez introducidos todos los paquetes y el estudio al que van a ser sometidos, se realizá 
+                la comparativa de los mismos. Inicialmente, los paquetes serán analizados uno por uno y 
+                finalmente se hará una comparativa con los datos obtenidos.
+        \end{itemize}
+  \item {\bfseries Bloque IV: Conclusiones y futuras líneas de trabajo. }
+\end{enumerate}
+

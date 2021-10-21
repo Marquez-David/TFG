@@ -1,22 +1,22 @@
 # Fdb version 3
-["bibtex anteproyecto"] 1634207482 "anteproyecto.aux" "anteproyecto.bbl" "anteproyecto" 1634207632
-  "../Book/biblio/biblio.bib" 1634207312 3185 51e0af128e2463db7b123a17299768d0 ""
+["bibtex anteproyecto"] 1634554515 "anteproyecto.aux" "anteproyecto.bbl" "anteproyecto" 1634554516
+  "../Book/biblio/biblio.bib" 1634554514 4035 e2d79ce834252f45df56e753454fd06a ""
   "D:/MikText/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "anteproyecto.aux" 1634207488 2870 80e878a3784ef1ac7ccfc8b812e38f99 "pdflatex"
+  "anteproyecto.aux" 1634554481 2870 80e878a3784ef1ac7ccfc8b812e38f99 "pdflatex"
   (generated)
   "anteproyecto.bbl"
   "anteproyecto.blg"
-["pdflatex"] 1634207483 "c:/Users/Darks/Documents/GitHub/TFG/Anteproyecto/anteproyecto.tex" "anteproyecto.pdf" "anteproyecto" 1634207632
+["pdflatex"] 1634554475 "c:/Users/Darks/Documents/GitHub/TFG/Anteproyecto/anteproyecto.tex" "anteproyecto.pdf" "anteproyecto" 1634554516
   "../Book/biblio/bibliography.tex" 1614178623 878 39a15557f0099057b58f2505a69bf75c ""
   "../Book/diagrams//breakdown-diagram.png" 1606270366 64964 1099c94a96ba2818ee0dee2159ea7d10 ""
   "../Book/photos//text-mining-diagram.png" 1606188344 59001 67e9af14a172bc65f8d2ba6e0005b04a ""
-  "../Config/myconfig.tex" 1634207632 8356 e93608c43e77daf9a1bb018da0497777 ""
+  "../Config/myconfig.tex" 1634207663 8355 e2f48feec09942db0556829857407da1 ""
   "../Config/postamble.tex" 1613488964 25557 72b7951ac58926fe11c8a63d122c0567 ""
   "../Config/preamble-anteproyecto.tex" 1614179109 15670 f26628c7bbac81822d4e913d469bb4fa ""
   "../Config/setlanguagedependentissues.tex" 1614179187 1067 587693128a41d680542c09103b7d5178 ""
   "C:/Users/Darks/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1604494943 12668 c0021c8f3755cefc93f30f8d11243e6e ""
   "C:/Users/Darks/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1603992396 10243038 a2ccb7234ad2639f54cb8319e9943470 ""
-  "C:/Users/Darks/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1629325840 82884 7092ddb3c99bcfd42463d1f7c0bda804 ""
+  "C:/Users/Darks/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1634288577 82884 7092ddb3c99bcfd42463d1f7c0bda804 ""
   "D:/MikText/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993062124 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "D:/MikText/fonts/tfm/jknappen/ec/tcrm1095.tfm" 993062508 1460 8005ce585ff351dff78998923504da5e ""
   "D:/MikText/fonts/tfm/public/ae/aeb10.tfm" 1057861800 6132 78e5594f4fe2bad148a7cb22806d1f42 ""
@@ -268,13 +268,13 @@
   "D:/MikText/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
   "D:/MikText/tex/latex/xfor/xfor.sty" 1233853356 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "D:/MikText/tex/latex/xkeyval/xkeyval.sty" 1419274338 5114 9c1069474ff71dbc47d5006555e352d3 ""
-  "anteproyecto.aux" 1634207488 2870 80e878a3784ef1ac7ccfc8b812e38f99 "pdflatex"
-  "anteproyecto.bbl" 1634207482 901 628a2a8c68e066122d1514411e0b8455 "bibtex anteproyecto"
-  "anteproyecto.out" 1634207488 344 483989c654ad0e9ebac99041151de983 "pdflatex"
+  "anteproyecto.aux" 1634554481 2870 80e878a3784ef1ac7ccfc8b812e38f99 "pdflatex"
+  "anteproyecto.bbl" 1634554516 901 628a2a8c68e066122d1514411e0b8455 "bibtex anteproyecto"
+  "anteproyecto.out" 1634554481 344 483989c654ad0e9ebac99041151de983 "pdflatex"
   "anteproyecto.tex" 1613488843 9066 1c78c623a2a39089a5d90696fb403c57 ""
   "c:/Users/Darks/Documents/GitHub/TFG/Anteproyecto/anteproyecto.tex" 1613488843 9066 1c78c623a2a39089a5d90696fb403c57 ""
   (generated)
+  "anteproyecto.aux"
   "anteproyecto.out"
   "anteproyecto.log"
   "anteproyecto.pdf"
-  "anteproyecto.aux"
