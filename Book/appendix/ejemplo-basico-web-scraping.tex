@@ -1,0 +1,104 @@
+\chapter{Funcionamiento básico de un web scraper}
+\label{cha:funcionamiento basico de un web scraper}
+
+Siguiendo las directrices determinadas en la sección \ref{subsec:extraccion de los datos}, se
+muestra el funcionamiento de un web scraper durante las tres fases definidas. Para ello se realizará un
+pequeño ejemplo mostrando el comportamiento del mismo y de como interactúa con el servidor web al que
+se desea acceder.
+
+Para el desarrollo de este ejemplo se han empleado bibliotecas software basadas en el lenguaje de
+programación R, capaces de extraer datos de cualquier web. En este caso la web sujeta al análisis será,
+\emph{imdb} encargada de asignar un ranking entre películas y series.
+
+\section{Fase de búsqueda}
+\label{sec:fase de busqueda}
+
+Antes de comenzar con la primera de las tres etapas, debemos asegurarnos que nuestro agente software
+cumple con todos los aspectos ético-legales descritos en la sección \ref{sec:aspectos etico-legales del web
+scraping}. Los términos y servicios de la página deberán ser leídos, al igual que el documento
+\emph{'robots.txt'} con el objetivo de conocer cuáles son los accesos disponibles y el índice de solicitudes
+a realizar.
+
+En el fragmento de código \ref{cod:solicitud del documento robots.txt} se muestra la solicitud al servidor
+realizada. A través de la biblioteca \emph{robotstxt} \cite{robotstxt-cran} y haciendo uso de la función
+\emph{get\_robotstxt} se obtiene el documento deseado.
+
+Es posible que la solicitud del documento no se realice correctamente, pues o bien la página no dispone
+del documento en ese instante, o la función ha fallado durante su solicitud. En cualquiera de estos dos
+escenarios, es posible realizar una doble comprobación accediendo al mismo a través de la propia URL,
+\emph{https://www.imdb.com/robots.txt}.
+
+\begin{codefloat}
+\inputencoding{latin1}
+\lstinputlisting[style=CppExample]{appendix/ejemplo-basico-web-scraping-1.R}
+\inputencoding{utf8}
+\caption{Solicitud del documento \emph{robots.txt}}
+\label{cod:solicitud del documento robots.txt}
+\end{codefloat}
+
+\input{appendix/ejemplo-basico-web-scraping-1.tex}
+
+Una vez se ha accedido al documento \emph{'robots.txt'}, conociendo los posibles accesos al servidor, y
+determinando el número de solicitudes máximas por segundo, es posible acceder y descargar el fichero
+HTML de forma segura. Para este propósito se empleará la función \emph{read\_html} de la biblioteca
+\emph{xml2} \cite{xml2-cran} la cual se detalla a continuación.
+
+\begin{codefloat}
+\inputencoding{latin1}
+\lstinputlisting[style=CppExample]{appendix/ejemplo-basico-web-scraping-2.R}
+\inputencoding{utf8}
+\caption{Acceso y descarga del archivo HTML}
+\label{cod:acceso y descarga del archivo html}
+\end{codefloat}
+
+El valor que retorna la función \emph{read\_html}, se trata del archivo HTML integro, donde se incluyen
+cabecera, cuerpo y demás etiquetas del mismo. Una vez que se dispone de la página, es posible comenzar
+con la extracción de datos de interés de la misma.
+
+\section{Fase de extracción}
+\label{sec:fase de extraccion}
+
+Para el minado se empleará \emph{rvest} \cite{rvest-cran}, una de las bibliotecas software más comunes en
+este aspecto, diseñada para trabajar con \emph{magrittr} \cite{magrittr-cran} y facilitar tareas de la
+extracción. Además, será necesario el uso de funciones como \emph{html\_nodes()} y \emph{html\_text()}.
+
+Durante esta fase de extracción se obtendrán tanto los títulos como el ranking asignado a cada película o
+serie. Para realizar la extracción de forma correcta, se deberá conocer la etiqueta HTML que envuelve dicha
+información.
+
+\begin{codefloat}
+\inputencoding{latin1}
+\lstinputlisting[style=CppExample]{appendix/ejemplo-basico-web-scraping-3.R}
+\inputencoding{utf8}
+\caption{Extracción de datos de interés del documento}
+\label{cod:extraccion de datos de interes del documento}
+\end{codefloat}
+
+\input{appendix/ejemplo-basico-web-scraping-3.tex}
+
+\section{Fase de transformación}
+\label{sec:fase de transformacion}
+
+Una vez los datos han sido extraídos, la última fase consiste en la transformación de los mismos. Los datos
+desordenados deberán ser convertidos en estructuras de datos ordenadas y coherentes con el fin su posible
+almacenamiento en una base de datos.
+
+\begin{codefloat}
+\inputencoding{latin1}
+\lstinputlisting[style=CppExample]{appendix/ejemplo-basico-web-scraping-4.R}
+\inputencoding{utf8}
+\caption{Transformación de datos en un data frame}
+\label{cod:transformacion de datos en un data frame}
+\end{codefloat}
+
+\input{appendix/ejemplo-basico-web-scraping-4.tex}
+
+Una vez los datos han sido ordenados en una estructura de datos propia, en este caso un data frame, es
+posible trabajar con ellos de forma más cómoda y sencilla.
+
+
+
+
+
+
+

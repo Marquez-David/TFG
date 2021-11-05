@@ -1,20 +1,31 @@
 \babel@toc {english}{}
 \babel@toc {spanish}{}
-\contentsline {chapter}{Resumen}{vii}{chapter*.2}%
-\contentsline {chapter}{Abstract}{ix}{chapter*.3}%
-\contentsline {chapter}{Resumen extendido}{xi}{chapter*.4}%
-\contentsline {chapter}{\'{I}ndice general}{xiii}{chapter*.5}%
-\contentsline {chapter}{\'{I}ndice de figuras}{xv}{chapter*.6}%
-\contentsline {chapter}{Índice de tablas}{xvii}{chapter*.7}%
-\contentsline {chapter}{Índice de listados de código fuente}{xix}{chapter*.8}%
-\contentsline {chapter}{Índice de algoritmos}{xxi}{chapter*.9}%
-\contentsline {chapter}{\numberline {1}Introducción y objetivos}{1}{chapter.10}%
-\contentsline {section}{\numberline {1.1}Contexto}{1}{section.11}%
-\contentsline {section}{\numberline {1.2}Motivación}{1}{section.12}%
-\contentsline {section}{\numberline {1.3}Objetivo y limitaciones}{2}{section.13}%
-\contentsline {section}{\numberline {1.4}Estructura del documento}{2}{section.14}%
-\contentsline {chapter}{\numberline {2}Web scraping, extracción de datos en la web: Marco teórico}{3}{chapter.19}%
-\contentsline {section}{\numberline {2.1}En que consiste el web scraping}{3}{section.20}%
-\contentsline {section}{\numberline {2.2}¿Como funciona el web scraping?}{3}{section.21}%
-\contentsline {chapter}{\numberline {3}Presupuesto}{5}{chapter.22}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{7}{chapter*.23}%
+\contentsline {chapter}{Resumen}{v}{chapter*.1}%
+\contentsline {chapter}{Abstract}{vii}{chapter*.2}%
+\contentsline {chapter}{Resumen extendido}{ix}{chapter*.3}%
+\contentsline {chapter}{\'{I}ndice general}{xi}{chapter*.4}%
+\contentsline {chapter}{\'{I}ndice de figuras}{xiii}{chapter*.5}%
+\contentsline {chapter}{Índice de tablas}{xv}{chapter*.6}%
+\contentsline {chapter}{Índice de listados de código fuente}{xvii}{chapter*.7}%
+\contentsline {chapter}{Índice de algoritmos}{xix}{chapter*.8}%
+\contentsline {chapter}{\numberline {1}Introducción y objetivos}{1}{chapter.9}%
+\contentsline {section}{\numberline {1.1}Contexto}{1}{section.10}%
+\contentsline {section}{\numberline {1.2}Motivación}{1}{section.11}%
+\contentsline {section}{\numberline {1.3}Objetivo y limitaciones}{2}{section.12}%
+\contentsline {section}{\numberline {1.4}Estructura del documento}{2}{section.13}%
+\contentsline {chapter}{\numberline {2}Web scraping, extracción de datos en la web}{3}{chapter.18}%
+\contentsline {section}{\numberline {2.1}En que consiste realmente el web scraping}{3}{section.19}%
+\contentsline {subsection}{\numberline {2.1.1}Extracción de los datos}{3}{subsection.20}%
+\contentsline {subsection}{\numberline {2.1.2}Herramientas software disponibles}{4}{subsection.25}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}XPath}{4}{subsubsection.26}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Selectores CSS}{5}{subsubsection.27}%
+\contentsline {subsection}{\numberline {2.1.3}Tipologias}{5}{subsection.28}%
+\contentsline {section}{\numberline {2.2}Posibilidades prácticas del web scraping}{6}{section.30}%
+\contentsline {section}{\numberline {2.3}Retos del web scraping}{6}{section.31}%
+\contentsline {section}{\numberline {2.4}Aspectos ético-legales del web scraping}{7}{section.32}%
+\contentsline {chapter}{\numberline {3}Presupuesto}{9}{chapter.33}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{11}{chapter*.34}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{13}{Appendix.35}%
+\contentsline {section}{\numberline {A.1}Fase de búsqueda}{13}{section.36}%
+\contentsline {section}{\numberline {A.2}Fase de extracción}{14}{section.53}%
+\contentsline {section}{\numberline {A.3}Fase de transformación}{15}{section.72}%

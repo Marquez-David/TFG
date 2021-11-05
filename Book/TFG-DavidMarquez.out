@@ -1,18 +1,29 @@
-\BOOKMARK [0][-]{chapter*.2}{Resumen}{}% 1
-\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 2
-\BOOKMARK [0][-]{chapter*.4}{Resumen extendido}{}% 3
-\BOOKMARK [0][-]{chapter*.5}{\315ndice general}{}% 4
-\BOOKMARK [0][-]{chapter*.6}{\315ndice de figuras}{}% 5
-\BOOKMARK [0][-]{chapter*.7}{\315ndice de tablas}{}% 6
-\BOOKMARK [0][-]{chapter*.8}{\315ndice de listados de c\363digo fuente}{}% 7
-\BOOKMARK [0][-]{chapter*.9}{\315ndice de algoritmos}{}% 8
-\BOOKMARK [0][-]{chapter.10}{1 Introducci\363n y objetivos}{}% 9
-\BOOKMARK [1][-]{section.11}{1.1 Contexto}{chapter.10}% 10
-\BOOKMARK [1][-]{section.12}{1.2 Motivaci\363n}{chapter.10}% 11
-\BOOKMARK [1][-]{section.13}{1.3 Objetivo y limitaciones}{chapter.10}% 12
-\BOOKMARK [1][-]{section.14}{1.4 Estructura del documento}{chapter.10}% 13
-\BOOKMARK [0][-]{chapter.19}{2 Web scraping, extracci\363n de datos en la web: Marco te\363rico}{}% 14
-\BOOKMARK [1][-]{section.20}{2.1 En que consiste el web scraping}{chapter.19}% 15
-\BOOKMARK [1][-]{section.21}{2.2 \277Como funciona el web scraping?}{chapter.19}% 16
-\BOOKMARK [0][-]{chapter.22}{3 Presupuesto}{}% 17
-\BOOKMARK [0][-]{chapter*.23}{Bibliograf\355a}{}% 18
+\BOOKMARK [0][-]{chapter*.1}{Resumen}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Abstract}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{Resumen extendido}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{\315ndice general}{}% 4
+\BOOKMARK [0][-]{chapter*.5}{\315ndice de figuras}{}% 5
+\BOOKMARK [0][-]{chapter*.6}{\315ndice de tablas}{}% 6
+\BOOKMARK [0][-]{chapter*.7}{\315ndice de listados de c\363digo fuente}{}% 7
+\BOOKMARK [0][-]{chapter*.8}{\315ndice de algoritmos}{}% 8
+\BOOKMARK [0][-]{chapter.9}{1 Introducci\363n y objetivos}{}% 9
+\BOOKMARK [1][-]{section.10}{1.1 Contexto}{chapter.9}% 10
+\BOOKMARK [1][-]{section.11}{1.2 Motivaci\363n}{chapter.9}% 11
+\BOOKMARK [1][-]{section.12}{1.3 Objetivo y limitaciones}{chapter.9}% 12
+\BOOKMARK [1][-]{section.13}{1.4 Estructura del documento}{chapter.9}% 13
+\BOOKMARK [0][-]{chapter.18}{2 Web scraping, extracci\363n de datos en la web}{}% 14
+\BOOKMARK [1][-]{section.19}{2.1 En que consiste realmente el web scraping}{chapter.18}% 15
+\BOOKMARK [2][-]{subsection.20}{2.1.1 Extracci\363n de los datos}{section.19}% 16
+\BOOKMARK [2][-]{subsection.25}{2.1.2 Herramientas software disponibles}{section.19}% 17
+\BOOKMARK [3][-]{subsubsection.26}{2.1.2.1 XPath}{subsection.25}% 18
+\BOOKMARK [3][-]{subsubsection.27}{2.1.2.2 Selectores CSS}{subsection.25}% 19
+\BOOKMARK [2][-]{subsection.28}{2.1.3 Tipologias}{section.19}% 20
+\BOOKMARK [1][-]{section.30}{2.2 Posibilidades pr\341cticas del web scraping}{chapter.18}% 21
+\BOOKMARK [1][-]{section.31}{2.3 Retos del web scraping}{chapter.18}% 22
+\BOOKMARK [1][-]{section.32}{2.4 Aspectos \351tico-legales del web scraping}{chapter.18}% 23
+\BOOKMARK [0][-]{chapter.33}{3 Presupuesto}{}% 24
+\BOOKMARK [0][-]{chapter*.34}{Bibliograf\355a}{}% 25
+\BOOKMARK [0][-]{Appendix.35}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 26
+\BOOKMARK [1][-]{section.36}{A.1 Fase de b\372squeda}{Appendix.35}% 27
+\BOOKMARK [1][-]{section.53}{A.2 Fase de extracci\363n}{Appendix.35}% 28
+\BOOKMARK [1][-]{section.72}{A.3 Fase de transformaci\363n}{Appendix.35}% 29

@@ -1,6 +1,0 @@
-app_name <- "MarquezDavidTFG"
-key <- "bsS2cbbZe7BDsxFPLYRM0GKJ8"
-secret_key <- "WvUilwEZbgJhHiUgpjyboQcQHYSSCNKwImHF1TeINe9aWskkDo"
-acces_token <- "3147132436-kFG9XkuWsdI8n1KPVZQTOrf6rw45lrqPEPoUXPr"
-acces_token_secret <- "zK8dyBAgB4sTrRhjVBXmNCAjX4QQvCUfQIXckQmTrcAix"
-Bearer token: AAAAAAAAAAAAAAAAAAAAAEAXKAEAAAAAL0fEf8ue1w6Y%2BZPORUzb8d5S0X4%3DhIlgfXATtYnJaByDVEZZ7dkA2GDZzVsdU8iGAjpZLDm7MDRPxZ

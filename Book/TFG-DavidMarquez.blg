@@ -14,47 +14,48 @@ Database file #1: biblio/biblio.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--missing publisher in web-scraping-bozhao
+Warning--missing publisher in web-scraping-seppe
 
 Done.
-You've used 3 entries,
+You've used 17 entries,
             4087 wiz_defined-function locations,
-            834 strings with 7613 characters,
-and the built_in function-call counts, 1339 in all, are:
-= -- 88
-> -- 15
-< -- 4
-+ -- 8
-- -- 3
-* -- 60
-:= -- 225
-add.period$ -- 5
-call.type$ -- 3
-change.case$ -- 4
-chr.to.int$ -- 9
-cite$ -- 4
-duplicate$ -- 105
-empty$ -- 132
-format.name$ -- 3
-if$ -- 289
+            892 strings with 9885 characters,
+and the built_in function-call counts, 7332 in all, are:
+= -- 529
+> -- 126
+< -- 20
++ -- 66
+- -- 27
+* -- 269
+:= -- 1185
+add.period$ -- 32
+call.type$ -- 17
+change.case$ -- 26
+chr.to.int$ -- 45
+cite$ -- 19
+duplicate$ -- 615
+empty$ -- 718
+format.name$ -- 30
+if$ -- 1664
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 23
-newline$ -- 32
-num.names$ -- 3
-pop$ -- 65
+int.to.str$ -- 17
+missing$ -- 140
+newline$ -- 74
+num.names$ -- 17
+pop$ -- 384
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 97
+skip$ -- 558
 stack$ -- 0
-substring$ -- 27
-swap$ -- 65
-text.length$ -- 1
+substring$ -- 143
+swap$ -- 384
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 3
-warning$ -- 1
-while$ -- 6
-width$ -- 4
-write$ -- 44
-(There was 1 warning)
+type$ -- 17
+warning$ -- 2
+while$ -- 26
+width$ -- 19
+write$ -- 150
+(There were 2 warnings)
