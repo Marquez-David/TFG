@@ -1609,10 +1609,6 @@ INPUT TFG-DavidMarquez.cod
 INPUT TFG-DavidMarquez.cod
 INPUT D:\MikText\fonts\tfm\public\lm\ec-lmri10.tfm
 OUTPUT TFG-DavidMarquez.cod
-INPUT .\TFG-DavidMarquez.loa
-INPUT TFG-DavidMarquez.loa
-INPUT TFG-DavidMarquez.loa
-OUTPUT TFG-DavidMarquez.loa
 INPUT .\chapters\introduccion-objetivos.tex
 INPUT chapters\introduccion-objetivos.tex
 INPUT .\chapters\introduccion-objetivos.tex
@@ -1640,6 +1636,14 @@ INPUT .\photos\\web-crawler-phases.jpg
 INPUT .\photos\\web-crawler-phases.jpg
 INPUT .\photos\\web-crawler-phases.jpg
 INPUT .\photos\\web-crawler-phases.jpg
+INPUT .\chapters\paquetes-marco-teorico.tex
+INPUT chapters\paquetes-marco-teorico.tex
+INPUT .\chapters\paquetes-marco-teorico.tex
+INPUT chapters\paquetes-marco-teorico.tex
+INPUT .\chapters\paquetes-marco-practico.tex
+INPUT chapters\paquetes-marco-practico.tex
+INPUT .\chapters\paquetes-marco-practico.tex
+INPUT chapters\paquetes-marco-practico.tex
 INPUT .\presupuesto\presupuesto.tex
 INPUT presupuesto\presupuesto.tex
 INPUT .\presupuesto\presupuesto.tex

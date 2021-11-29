@@ -5,25 +5,29 @@
 \BOOKMARK [0][-]{chapter*.5}{\315ndice de figuras}{}% 5
 \BOOKMARK [0][-]{chapter*.6}{\315ndice de tablas}{}% 6
 \BOOKMARK [0][-]{chapter*.7}{\315ndice de listados de c\363digo fuente}{}% 7
-\BOOKMARK [0][-]{chapter*.8}{\315ndice de algoritmos}{}% 8
-\BOOKMARK [0][-]{chapter.9}{1 Introducci\363n y objetivos}{}% 9
-\BOOKMARK [1][-]{section.10}{1.1 Contexto}{chapter.9}% 10
-\BOOKMARK [1][-]{section.11}{1.2 Motivaci\363n}{chapter.9}% 11
-\BOOKMARK [1][-]{section.12}{1.3 Objetivo y limitaciones}{chapter.9}% 12
-\BOOKMARK [1][-]{section.13}{1.4 Estructura del documento}{chapter.9}% 13
-\BOOKMARK [0][-]{chapter.18}{2 Web scraping, extracci\363n de datos en la web}{}% 14
-\BOOKMARK [1][-]{section.19}{2.1 En que consiste realmente el web scraping}{chapter.18}% 15
-\BOOKMARK [2][-]{subsection.20}{2.1.1 Extracci\363n de los datos}{section.19}% 16
-\BOOKMARK [2][-]{subsection.25}{2.1.2 Herramientas software disponibles}{section.19}% 17
-\BOOKMARK [3][-]{subsubsection.26}{2.1.2.1 XPath}{subsection.25}% 18
-\BOOKMARK [3][-]{subsubsection.27}{2.1.2.2 Selectores CSS}{subsection.25}% 19
-\BOOKMARK [2][-]{subsection.28}{2.1.3 Tipologias}{section.19}% 20
-\BOOKMARK [1][-]{section.30}{2.2 Posibilidades pr\341cticas del web scraping}{chapter.18}% 21
-\BOOKMARK [1][-]{section.31}{2.3 Retos del web scraping}{chapter.18}% 22
-\BOOKMARK [1][-]{section.32}{2.4 Aspectos \351tico-legales del web scraping}{chapter.18}% 23
-\BOOKMARK [0][-]{chapter.33}{3 Presupuesto}{}% 24
-\BOOKMARK [0][-]{chapter*.34}{Bibliograf\355a}{}% 25
-\BOOKMARK [0][-]{Appendix.35}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 26
-\BOOKMARK [1][-]{section.36}{A.1 Fase de b\372squeda}{Appendix.35}% 27
-\BOOKMARK [1][-]{section.53}{A.2 Fase de extracci\363n}{Appendix.35}% 28
-\BOOKMARK [1][-]{section.72}{A.3 Fase de transformaci\363n}{Appendix.35}% 29
+\BOOKMARK [0][-]{chapter.8}{1 Introducci\363n y objetivos}{}% 8
+\BOOKMARK [1][-]{section.9}{1.1 Contexto}{chapter.8}% 9
+\BOOKMARK [1][-]{section.10}{1.2 Motivaci\363n}{chapter.8}% 10
+\BOOKMARK [1][-]{section.11}{1.3 Objetivo y limitaciones}{chapter.8}% 11
+\BOOKMARK [1][-]{section.12}{1.4 Estructura del documento}{chapter.8}% 12
+\BOOKMARK [0][-]{chapter.17}{2 Web scraping, extracci\363n de datos en la web}{}% 13
+\BOOKMARK [1][-]{section.18}{2.1 En que consiste realmente el web scraping}{chapter.17}% 14
+\BOOKMARK [2][-]{subsection.19}{2.1.1 Extracci\363n de los datos}{section.18}% 15
+\BOOKMARK [2][-]{subsection.24}{2.1.2 Herramientas software disponibles}{section.18}% 16
+\BOOKMARK [3][-]{subsubsection.25}{2.1.2.1 XPath}{subsection.24}% 17
+\BOOKMARK [3][-]{subsubsection.26}{2.1.2.2 Selectores CSS}{subsection.24}% 18
+\BOOKMARK [2][-]{subsection.27}{2.1.3 Tipologias}{section.18}% 19
+\BOOKMARK [1][-]{section.29}{2.2 Posibilidades pr\341cticas del web scraping}{chapter.17}% 20
+\BOOKMARK [1][-]{section.30}{2.3 Retos del web scraping}{chapter.17}% 21
+\BOOKMARK [1][-]{section.31}{2.4 Aspectos \351tico-legales del web scraping}{chapter.17}% 22
+\BOOKMARK [0][-]{chapter.32}{3 Paquetes orientados al minado web en Python}{}% 23
+\BOOKMARK [1][-]{section.33}{3.1 Proceso de b\372squeda y selecci\363n de paquetes orientados al web scraping}{chapter.32}% 24
+\BOOKMARK [1][-]{section.34}{3.2 Paquetes encontrados durante el proceso de b\372squeda}{chapter.32}% 25
+\BOOKMARK [1][-]{section.35}{3.3 Paquetes seleccionados para el proceso de an\341lisis}{chapter.32}% 26
+\BOOKMARK [0][-]{chapter.36}{4 Selecci\363n de variables de an\341lisis y proceso de estudio}{}% 27
+\BOOKMARK [0][-]{chapter.37}{5 Presupuesto}{}% 28
+\BOOKMARK [0][-]{chapter*.38}{Bibliograf\355a}{}% 29
+\BOOKMARK [0][-]{Appendix.39}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 30
+\BOOKMARK [1][-]{section.40}{A.1 Fase de b\372squeda}{Appendix.39}% 31
+\BOOKMARK [1][-]{section.57}{A.2 Fase de extracci\363n}{Appendix.39}% 32
+\BOOKMARK [1][-]{section.76}{A.3 Fase de transformaci\363n}{Appendix.39}% 33

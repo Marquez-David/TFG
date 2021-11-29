@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  5 NOV 2021 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  9 NOV 2021 15:27
 entering extended mode
 **c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
 (c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
@@ -1146,7 +1146,7 @@ LaTeX Info: Redefining \selectfont on input line 126.
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 ) (cover/cover.tex (cover/portada-tfg-uah.tex
-<logos/logoEPS-UAH.jpg, id=122, 401.5pt x 292.09125pt>
+<logos/logoEPS-UAH.jpg, id=138, 401.5pt x 292.09125pt>
 File: logos/logoEPS-UAH.jpg Graphic file (type jpg)
 <use logos/logoEPS-UAH.jpg>
 Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 114.
@@ -1251,13 +1251,7 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@cod=\write13
 \openout13 = `TFG-DavidMarquez.cod'.
 
- [17] [18
-
-] (TFG-DavidMarquez.loa)
-\tf@loa=\write14
-\openout14 = `TFG-DavidMarquez.loa'.
-
-) [19] [20
+) [17] [18
 
 ] (chapters/introduccion-objetivos.tex
 Cap\'{\i }tulo 1.
@@ -1268,7 +1262,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [2]
 Cap\'{\i }tulo 2.
-<./photos//web-scraping-phases.jpg, id=319, 779.91376pt x 121.20282pt>
+<./photos//web-scraping-phases.jpg, id=335, 779.91376pt x 121.20282pt>
 File: ./photos//web-scraping-phases.jpg Graphic file (type jpg)
 <use ./photos//web-scraping-phases.jpg>
 Package pdftex.def Info: ./photos//web-scraping-phases.jpg  used on input line 48.
@@ -1279,7 +1273,7 @@ Package pdftex.def Info: ./photos//web-scraping-phases.jpg  used on input line 4
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
  [4 <./photos//web-scraping-phases.jpg>]
-<./photos//web-crawler-phases.jpg, id=344, 520.19344pt x 325.215pt>
+<./photos//web-crawler-phases.jpg, id=360, 520.19344pt x 325.215pt>
 File: ./photos//web-crawler-phases.jpg Graphic file (type jpg)
 <use ./photos//web-crawler-phases.jpg>
 Package pdftex.def Info: ./photos//web-crawler-phases.jpg  used on input line 130.
@@ -1289,28 +1283,36 @@ LaTeX Info: Redefining \% on input line 146.
  [5 <./photos//web-crawler-phases.jpg>]
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
- [6]) (presupuesto/presupuesto.tex
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
+ [6]) (chapters/paquetes-marco-teorico.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [7] [8
 
 ]
 Cap\'{\i }tulo 3.
+) (chapters/paquetes-marco-practico.tex [9] [10
+
+]
+Cap\'{\i }tulo 4.
+) (presupuesto/presupuesto.tex [11] [12
+
+]
+Cap\'{\i }tulo 5.
 ) (biblio/bibliography.tex (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
-) (TFG-DavidMarquez.bbl [9] [10
+) (TFG-DavidMarquez.bbl [13] [14
 
 ]
 Underfull \hbox (badness 1701) in paragraph at lines 73--76
 []\T1/lmr/m/n/10 Google, ``In-tro-duc-ción a los ar-chi-vos ro-bots.txt,'' [][]$https : / / developers . google . com / search / docs /
  []
 
-[11]) (D:\MikText\tex/latex/base\utf8.def
+[15]) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )) (appendix/ejemplo-basico-web-scraping.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [12]
+ [16]
 Ap\'{e}ndice A.
 (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
@@ -1328,7 +1330,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
 Package hyperref Info: bookmark level for unknown codefloat defaults to 0 on input line 35.
- (appendix/ejemplo-basico-web-scraping-1.tex [13
+ (appendix/ejemplo-basico-web-scraping-1.tex [17
 
 ]) (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
@@ -1351,19 +1353,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 76.
 LaTeX Info: Redefining \% on input line 76.
- [14] (appendix/ejemplo-basico-web-scraping-3.tex) (D:\MikText\tex/latex/base\latin1.def
+ [18] (appendix/ejemplo-basico-web-scraping-3.tex) (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (appendix/ejemplo-basico-web-scraping-4.R) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 ) (appendix/ejemplo-basico-web-scraping-4.tex))
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
- [15] [16
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [19] [20
 
-] (cover/backpage.tex (cover/backpage-tfg-uah.tex [17
+] (cover/backpage.tex (cover/backpage-tfg-uah.tex [21
 
 ]
-<./logos//uah/01_logo-vA_pant293.pdf, id=474, 607.48354pt x 209.12729pt>
+<./logos//uah/01_logo-vA_pant293.pdf, id=507, 607.48354pt x 209.12729pt>
 File: ./logos//uah/01_logo-vA_pant293.pdf Graphic file (type pdf)
 <use ./logos//uah/01_logo-vA_pant293.pdf>
 Package pdftex.def Info: ./logos//uah/01_logo-vA_pant293.pdf  used on input line 40.
@@ -1376,29 +1378,29 @@ This document will not have a glossary.
 
 File: logos/logoEPS-UAH.jpg Graphic file (type jpg)
 <use logos/logoEPS-UAH.jpg>
-Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 121.
+Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 124.
 (pdftex.def)             Requested size: 418.25368pt x 304.29808pt.
-[18
+[22
 
  <./logos//uah/01_logo-vA_pant293.pdf>] (TFG-DavidMarquez.aux
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
 )
 Package rerunfilecheck Info: File `TFG-DavidMarquez.out' has not changed.
-(rerunfilecheck)             Checksum: 160717898D89CDAAEF418EADFE0DF769;2011.
+(rerunfilecheck)             Checksum: CE26EF3BF5E40D254A57B9CC7897A2D6;2468.
  ) 
 Here is how much of TeX's memory you used:
- 31948 strings out of 480236
- 553140 string characters out of 2896605
- 1217593 words of memory out of 3000000
- 47504 multiletter control sequences out of 15000+200000
+ 31966 strings out of 480236
+ 553769 string characters out of 2896605
+ 1218043 words of memory out of 3000000
+ 47513 multiletter control sequences out of 15000+200000
  622776 words of font info for 95 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,12n,124p,1069b,2306s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/MikText/fonts/enc/dvips/lm/lm-ts1.enc}{D:/MikText/fonts/enc/dvips/base/8r.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ec.enc}<D:/MikText/fonts/type1/public/lm/lmbx10.pfb><D:/MikText/fonts/type1/public/lm/lmbx12.pfb><D:/MikText/fonts/type1/public/lm/lmr10.pfb><D:/MikText/fonts/type1/public/lm/lmr12.pfb><D:/MikText/fonts/type1/public/lm/lmr17.pfb><D:/MikText/fonts/type1/public/lm/lmr6.pfb><D:/MikText/fonts/type1/public/lm/lmr7.pfb><D:/MikText/fonts/type1/public/lm/lmr8.pfb><D:/MikText/fonts/type1/public/lm/lmr9.pfb><D:/MikText/fonts/type1/public/lm/lmri10.pfb><D:/MikText/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on TFG-DavidMarquez.pdf (38 pages, 474677 bytes).
+Output written on TFG-DavidMarquez.pdf (40 pages, 481036 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 
