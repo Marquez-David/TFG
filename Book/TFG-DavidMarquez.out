@@ -20,14 +20,25 @@
 \BOOKMARK [1][-]{section.29}{2.2 Posibilidades pr\341cticas del web scraping}{chapter.17}% 20
 \BOOKMARK [1][-]{section.30}{2.3 Retos del web scraping}{chapter.17}% 21
 \BOOKMARK [1][-]{section.31}{2.4 Aspectos \351tico-legales del web scraping}{chapter.17}% 22
-\BOOKMARK [0][-]{chapter.32}{3 Paquetes orientados al minado web en Python}{}% 23
-\BOOKMARK [1][-]{section.33}{3.1 Proceso de b\372squeda y selecci\363n de paquetes orientados al web scraping}{chapter.32}% 24
-\BOOKMARK [1][-]{section.34}{3.2 Paquetes encontrados durante el proceso de b\372squeda}{chapter.32}% 25
-\BOOKMARK [1][-]{section.35}{3.3 Paquetes seleccionados para el proceso de an\341lisis}{chapter.32}% 26
-\BOOKMARK [0][-]{chapter.36}{4 Selecci\363n de variables de an\341lisis y proceso de estudio}{}% 27
-\BOOKMARK [0][-]{chapter.37}{5 Presupuesto}{}% 28
-\BOOKMARK [0][-]{chapter*.38}{Bibliograf\355a}{}% 29
-\BOOKMARK [0][-]{Appendix.39}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 30
-\BOOKMARK [1][-]{section.40}{A.1 Fase de b\372squeda}{Appendix.39}% 31
-\BOOKMARK [1][-]{section.57}{A.2 Fase de extracci\363n}{Appendix.39}% 32
-\BOOKMARK [1][-]{section.76}{A.3 Fase de transformaci\363n}{Appendix.39}% 33
+\BOOKMARK [0][-]{chapter.32}{3 Paquetes de programaci\363n orientados al web scraping}{}% 23
+\BOOKMARK [1][-]{section.33}{3.1 B\372squeda de paquetes destinados al web scraping}{chapter.32}% 24
+\BOOKMARK [1][-]{section.37}{3.2 Bibliotecas de Python encontradas durante el proceso de b\372squeda}{chapter.32}% 25
+\BOOKMARK [2][-]{subsection.38}{3.2.1 Beautiful Soup}{section.37}% 26
+\BOOKMARK [2][-]{subsection.41}{3.2.2 JusText}{section.37}% 27
+\BOOKMARK [2][-]{subsection.70}{3.2.3 Inscriptis}{section.37}% 28
+\BOOKMARK [2][-]{subsection.71}{3.2.4 Goose3}{section.37}% 29
+\BOOKMARK [2][-]{subsection.90}{3.2.5 News-please}{section.37}% 30
+\BOOKMARK [2][-]{subsection.96}{3.2.6 Trafilatura}{section.37}% 31
+\BOOKMARK [2][-]{subsection.123}{3.2.7 Dragnet}{section.37}% 32
+\BOOKMARK [2][-]{subsection.125}{3.2.8 Readability}{section.37}% 33
+\BOOKMARK [2][-]{subsection.126}{3.2.9 HTML-Text}{section.37}% 34
+\BOOKMARK [2][-]{subsection.127}{3.2.10 Newspaper3k}{section.37}% 35
+\BOOKMARK [1][-]{section.128}{3.3 Paquetes de R encontrados durante el proceso de b\372squeda}{chapter.32}% 36
+\BOOKMARK [1][-]{section.129}{3.4 Paquetes seleccionados para el proceso de an\341lisis}{chapter.32}% 37
+\BOOKMARK [0][-]{chapter.130}{4 Selecci\363n de variables de an\341lisis y proceso de estudio}{}% 38
+\BOOKMARK [0][-]{chapter.131}{5 Presupuesto}{}% 39
+\BOOKMARK [0][-]{chapter*.132}{Bibliograf\355a}{}% 40
+\BOOKMARK [0][-]{Appendix.133}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 41
+\BOOKMARK [1][-]{section.134}{A.1 Fase de b\372squeda}{Appendix.133}% 42
+\BOOKMARK [1][-]{section.151}{A.2 Fase de extracci\363n}{Appendix.133}% 43
+\BOOKMARK [1][-]{section.170}{A.3 Fase de transformaci\363n}{Appendix.133}% 44

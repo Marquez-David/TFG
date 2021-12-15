@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{bs-parse-tree}
+``Python simple crawling using beautifulsoup,''
+  \url{https://medium.com/milooproject/python-simple-crawling-using-beautifulsoup-8247657c2de5.}
+  [Ultimo acceso 08/diciembre/2021].
+
 \bibitem{web-scraping-wikipedia}
 Wikipedia, ``Web scraping,'' \url{https://es.wikipedia.org/wiki/Web_scraping.}
   [Ultimo acceso 18/octubre/2021].
@@ -79,6 +84,70 @@ M.~Beckman, S.~Guerrier, J.~Lee, R.~Molinari, S.~Orso, and I.~Rudnytskyi, ``An
   introduction to statistical programming methods with r, chapter 10,''
   \url{https://smac-group.github.io/ds/index.html.} [Ultimo acceso
   27/octubre/2021].
+
+\bibitem{github}
+``Github,'' \url{https://github.com/.} [Ultimo acceso 07/diciembre/2021].
+
+\bibitem{cran}
+``Cran,'' \url{https://cran.r-project.org/.} [Ultimo acceso 07/diciembre/2021].
+
+\bibitem{pypi}
+``Pypi,'' \url{https://pypi.org/.} [Ultimo acceso 07/diciembre/2021].
+
+\bibitem{beautifulsoup}
+``Beautiful soup documentation,''
+  \url{https://www.crummy.com/software/BeautifulSoup/bs4/doc/.} [Ultimo acceso
+  08/diciembre/2021].
+
+\bibitem{justext}
+M.~Belica, ``Justext,'' \url{https://github.com/miso-belica/jusText.} [Ultimo
+  acceso 09/diciembre/2021].
+
+\bibitem{inscriptis}
+\BIBentryALTinterwordspacing
+A.~Weichselbraun, ``Inscriptis - a python-based html to text conversion library
+  optimized for knowledge extraction from the web,'' \emph{Journal of Open
+  Source Software}, vol.~6, no.~66, p. 3557, 2021. [Online]. Available:
+  \url{https://doi.org/10.21105/joss.03557}
+\BIBentrySTDinterwordspacing
+
+\bibitem{goose3}
+M.~Lababidi, ``Goose3,'' \url{https://goose3.readthedocs.io/en/latest/.}
+  [Ultimo acceso 11/diciembre/2021].
+
+\bibitem{news-please}
+F.~Hamborg, N.~Meuschke, C.~Breitinger, and B.~Gipp, ``news-please: A generic
+  news crawler and extractor,'' in \emph{Proceedings of the 15th International
+  Symposium of Information Science}, March 2017, pp. 218--223.
+
+\bibitem{trafilatura}
+\BIBentryALTinterwordspacing
+A.~Barbaresi, ``{Trafilatura: A Web Scraping Library and Command-Line Tool for
+  Text Discovery and Extraction},'' in \emph{Proceedings of the Joint
+  Conference of the 59th Annual Meeting of the Association for Computational
+  Linguistics and the 11th International Joint Conference on Natural Language
+  Processing: System Demonstrations}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Association for Computational Linguistics, 2021, pp. 122--131. [Online].
+  Available: \url{https://aclanthology.org/2021.acl-demo.15}
+\BIBentrySTDinterwordspacing
+
+\bibitem{dragnet}
+\BIBentryALTinterwordspacing
+M.~E. Peters and D.~Lecocq, ``Content extraction using diverse feature sets,''
+  in \emph{Proceedings of the 22nd International Conference on World Wide Web},
+  ser. WWW '13 Companion.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY,
+  USA: Association for Computing Machinery, 2013, pp. 89--90. [Online].
+  Available: \url{https://doi.org/10.1145/2487788.2487828}
+\BIBentrySTDinterwordspacing
+
+\bibitem{dom-wikipedia}
+Wikipedia, ``Document object model,''
+  \url{https://es.wikipedia.org/wiki/Document_Object_Model.} [Ultimo acceso
+  14/diciembre/2021].
+
+\bibitem{html-text}
+M.~Korobov, ``Html-text,'' \url{https://github.com/TeamHG-Memex/html-text.}
+  [Ultimo acceso 15/diciembre/2021].
 
 \bibitem{robotstxt-cran}
 CRAN, ``robotstxt: A 'robots.txt' parser and 'webbot'/'spider'/'crawler'

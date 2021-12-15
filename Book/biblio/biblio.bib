@@ -1,8 +1,6 @@
-%%
-%% $Id: biblio.bib,v 1.7 2015/03/18 09:43:08 macias Exp $
-%%
-
-%%Definicion de web scraping de wikipedia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Definiciones genericas de wikipedia y otras fuentes %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 @misc{web-scraping-wikipedia,
   optkey       = {web-scraping-wikipedia},
   author       = {Wikipedia},
@@ -47,6 +45,17 @@
   optannote    = {}
 }
 
+@misc{dom-wikipedia,
+  optkey       = {dom-wikipedia},
+  author       = {Wikipedia},
+  note         = {\url{https://es.wikipedia.org/wiki/Document_Object_Model.} [Ultimo acceso 14/diciembre/2021]},
+  howpublished = {},
+  optmonth     = {},
+  optyear      = {},
+  title        = {Document Object Model},
+  optannote    = {}
+}
+
 @misc{css-selectors-w3c,
   optkey       = {css-selectors-w3c},
   author       = {W3Schools},
@@ -55,6 +64,43 @@
   optmonth     = {},
   optyear      = {},
   title        = {CSS Selector Reference},
+  optannote    = {}
+}
+
+@misc{robots-txt,
+  optkey       = {robots-txt},
+  author       = {Google},
+  note         = {\url{https://developers.google.com/search/docs/advanced/robots/intro?hl=es.} [Ultimo acceso 27/octubre/2021]},
+  howpublished = {},
+  optmonth     = {August},
+  optyear      = {2021},
+  title        = {Introducci\'on a los archivos robots.txt},
+  optannote    = {}
+}
+
+@misc{legalidad-web-scraping,
+  optkey       = {legalidad-web-scraping},
+  author       = {Beckman, Matthew and Guerrier, St\'ephane and Lee, Justin and Molinari, Roberto and Orso, Samuel and Rudnytskyi, Iegor},
+  note         = {\url{https://smac-group.github.io/ds/index.html.} [Ultimo acceso 27/octubre/2021]},
+  howpublished = {},
+  optmonth     = {October},
+  optyear      = {2020},
+  title        = {An Introduction to Statistical Programming Methods with R, Chapter 10},
+  optannote    = {}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CRAN y demas respositorios de paquetes %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@misc{cran,
+  optkey       = {CRAN},
+  author       = {},
+  note         = {\url{https://cran.r-project.org/.} [Ultimo acceso 07/diciembre/2021]},
+  howpublished = {},
+  optmonth     = {},
+  optyear      = {},
+  title        = {CRAN},
   optannote    = {}
 }
 
@@ -113,25 +159,40 @@
   optannote    = {}
 }
 
-@misc{robots-txt,
-  optkey       = {robots-txt},
-  author       = {Google},
-  note         = {\url{https://developers.google.com/search/docs/advanced/robots/intro?hl=es.} [Ultimo acceso 27/octubre/2021]},
+@misc{github,
+  optkey       = {github},
+  author       = {},
+  note         = {\url{https://github.com/.} [Ultimo acceso 07/diciembre/2021]},
   howpublished = {},
-  optmonth     = {August},
-  optyear      = {2021},
-  title        = {Introducci\'on a los archivos robots.txt},
+  optmonth     = {},
+  optyear      = {},
+  title        = {GitHub},
   optannote    = {}
 }
 
-@misc{legalidad-web-scraping,
-  optkey       = {legalidad-web-scraping},
-  author       = {Beckman, Matthew and Guerrier, St\'ephane and Lee, Justin and Molinari, Roberto and Orso, Samuel and Rudnytskyi, Iegor},
-  note         = {\url{https://smac-group.github.io/ds/index.html.} [Ultimo acceso 27/octubre/2021]},
+@misc{pypi,
+  optkey       = {pypi},
+  author       = {},
+  note         = {\url{https://pypi.org/.} [Ultimo acceso 07/diciembre/2021]},
   howpublished = {},
-  optmonth     = {October},
-  optyear      = {2020},
-  title        = {An Introduction to Statistical Programming Methods with R, Chapter 10},
+  optmonth     = {},
+  optyear      = {},
+  title        = {PyPi},
+  optannote    = {}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Articulos, thesis ... %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@misc{bs-parse-tree,
+  optkey       = {bs-parse-tree},
+  author       = {},
+  note         = {\url{https://medium.com/milooproject/python-simple-crawling-using-beautifulsoup-8247657c2de5.} [Ultimo acceso 08/diciembre/2021]},
+  howpublished = {},
+  optmonth     = {},
+  optyear      = {},
+  title        = {Python Simple Crawling Using Beautifulsoup},
   optannote    = {}
 }
 
@@ -170,17 +231,16 @@
 }
 
 @article{web-scraping-api-world,
-  author   = {Glez-Pe\~{n}a, Daniel and Lourenco, An\'alia and L\'opez-Fern\'andez, Hugo and Reboiro-Jato, Miguel and Fdez-Riverola, Florentino},
-  title    = {{Web scraping technologies in an API world}},
-  journal  = {Briefings in Bioinformatics},
-  volume   = {15},
-  number   = {5},
-  pages    = {788-797},
-  year     = 2013,
-  month    = {April},
+  author  = {Glez-Pe\~{n}a, Daniel and Lourenco, An\'alia and L\'opez-Fern\'andez, Hugo and Reboiro-Jato, Miguel and Fdez-Riverola, Florentino},
+  title   = {{Web scraping technologies in an API world}},
+  journal = {Briefings in Bioinformatics},
+  volume  = {15},
+  number  = {5},
+  pages   = {788-797},
+  year    = 2013,
+  month   = {April}
 }
 
-%% web scraping bo zhao
 @inbook{web-scraping-bozhao,
   author = {Zhao, Bo},
   year   = {2017},
@@ -191,105 +251,110 @@
   doi    = {10.1007/978-3-319-32001-4_483-1}
 }
 
-%% web scraping bo zhao
 @inbook{web-scraping-seppe,
   author = {Broucke Vande, Seppe and Baesens, Bart},
   year   = {2017},
   month  = {11},
   pages  = {14-16},
   title  = {Web Scraping for Data Science with Python},
-  isbn   = {978-1979343787},
+  isbn   = {978-1979343787}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Algortimos de extraccion %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@misc{beautifulsoup,
+  optkey       = {beautifulsoup},
+  author       = {},
+  note         = {\url{https://www.crummy.com/software/BeautifulSoup/bs4/doc/.} [Ultimo acceso 08/diciembre/2021]},
+  howpublished = {},
+  optmonth     = {},
+  optyear      = {},
+  title        = {Beautiful Soup Documentation},
+  optannote    = {}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                         EJMEPLOS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@techreport{AMI,
-  title       = {Augmented Multi-party interacion (AMI) project.},
-  author      = {State of the art overview: Localization {and tracking of multiple interlocutors with multiple sensors}},
-  institution = {Technical report},
-  year        = {2007}
+@misc{justext,
+  optkey       = {justext},
+  author       = {Mišo Belica},
+  note         = {\url{https://github.com/miso-belica/jusText.} [Ultimo acceso 09/diciembre/2021]},
+  howpublished = {},
+  optmonth     = {},
+  optyear      = {},
+  title        = {JusText},
+  optannote    = {}
 }
 
-@inproceedings{lathoud04,
-  author          = {G. Lathoud and I.A. McCowan and J.M. Odobez},
-  title           = {Unsupervised location-based segmentation of multi-party speech},
-  optcrossref     = {},
-  optkey          = {},
-  booktitle       = {NIST ICASSP Meeting Recognition Workshop},
-  optpages        = {},
-  year            = {2004},
-  opteditor       = {},
-  optvolume       = {},
-  optnumber       = {},
-  optseries       = {},
-  optaddress      = {},
-  optmonth        = {},
-  optorganization = {},
-  optpublisher    = {},
-  optnote         = {},
-  optannote       = {}
+@article{inscriptis,
+  doi       = {10.21105/joss.03557},
+  url       = {https://doi.org/10.21105/joss.03557},
+  year      = {2021},
+  publisher = {The Open Journal},
+  volume    = {6},
+  number    = {66},
+  pages     = {3557},
+  author    = {Albert Weichselbraun},
+  title     = {Inscriptis - A Python-based HTML to text conversion library optimized for knowledge extraction from the Web},
+  journal   = {Journal of Open Source Software}
 }
 
-@techreport{kochkin02,
-  author      = {Sergei Kochkin and Tim Wickstrom},
-  title       = {Headsets, Far Field and Handheld Microphones: Their Impact on Continuous Speech Recognition},
-  institution = {EMKAY, a division of Knowles Electronics},
-  year        = {2002},
-  optkey      = {},
-  opttype     = {},
-  optnumber   = {},
-  optaddress  = {},
-  optmonth    = {},
-  optnote     = {},
-  optannote   = {}
+@misc{goose3,
+  optkey       = {goose3},
+  author       = {Mahmoud Lababidi},
+  note         = {\url{https://goose3.readthedocs.io/en/latest/.} [Ultimo acceso 11/diciembre/2021]},
+  howpublished = {},
+  optmonth     = {},
+  optyear      = {},
+  title        = {Goose3},
+  optannote    = {}
 }
 
-
-@article{furui86,
-  author  = {Sadaoki Furui},
-  title   = {Speaker-Independent Isolated Word Recognition Using Dynamic Features of Speech Spectrun },
-  journal = {IEEE Transactions on Acoustics, Speech and Signal processing},
-  year    = 1986,
-  volume  = {ASSPS-34},
-  number  = 1,
-  pages   = {52-59},
-  month   = {February}
-}
-@manual{nelson90,
-  title        = {Document Preparation with \LaTeX},
-  author       = {Sam Nelson},
-  organization = {University Of Stirling},
-  month        = {October},
-  year         = 1990
+@inproceedings{news-please,
+  author    = {Hamborg, Felix and Meuschke, Norman and Breitinger, Corinna and Gipp, Bela},
+  title     = {news-please: A Generic News Crawler and Extractor},
+  year      = {2017},
+  booktitle = {Proceedings of the 15th International Symposium of Information Science},
+  location  = {Berlin},
+  doi       = {10.5281/zenodo.4120316},
+  pages     = {218--223},
+  month     = {March}
 }
 
-@book{o'shaughnessy50,
-  author    = {Douglas O'Shaughnessy},
-  title     = {Speech Communication Human and Machine},
-  publisher = {Addison-Wesley},
-  year      = 1950,
-  series    = {Electrical Engineering: Digital Signal Processing}
+@inproceedings{trafilatura,
+  title     = {{Trafilatura: A Web Scraping Library and Command-Line Tool for Text Discovery and Extraction}},
+  author    = {Barbaresi, Adrien},
+  booktitle = {Proceedings of the Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing: System Demonstrations},
+  pages     = {122--131},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2021.acl-demo.15},
+  year      = 2021
 }
 
-@mastersthesis{varma02,
-  author     = {Krishnaraj Varma},
-  title      = {Time-Delay-Estimate Based Direction-of-Arrival Estimation for Speech in Reverberant Environments},
-  school     = {Virginia Polytechnic Institute and State University},
-  year       = {2002},
-  optkey     = {},
-  opttype    = {},
-  optaddress = {},
-  optmonth   = {},
-  optnote    = {},
-  optannote  = {}
+@inproceedings{dragnet,
+  author    = {Peters, Matthew E. and Lecocq, Dan},
+  title     = {Content Extraction Using Diverse Feature Sets},
+  year      = {2013},
+  isbn      = {9781450320382},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/2487788.2487828},
+  doi       = {10.1145/2487788.2487828},
+  abstract  = {The goal of content extraction or boilerplate detection is to separate the main content from navigation chrome, advertising blocks, copyright notices and the like in web pages. In this paper we explore a machine learning approach to content extraction that combines diverse feature sets and methods. Our main contributions are: a) preliminary results that show combining feature sets generally improves performance; and b) a method for including semantic information via id and class attributes applicable to HTML5. We also show that performance decreases on a new benchmark data set that better represents modern chrome.},
+  booktitle = {Proceedings of the 22nd International Conference on World Wide Web},
+  pages     = {89-90},
+  numpages  = {2},
+  keywords  = {template detection, content extraction, boilerplate removal},
+  location  = {Rio de Janeiro, Brazil},
+  series    = {WWW '13 Companion}
+}
+
+@misc{html-text,
+  optkey       = {html-text},
+  author       = {Korobov, Mikhail},
+  note         = {\url{https://github.com/TeamHG-Memex/html-text.} [Ultimo acceso 15/diciembre/2021]},
+  howpublished = {},
+  optmonth     = {},
+  optyear      = {},
+  title        = {HTML-Text},
+  optannote    = {}
 }
