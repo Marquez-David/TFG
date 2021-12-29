@@ -36,7 +36,21 @@ escenarios, es posible realizar una doble comprobación accediendo al mismo a tr
 \label{cod:solicitud del documento robots.txt}
 \end{codefloat}
 
-\input{appendix/ejemplo-basico-web-scraping-1.tex}
+\begin{Schunk}
+    \begin{Soutput}
+    # robots.txt for https://www.imdb.com properties
+    User-agent: *
+    Disallow: /OnThisDay
+    Disallow: /ads/
+    Disallow: /ap/
+    Disallow: /mymovies/
+    Disallow: /r/
+    Disallow: /register
+    Disallow: /registration/
+    ...
+    \end{Soutput}
+\end{Schunk}
+    
 
 Una vez se ha accedido al documento \emph{'robots.txt'}, conociendo los posibles accesos al servidor, y
 determinando el número de solicitudes máximas por segundo, es posible acceder y descargar el fichero
@@ -74,7 +88,15 @@ información.
 \label{cod:extraccion de datos de interes del documento}
 \end{codefloat}
 
-\input{appendix/ejemplo-basico-web-scraping-3.tex}
+\begin{Schunk}
+    \begin{Soutput}
+    [1] "1." "2." "3." "4." "5." "6."
+    
+    [1] "Animales nocturnos"   "Train to Busan"       "La llegada (Arrival)"
+    [4] "Escuadrón suicida"    "Deadpool"             "Hush (Silencio)"     
+    \end{Soutput}
+\end{Schunk}
+    
 
 \section{Fase de transformación}
 \label{sec:fase de transformacion}
@@ -91,7 +113,17 @@ almacenamiento en una base de datos.
 \label{cod:transformacion de datos en un data frame}
 \end{codefloat}
 
-\input{appendix/ejemplo-basico-web-scraping-4.tex}
+\begin{Schunk}
+    \begin{Soutput}
+      Rank                Title
+    1   1.   Animales nocturnos
+    2   2.       Train to Busan
+    3   3. La llegada (Arrival)
+    4   4.    Escuadrón suicida
+    5   5.             Deadpool
+    6   6.      Hush (Silencio)
+    \end{Soutput}
+\end{Schunk}
 
 Una vez los datos han sido ordenados en una estructura de datos propia, en este caso un data frame, es
 posible trabajar con ellos de forma más cómoda y sencilla.

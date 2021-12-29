@@ -1,8 +1,6 @@
-\contentsline {codefloat}{\numberline {3.1}{\ignorespaces JusText - Algoritmo de clasificación\relax }}{12}{codefloat.68}%
-\contentsline {codefloat}{\numberline {3.2}{\ignorespaces Goose3 - Algoritmo de extracción\relax }}{15}{codefloat.89}%
-\contentsline {codefloat}{\numberline {3.3}{\ignorespaces Trafilatura - Delimitación de contenido\relax }}{17}{codefloat.110}%
-\contentsline {codefloat}{\numberline {3.4}{\ignorespaces Trafilatura - Algoritmo de respaldo y extraccion base\relax }}{17}{codefloat.122}%
-\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{27}{codefloat.142}%
-\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{28}{codefloat.150}%
-\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{29}{codefloat.169}%
-\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{29}{codefloat.175}%
+\contentsline {codefloat}{\numberline {3.1}{\ignorespaces Inscriptis - Uso de reglas de anotación\relax }}{12}{codefloat.55}%
+\contentsline {codefloat}{\numberline {3.2}{\ignorespaces JusText - Algoritmo de clasificación\relax }}{15}{codefloat.88}%
+\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{25}{codefloat.111}%
+\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{26}{codefloat.119}%
+\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{27}{codefloat.138}%
+\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{27}{codefloat.144}%

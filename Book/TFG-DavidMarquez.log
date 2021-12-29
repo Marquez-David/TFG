@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  15 DEC 2021 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  29 DEC 2021 13:24
 entering extended mode
 **c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
 (c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
@@ -1146,7 +1146,7 @@ LaTeX Info: Redefining \selectfont on input line 126.
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 ) (cover/cover.tex (cover/portada-tfg-uah.tex
-<logos/logoEPS-UAH.jpg, id=182, 401.5pt x 292.09125pt>
+<logos/logoEPS-UAH.jpg, id=218, 401.5pt x 292.09125pt>
 File: logos/logoEPS-UAH.jpg Graphic file (type jpg)
 <use logos/logoEPS-UAH.jpg>
 Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 114.
@@ -1253,37 +1253,37 @@ LaTeX Info: Redefining \% on input line 2.
 
 ) [17] [18
 
-] (chapters/introduccion-objetivos.tex
+] (chapters/capitulo1.tex
 Cap\'{\i }tulo 1.
 [1
 
-]) (chapters/web-scraping.tex
+]) (chapters/capitulo2.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [2]
 Cap\'{\i }tulo 2.
-<./photos//web-scraping-phases.jpg, id=430, 779.91376pt x 121.20282pt>
-File: ./photos//web-scraping-phases.jpg Graphic file (type jpg)
-<use ./photos//web-scraping-phases.jpg>
-Package pdftex.def Info: ./photos//web-scraping-phases.jpg  used on input line 48.
+<./images//web-scraping-phases.jpg, id=485, 779.91376pt x 121.20282pt>
+File: ./images//web-scraping-phases.jpg Graphic file (type jpg)
+<use ./images//web-scraping-phases.jpg>
+Package pdftex.def Info: ./images//web-scraping-phases.jpg  used on input line 48.
 (pdftex.def)             Requested size: 433.62pt x 67.38672pt.
 [3
 
 ]
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
- [4 <./photos//web-scraping-phases.jpg>]
-<./photos//web-crawler-phases.jpg, id=455, 520.19344pt x 325.215pt>
-File: ./photos//web-crawler-phases.jpg Graphic file (type jpg)
-<use ./photos//web-crawler-phases.jpg>
-Package pdftex.def Info: ./photos//web-crawler-phases.jpg  used on input line 130.
+ [4 <./images//web-scraping-phases.jpg>]
+<./images//web-crawler-phases.jpg, id=510, 520.19344pt x 325.215pt>
+File: ./images//web-crawler-phases.jpg Graphic file (type jpg)
+<use ./images//web-crawler-phases.jpg>
+Package pdftex.def Info: ./images//web-crawler-phases.jpg  used on input line 130.
 (pdftex.def)             Requested size: 289.07999pt x 180.72473pt.
 LaTeX Info: Redefining \. on input line 146.
 LaTeX Info: Redefining \% on input line 146.
- [5 <./photos//web-crawler-phases.jpg>]
+ [5 <./images//web-crawler-phases.jpg>]
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
- [6]) (chapters/paquetes-marco-teorico.tex
+ [6]) (chapters/capitulo3.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [7] [8
@@ -1291,25 +1291,22 @@ LaTeX Info: Redefining \% on input line 1.
 ]
 Cap\'{\i }tulo 3.
 [9]
-Overfull \hbox (8.42535pt too wide) in paragraph at lines 54--61
+Overfull \hbox (21.27942pt too wide) in paragraph at lines 47--51
  [] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 76.
+
+Overfull \hbox (22.39099pt too wide) in paragraph at lines 54--58
+ [][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 88.
 (D:\MikText\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<./photos//bs-parse-tree.png, id=498, 955.57pt x 473.77pt>
-File: ./photos//bs-parse-tree.png Graphic file (type png)
-<use ./photos//bs-parse-tree.png>
-Package pdftex.def Info: ./photos//bs-parse-tree.png  used on input line 113.
-(pdftex.def)             Requested size: 325.215pt x 161.23871pt.
-LaTeX Info: Redefining \. on input line 116.
-LaTeX Info: Redefining \% on input line 116.
- [10]
-LaTeX Info: Redefining \. on input line 155.
-LaTeX Info: Redefining \% on input line 155.
- [11 <./photos//bs-parse-tree.png>] (D:\MikText\tex/latex/base\latin1.def
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+ [10] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (D:\MikText\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1317,107 +1314,93 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (D:\MikText\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) (scripts/clasificacion-justext.py) (D:\MikText\tex/latex/base\utf8.def
+) (scripts/reglas-anoptacion-inscriptis.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-Package hyperref Info: bookmark level for unknown codefloat defaults to 0 on input line 179.
-
-Underfull \hbox (badness 4060) in paragraph at lines 187--192
-[]\T1/lmr/m/n/10 El al-go-rit-mo to-ma co-mo pa-rá-me-tros dos en-te-ros de-fi-ni-dos co-mo LENGTH_LOW(70) y
- []
-
-LaTeX Info: Redefining \. on input line 192.
-LaTeX Info: Redefining \% on input line 192.
-[12]
-<./photos//justext-blocks-classification.jpg, id=549, 343.2825pt x 277.035pt>
-File: ./photos//justext-blocks-classification.jpg Graphic file (type jpg)
-<use ./photos//justext-blocks-classification.jpg>
-Package pdftex.def Info: ./photos//justext-blocks-classification.jpg  used on input line 202.
-(pdftex.def)             Requested size: 289.07999pt x 233.29115pt.
-LaTeX Info: Redefining \. on input line 232.
-LaTeX Info: Redefining \% on input line 232.
- [13 <./photos//justext-blocks-classification.jpg>]
-LaTeX Info: Redefining \. on input line 304.
-LaTeX Info: Redefining \% on input line 304.
- [14] (D:\MikText\tex/latex/base\latin1.def
-File: latin1.def 2020/08/01 v1.3d Input encoding file
-) (scripts/extraccion-goose3.py) (D:\MikText\tex/latex/base\utf8.def
-File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-)
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 331.
+Package hyperref Info: bookmark level for unknown codefloat defaults to 0 on input line 181.
+LaTeX Info: Redefining \. on input line 184.
+LaTeX Info: Redefining \% on input line 184.
+ [11]
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 194.
  (D:\MikText\tex/latex/psnfss\ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-<./photos//newsplease-processing.jpg, id=566, 366.61969pt x 154.32657pt>
-File: ./photos//newsplease-processing.jpg Graphic file (type jpg)
-<use ./photos//newsplease-processing.jpg>
-Package pdftex.def Info: ./photos//newsplease-processing.jpg  used on input line 347.
-(pdftex.def)             Requested size: 325.215pt x 136.90512pt.
-LaTeX Info: Redefining \. on input line 350.
-LaTeX Info: Redefining \% on input line 350.
- [15] (D:\MikText\tex/latex/base\latin1.def
-File: latin1.def 2020/08/01 v1.3d Input encoding file
-) (scripts/delimitacion-trafilatura.py) (D:\MikText\tex/latex/base\utf8.def
-File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-)
-LaTeX Info: Redefining \. on input line 399.
-LaTeX Info: Redefining \% on input line 399.
- [16 <./photos//newsplease-processing.jpg>] (D:\MikText\tex/latex/base\latin1.def
-File: latin1.def 2020/08/01 v1.3d Input encoding file
-) (scripts/respaldo-trafilatura.py) (D:\MikText\tex/latex/base\utf8.def
-File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-)
-Underfull \vbox (badness 1484) has occurred while \output is active []
+<./images//inscriptis-html-postprocessor.png, id=569, 724.20563pt x 268.00125pt>
+File: ./images//inscriptis-html-postprocessor.png Graphic file (type png)
+<use ./images//inscriptis-html-postprocessor.png>
+Package pdftex.def Info: ./images//inscriptis-html-postprocessor.png  used on input line 218.
+(pdftex.def)             Requested size: 455.30121pt x 168.48997pt.
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
+ [12 <./images//inscriptis-html-postprocessor.png>]
+Overfull \hbox (20.41154pt too wide) in paragraph at lines 242--249
+ [] 
+ []
 
-LaTeX Info: Redefining \. on input line 433.
-LaTeX Info: Redefining \% on input line 433.
- [17]
-LaTeX Info: Redefining \. on input line 492.
-LaTeX Info: Redefining \% on input line 492.
- [18]) (chapters/paquetes-marco-practico.tex
+LaTeX Info: Redefining \. on input line 300.
+LaTeX Info: Redefining \% on input line 300.
+[13]
+<./images//bs-parse-tree.png, id=598, 955.57pt x 473.77pt>
+File: ./images//bs-parse-tree.png Graphic file (type png)
+<use ./images//bs-parse-tree.png>
+Package pdftex.def Info: ./images//bs-parse-tree.png  used on input line 303.
+(pdftex.def)             Requested size: 325.215pt x 161.23871pt.
+LaTeX Info: Redefining \. on input line 345.
+LaTeX Info: Redefining \% on input line 345.
+ [14 <./images//bs-parse-tree.png>] (D:\MikText\tex/latex/base\latin1.def
+File: latin1.def 2020/08/01 v1.3d Input encoding file
+) (scripts/clasificacion-justext.py) (D:\MikText\tex/latex/base\utf8.def
+File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
+)
+LaTeX Info: Redefining \. on input line 382.
+LaTeX Info: Redefining \% on input line 382.
+ [15]
+<./images//justext-blocks-classification.jpg, id=636, 304.13625pt x 285.31593pt>
+File: ./images//justext-blocks-classification.jpg Graphic file (type jpg)
+<use ./images//justext-blocks-classification.jpg>
+Package pdftex.def Info: ./images//justext-blocks-classification.jpg  used on input line 414.
+(pdftex.def)             Requested size: 260.17244pt x 244.07826pt.
+LaTeX Info: Redefining \. on input line 431.
+LaTeX Info: Redefining \% on input line 431.
+ [16 <./images//justext-blocks-classification.jpg>]) (chapters/capitulo4.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [19] [20
+ [17] [18
 
 ]
 Cap\'{\i }tulo 4.
-) (presupuesto/presupuesto.tex [21] [22
+) (presupuesto/presupuesto.tex [19] [20
 
 ]
 Cap\'{\i }tulo 5.
 ) (biblio/bibliography.tex (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
-) (TFG-DavidMarquez.bbl [23] [24
+) (TFG-DavidMarquez.bbl [21] [22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
-[]\T1/lmr/m/n/10 ``Python sim-ple craw-ling using beau-ti-ful-soup,'' [][]$https : / / medium . com / milooproject /
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 78--81
+Underfull \hbox (badness 1701) in paragraph at lines 73--76
 []\T1/lmr/m/n/10 Google, ``In-tro-duc-ción a los ar-chi-vos ro-bots.txt,'' [][]$https : / / developers . google . com / search / docs /
  []
 
-[25]
-Underfull \hbox (badness 2608) in paragraph at lines 115--117
-[]\T1/lmr/m/n/10 M. La-ba-bi-di, ``Goo-se3,'' [][]$https : / / goose3 . readthedocs . io / en / latest / .$[][] [Ul-ti-mo ac-ce-so 11/di-ciem-
+[23]
+Underfull \hbox (badness 3895) in paragraph at lines 144--146
+[]\T1/lmr/m/n/10 ------, ``Beau-ti-ful-soup par-ser,'' [][]$https : / / lxml . de / elementsoup . html.$[][] [Ul-ti-mo ac-ce-so 20/di-ciem-
  []
 
 ) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-)) (appendix/ejemplo-basico-web-scraping.tex
+)) (appendix/apendiceA.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [26]
+ [24]
 Ap\'{e}ndice A.
 (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/ejemplo-basico-web-scraping-1.R) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-) (appendix/ejemplo-basico-web-scraping-1.tex [27
+) [25
 
-]) (D:\MikText\tex/latex/base\latin1.def
+] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/ejemplo-basico-web-scraping-2.R
 Overfull \hbox (5.40488pt too wide) in paragraph at lines 5--6
@@ -1436,21 +1419,39 @@ File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 76.
-LaTeX Info: Redefining \% on input line 76.
- [28] (appendix/ejemplo-basico-web-scraping-3.tex) (D:\MikText\tex/latex/base\latin1.def
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+ [26] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/ejemplo-basico-web-scraping-4.R) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-) (appendix/ejemplo-basico-web-scraping-4.tex))
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
- [29] [30
-
-] (cover/backpage.tex (cover/backpage-tfg-uah.tex [31
+)) (appendix/apendiceB.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [27] [28
 
 ]
-<./logos//uah/01_logo-vA_pant293.pdf, id=774, 607.48354pt x 209.12729pt>
+Ap\'{e}ndice B.
+
+LaTeX Warning: Reference `sec:paquetes de python encontrados durante el proceso de busqueda' on page 29 undefined on input line 8.
+
+<./images//parser-structure.jpg, id=777, 631.60968pt x 241.65282pt>
+File: ./images//parser-structure.jpg Graphic file (type jpg)
+<use ./images//parser-structure.jpg>
+Package pdftex.def Info: ./images//parser-structure.jpg  used on input line 18.
+(pdftex.def)             Requested size: 397.48499pt x 152.07983pt.
+[29 <./images//parser-structure.jpg>]
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [30])
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+ [31] [32
+
+] (cover/backpage.tex (cover/backpage-tfg-uah.tex [33
+
+]
+<./logos//uah/01_logo-vA_pant293.pdf, id=806, 607.48354pt x 209.12729pt>
 File: ./logos//uah/01_logo-vA_pant293.pdf Graphic file (type pdf)
 <use ./logos//uah/01_logo-vA_pant293.pdf>
 Package pdftex.def Info: ./logos//uah/01_logo-vA_pant293.pdf  used on input line 40.
@@ -1463,29 +1464,33 @@ This document will not have a glossary.
 
 File: logos/logoEPS-UAH.jpg Graphic file (type jpg)
 <use logos/logoEPS-UAH.jpg>
-Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 124.
+Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 122.
 (pdftex.def)             Requested size: 418.25368pt x 304.29808pt.
-[32
+[34
 
  <./logos//uah/01_logo-vA_pant293.pdf>] (TFG-DavidMarquez.aux
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
 )
 Package rerunfilecheck Info: File `TFG-DavidMarquez.out' has not changed.
-(rerunfilecheck)             Checksum: A4CCC06E4A6B082CBFDD8DC6F4E5457B;3250.
+(rerunfilecheck)             Checksum: ACCE6EE33401B589CF493AB27486CC06;4073.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 32417 strings out of 480236
- 561113 string characters out of 2896605
- 1232060 words of memory out of 3000000
- 47807 multiletter control sequences out of 15000+200000
+ 32266 strings out of 480236
+ 558847 string characters out of 2896605
+ 1220737 words of memory out of 3000000
+ 47695 multiletter control sequences out of 15000+200000
  626065 words of font info for 97 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,12n,124p,1069b,2000s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/MikText/fonts/enc/dvips/lm/lm-ts1.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ec.enc}{D:/MikText/fonts/enc/dvips/base/8r.enc}<D:/MikText/fonts/type1/public/lm/lmbx10.pfb><D:/MikText/fonts/type1/public/lm/lmbx12.pfb><D:/MikText/fonts/type1/public/lm/lmbx9.pfb><D:/MikText/fonts/type1/public/lm/lmr10.pfb><D:/MikText/fonts/type1/public/lm/lmr12.pfb><D:/MikText/fonts/type1/public/lm/lmr17.pfb><D:/MikText/fonts/type1/public/lm/lmr6.pfb><D:/MikText/fonts/type1/public/lm/lmr7.pfb><D:/MikText/fonts/type1/public/lm/lmr8.pfb><D:/MikText/fonts/type1/public/lm/lmr9.pfb><D:/MikText/fonts/type1/public/lm/lmri10.pfb><D:/MikText/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on TFG-DavidMarquez.pdf (50 pages, 694124 bytes).
+Output written on TFG-DavidMarquez.pdf (52 pages, 732796 bytes).
 PDF statistics:
- 889 PDF objects out of 1000 (max. 8388607)
- 255 named destinations out of 1000 (max. 500000)
- 400 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 916 PDF objects out of 1000 (max. 8388607)
+ 232 named destinations out of 1000 (max. 500000)
+ 477 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,9 +5,11 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Fases del web scraping\relax }}{4}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Fases del web crawling\relax }}{5}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Arbol de objetos de Beautiful Soup\cite {bs-parse-tree}\relax }}{11}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces JusText - Reclasificación de bloques\relax }}{13}{figure.caption.69}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces News-please - Proceso de scraping y crawling\relax }}{16}{figure.caption.91}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Inscriptis - Postprocesamiento html\relax }}{12}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Arbol de objetos\relax }}{14}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces JusText - Reclasificación de bloques\relax }}{16}{figure.caption.91}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{29}{figure.caption.146}%
