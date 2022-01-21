@@ -21,16 +21,12 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{web-scraping-wikipedia}
-Wikipedia, ``Web scraping,'' \url{https://es.wikipedia.org/wiki/Web_scraping.}
-  [Ultimo acceso 18/octubre/2021].
+\bibitem{Andreas-Mehlfuhrer}
+A.~Mehlf{\"u}hrer, ``Web scraping, a tool evaluation,'' Master's thesis,
+  Technische Universit{\"a}t Wien, 2009.
 
 \bibitem{web-scraping-bozhao}
 B.~Zhao, \emph{Web Scraping}, 05 2017, pp. 1--3.
-
-\bibitem{api-wikipedia}
-Wikipedia, ``Interfaz de programaci\'on de aplicaciones,''
-  \url{https://en.wikipedia.org/wiki/API.} [Ultimo acceso 18/octubre/2021].
 
 \bibitem{web-scraping-osmar-castrillo}
 O.~Castrillo-Fern\'andez, \emph{Web Scraping: Applications and Tools}, ser.
@@ -43,36 +39,29 @@ D.~Glez-Pe\~{n}a, A.~Lourenco, H.~L\'opez-Fern\'andez, M.~Reboiro-Jato, and
   \emph{Briefings in Bioinformatics}, vol.~15, no.~5, pp. 788--797, April 2013.
 
 \bibitem{curl-cran}
-CRAN, ``curl: A modern and flexible web client for r,''
-  \url{https://cran.r-project.org/web/packages/curl/index.html.} [Ultimo acceso
-  26/octubre/2021].
+\BIBentryALTinterwordspacing
+J.~Ooms, \emph{curl: A Modern and Flexible Web Client for R}, 2019, r package
+  version 4.3. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=curl}
+\BIBentrySTDinterwordspacing
 
 \bibitem{tfg-daniel-francisco-lopez}
 D.~Francisco~L\'opez, ``Revisi\'on de los paquetes para realizar web scraping
   en r: An\'alisis cualitativo y cuantitativo,'' Master's thesis, Universidad
   de Alcal\'a Escuela Polit\'ecnica Superior, 2018.
 
-\bibitem{xpath-wikipedia}
-Wikipedia, ``Xpath,'' \url{https://es.wikipedia.org/wiki/XPath.} [Ultimo acceso
-  04/noviembre/2021].
-
-\bibitem{css-selectors-w3c}
-W3Schools, ``Css selector reference,''
-  \url{https://www.w3schools.com/cssref/css_selectors.asp.} [Ultimo acceso
-  04/noviembre/2021].
-
-\bibitem{web-crawling-wikipedia}
-Wikipedia, ``Web crawler,'' \url{https://en.wikipedia.org/wiki/Web_crawler.}
-  [Ultimo acceso 02/noviembre/2021].
+\bibitem{css-xpath-lilland}
+S.~L. Nerdal, ``Newsenhancer,'' Master's thesis, Department of Informatics,
+  University of Bergen, 2018.
 
 \bibitem{web-scraping-seppe}
 S.~Broucke~Vande and B.~Baesens, \emph{Web Scraping for Data Science with
   Python}, 11 2017, pp. 14--16.
 
 \bibitem{robots-txt}
-Google, ``Introducci\'on a los archivos robots.txt,''
-  \url{https://developers.google.com/search/docs/advanced/robots/intro?hl=es.}
-  [Ultimo acceso 27/octubre/2021].
+D.~Doran and S.~Gokhale, ``Web robot detection techniques: Overview and
+  limitations,'' \emph{Data Mining and Knowledge Discovery}, vol.~22, pp.
+  183--210, 06 2011.
 
 \bibitem{legalidad-web-scraping}
 M.~Beckman, S.~Guerrier, J.~Lee, R.~Molinari, S.~Orso, and I.~Rudnytskyi, ``An
@@ -81,13 +70,17 @@ M.~Beckman, S.~Guerrier, J.~Lee, R.~Molinari, S.~Orso, and I.~Rudnytskyi, ``An
   27/octubre/2021].
 
 \bibitem{github}
-``Github,'' \url{https://github.com/.} [Ultimo acceso 07/diciembre/2021].
+\BIBentryALTinterwordspacing
+github, ``Github,'' 2020. [Online]. Available: \url{https://github.com/}
+\BIBentrySTDinterwordspacing
 
 \bibitem{cran}
 ``Cran,'' \url{https://cran.r-project.org/.} [Ultimo acceso 07/diciembre/2021].
 
 \bibitem{pypi}
-``Pypi,'' \url{https://pypi.org/.} [Ultimo acceso 07/diciembre/2021].
+\BIBentryALTinterwordspacing
+Python package index - pypi. [Online]. Available: \url{https://pypi.org/}
+\BIBentrySTDinterwordspacing
 
 \bibitem{inscriptis}
 \BIBentryALTinterwordspacing
@@ -98,55 +91,130 @@ A.~Weichselbraun, ``Inscriptis - a python-based html to text conversion library
 \BIBentrySTDinterwordspacing
 
 \bibitem{beautifulsoup}
-``Beautiful soup documentation,''
-  \url{https://www.crummy.com/software/BeautifulSoup/bs4/doc/.} [Ultimo acceso
-  08/diciembre/2021].
+L.~Richardson, ``Beautiful soup documentation,'' \emph{April}, 2007.
 
 \bibitem{justext}
-M.~Belica, ``Justext,'' \url{https://github.com/miso-belica/jusText.} [Ultimo
-  acceso 09/diciembre/2021].
+J.~Pomik{\'a}lek, ``Removing boilerplate and duplicate content from web
+  corpora,'' Ph.D. dissertation, Masaryk university, Faculty of informatics,
+  Brno, Czech Republic, 2011.
+
+\bibitem{news-please}
+F.~Hamborg, N.~Meuschke, C.~Breitinger, and B.~Gipp, ``news-please: A generic
+  news crawler and extractor,'' in \emph{Proceedings of the 15th International
+  Symposium of Information Science}, March 2017, pp. 218--223.
+
+\bibitem{rss-sitemaps}
+H.~Bjerkander and E.~Karlsson, ``Distributed web-crawler,'' Master's thesis,
+  Department of Computer Science and Engineering, Chalmers University of
+  Technology, 2005.
+
+\bibitem{libextract}
+R.~Palacios and E.~Jun, ``Libextract: extract data from websites,''
+  \url{https://github.com/datalib/libextract.} [Ultimo acceso 18/enero/2022].
+
+\bibitem{eatiht}
+R.~Palacios, ``eatiht, a simple tool used to extract an article's text in html
+  documents.'' \url{http://rodricios.github.io/eatiht/.} [Ultimo acceso
+  18/enero/2022].
+
+\bibitem{trafilatura}
+\BIBentryALTinterwordspacing
+A.~Barbaresi, ``{Trafilatura: A Web Scraping Library and Command-Line Tool for
+  Text Discovery and Extraction},'' in \emph{Proceedings of the Joint
+  Conference of the 59th Annual Meeting of the Association for Computational
+  Linguistics and the 11th International Joint Conference on Natural Language
+  Processing: System Demonstrations}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Association for Computational Linguistics, 2021, pp. 122--131. [Online].
+  Available: \url{https://aclanthology.org/2021.acl-demo.15}
+\BIBentrySTDinterwordspacing
+
+\bibitem{dragnet}
+\BIBentryALTinterwordspacing
+M.~E. Peters and D.~Lecocq, ``Content extraction using diverse feature sets,''
+  in \emph{Proceedings of the 22nd International Conference on World Wide Web},
+  ser. WWW '13 Companion.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY,
+  USA: Association for Computing Machinery, 2013, pp. 89--90. [Online].
+  Available: \url{https://doi.org/10.1145/2487788.2487828}
+\BIBentrySTDinterwordspacing
+
+\bibitem{goose3}
+M.~Lababidi, ``Goose3,'' \url{https://goose3.readthedocs.io/en/latest/.}
+  [Ultimo acceso 11/diciembre/2021].
+
+\bibitem{html-text}
+M.~Korobov, ``Html-text,'' \url{https://github.com/TeamHG-Memex/html-text.}
+  [Ultimo acceso 15/diciembre/2021].
+
+\bibitem{newspaper3k}
+\BIBentryALTinterwordspacing
+L.~OuYang, \emph{newspaper Documentation}, 2018, release 0.0.2. [Online].
+  Available:
+  \url{https://buildmedia.readthedocs.org/media/pdf/newspaper/latest/newspaper.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{html2text}
+A.~Savand, ``html2text,'' \url{https://github.com/Alir3z4/html2text.} [Ultimo
+  acceso 17/enero/2022].
+
+\bibitem{readability}
+Y.~Baburov, ``python-readability,''
+  \url{https://github.com/buriy/python-readability.} [Ultimo acceso
+  17/enero/2022].
+
+\bibitem{boilerpipeR-cran}
+\BIBentryALTinterwordspacing
+S.~A. file., \emph{boilerpipeR: Interface to the Boilerpipe Java Library},
+  2021, r package version 1.3.2. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=boilerpipeR}
+\BIBentrySTDinterwordspacing
+
+\bibitem{boilerpy}
+J.~Riebold, ``Boilerpy3.'' \url{https://github.com/jmriebold/BoilerPy3.}
+  [Ultimo acceso 19/enero/2022].
 
 \bibitem{robotstxt-cran}
-CRAN, ``robotstxt: A 'robots.txt' parser and 'webbot'/'spider'/'crawler'
-  permissions checker,''
-  \url{https://cran.r-project.org/web/packages/robotstxt/index.html.} [Ultimo
-  acceso 28/octubre/2021].
+\BIBentryALTinterwordspacing
+P.~Meissner and K.~Ren, \emph{robotstxt: A 'robots.txt' Parser and
+  'Webbot'/'Spider'/'Crawler' Permissions Checker}, 2020, r package version
+  0.7.13. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=robotstxt}
+\BIBentrySTDinterwordspacing
 
 \bibitem{xml2-cran}
-------, ``xml2: Parse xml,''
-  \url{https://cran.r-project.org/web/packages/xml2/index.html.} [Ultimo acceso
-  29/octubre/2021].
+\BIBentryALTinterwordspacing
+H.~Wickham, J.~Hester, and J.~Ooms, \emph{xml2: Parse XML}, 2020, r package
+  version 1.3.2. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=xml2}
+\BIBentrySTDinterwordspacing
 
 \bibitem{rvest-cran}
-------, ``rvest: Easily harvest (scrape) web pages,''
-  \url{https://cran.r-project.org/web/packages/rvest/index.html.} [Ultimo
-  acceso 29/octubre/2021].
+\BIBentryALTinterwordspacing
+H.~Wickham, \emph{rvest: Easily Harvest (Scrape) Web Pages}, 2020, r package
+  version 0.3.6. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=rvest}
+\BIBentrySTDinterwordspacing
 
 \bibitem{magrittr-cran}
-------, ``magrittr: A forward-pipe operator for r,''
-  \url{https://cran.r-project.org/web/packages/magrittr/index.html.} [Ultimo
-  acceso 29/octubre/2021].
+\BIBentryALTinterwordspacing
+S.~M. Bache and H.~Wickham, \emph{magrittr: A Forward-Pipe Operator for R},
+  2020, r package version 2.0.1. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=magrittr}
+\BIBentrySTDinterwordspacing
 
-\bibitem{parser-wikipedia}
-Wikipedia, ``Analizador sint\'actico,''
-  \url{https://en.wikipedia.org/wiki/Parsing.} [Ultimo acceso
-  22/diciembre/2021].
+\bibitem{parser-lexer}
+T.~Parr, \emph{The Definitive ANTLR 4 Reference}.\hskip 1em plus 0.5em minus
+  0.4em\relax Pragmatic Bookshelf, 2013.
 
 \bibitem{lxml}
-I.~Bicking, ``lxml - xml and html with python,''
-  \url{https://lxml.de/index.html.} [Ultimo acceso 20/diciembre/2021].
-
-\bibitem{lxml-html}
-------, ``lxml.html,'' \url{https://lxml.de/lxmlhtml.html.} [Ultimo acceso
-  20/diciembre/2021].
-
-\bibitem{lxml-soup}
-------, ``Beautifulsoup parser,'' \url{https://lxml.de/elementsoup.html.}
-  [Ultimo acceso 20/diciembre/2021].
+S.~Behnel, M.~Faassen, and I.~Bicking, ``lxml: Xml and html with python,''
+  2005.
 
 \bibitem{html5lib}
-------, ``html5lib parser,'' \url{https://lxml.de/html5parser.html.} [Ultimo
-  acceso 20/diciembre/2021].
+\BIBentryALTinterwordspacing
+J.~Graham, S.~Sneddon, and contributors, \emph{html5lib Documentation}, 2020,
+  release 1.1. [Online]. Available:
+  \url{https://html5lib.readthedocs.io/_/downloads/en/stable/pdf/}
+\BIBentrySTDinterwordspacing
 
 \bibitem{html-parser}
 Python, ``html parser - simple html and xhtml parser,''

@@ -4,6 +4,7 @@
     "cchardet",
     "delimitaciones",
     "heurística",
+    "instanciadas",
     "interactividad",
     "investigaciónes",
     "lxml",
@@ -16,7 +17,9 @@
     "retroalimentan",
     "retroalimenten",
     "robotstxt",
+    "stopwords",
     "TFGs",
-    "tipologías"
+    "tipologías",
+    "tokenizador"
   ]
 }

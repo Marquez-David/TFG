@@ -4,9 +4,9 @@
 \contentsline {chapter}{Abstract}{vii}{chapter*.2}%
 \contentsline {chapter}{Resumen extendido}{ix}{chapter*.3}%
 \contentsline {chapter}{\'{I}ndice general}{xi}{chapter*.4}%
-\contentsline {chapter}{\'{I}ndice de figuras}{xiii}{chapter*.5}%
-\contentsline {chapter}{Índice de tablas}{xv}{chapter*.6}%
-\contentsline {chapter}{Índice de listados de código fuente}{xvii}{chapter*.7}%
+\contentsline {chapter}{\'{I}ndice de figuras}{xv}{chapter*.5}%
+\contentsline {chapter}{Índice de tablas}{xvii}{chapter*.6}%
+\contentsline {chapter}{Índice de listados de código fuente}{xix}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Introducción y objetivos}{1}{chapter.8}%
 \contentsline {section}{\numberline {1.1}Contexto}{1}{section.9}%
 \contentsline {section}{\numberline {1.2}Motivación}{1}{section.10}%
@@ -18,38 +18,60 @@
 \contentsline {subsection}{\numberline {2.1.2}Herramientas software disponibles}{4}{subsection.24}%
 \contentsline {subsubsection}{\numberline {2.1.2.1}XPath}{4}{subsubsection.25}%
 \contentsline {subsubsection}{\numberline {2.1.2.2}Selectores CSS}{5}{subsubsection.26}%
-\contentsline {subsection}{\numberline {2.1.3}Tipologias}{5}{subsection.27}%
+\contentsline {subsection}{\numberline {2.1.3}Tipologías}{5}{subsection.27}%
 \contentsline {section}{\numberline {2.2}Posibilidades prácticas del web scraping}{6}{section.29}%
 \contentsline {section}{\numberline {2.3}Retos del web scraping}{6}{section.30}%
 \contentsline {section}{\numberline {2.4}Aspectos ético-legales del web scraping}{7}{section.31}%
-\contentsline {chapter}{\numberline {3}Librerías de programación orientadas al web scraping}{9}{chapter.32}%
-\contentsline {section}{\numberline {3.1}Búsqueda de librerías destinadas al web scraping}{9}{section.33}%
-\contentsline {section}{\numberline {3.2}Librerías de Python encontradas durante el proceso de búsqueda}{9}{section.37}%
+\contentsline {chapter}{\numberline {3}Bibliotecas de programación orientadas al web scraping}{9}{chapter.32}%
+\contentsline {section}{\numberline {3.1}Búsqueda de bibliotecas destinadas al web scraping}{9}{section.33}%
+\contentsline {section}{\numberline {3.2}Bibliotecas de Python encontradas durante el proceso de búsqueda}{9}{section.37}%
 \contentsline {subsection}{\numberline {3.2.1}Inscriptis}{10}{subsection.39}%
 \contentsline {subsubsection}{\numberline {3.2.1.1}Estructura de la solución}{10}{subsubsection.40}%
 \contentsline {subsubsection}{\numberline {3.2.1.2}Reglas de anotación}{11}{subsubsection.41}%
 \contentsline {subsubsection}{\numberline {3.2.1.3}Postprocesamiento}{12}{subsubsection.56}%
-\contentsline {subsection}{\numberline {3.2.2}Beautiful Soup}{13}{subsection.58}%
+\contentsline {subsection}{\numberline {3.2.2}BeautifulSoup}{13}{subsection.58}%
 \contentsline {subsubsection}{\numberline {3.2.2.1}Multiplicidad de analizadores}{13}{subsubsection.59}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}Proceso de extracción}{14}{subsubsection.61}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}Sopa de objetos}{14}{subsubsection.61}%
 \contentsline {subsection}{\numberline {3.2.3}JusText}{14}{subsection.63}%
 \contentsline {subsubsection}{\numberline {3.2.3.1}Preprocesamiento}{14}{subsubsection.64}%
 \contentsline {subsubsection}{\numberline {3.2.3.2}Segmentación}{14}{subsubsection.65}%
 \contentsline {subsubsection}{\numberline {3.2.3.3}Clasificación de bloques}{15}{subsubsection.66}%
 \contentsline {subsubsection}{\numberline {3.2.3.4}Reclasificación de bloques}{16}{subsubsection.90}%
 \contentsline {subsubsection}{\numberline {3.2.3.5}Bloques de cabecera}{17}{subsubsection.92}%
-\contentsline {section}{\numberline {3.3}Paquetes de R encontrados durante el proceso de búsqueda}{17}{section.97}%
-\contentsline {section}{\numberline {3.4}Paquetes seleccionados para el proceso de análisis}{17}{section.98}%
-\contentsline {chapter}{\numberline {4}Selección de variables de análisis y proceso de estudio}{19}{chapter.99}%
-\contentsline {chapter}{\numberline {5}Presupuesto}{21}{chapter.100}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{23}{chapter*.101}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{25}{Appendix.102}%
-\contentsline {section}{\numberline {A.1}Fase de búsqueda}{25}{section.103}%
-\contentsline {section}{\numberline {A.2}Fase de extracción}{26}{section.120}%
-\contentsline {section}{\numberline {A.3}Fase de transformación}{27}{section.139}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Analizadores empleados en el web scraping}{29}{Appendix.145}%
-\contentsline {section}{\numberline {B.1}lxml}{29}{section.147}%
-\contentsline {subsection}{\numberline {B.1.1}lxml.html}{30}{subsection.148}%
-\contentsline {subsection}{\numberline {B.1.2}soupparser}{30}{subsection.149}%
-\contentsline {section}{\numberline {B.2}html5lib}{31}{section.150}%
-\contentsline {section}{\numberline {B.3}html.parser}{31}{section.151}%
+\contentsline {subsection}{\numberline {3.2.4}News-please}{17}{subsection.97}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Web crawling en News-please}{18}{subsubsection.99}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}Web scraping en News-please}{18}{subsubsection.100}%
+\contentsline {subsection}{\numberline {3.2.5}Libextract}{19}{subsection.121}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}Eatiht como algoritmo de partición}{19}{subsubsection.122}%
+\contentsline {subsection}{\numberline {3.2.6}Trafilatura}{20}{subsection.139}%
+\contentsline {subsubsection}{\numberline {3.2.6.1}Delimitación de contenido}{20}{subsubsection.140}%
+\contentsline {subsubsection}{\numberline {3.2.6.2}Algoritmos de respaldo}{21}{subsubsection.141}%
+\contentsline {subsubsection}{\numberline {3.2.6.3}Extracción base}{21}{subsubsection.164}%
+\contentsline {subsection}{\numberline {3.2.7}Dragnet}{22}{subsection.165}%
+\contentsline {subsubsection}{\numberline {3.2.7.1}Extracción enfocada al aprendizaje automatico}{22}{subsubsection.166}%
+\contentsline {subsubsection}{\numberline {3.2.7.2}Características del modelo}{22}{subsubsection.167}%
+\contentsline {subsection}{\numberline {3.2.8}Goose3}{23}{subsection.168}%
+\contentsline {subsubsection}{\numberline {3.2.8.1}Cálculo del mejor nodo}{23}{subsubsection.169}%
+\contentsline {subsection}{\numberline {3.2.9}HTML-Text}{24}{subsection.191}%
+\contentsline {subsubsection}{\numberline {3.2.9.1}Normalización de espacio}{24}{subsubsection.195}%
+\contentsline {subsection}{\numberline {3.2.10}Newspaper3k}{25}{subsection.196}%
+\contentsline {subsubsection}{\numberline {3.2.10.1}Heurística según el idioma}{25}{subsubsection.197}%
+\contentsline {subsection}{\numberline {3.2.11}HTML2Text}{26}{subsection.207}%
+\contentsline {subsection}{\numberline {3.2.12}Readability}{26}{subsection.208}%
+\contentsline {subsubsection}{\numberline {3.2.12.1}Heurística de nodo candidato}{26}{subsubsection.209}%
+\contentsline {subsection}{\numberline {3.2.13}BoilerPy3/BoilerpipeR}{27}{subsection.221}%
+\contentsline {subsubsection}{\numberline {3.2.13.1}Multiplicidad de extractores}{27}{subsubsection.222}%
+\contentsline {section}{\numberline {3.3}Paquetes de R encontrados durante el proceso de búsqueda}{27}{section.223}%
+\contentsline {chapter}{\numberline {4}Selección de variables de análisis y proceso de estudio}{29}{chapter.224}%
+\contentsline {chapter}{\numberline {5}Presupuesto}{31}{chapter.225}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{33}{chapter*.226}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{37}{Appendix.227}%
+\contentsline {section}{\numberline {A.1}Fase de búsqueda}{37}{section.228}%
+\contentsline {section}{\numberline {A.2}Fase de extracción}{38}{section.245}%
+\contentsline {section}{\numberline {A.3}Fase de transformación}{39}{section.264}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Analizadores empleados en el web scraping}{41}{Appendix.270}%
+\contentsline {section}{\numberline {B.1}lxml}{41}{section.272}%
+\contentsline {subsection}{\numberline {B.1.1}lxml.html}{42}{subsection.273}%
+\contentsline {subsection}{\numberline {B.1.2}soupparser}{42}{subsection.274}%
+\contentsline {section}{\numberline {B.2}html5lib}{43}{section.275}%
+\contentsline {section}{\numberline {B.3}html.parser}{43}{section.276}%

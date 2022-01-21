@@ -4,11 +4,11 @@
 Este apéndice tiene como objetivo introducir aquellos aspectos más relevantes relacionados con los
 analizadores, también conocidos como \emph{parsers}, empleados en el web scraping. A lo largo de esta sección
 se realizará una pequeña sinopsis de aquellas herramientas empleadas en los algoritmos de extracción de
-los paquetes definidos en la sección \ref{sec:paquetes de python encontrados durante el proceso de 
+los paquetes definidos en la sección \ref{sec:bibliotecas de python encontradas durante el proceso de 
 busqueda}.
 
 A modo de introducción cabe destacar que un analizador sintáctico, es un programa informático que analiza
-una cadena de símbolos según las reglas de una gramática formal \cite{parser-wikipedia}. Generalmente, los 
+una cadena de símbolos según las reglas de una gramática formal \cite{parser-lexer}. Generalmente, los 
 analizadores se componen de dos partes, por un lado, un analizador sintáctico, y por otro un analizador 
 léxico. Mientras que el analizador léxico crea tokens a partir de una secuencia de caracteres de entrada, 
 el analizador sintáctico convierte los tokens en otras estructuras.
@@ -26,11 +26,12 @@ el analizador sintáctico convierte los tokens en otras estructuras.
 Uno de los analizadores más comunes en todos los algoritmos de minado web es \emph{lxml} \cite{lxml}. Esta
 biblioteca de Python permite procesar tanto documentos XML como HTML.
 
-Como la gran mayoría de analizadores, lxml convierte el texto de entrada en una estructura tipo árbol. Esto
-permite navegar por la propia estructura en busca de la información que se desea de forma sencilla. 
+Como la gran mayoría de analizadores, \emph{lxml} convierte el texto de entrada en una estructura tipo 
+árbol. Esto permite navegar por la propia estructura en busca de la información que se desea de forma 
+sencilla. 
 
-En el caso del web scraping, la manera en la que lxml es capaz de encontrar información valiosa, es decir 
-texto, es a través de expresiones XPath. Se muestra un pequeño ejemplo a continuación.
+En el caso del web scraping, la manera en la que \emph{lxml} es capaz de encontrar información valiosa, es 
+decir texto, es a través de expresiones XPath. Se muestra un pequeño ejemplo a continuación.
 
 \begin{Schunk}
     \begin{Soutput}
@@ -50,7 +51,7 @@ diferentes métodos.
 \label{subsec:lxml.html}
 
 ¿Qué ocurre con los documentos HTML mal formados? Para este propósito, se creó lo que se conoce como
-\emph{lxml.html} \cite{lxml-html}. Un paquete de Python especial para tratar con documentos HTML, el cual 
+\emph{lxml.html} \cite{lxml}. Un paquete de Python especial para tratar con documentos HTML, el cual 
 a diferencia del analizador base, proporciona una API de elementos propia de HTML, así como una serie de 
 utilidades para tareas comunes de procesamiento de los mismos.
 
@@ -71,8 +72,8 @@ el fin de recorrer el árbol generado y recuperar información de valor.
 \subsection{soupparser}
 \label{subsec:soupparser}
 
-Otro de los analizadores propios de lxml es \emph{soupparser} \cite{lxml-soup} propio del paquete
-BeautifulSoup. La forma en la que lxml interactúa con BeautifulSoup, es a través del módulo 
+Otro de los analizadores propios de \emph{lxml} es \emph{soupparser} \cite{lxml} propio del paquete
+BeautifulSoup. La forma en la que \emph{lxml} interactúa con BeautifulSoup, es a través del módulo 
 \emph{lxml.html.soupparser} el cual proporciona una seria de funciones principales. 
 
 Por un lado, tanto \emph{fromstring()} como \emph{parse()} se emplean para analizar ya sea una cadena o un 
@@ -95,13 +96,13 @@ provocar algún error, puesto que no es exactamente una estructura propia de HTM
 \label{sec:html5lib}
 
 \emph{html5lib} \cite{html5lib} es un paquete de Python que implementa el algoritmo de análisis sintáctico 
-de HTML5. Proporciona una interfaz similar a la del módulo lxml.html \ref{subsec:lxml.html} con metodos 
-como \emph{fromstring()} o \emph{parse()} que operan de la misma manera que las funciones de análisis 
+de HTML5. Proporciona una interfaz similar a la del módulo \emph{lxml.html} \ref{subsec:lxml.html} con 
+métodos como \emph{fromstring()} o \emph{parse()} que operan de la misma manera que las funciones de análisis 
 de HTML normales.
 
-Al igual que lxml.html, este paquete también trabaja con árboles de objetos, pero en este caso normaliza 
-algunos elementos y estructuras a un formato común. Por ejemplo, incluso si una tabla no tiene una etiqueta 
-del tipo \emph{<tbody>}, se inyectará una automáticamente.
+Al igual que \emph{lxml.html}, este paquete también trabaja con árboles de objetos, pero en este caso 
+normaliza algunos elementos y estructuras a un formato común. Por ejemplo, incluso si una tabla no tiene 
+una etiqueta del tipo \emph{<tbody>}, se inyectará una automáticamente.
 
 \begin{Schunk}
     \begin{Soutput}

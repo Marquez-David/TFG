@@ -16,38 +16,60 @@
 \BOOKMARK [2][-]{subsection.24}{2.1.2 Herramientas software disponibles}{section.18}% 16
 \BOOKMARK [3][-]{subsubsection.25}{2.1.2.1 XPath}{subsection.24}% 17
 \BOOKMARK [3][-]{subsubsection.26}{2.1.2.2 Selectores CSS}{subsection.24}% 18
-\BOOKMARK [2][-]{subsection.27}{2.1.3 Tipologias}{section.18}% 19
+\BOOKMARK [2][-]{subsection.27}{2.1.3 Tipolog\355as}{section.18}% 19
 \BOOKMARK [1][-]{section.29}{2.2 Posibilidades pr\341cticas del web scraping}{chapter.17}% 20
 \BOOKMARK [1][-]{section.30}{2.3 Retos del web scraping}{chapter.17}% 21
 \BOOKMARK [1][-]{section.31}{2.4 Aspectos \351tico-legales del web scraping}{chapter.17}% 22
-\BOOKMARK [0][-]{chapter.32}{3 Librer\355as de programaci\363n orientadas al web scraping}{}% 23
-\BOOKMARK [1][-]{section.33}{3.1 B\372squeda de librer\355as destinadas al web scraping}{chapter.32}% 24
-\BOOKMARK [1][-]{section.37}{3.2 Librer\355as de Python encontradas durante el proceso de b\372squeda}{chapter.32}% 25
+\BOOKMARK [0][-]{chapter.32}{3 Bibliotecas de programaci\363n orientadas al web scraping}{}% 23
+\BOOKMARK [1][-]{section.33}{3.1 B\372squeda de bibliotecas destinadas al web scraping}{chapter.32}% 24
+\BOOKMARK [1][-]{section.37}{3.2 Bibliotecas de Python encontradas durante el proceso de b\372squeda}{chapter.32}% 25
 \BOOKMARK [2][-]{subsection.39}{3.2.1 Inscriptis}{section.37}% 26
 \BOOKMARK [3][-]{subsubsection.40}{3.2.1.1 Estructura de la soluci\363n}{subsection.39}% 27
 \BOOKMARK [3][-]{subsubsection.41}{3.2.1.2 Reglas de anotaci\363n}{subsection.39}% 28
 \BOOKMARK [3][-]{subsubsection.56}{3.2.1.3 Postprocesamiento}{subsection.39}% 29
-\BOOKMARK [2][-]{subsection.58}{3.2.2 Beautiful Soup}{section.37}% 30
+\BOOKMARK [2][-]{subsection.58}{3.2.2 BeautifulSoup}{section.37}% 30
 \BOOKMARK [3][-]{subsubsection.59}{3.2.2.1 Multiplicidad de analizadores}{subsection.58}% 31
-\BOOKMARK [3][-]{subsubsection.61}{3.2.2.2 Proceso de extracci\363n}{subsection.58}% 32
+\BOOKMARK [3][-]{subsubsection.61}{3.2.2.2 Sopa de objetos}{subsection.58}% 32
 \BOOKMARK [2][-]{subsection.63}{3.2.3 JusText}{section.37}% 33
 \BOOKMARK [3][-]{subsubsection.64}{3.2.3.1 Preprocesamiento}{subsection.63}% 34
 \BOOKMARK [3][-]{subsubsection.65}{3.2.3.2 Segmentaci\363n}{subsection.63}% 35
 \BOOKMARK [3][-]{subsubsection.66}{3.2.3.3 Clasificaci\363n de bloques}{subsection.63}% 36
 \BOOKMARK [3][-]{subsubsection.90}{3.2.3.4 Reclasificaci\363n de bloques}{subsection.63}% 37
 \BOOKMARK [3][-]{subsubsection.92}{3.2.3.5 Bloques de cabecera}{subsection.63}% 38
-\BOOKMARK [1][-]{section.97}{3.3 Paquetes de R encontrados durante el proceso de b\372squeda}{chapter.32}% 39
-\BOOKMARK [1][-]{section.98}{3.4 Paquetes seleccionados para el proceso de an\341lisis}{chapter.32}% 40
-\BOOKMARK [0][-]{chapter.99}{4 Selecci\363n de variables de an\341lisis y proceso de estudio}{}% 41
-\BOOKMARK [0][-]{chapter.100}{5 Presupuesto}{}% 42
-\BOOKMARK [0][-]{chapter*.101}{Bibliograf\355a}{}% 43
-\BOOKMARK [0][-]{Appendix.102}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 44
-\BOOKMARK [1][-]{section.103}{A.1 Fase de b\372squeda}{Appendix.102}% 45
-\BOOKMARK [1][-]{section.120}{A.2 Fase de extracci\363n}{Appendix.102}% 46
-\BOOKMARK [1][-]{section.139}{A.3 Fase de transformaci\363n}{Appendix.102}% 47
-\BOOKMARK [0][-]{Appendix.145}{Ap\351ndice B Analizadores empleados en el web scraping}{}% 48
-\BOOKMARK [1][-]{section.147}{B.1 lxml}{Appendix.145}% 49
-\BOOKMARK [2][-]{subsection.148}{B.1.1 lxml.html}{section.147}% 50
-\BOOKMARK [2][-]{subsection.149}{B.1.2 soupparser}{section.147}% 51
-\BOOKMARK [1][-]{section.150}{B.2 html5lib}{Appendix.145}% 52
-\BOOKMARK [1][-]{section.151}{B.3 html.parser}{Appendix.145}% 53
+\BOOKMARK [2][-]{subsection.97}{3.2.4 News-please}{section.37}% 39
+\BOOKMARK [3][-]{subsubsection.99}{3.2.4.1 Web crawling en News-please}{subsection.97}% 40
+\BOOKMARK [3][-]{subsubsection.100}{3.2.4.2 Web scraping en News-please}{subsection.97}% 41
+\BOOKMARK [2][-]{subsection.121}{3.2.5 Libextract}{section.37}% 42
+\BOOKMARK [3][-]{subsubsection.122}{3.2.5.1 Eatiht como algoritmo de partici\363n}{subsection.121}% 43
+\BOOKMARK [2][-]{subsection.139}{3.2.6 Trafilatura}{section.37}% 44
+\BOOKMARK [3][-]{subsubsection.140}{3.2.6.1 Delimitaci\363n de contenido}{subsection.139}% 45
+\BOOKMARK [3][-]{subsubsection.141}{3.2.6.2 Algoritmos de respaldo}{subsection.139}% 46
+\BOOKMARK [3][-]{subsubsection.164}{3.2.6.3 Extracci\363n base}{subsection.139}% 47
+\BOOKMARK [2][-]{subsection.165}{3.2.7 Dragnet}{section.37}% 48
+\BOOKMARK [3][-]{subsubsection.166}{3.2.7.1 Extracci\363n enfocada al aprendizaje automatico}{subsection.165}% 49
+\BOOKMARK [3][-]{subsubsection.167}{3.2.7.2 Caracter\355sticas del modelo}{subsection.165}% 50
+\BOOKMARK [2][-]{subsection.168}{3.2.8 Goose3}{section.37}% 51
+\BOOKMARK [3][-]{subsubsection.169}{3.2.8.1 C\341lculo del mejor nodo}{subsection.168}% 52
+\BOOKMARK [2][-]{subsection.191}{3.2.9 HTML-Text}{section.37}% 53
+\BOOKMARK [3][-]{subsubsection.195}{3.2.9.1 Normalizaci\363n de espacio}{subsection.191}% 54
+\BOOKMARK [2][-]{subsection.196}{3.2.10 Newspaper3k}{section.37}% 55
+\BOOKMARK [3][-]{subsubsection.197}{3.2.10.1 Heur\355stica seg\372n el idioma}{subsection.196}% 56
+\BOOKMARK [2][-]{subsection.207}{3.2.11 HTML2Text}{section.37}% 57
+\BOOKMARK [2][-]{subsection.208}{3.2.12 Readability}{section.37}% 58
+\BOOKMARK [3][-]{subsubsection.209}{3.2.12.1 Heur\355stica de nodo candidato}{subsection.208}% 59
+\BOOKMARK [2][-]{subsection.221}{3.2.13 BoilerPy3/BoilerpipeR}{section.37}% 60
+\BOOKMARK [3][-]{subsubsection.222}{3.2.13.1 Multiplicidad de extractores}{subsection.221}% 61
+\BOOKMARK [1][-]{section.223}{3.3 Paquetes de R encontrados durante el proceso de b\372squeda}{chapter.32}% 62
+\BOOKMARK [0][-]{chapter.224}{4 Selecci\363n de variables de an\341lisis y proceso de estudio}{}% 63
+\BOOKMARK [0][-]{chapter.225}{5 Presupuesto}{}% 64
+\BOOKMARK [0][-]{chapter*.226}{Bibliograf\355a}{}% 65
+\BOOKMARK [0][-]{Appendix.227}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 66
+\BOOKMARK [1][-]{section.228}{A.1 Fase de b\372squeda}{Appendix.227}% 67
+\BOOKMARK [1][-]{section.245}{A.2 Fase de extracci\363n}{Appendix.227}% 68
+\BOOKMARK [1][-]{section.264}{A.3 Fase de transformaci\363n}{Appendix.227}% 69
+\BOOKMARK [0][-]{Appendix.270}{Ap\351ndice B Analizadores empleados en el web scraping}{}% 70
+\BOOKMARK [1][-]{section.272}{B.1 lxml}{Appendix.270}% 71
+\BOOKMARK [2][-]{subsection.273}{B.1.1 lxml.html}{section.272}% 72
+\BOOKMARK [2][-]{subsection.274}{B.1.2 soupparser}{section.272}% 73
+\BOOKMARK [1][-]{section.275}{B.2 html5lib}{Appendix.270}% 74
+\BOOKMARK [1][-]{section.276}{B.3 html.parser}{Appendix.270}% 75

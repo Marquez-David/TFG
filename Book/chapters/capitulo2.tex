@@ -4,7 +4,7 @@
 \section{En que consiste realmente el web scraping}
 \label{sec:en que consiste realmente el web scraping}
 
-En la actualidad el web scraping se puede definir como una \emph{“solución tecnológica para extraer
+En la actualidad el \emph{web scraping} se puede definir como una \emph{“solución tecnológica para extraer
 información de sitios web, de forma rápida, eficiente y automática, ofreciendo datos en un formato más
 estructurado y más fácil de usar \cite{web-scraping-osmar-castrillo}”}. Sin embargo, esta definición no ha
 sido siempre así, los métodos de minado web han evolucionado desde procedimientos más pequeños con ayuda
@@ -56,13 +56,14 @@ comportamiento con el servidor web al que se desea acceder.
 
 \subsection{Herramientas software disponibles}
 \label{subsec:herramientas software disponibles}
-El software disponible que emplean los web scrapers puede dividirse en varios enfoques, ya sean bibliotecas
-de programación de propósito general, frameworks, o entornos de escritorio.
 
-Por lo general tanto los frameworks como los entornos de escritorio presentan una solución más sencilla
-e integradora con respecto a bibliotecas de programación. Esto es debido a que ambos, no se ven afectados
-a los posibles cambios HTML de los recursos a los que accede. Además, estas necesitan la integración de
-otras múltiples bibliotecas adicionales para el acceso, análisis y extracción del contenido.
+El software disponible que emplean los \emph{web scrapers} puede dividirse en varios enfoques, ya sean 
+bibliotecas de programación de propósito general, \emph{frameworks}, o entornos de escritorio.
+
+Por lo general tanto los \emph{frameworks} como los entornos de escritorio presentan una solución más 
+sencilla e integradora con respecto a bibliotecas de programación. Esto es debido a que ambos, no se ven 
+afectados a los posibles cambios HTML de los recursos a los que accede. Además, estas necesitan la 
+integración de otras múltiples bibliotecas adicionales para el acceso, análisis y extracción del contenido.
 
 Este trabajo se desarrolla sobre bibliotecas de programación, las cuales se implementan como un programa
 software convencional utilizando estructuras de control y de datos del propio lenguaje. Por lo general,
@@ -74,9 +75,8 @@ Comprender como las bibliotecas obtienen los datos de los sitios web, pasa por c
 formas en las que los documentos HTML se organizan. Existen dos técnicas, dependiendo si se realiza un
 renderizado previo o no \cite{tfg-daniel-francisco-lopez}. La primera técnica consiste simplemente en
 parsear, es decir, realizar un análisis léxico-sintáctico sobre estructuras XML o HTML. Se suelen emplear
-tanto heurísticas determinadas, como expresiones XPath o selectores CSS para su realización. Por otro,
-lado si es necesario que parte de la lógica del sitio web pase al lado del cliente, este deberá pasar por
-un proceso de renderizado previo
+expresiones XPath o selectores CSS para su realización. Por otro, lado si es necesario que parte de la 
+lógica del sitio web pase al lado del cliente, este deberá pasar por un proceso de renderizado previo.
 
 Con el paso del tiempo, cada vez se extiende más el uso de bibliotecas de desarrollo como JQuery, encargadas 
 de pasar parte de la lógica del lado del servidor al lado del cliente con el objetivo de favorecer la 
@@ -85,17 +85,17 @@ interactividad. Estas páginas no podrán ser analizadas si no se renderizan ant
 \subsubsection{XPath}
 \label{subsubsec:xpath}
 
-\emph{XPath} es un lenguaje que permite construir expresiones que recorren y procesan un documento XML
-\cite{xpath-wikipedia}. Puede utilizarse para navegar por documentos HTML, ya que este es un lenguaje
-similar en cuanto a estructura a XML. \emph{XPath} es comúnmente utilizado en el web scraping para extraer
-datos de documentos HTML, además utiliza la misma notación empleada en las URL para navegar por la
-estructura del sitio web en cuestión.
+XPath es un lenguaje que permite construir expresiones que recorren y procesan un documento XML
+\cite{css-xpath-lilland}. Puede utilizarse para navegar por documentos HTML, ya que este es un lenguaje
+similar en cuanto a estructura a XML. Es comúnmente utilizado en el \emph{web scraping} para extraer datos 
+de documentos HTML, además utiliza la misma notación empleada en las URL para navegar por la estructura 
+del sitio web en cuestión.
 
 \subsubsection{Selectores CSS}
 \label{subsubsec:selectores CSS}
 
 El segundo método de extracción de datos en documento HTML se realiza a través de lo que se conoce como
-selectores CSS \cite{css-selectors-w3c}. CSS es el lenguaje utilizado para dar estilo a los documentos
+selectores CSS \cite{css-xpath-lilland}. CSS es el lenguaje utilizado para dar estilo a los documentos
 HTML, por otro lado, los selectores son patrones que se utilizan para hacer coincidir y extraer elementos
 HTML basados en sus propiedades CSS.
 
@@ -104,26 +104,26 @@ CSS está estructurado. En el fragmento de código \ref{cod:extraccion de datos 
 se hace uso de los selectores \emph{'.text-primary'} y \emph{'.lister-item-header a'} para acceder al
 contenido web deseado.
 
-\subsection{Tipologias}
+\subsection{Tipologías}
 \label{subsec:tipologias}
-Dependiendo de como se acceda y extraiga la información, existen dos técnicas de web scraping. Se mencionan
-los siguientes supuestos a continuación:
+Dependiendo de como se acceda y extraiga la información, existen dos técnicas de \emph{web scraping}. Se 
+mencionan los siguientes supuestos a continuación:
 
 \begin{itemize}
 \item Si la información que se almacena no procede de sitios web concretos, sino que durante el análisis
 de páginas web se encuentran enlaces que retroalimentan el análisis de otras nuevas, el método se conoce
-como web crawling \cite{web-crawling-wikipedia}.
+como \emph{web crawling} \cite{Andreas-Mehlfuhrer}.
 
-\item Si la información se extrae de sitios web concretos, donde ya se conoce como extraer y generar un
-valor por la información, la técnica se conoce como web scraping genérico. Mientras que en el web crawling
-el resultado de ejecución es la obtención de nuevas páginas, en el web scraping el resultado es la propia
-información.
+\item Por el contrario, si la información se extrae de sitios web concretos, donde ya se conoce como extraer 
+y generar un valor por la misma, la técnica se conoce como \emph{web scraping} genérico. Mientras que en 
+el \emph{web crawling} el resultado de ejecución es la obtención de nuevas páginas, en el \emph{web scraping} 
+el resultado es la propia información.
 \end{itemize}
 
-Es decir, la principal diferencia entre ambas, es que mientras los web scrapers extraen información de
-páginas webs concretas, los web crawlers almacenan y acceden a las páginas a través de los enlaces
+Es decir, la principal diferencia entre ambas, es que mientras los \emph{web scrapers} extraen información 
+de páginas webs concretas, los \emph{web crawlers} almacenan y acceden a las páginas a través de los enlaces
 contenidos en las mismas. En la figura \ref{img:web-scraping-phases} se mostraba la arquitectura en fases
-de un web scraper, veamos a continuación como es la arquitectura de un web crawler.
+de un \emph{web scraper}, veamos a continuación como es la arquitectura de un \emph{web crawler}.
 
 \begin{figure}[tphb]
 \centering
@@ -138,34 +138,35 @@ necesitan información especial para su acceso.
 
 \section{Posibilidades prácticas del web scraping}
 \label{sec:posibilidades practicas del web scraping}
+
 Son muchas las aplicaciones prácticas de la minería web, la mayoría de estas entran en el ámbito de la
 ciencia de los datos. En la siguiente lista se exponen algunos casos de su uso en la vida real
 \cite{web-scraping-seppe}:
 
 \begin{itemize}
-\item Bancos y otras instituciones financieras utilizan minería web para analizar a la competencia.
-Inversores también utilizan web scraping, para hacer un seguimiento de artículos de prensa relacionados
-con los activos de su cartera.
+    \item Bancos y otras instituciones financieras utilizan minería web para analizar a la competencia.
+    Inversores también utilizan \emph{web scraping}, para hacer un seguimiento de artículos de prensa 
+    relacionados con los activos de su cartera.
 
-\item En las redes sociales se emplea minería de datos para conocer la opinión de la gente a cerca de un
-determinado tema.
+    \item En las redes sociales se emplea minería de datos para conocer la opinión de la gente a cerca de 
+    un determinado tema.
 
-\item Existen aplicaciones capaces de analizar diferentes sitios web y encontrar los mismos productos a
-precio reducido. Incluso capaces de detectar ofertas de artículos a tiempo récord.
+    \item Existen aplicaciones capaces de analizar diferentes sitios web y encontrar los mismos productos 
+    a precio reducido. Incluso capaces de detectar ofertas de artículos a tiempo récord.
 
-\item etcétera
+    \item etcétera
 \end{itemize}
 
 El minado web contiene infinidad de aplicaciones, muy diversas e interesante capaces de automatizar el
-trabajo y conseguir la información de forma ordenada.
+trabajo y conseguir la información de forma ordenada. No obstante, muchos sitios web ofrecen alternativas 
+como el uso de APIs o ficheros estructuras para el acceso a dichos datos. 
 
-No obstante, muchos sitios web ofrecen alternativas como el uso de APIs o ficheros estructuras para el
-acceso a dichos datos. En general el web scraping es una técnica que consume bastantes recursos, por lo
-que el desarrollador debe limitar su uso si existen otras alternativas, como las APIs, que proporcionan
-los mismos resultados.
+En general el \emph{web scraping} es una técnica que consume bastantes recursos, por lo que el desarrollador 
+debe limitar su uso si existen otras alternativas, como las APIs, que proporcionan los mismos resultados.
 
 \section{Retos del web scraping}
 \label{sec:retos del web scraping}
+
 La forma en la que se crean los sistemas de extracción web se ha discutido desde diferentes perspectivas
 a lo largo del tiempo. Se emplean métodos científicos como el aprendizaje automático, la lógica o el
 procesamiento del lenguaje natural para lograr su implementación.
@@ -191,15 +192,16 @@ la ayuda humana puede desempeñar un papel importante a la hora de elevar el niv
 por un sistema de extracción de datos web, por ello la clave está en encontrar un equilibrio entre
 automatización e intervención humana.
 
-Por último, a pesar de que las herramientas de web scraping han evolucionado con el tiempo, los aspectos
-legales están algo inexplorados pues dependen de los términos y condiciones de cada sitio web en cuestión.
+Por último, a pesar de que las herramientas de \emph{web scraping} han evolucionado con el tiempo, los 
+aspectos legales están algo inexplorados pues dependen de los términos y condiciones de cada sitio web en 
+cuestión.
 
 \section{Aspectos ético-legales del web scraping}
 \label{sec:aspectos etico-legales del web scraping}
-Para comprender los aspectos legales del web scraping, debemos recordar el robot o agente software
-definido en el apartado \ref{subsec:extraccion de los datos}. Este agente software,
-previamente examinado por el servidor, es el que se encarga de acceder y realizar un recorrido por el
-contenido web.
+
+Para comprender los aspectos legales del \emph{web scraping}, debemos recordar el robot o agente software
+definido en el apartado \ref{subsec:extraccion de los datos}. Este agente software, previamente examinado 
+por el servidor, es el que se encarga de acceder y realizar un recorrido por el contenido web.
 
 Durante el acceso al contenido, se espera que este agente se ajuste a los términos de uso del sitio en
 cuestión, así como el cumplimiento del archivo \emph{'robots.txt'} \footnote{Archivo alojado en el
@@ -208,22 +210,22 @@ forma automática \cite{robots-txt}.}, con el objetivo de evitar accesos no dese
 servidor.
 
 Puesto que el documento \emph{'robots.txt'} no es de obligado cumplimiento, a lo largo de los años la
-reputación del web scraping ha decrecido de forma significativa. Muchos agentes software no siguen las
-indicaciones determinadas, por lo que definir la cantidad de accesos y archivos a los que se accede
+reputación del \emph{web scraping} ha decrecido de forma significativa. Muchos agentes software no siguen 
+las indicaciones determinadas, por lo que definir la cantidad de accesos y archivos a los que se accede
 dependerá de la ética de cada desarrollador.
 
 Con el objetivo de tener una cierta garantía de que nuestro agente software cumple con los aspectos
 ético-legales, se deben tener en consideración las siguientes cuestiones \cite{legalidad-web-scraping}:
 
 \begin{itemize}
-\item Leer los términos de uso de la página web en al que se vaya a realizar el minado.
+    \item Leer los términos de uso de la página web en al que se vaya a realizar el minado.
 
-\item Inspeccionar y cumplir con el documento robots.txt, para ser capaces de identificar los accesos
-del servidor.
+    \item Inspeccionar y cumplir con el documento robots.txt, para ser capaces de identificar los accesos
+    del servidor.
 
-\item Realizar peticiones al servidor de forma controlada. Puede que el índice de solicitudes al servidor
-no este especificado en el documento, si esto sucede debemos determinar un número de solicitudes razonable,
-por ejemplo, una solicitud por segundo.
+    \item Realizar peticiones al servidor de forma controlada. Puede que el índice de solicitudes al 
+    servidor no este especificado en el documento, si esto sucede debemos determinar un número de solicitudes 
+    razonable, por ejemplo, una solicitud por segundo.
 \end{itemize}
 
 
