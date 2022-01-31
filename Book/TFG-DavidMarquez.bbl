@@ -117,6 +117,19 @@ R.~Palacios, ``eatiht, a simple tool used to extract an article's text in html
   documents.'' \url{http://rodricios.github.io/eatiht/.} [Ultimo acceso
   18/enero/2022].
 
+\bibitem{html-text}
+M.~Korobov, ``Html-text,'' \url{https://github.com/TeamHG-Memex/html-text.}
+  [Ultimo acceso 15/diciembre/2021].
+
+\bibitem{html2text}
+A.~Savand, ``html2text,'' \url{https://github.com/Alir3z4/html2text.} [Ultimo
+  acceso 17/enero/2022].
+
+\bibitem{readability}
+Y.~Baburov, ``python-readability,''
+  \url{https://github.com/buriy/python-readability.} [Ultimo acceso
+  17/enero/2022].
+
 \bibitem{trafilatura}
 \BIBentryALTinterwordspacing
 A.~Barbaresi, ``{Trafilatura: A Web Scraping Library and Command-Line Tool for
@@ -141,25 +154,12 @@ M.~E. Peters and D.~Lecocq, ``Content extraction using diverse feature sets,''
 M.~Lababidi, ``Goose3,'' \url{https://goose3.readthedocs.io/en/latest/.}
   [Ultimo acceso 11/diciembre/2021].
 
-\bibitem{html-text}
-M.~Korobov, ``Html-text,'' \url{https://github.com/TeamHG-Memex/html-text.}
-  [Ultimo acceso 15/diciembre/2021].
-
 \bibitem{newspaper3k}
 \BIBentryALTinterwordspacing
 L.~OuYang, \emph{newspaper Documentation}, 2018, release 0.0.2. [Online].
   Available:
   \url{https://buildmedia.readthedocs.org/media/pdf/newspaper/latest/newspaper.pdf}
 \BIBentrySTDinterwordspacing
-
-\bibitem{html2text}
-A.~Savand, ``html2text,'' \url{https://github.com/Alir3z4/html2text.} [Ultimo
-  acceso 17/enero/2022].
-
-\bibitem{readability}
-Y.~Baburov, ``python-readability,''
-  \url{https://github.com/buriy/python-readability.} [Ultimo acceso
-  17/enero/2022].
 
 \bibitem{boilerpipeR-cran}
 \BIBentryALTinterwordspacing
@@ -171,6 +171,44 @@ S.~A. file., \emph{boilerpipeR: Interface to the Boilerpipe Java Library},
 \bibitem{boilerpy}
 J.~Riebold, ``Boilerpy3.'' \url{https://github.com/jmriebold/BoilerPy3.}
   [Ultimo acceso 19/enero/2022].
+
+\bibitem{rvest-cran}
+\BIBentryALTinterwordspacing
+H.~Wickham, \emph{rvest: Easily Harvest (Scrape) Web Pages}, 2020, r package
+  version 0.3.6. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=rvest}
+\BIBentrySTDinterwordspacing
+
+\bibitem{rcrawler-cran}
+\BIBentryALTinterwordspacing
+S.~Khalil, \emph{Rcrawler: Web Crawler and Scraper}, 2018, r package version
+  0.1.9-1. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=Rcrawler}
+\BIBentrySTDinterwordspacing
+
+\bibitem{rcrawler}
+S.~Khalil and M.~Fakir, ``Rcrawler: An r package for parallel web crawling and
+  scraping,'' \emph{SoftwareX}, vol.~6, pp. 98--106, 2017.
+
+\bibitem{htm2txt-cran}
+\BIBentryALTinterwordspacing
+S.~Park, \emph{htm2txt: Convert Html into Text}, 2017, r package version 2.1.1.
+  [Online]. Available: \url{https://CRAN.R-project.org/package=htm2txt}
+\BIBentrySTDinterwordspacing
+
+\bibitem{scraper-cran}
+\BIBentryALTinterwordspacing
+R.~M. Acton, \emph{scrapeR: Tools for Scraping Data from HTML and XML
+  Documents}, 2010, r package version 0.1.6. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=scrapeR}
+\BIBentrySTDinterwordspacing
+
+\bibitem{rselenium-cran}
+\BIBentryALTinterwordspacing
+J.~Harrison, \emph{RSelenium: R Bindings for 'Selenium WebDriver'}, 2020, r
+  package version 1.7.7. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=RSelenium}
+\BIBentrySTDinterwordspacing
 
 \bibitem{robotstxt-cran}
 \BIBentryALTinterwordspacing
@@ -185,13 +223,6 @@ P.~Meissner and K.~Ren, \emph{robotstxt: A 'robots.txt' Parser and
 H.~Wickham, J.~Hester, and J.~Ooms, \emph{xml2: Parse XML}, 2020, r package
   version 1.3.2. [Online]. Available:
   \url{https://CRAN.R-project.org/package=xml2}
-\BIBentrySTDinterwordspacing
-
-\bibitem{rvest-cran}
-\BIBentryALTinterwordspacing
-H.~Wickham, \emph{rvest: Easily Harvest (Scrape) Web Pages}, 2020, r package
-  version 0.3.6. [Online]. Available:
-  \url{https://CRAN.R-project.org/package=rvest}
 \BIBentrySTDinterwordspacing
 
 \bibitem{magrittr-cran}
@@ -220,5 +251,12 @@ J.~Graham, S.~Sneddon, and contributors, \emph{html5lib Documentation}, 2020,
 Python, ``html parser - simple html and xhtml parser,''
   \url{https://docs.python.org/3/library/html.parser.html.} [Ultimo acceso
   20/diciembre/2021].
+
+\bibitem{xml-cran}
+\BIBentryALTinterwordspacing
+D.~{Temple Lang}, \emph{XML: Tools for Parsing and Generating XML Within R and
+  S-Plus}, 2021, r package version 3.99-0.8. [Online]. Available:
+  \url{https://CRAN.R-project.org/package=XML}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

@@ -1,10 +1,10 @@
-\chapter{Analizadores empleados en el web scraping}
-\label{cha:analizadores empleados en el web scraping}
+\chapter{Analizadores empleados en los paquetes de web scraping}
+\label{cha:analizadores empleados en los paquetes de web scraping}
 
 Este apéndice tiene como objetivo introducir aquellos aspectos más relevantes relacionados con los
-analizadores, también conocidos como \emph{parsers}, empleados en el web scraping. A lo largo de esta sección
-se realizará una pequeña sinopsis de aquellas herramientas empleadas en los algoritmos de extracción de
-los paquetes definidos en la sección \ref{sec:bibliotecas de python encontradas durante el proceso de 
+analizadores, también conocidos como \emph{parsers}, empleados en el web scraping. A lo largo de esta 
+sección se realizará una pequeña sinopsis de aquellas herramientas empleadas en los algoritmos de extracción 
+de los paquetes definidos en la sección \ref{sec:bibliotecas de python encontradas durante el proceso de 
 busqueda}.
 
 A modo de introducción cabe destacar que un analizador sintáctico, es un programa informático que analiza
@@ -23,15 +23,15 @@ el analizador sintáctico convierte los tokens en otras estructuras.
 \section{lxml}
 \label{sec:lxml}
 
-Uno de los analizadores más comunes en todos los algoritmos de minado web es \emph{lxml} \cite{lxml}. Esta
-biblioteca de Python permite procesar tanto documentos XML como HTML.
+Uno de los analizadores más comunes en todos los algoritmos de minado web es \textbf{lxml} \cite{lxml}. 
+Esta biblioteca de Python permite procesar tanto documentos XML como HTML.
 
-Como la gran mayoría de analizadores, \emph{lxml} convierte el texto de entrada en una estructura tipo 
+Como la gran mayoría de analizadores, \textbf{lxml} convierte el texto de entrada en una estructura tipo 
 árbol. Esto permite navegar por la propia estructura en busca de la información que se desea de forma 
 sencilla. 
 
-En el caso del web scraping, la manera en la que \emph{lxml} es capaz de encontrar información valiosa, es 
-decir texto, es a través de expresiones XPath. Se muestra un pequeño ejemplo a continuación.
+En el caso del web scraping, la manera en la que \textbf{lxml} es capaz de encontrar información valiosa, 
+es decir texto, es a través de expresiones XPath. Se muestra un pequeño ejemplo a continuación.
 
 \begin{Schunk}
     \begin{Soutput}
@@ -51,7 +51,7 @@ diferentes métodos.
 \label{subsec:lxml.html}
 
 ¿Qué ocurre con los documentos HTML mal formados? Para este propósito, se creó lo que se conoce como
-\emph{lxml.html} \cite{lxml}. Un paquete de Python especial para tratar con documentos HTML, el cual 
+\textbf{lxml.html} \cite{lxml}. Un paquete de Python especial para tratar con documentos HTML, el cual 
 a diferencia del analizador base, proporciona una API de elementos propia de HTML, así como una serie de 
 utilidades para tareas comunes de procesamiento de los mismos.
 
@@ -72,13 +72,13 @@ el fin de recorrer el árbol generado y recuperar información de valor.
 \subsection{soupparser}
 \label{subsec:soupparser}
 
-Otro de los analizadores propios de \emph{lxml} es \emph{soupparser} \cite{lxml} propio del paquete
-BeautifulSoup. La forma en la que \emph{lxml} interactúa con BeautifulSoup, es a través del módulo 
-\emph{lxml.html.soupparser} el cual proporciona una seria de funciones principales. 
+Otro de los analizadores propios de \textbf{lxml} es \textbf{soupparser} \cite{lxml} propio del paquete
+\textbf{Beautiful Soup}. La forma en la que \textbf{lxml} interactúa con \textbf{Beautiful Soup}, es a 
+través del módulo \textbf{lxml.html.soupparser} el cual proporciona una seria de funciones principales. 
 
 Por un lado, tanto \emph{fromstring()} como \emph{parse()} se emplean para analizar ya sea una cadena o un 
-archivo HTML, por otro lado \emph{convert\_tree()} se emplea para convertir un árbol BeautifulSoup existente 
-en una lista de elementos de nivel superior.
+archivo HTML, por otro lado \emph{convert\_tree()} se emplea para convertir un árbol \textbf{Beautiful Soup} 
+existente en una lista de elementos de nivel superior.
 
 \begin{Schunk}
     \begin{Soutput}
@@ -95,12 +95,12 @@ provocar algún error, puesto que no es exactamente una estructura propia de HTM
 \section{html5lib}
 \label{sec:html5lib}
 
-\emph{html5lib} \cite{html5lib} es un paquete de Python que implementa el algoritmo de análisis sintáctico 
-de HTML5. Proporciona una interfaz similar a la del módulo \emph{lxml.html} \ref{subsec:lxml.html} con 
+\textbf{html5lib} \cite{html5lib} es un paquete de Python que implementa el algoritmo de análisis sintáctico 
+de HTML5. Proporciona una interfaz similar a la del módulo \textbf{lxml.html} \ref{subsec:lxml.html} con 
 métodos como \emph{fromstring()} o \emph{parse()} que operan de la misma manera que las funciones de análisis 
 de HTML normales.
 
-Al igual que \emph{lxml.html}, este paquete también trabaja con árboles de objetos, pero en este caso 
+Al igual que \textbf{lxml.html}, este paquete también trabaja con árboles de objetos, pero en este caso 
 normaliza algunos elementos y estructuras a un formato común. Por ejemplo, incluso si una tabla no tiene 
 una etiqueta del tipo \emph{<tbody>}, se inyectará una automáticamente.
 
@@ -114,9 +114,10 @@ una etiqueta del tipo \emph{<tbody>}, se inyectará una automáticamente.
 \section{html.parser}
 \label{sec:html.parser}
 
-\emph{html.parser} \cite{html-parser} es un módulo que define una clase HTMLParse como base para analizar
-archivos HTML y XHTML. Este módulo trabaja alrededor de etiquetas, pues llama a métodos de manejo cuando
-se encuentran etiquetas de inicio, etiquetas finales, texto, comentarios y otros elementos de marcado.
+\textbf{html.parser} \cite{html-parser} es un módulo de Python que define una clase HTMLParse como base 
+para analizar archivos HTML y XHTML. Este módulo trabaja alrededor de etiquetas, pues llama a métodos de 
+manejo cuando se encuentran etiquetas de inicio, etiquetas finales, texto, comentarios y otros elementos 
+de marcado.
 
 \begin{Schunk}
     \begin{Soutput}
@@ -132,4 +133,47 @@ se encuentran etiquetas de inicio, etiquetas finales, texto, comentarios y otros
 Como se puede observar, el algoritmo es capaz de detectar etiquetas tanto de apertura, como de cierre incluso
 en documentos HTML mal formados como este. Esto hace que la búsqueda de información valiosa, en este caso
 texto, sea sencilla.
+
+\section{XML}
+\label{sec:xml}
+
+\textbf{XML} \cite{xml-cran} es un paquete de R que se encarga de realizar el análisis de documentos XML
+y HTML. Además del proceso de análisis, también proporciona acceso a un intérprete de XPath que permite
+consultar nodos concretos de los documentos. Como contrapartida, no permite el uso de selectores CSS para
+consultar XML o HTML analizados.
+
+Adicionalmente, hay que destacar que tiene algunos problemas de liberación de memoria que no puede resolver
+adecuadamente el recolector de basura de R. Por ello, se han ido creando diferentes soluciones que abordan
+este problema.
+
+En cuanto al método de análisis, se recorre el árbol buscando la información que desee y se coloca en 
+diferentes formas. Hay dos maneras de hacer esta iteración. Una es "recorrer" recursivamente el árbol 
+empezando por el nodo raíz y procesándolo, la otra consiste procesar cada nodo hijo de la misma manera, 
+trabajando en su nombre y atributos y luego en sus hijos, y así sucesivamente.
+
+
+\section{xml2}
+\label{sec:xml2}
+
+Otro paquete de R que permite trabajar con ficheros XML y HTML es \textbf{xml2} \cite{xml2-cran}. Está
+basado sobre la biblioteca \textbf{libxml2}. El paquete sigue los mismos objetivos que \textbf{XML}, por
+lo que el análisis de ficheros compone la parte principal del mismo.
+
+\textbf{xml2} tiene una jerarquía de clases muy sencilla que permite no preocuparse por el tipo de objeto
+se está gestionando. Estas clases son clave y se definen a continuación:
+
+\begin{enumerate}
+    \item xml\_node: un solo nodo de un documento.
+    \item xml\_doc: el documento completo. Actuar sobre un documento suele ser lo mismo que actuar sobre 
+    el nodo raíz del documento.
+    \item xml\_nodeset: un conjunto de nodos dentro del documento. Las operaciones sobre \emph{xml\_nodesets}
+    se vectorizan, aplicando la operación sobre cada nodo del conjunto.
+\end{enumerate}
+
+A diferencia del paquete \textbf{XML}, \textbf{xml2} cuida la gestión de la memoria de forma transparente,
+liberando aquella que haya sido utilizada por un documento tan pronto como se pierden todas las referencias
+que apuntan a él. Además, la jerarquía de clases es más simple, por lo que no es necesario pensar
+exactamente qué tipo de objeto se tiene, \textbf{xml2} simplemente hará lo correcto.
+
+
 

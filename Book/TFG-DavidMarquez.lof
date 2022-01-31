@@ -5,12 +5,14 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Fases del web scraping\relax }}{4}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Fases del web crawling\relax }}{5}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Inscriptis - Postprocesamiento html\relax }}{12}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces inscriptis - Postprocesamiento html\relax }}{12}{figure.caption.57}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Arbol de objetos\relax }}{14}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces JusText - Reclasificación de bloques\relax }}{16}{figure.caption.91}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces News-please - Proceso de scraping y crawling\relax }}{17}{figure.caption.98}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces jusText - Reclasificación de bloques\relax }}{16}{figure.caption.91}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces news-please - Proceso de scraping y crawling\relax }}{17}{figure.caption.98}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces rvest - Elementos a nivel de bloque\relax }}{28}{figure.caption.227}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Rcrawler - Arquitectura y componentes principales de Rcrawler\relax }}{29}{figure.caption.230}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{41}{figure.caption.271}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{45}{figure.caption.291}%

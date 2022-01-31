@@ -36,9 +36,9 @@ Es posible que algunos de los paquetes hayan sido desarrollados tanto en R como 
 un lado, la introducción se realzará de forma conjunta, sin embargo, será interesante ver el código del 
 mismo en ambos casos y como se comportan estos ante los distintos test de evaluación.
 
-Antes de comenzar con la sinopsis de paquetes, es conveniente revisar el apéndice \ref{cha:analizadores
-empleados en el web scraping}, donde se realiza una breve introducción de aquellos analizadores empleados
-en los mismos. Los 'emparejamientos' entre biblioteca-analizador se recogen en la tabla 
+Antes de comenzar con la sinopsis de bibliotecas, es conveniente revisar el apéndice \ref{cha:analizadores 
+empleados en los paquetes de web scraping}, donde se realiza una breve introducción de aquellos analizadores 
+empleados en las mismas. Los 'emparejamientos' entre biblioteca-analizador se recogen en la tabla 
 \ref{tab:emparejamientos biblioteca-analizador} a modo de resumen.
 
 \begin{table}[h]
@@ -51,7 +51,7 @@ en los mismos. Los 'emparejamientos' entre biblioteca-analizador se recogen en l
   \hfill \break
 
   \begin{tabular}{| c | c | c | c | c | c |} \hline 
-    \textbf{html2text} & \textbf{readability} & \textbf{trafilatura} & \textbf{beautifulsoup} & \textbf{newspaper3k} & \textbf{html-text}  \\ \hline
+    \textbf{html2text} & \textbf{readability} & \textbf{trafilatura} & \textbf{beautiful soup} & \textbf{newspaper3k} & \textbf{html\_text}  \\ \hline
     html parser & lxml & lxml & lxml \& html5lib \& html & lxml & lxml \\ \hline
   \end{tabular}
 
@@ -64,23 +64,23 @@ Ya sea porque determinadas bibliotecas permiten al desarrollador seleccionar ent
 analizadores, o bien porque múltiples de ellos son necesarios para el correcto funcionamiento de la 
 extracción, muchas de estas bibliotecas hacen uso de más de un analizador en su código.
 
-\subsection{Inscriptis}
+\subsection{inscriptis}
 \label{subsec:inscriptis}
 
-Además de ser una biblioteca de conversión de HTML a texto basada en Python, \textbf{Inscriptis} 
+Además de ser una biblioteca de conversión de HTML a texto basada en Python, \textbf{inscriptis} 
 \cite{inscriptis} también tiene soporte como línea de comandos o como servicio web para tablas anidadas. 
-A pesar de sus múltiples funcionalidades esta sección se centra en \textbf{Inscriptis} como biblioteca de 
+A pesar de sus múltiples funcionalidades esta sección se centra en \textbf{inscriptis} como biblioteca de 
 programación.
 
 \subsubsection{Estructura de la solución}
 \label{subsubsec:estructura de la solucion}
 
-A diferencia de otros algoritmos de extracción, \textbf{Inscriptis} no solo tiene en cuenta la calidad del 
+A diferencia de otros algoritmos de extracción, \textbf{inscriptis} no solo tiene en cuenta la calidad del 
 texto extraído, la estructura del mismo también es muy importante. Esto provoca que el resultado obtenido 
 se acerque más a un posible resultado aplicando el método tradicional a través de cualquier navegador web.
 
-Se muestra a continuación una pequeña comparación entre la extracción de texto de \textbf{BeautifulSoup}
-\ref{subsec:beautifulsoup}, con la extracción de texto de \textbf{Inscriptis}, donde se tiene un fragmento 
+Se muestra a continuación una pequeña comparación entre la extracción de texto de \textbf{Beautiful Soup}
+\ref{subsec:beautiful soup}, con la extracción de texto de \textbf{inscriptis}, donde se tiene un fragmento 
 HTML como el siguiente como objeto de prueba.
 
 \begin{Schunk}
@@ -90,7 +90,7 @@ HTML como el siguiente como objeto de prueba.
   \end{Soutput}
 \end{Schunk}
 
-Se emplea en primer lugar el método \emph{get\_text()} propio de \textbf{BeautifulSoup} sobre el fragmento 
+Se emplea en primer lugar el método \emph{get\_text()} propio de \textbf{Beautiful Soup} sobre el fragmento 
 HTML anterior.
 
 \begin{Schunk}
@@ -100,7 +100,7 @@ HTML anterior.
 \end{Schunk}
 
 Se puede observar que el formato obtenido no es el adecuado, puesto que no se ha respetado la estructura
-del documento base. Sin embargo, si se aplica \textbf{Inscriptis} sobre el mismo fragmento HTML, la salida 
+del documento base. Sin embargo, si se aplica \textbf{inscriptis} sobre el mismo fragmento HTML, la salida 
 obtenida sería la siguiente:
 
 \begin{Schunk}
@@ -134,7 +134,7 @@ lo que se conoce como perfil de anotaciones, algo parecido a un diccionario.
     \#class=FactBox & ['fact-box'] \\ \hline
     \#cite & ['citation'] \\ \hline
   \end{tabular}
-  \caption{Inscriptis - Perfil de anotaciones}
+  \caption{inscriptis - Perfil de anotaciones}
   \label{tab:inscriptis - perfil de anotaciones}
   \end{center}
 \end{table}
@@ -178,14 +178,14 @@ un programa.
   \inputencoding{latin1}
   \lstinputlisting[style=CppExample]{scripts/inscriptis-reglas-anotacion.py}
   \inputencoding{utf8}
-  \caption{Inscriptis - Uso de reglas de anotación}
+  \caption{inscriptis - Uso de reglas de anotación}
   \label{cod:inscriptis - uso de reglas de anotacion}
 \end{codefloat}
 
 \subsubsection{Postprocesamiento}
 \label{subsubsec:postprocesamiento}
 
-Además, \textbf{Inscriptis} da la posibilidad al usuario de realizar una fase de postprocesamiento donde 
+Además, \textbf{inscriptis} da la posibilidad al usuario de realizar una fase de postprocesamiento donde 
 las anotaciones se realizan en un formato determinado. Un primer tipo de postprocesamiento es el que se 
 conoce como \emph{surface}, donde se retorna una lista de mapeos entre la superficie de anotación y su 
 etiqueta.
@@ -217,24 +217,24 @@ ejemplo de la salida obtenida.
 \begin{figure}[tphb]
   \centering
   \includegraphics[width=6.3in]{inscriptis-html-postprocessor.png}
-  \caption{Inscriptis - Postprocesamiento html}
+  \caption{inscriptis - Postprocesamiento html}
   \label{img: inscriptis - postprocesamiento html}
 \end{figure}
 
-\subsection{BeautifulSoup}
-\label{subsec:beautifulsoup}
+\subsection{Beautiful Soup}
+\label{subsec:beautiful soup}
 
-Una de las bibliotecas de Python más comunes en el ámbito del \emph{web scraping} es \textbf{BeautifulSoup}
+Una de las bibliotecas de Python más comunes en el ámbito del \emph{web scraping} es \textbf{Beautiful Soup}
 \cite{beautifulsoup}, la cual está diseñada para extraer datos de documentos XML y HTML. Como se muestra
 en la tabla \ref{tab:emparejamientos biblioteca-analizador} y a diferencia del resto de bibliotecas,
-\textbf{BeautifulSoup} permite determinar el tipo de analizador que se empleará en la extracción, lo que
+\textbf{Beautiful Soup} permite determinar el tipo de analizador que se empleará en la extracción, lo que
 flexibiliza el proceso de navegación, búsqueda y modificación de documentos.
 
 \subsubsection{Multiplicidad de analizadores}
 \label{subsubsec:multiplicidad de analizadores}
 
-\textbf{BeautifulSoup} tiene a \emph{html.parse} como analizador estándar de documentos HTML, pero admite 
-varios analizadores de terceros. En la tabla \ref{tab:beautifulsoup - analizadores disponibles} se muestran 
+\textbf{Beautiful Soup} tiene a \emph{html.parse} como analizador estándar de documentos HTML, pero admite 
+varios analizadores de terceros. En la tabla \ref{tab:beautiful soup - analizadores disponibles} se muestran 
 los distintos analizadores disponibles, así como un pequeño resumen de las ventajas y desventajas de estos.
 
 \begin{table}[h]
@@ -246,8 +246,8 @@ los distintos analizadores disponibles, así como un pequeño resumen de las ven
   lxml xml & bs(markup, "xml") & Muy rápido y soporta xml & Dependencia de C \\
   html5lib & bs(markup, "html5lib") & Analiza igual que un buscador & Muy lento \\ \hline
   \end{tabular}
-  \caption{BeautifulSoup - Analizadores disponibles}
-  \label{tab:beautifulsoup - analizadores disponibles}
+  \caption{Beautiful Soup - Analizadores disponibles}
+  \label{tab:beautiful soup - analizadores disponibles}
   \end{center}
 \end{table}
 
@@ -312,10 +312,10 @@ completo, sino que permite además la posibilidad de recorrer el mismo de forma 
 acceder a todos los objetos del árbol empleando métodos de navegación como \emph{soup.head, soup.parent,
 soup.next\_sibling, ...}.
 
-\subsection{JusText}
+\subsection{jusText}
 \label{subsec:justext}
 
-\textbf{JusText} \cite{justext} es una herramienta para eliminar el contenido repetitivo, como los enlaces
+\textbf{jusText} \cite{justext} es una herramienta para eliminar el contenido repetitivo, como los enlaces
 de navegación, encabezados y pies de página de los documentos HTML. Este algoritmo, está diseñado para
 preservar el texto que contiene frases completas.
 
@@ -352,7 +352,7 @@ dentro de un mismo bloque haya una mezcla de información importante con conteni
   todos los demás bloques largos son casi siempre del tipo \emph{'boilerplate'}.
 \end{itemize}
 
-Con respecto al ultimo punto, decidir si un texto es gramatical o no puede ser complicado, \textbf{JusText} 
+Con respecto al ultimo punto, decidir si un texto es gramatical o no puede ser complicado, \textbf{jusText} 
 emplea una simple heurística basada en el volumen de palabras con sentido gramatical. Mientras que un texto 
 gramatical suele contener un cierto porcentaje de estas palabras, los contenidos de tipo \emph{'boilerplate'} 
 suelen carecer de ellas.
@@ -369,7 +369,7 @@ para cada bloque.
   \inputencoding{latin1}
   \lstinputlisting[style=CppExample]{scripts/justext-clasificacion.py}
   \inputencoding{utf8}
-  \caption{JusText - Algoritmo de clasificación}
+  \caption{jusText - Algoritmo de clasificación}
   \label{cod:justext - algoritmo de clasificacion}
 \end{codefloat}
 
@@ -399,7 +399,7 @@ sobre este tipo de bloques.
   medium size & high & near-good \\ \hline
   long & high & good \\ \hline
   \end{tabular}
-  \caption{JusText - Clasificación de bloques long \& medium size}
+  \caption{jusText - Clasificación de bloques long \& medium size}
   \label{tab:justext - clasificacion de bloques long & medium size}
   \end{center}
 \end{table}
@@ -415,7 +415,7 @@ reclasificación se puede ver resumida en la figura \ref{img:justext - reclasifi
 \begin{figure}[tphb]
   \centering
   \includegraphics[width=3.6in]{justext-blocks-classification.jpg}
-  \caption{JusText - Reclasificación de bloques}
+  \caption{jusText - Reclasificación de bloques}
   \label{img:justext - reclasificacion de bloques}
 \end{figure}
 
@@ -452,10 +452,10 @@ buenos, y que al mismo tiempo no haya más caracteres entre el bloque de cabecer
 propósito es que algunas cabeceras cortas y casi buenas puedan clasificarse como buenas si preceden a
 bloques buenos que, de otro modo, habrían sido clasificadas como malas tras de la reclasificación.
 
-\subsection{News-please}
+\subsection{news-please}
 \label{subsec:news-please}
 
-Otro \emph{web scraper}, y al mismo tiempo \emph{web crawler}, de código abierto es \textbf{News-please}
+Otro \emph{web scraper}, y al mismo tiempo \emph{web crawler}, de código abierto es \textbf{news-please}
 \cite{news-please}. Esta biblioteca está desarrollada para cumplir cinco requisitos: extracción de
 noticias de cualquier sitio web, extracción completa del sitio web, alta calidad de la información
 extraída, facilidad de uso y mantenibilidad.
@@ -466,11 +466,11 @@ cuales se amplían con nuevas funcionalidades con el objetivo de cumplir con los
 \begin{figure}[tphb]
   \centering
   \includegraphics[width=4.5in]{newsplease-processing.jpg}
-  \caption{News-please - Proceso de scraping y crawling}
+  \caption{news-please - Proceso de scraping y crawling}
   \label{img:news-please - proceso de scraping y crawling}
 \end{figure}
 
-\subsubsection{Web crawling en News-please}
+\subsubsection{Web crawling en news-please}
 \label{subsubsec:web crawling en news-please}
 
 En cuanto al proceso de \emph{web crawling}, primero se descarga el documento y en segundo lugar, con el 
@@ -483,10 +483,10 @@ artículos recientes. Un RSS \cite{rss-sitemaps} es un tipo de formato de datos 
 a los usuarios contenidos actualizados con frecuencia.
 
 En segundo lugar, se emplea un seguimiento recursivo de los enlaces internos en las páginas rastreadas.
-El uso del \emph{framework} \textbf{scrapy} es fundamental independientemente de la técnica.
+El uso del \emph{framework} \emph{scrapy} es fundamental independientemente de la técnica.
 
 La tercera técnica consiste en analizar los \emph{sitemaps} en busca de enlaces a todos los artículos. Un 
-\emph{sitemap} \cite{rss-sitemaps} es un archivo que enumera las URLs visibles de un determinado sitio, 
+\emph{sitemap} \cite{rss-sitemaps} es un archivo que enumera las URL's visibles de un determinado sitio, 
 cuyo objetivo principal es revelar dónde pueden buscar contenido las máquinas.
 
 Finalmente se prueba con el \emph{crawling} a través de los \emph{sitemaps} y en caso de que se produzca 
@@ -496,19 +496,19 @@ Estos cuatro enfoques también pueden combinarse, por ejemplo, iniciando dos ins
 modo automático para obtener todos los artículos publicados hasta el momento y otra instancia en modo RSS 
 para recuperar los artículos recientes.
 
-\subsubsection{Web scraping en News-please}
+\subsubsection{Web scraping en news-please}
 \label{subsubsec:web scraping en news-please}
 
 Para el proceso de \emph{web scraping}, se emplean herramientas ya existentes en el mercado con el objetivo 
 de obtener la información deseada, título, contenido principal, autor, fecha... Herramientas como 
-\textbf{Newspaper} \ref{subsec:newspaper3k} o \textbf{Readability} \ref{subsec:readability} son utilizadas 
+\textbf{Newspaper3k} \ref{subsec:newspaper3k} o \textbf{Readability} \ref{subsec:readability} son utilizadas 
 para este proceso de extracción.
 
 \begin{codefloat}
   \inputencoding{latin1}
   \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/newsplease-scrape.py}
   \inputencoding{utf8}
-  \caption{News-please - Extracción de contenido relevante}
+  \caption{news-please - Extracción de contenido relevante}
   \label{cod:news-please - extraccion de contenido relevante}
 \end{codefloat}
 
@@ -523,10 +523,10 @@ que funciona con documentos HTML y XML escrita en Python. En cuanto al algoritmo
 \textbf{eatiht}, funciona en base a una simple suposición en la cual los datos aparecen como colecciones 
 de elementos repetitivos.
 
-\subsubsection{Eatiht como algoritmo de partición}
+\subsubsection{eatiht como algoritmo de partición}
 \label{subsubsec:eatiht como algoritmo de particion}
 
-\textbf{Eatiht} \cite{eatiht} es una posible solución en una línea de muchas soluciones imperfectas a uno 
+\textbf{eatiht} \cite{eatiht} es una posible solución en una línea de muchas soluciones imperfectas a uno 
 o más problemas en algún subcampo de la extracción de datos. En pocas palabras, este algoritmo intenta 
 extraer el texto central de un sitio web determinado.
 
@@ -567,6 +567,128 @@ no todos los nodos de texto que existen en el subárbol deseado. Veamos el funci
   \caption{Libextract - Funcionamiento de eatiht}
   \label{cod:libextract - funcionamiento de eatiht}
 \end{codefloat}
+
+\subsection{html\_text}
+\label{subsec:html_text}
+
+\textbf{html\_text} \cite{html-text} es una biblioteca de Python encargada de convertir un documento HTML
+en texto plano. Las principales diferencias frente a algoritmos como \textbf{Beautiful Soup},
+\ref{subsec:beautiful soup} donde se emplean expresiones del tipo \emph{.get\_text()}, o frente a expresiones
+XPath como \emph{.xpath('//text()')}, son las siguientes:
+
+\begin{enumerate}
+  \item El texto extraído en este caso, no contiene código JavaScript del propio documento, así como 
+  comentarios o cualquier contenido que no sea visible por el usuario.
+  \item La normalización de espacios también se tiene en cuenta, pero de una manera más inteligente que
+  con el uso simple de expresiones XPath, \emph{.xpath('normalize-space())}, ya que añade espacios alrededor
+  de los elementos en línea, y evitar añadir espacios extra para la puntuación.
+  \item Se añaden nuevas líneas de forma frecuente, por ejemplo después de los encabezados o párrafos, para 
+  que el texto de salida se parezca más a cómo se presenta en los navegadores.
+\end{enumerate}
+
+En cuanto a la heurística, en primer lugar se limpia el documento empleando como instancia
+\emph{lxml.html.clean.Cleaner}, y después, se procede con la conversión de árbol de objetos a texto,
+empleando para ello lo que se conoce como \emph{'chunks'}.
+
+\subsubsection{Normalización de espacio}
+\label{subsubsec:normalizacion de espacio}
+
+El uso habitual del algoritmo se consigue ejecutando la función de extracción de texto principal, de forma 
+que un documento HTML se pasa por parámetro y se devuelve como salida la parte de información que se determina
+como valiosa.
+
+\begin{Schunk}
+  \begin{Soutput}
+    >>> html_text.extract_text('<h1>Hello</h1> world!')
+    # 'Hello\n\nworld!'
+  \end{Soutput}
+\end{Schunk}
+
+En cuanto a la estructura del texto extraído, es posible personalizar cómo se añaden nuevas líneas al mismo
+utilizando los argumentos \emph{newline\_tags} y \emph{double\_newline\_tags}. De esta forma el algoritmo 
+es capaz de distinguir de forma automática aquellas secciones del documento que deben ser separadas por 
+línea simple o por doble línea.
+
+\begin{Schunk}
+  \begin{Soutput}
+    NEWLINE_TAGS = frozenset([
+      'article', 'aside', 'br', 'dd', 'details', 'div', 'dt', 'fieldset',
+      'figcaption', 'footer', 'form', 'header', 'hr', 'legend', ...
+    ])
+
+    DOUBLE_NEWLINE_TAGS = frozenset([
+      'blockquote', 'dl', 'figure', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ol',
+      'p', 'pre', 'title', 'ul'
+    ])
+  \end{Soutput}
+\end{Schunk}
+
+Imaginemos que se desea ejecutar \textbf{html\_text} sobre un documento HTML como el siguiente
+\emph{<div>Hello</div> world!}, donde el texto principal esta separado por una etiqueta de tipo \emph{<div>}.
+A partir de la gestión de espacio según el tipo de etiqueta, se determina la solución obtenida.
+
+\begin{Schunk}
+  \begin{Soutput}
+    >>> newline_tags = html_text.NEWLINE_TAGS - {'div'}
+    >>> html_text.extract_text('<div>Hello</div> world!',
+    ...                        newline_tags=newline_tags)
+    # 'Hello world!'
+  \end{Soutput}
+\end{Schunk}
+
+\subsection{html2text}
+\label{subsec:html2text}
+
+\textbf{html2ext} \cite{html2text} es un script de Python que convierte un documento HTML a texto ASCII, 
+el cual también resulta ser un formato de texto válido a HTML. Imaginemos que se dispone de un documento 
+HTML sencillo como el siguiente, \emph{'<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>'}, 
+veamos la salida obtenida:
+
+\begin{Schunk}
+  \begin{Soutput}
+    >>> html2text("<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>"))
+    # **Zed's** dead baby, _Zed's_ dead.
+  \end{Soutput}
+\end{Schunk}
+
+Si por el contrario se desea que la solución sea limpia, es posible eliminar todos los caracteres de
+marcado del texto obtenido empleando la función \emph{handle} como método de extracción.
+
+\begin{Schunk}
+  \begin{Soutput}
+    >>> handle("<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>"))
+    # Zed's dead baby, Zed's dead.
+  \end{Soutput}
+\end{Schunk}
+
+En cuanto a la heurística de extracción, el algoritmo simplemente analiza el documento a través de
+\emph{html.parser}, y a continuación envuelven todos los párrafos del texto proporcionado.
+
+\subsection{Readability}
+\label{subsec:readability}
+
+Dado un documento HTML, \textbf{Readability} \cite{readability} extrae el cuerpo del texto principal del 
+mismo. Previamente a la extracción de texto se produce una limpieza, donde se eliminan \emph{tags} y 
+atributos del propio documento. Este preprocesamiento se lleva a cabo mediante el uso de expresiones 
+regulares.
+
+\subsubsection{Heurística de nodo candidato}
+\label{subsubsec:heuristica de nodo candidato}
+
+La heurística de esta biblioteca es similar a la empleada por \textbf{Goose3} \ref{subsec:goose3} para
+calcular el mejor nodo del árbol. A partir de una puntuación dada para cada nodo se determina aquel cuya
+puntuación se máxima con el objetivo de obtener el nodo con una mayor cantidad de información.
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/readability-menjor-candidato.py}
+  \inputencoding{utf8}
+  \caption{Readability - Selección del nodo candidato}
+  \label{cod:readability - seleccion del nodo candidato}
+\end{codefloat}
+
+Una vez seleccionado dicho nodo, se busca en nodos hermanos con el objetivo de encontrar aquellos cuya
+información esté relacionada con el mismo, y, por tanto, sean de valor.
 
 \subsection{Trafilatura}
 \label{subsec:trafilatura}
@@ -648,7 +770,7 @@ texto/marcado y la posición/profundidad de los elementos en el árbol HTML.
 \end{codefloat}
 
 Esta fase de la extracción combina dos bibliotecas para su funcionamiento, tanto \textbf{Readability}
-\ref{subsec:readability} como \textbf{JusText} \ref{subsec:justext} se encargan de servir como redes de
+\ref{subsec:readability} como \textbf{jusText} \ref{subsec:justext} se encargan de servir como redes de
 seguridad y \emph{fallbacks} en caso de que la extracción anterior resultase errónea. Se muestra el código 
 fuente de ambos en \ref{cod:trafilatura - readability como algoritmo de respaldo} y 
 \ref{cod:trafilatura - justext como algoritmo de respaldo}.
@@ -657,7 +779,7 @@ fuente de ambos en \ref{cod:trafilatura - readability como algoritmo de respaldo
   \inputencoding{latin1}
   \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/trafilatura-respaldo2.py}
   \inputencoding{utf8}
-  \caption{Trafilatura - JusText como algoritmo de respaldo}
+  \caption{Trafilatura - jusText como algoritmo de respaldo}
   \label{cod:trafilatura - justext como algoritmo de respaldo}
 \end{codefloat}
 
@@ -683,7 +805,7 @@ es decir, título, nombre del sitio, autor, fecha, categorías y etiquetas del p
 \textbf{Dragnet} \cite{dragnet} es una biblioteca de \emph{web scraping} escrita en Python, la cual empleando 
 inteligencia artificial es capaz de extraer el texto principal de documento HTML.
 
-Algoritmos de extracción ya mostrados, como \textbf{Inscriptis} \ref{subsec:inscriptis}, trabajan dividiendo 
+Algoritmos de extracción ya mostrados, como \textbf{inscriptis} \ref{subsec:inscriptis}, trabajan dividiendo 
 el documento HTML en una secuencia de bloques que posteriormente son clasificados empleando la densidad de 
 los mismos como instrumento de medida. \textbf{Dragnet} combina esta clasificación de bloques con el 
 aprendizaje automático para minimizar el contenido basura y maximizar la obtención de información valiosa.
@@ -787,74 +909,6 @@ de encontrar aquel cuya puntuación sea máxima.
   \label{cod:goose3 - calculo del mejor nodo 2}
 \end{codefloat}
 
-\subsection{HTML-Text}
-\label{subsec:html-text}
-
-\textbf{HTML-Text} \cite{html-text} es una biblioteca de Python encargada de convertir un documento HTML
-en texto plano. Las principales diferencias frente a algoritmos como \textbf{BeautifulSoup},
-\ref{subsec:beautifulsoup} donde se emplean expresiones del tipo \emph{.get\_text()}, o frente a expresiones
-XPath como \emph{.xpath('//text()')}, son las siguientes:
-
-\begin{enumerate}
-  \item El texto extraído en este caso, no contiene código JavaScript del propio documento, así como 
-  comentarios o cualquier contenido que no sea visible por el usuario.
-  \item La normalización de espacios también se tiene en cuenta, pero de una manera más inteligente que
-  con el uso simple de expresiones XPath, \emph{.xpath('normalize-space())}, ya que añade espacios alrededor
-  de los elementos en línea, y evitar añadir espacios extra para la puntuación.
-  \item Se añaden nuevas líneas de forma frecuente, por ejemplo después de los encabezados o párrafos, para 
-  que el texto de salida se parezca más a cómo se presenta en los navegadores.
-\end{enumerate}
-
-En cuanto a la heurística, en primer lugar se limpia el documento empleando como instancia
-\emph{lxml.html.clean.Cleaner}, y después, se procede con la conversión de árbol de objetos a texto,
-empleando para ello lo que se conoce como \emph{'chunks'}.
-
-\subsubsection{Normalización de espacio}
-\label{subsubsec:normalizacion de espacio}
-
-El uso habitual del algoritmo se consigue ejecutando la función de extracción de texto principal, de forma 
-que un documento HTML se pasa por parámetro y se devuelve como salida la parte de información que se determina
-como valiosa.
-
-\begin{Schunk}
-  \begin{Soutput}
-    >>> html_text.extract_text('<h1>Hello</h1> world!')
-    # 'Hello\n\nworld!'
-  \end{Soutput}
-\end{Schunk}
-
-En cuanto a la estructura del texto extraído, es posible personalizar cómo se añaden nuevas líneas al mismo
-utilizando los argumentos \emph{newline\_tags} y \emph{double\_newline\_tags}. De esta forma el algoritmo 
-es capaz de distinguir de forma automática aquellas secciones del documento que deben ser separadas por 
-línea simple o por doble línea.
-
-\begin{Schunk}
-  \begin{Soutput}
-    NEWLINE_TAGS = frozenset([
-      'article', 'aside', 'br', 'dd', 'details', 'div', 'dt', 'fieldset',
-      'figcaption', 'footer', 'form', 'header', 'hr', 'legend', ...
-    ])
-
-    DOUBLE_NEWLINE_TAGS = frozenset([
-      'blockquote', 'dl', 'figure', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ol',
-      'p', 'pre', 'title', 'ul'
-    ])
-  \end{Soutput}
-\end{Schunk}
-
-Imaginemos que se desea ejecutar \textbf{HTMLText} sobre un documento HTML como el siguiente
-\emph{<div>Hello</div> world!}, donde el texto principal esta separado por una etiqueta de tipo \emph{<div>}.
-A partir de la gestión de espacio según el tipo de etiqueta, se determina la solución obtenida.
-
-\begin{Schunk}
-  \begin{Soutput}
-    >>> newline_tags = html_text.NEWLINE_TAGS - {'div'}
-    >>> html_text.extract_text('<div>Hello</div> world!',
-    ...                        newline_tags=newline_tags)
-    # 'Hello world!'
-  \end{Soutput}
-\end{Schunk}
-
 \subsection{Newspaper3k}
 \label{subsec:newspaper3k}
 
@@ -864,7 +918,7 @@ características que hacen destacar esta biblioteca sobre el resto se puede dest
 
 \begin{itemize}
   \item Capacidad de descarga de artículos en paralelo gracias al uso de multiples hilos.
-  \item Identificación de URLs de artículos.
+  \item Identificación de URL's de artículos.
   \item Extracción de texto de un documento HTML.
   \item Extracción de imágenes de un documento HTML.
   \item Extracción de palabras clave de un texto.
@@ -892,8 +946,8 @@ clave.
 
 Para los idiomas no latinos, es necesario dividir las palabras en tokens de una manera diferente, puesto
 que la división por espacios en blanco no funciona para idiomas como el chino o el árabe. Para el idioma
-chino se emplea una nueva biblioteca de código abierto llamada \textbf{jieba}, sin embargo, para el árabe
-se utiliza un tokenizador especial, \textbf{nltk} que se encarga de hacer el mismo trabajo como se muestra 
+chino se emplea una nueva biblioteca de código abierto llamada \emph{jieba}, sin embargo, para el árabe
+se utiliza un tokenizador especial, \emph{nltk} que se encarga de hacer el mismo trabajo como se muestra 
 en el fragmento de código \ref{cod:newspaper3k - heuristica en el arabe}.
 
 \begin{codefloat}
@@ -904,67 +958,13 @@ en el fragmento de código \ref{cod:newspaper3k - heuristica en el arabe}.
   \label{cod:newspaper3k - heuristica en el arabe}
 \end{codefloat}
 
-\subsection{HTML2Text}
-\label{subsec:html2text}
-
-\textbf{HTML2Text} \cite{html2text} es un script de Python que convierte un documento HTML a texto ASCII, 
-el cual también resulta ser un formato de texto válido a HTML. Imaginemos que se dispone de un documento 
-HTML sencillo como el siguiente, \emph{'<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>'}, 
-veamos la salida obtenida:
-
-\begin{Schunk}
-  \begin{Soutput}
-    >>> html2text("<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>"))
-    # **Zed's** dead baby, _Zed's_ dead.
-  \end{Soutput}
-\end{Schunk}
-
-Si por el contrario se desea que la solución sea limpia, es posible eliminar todos los caracteres de
-marcado del texto obtenido empleando la función \emph{handle} como método de extracción.
-
-\begin{Schunk}
-  \begin{Soutput}
-    >>> handle("<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>"))
-    # Zed's dead baby, Zed's dead.
-  \end{Soutput}
-\end{Schunk}
-
-En cuanto a la heurística de extracción, el algoritmo simplemente analiza el documento a través de
-\emph{html.parser}, y a continuación envuelven todos los párrafos del texto proporcionado.
-
-\subsection{Readability}
-\label{subsec:readability}
-
-Dado un documento HTML, \textbf{Readability} \cite{readability} extrae el cuerpo del texto principal del 
-mismo. Previamente a la extracción de texto se produce una limpieza, donde se eliminan \emph{tags} y 
-atributos del propio documento. Este preprocesamiento se lleva a cabo mediante el uso de expresiones 
-regulares.
-
-\subsubsection{Heurística de nodo candidato}
-\label{subsubsec:heuristica de nodo candidato}
-
-La heurística de esta biblioteca es similar a la empleada por \textbf{Goose3} \ref{subsec:goose3} para
-calcular el mejor nodo del árbol. A partir de una puntuación dada para cada nodo se determina aquel cuya
-puntuación se máxima con el objetivo de obtener el nodo con una mayor cantidad de información.
-
-\begin{codefloat}
-  \inputencoding{latin1}
-  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/readability-menjor-candidato.py}
-  \inputencoding{utf8}
-  \caption{Readability - Selección del nodo candidato}
-  \label{cod:readability - seleccion del nodo candidato}
-\end{codefloat}
-
-Una vez seleccionado dicho nodo, se busca en nodos hermanos con el objetivo de encontrar aquellos cuya
-información esté relacionada con el mismo, y, por tanto, sean de valor.
-
 \subsection{BoilerPy3/BoilerpipeR}
 \label{subsec:boilerpy/boilerpiper}
 
-\textbf{BoilerpipeR} \cite{boilerpipeR-cran} en R, y \textbf{BoilerPy3} \cite{boilerpy} en Python, es un 
-paquete que proporciona una interfaz para una biblioteca Java. Soporta la extracción genérica del contenido 
-del texto principal de los archivos HTML y, por tanto, elimina los anuncios, las barras laterales y 
-cabeceras del contenido fuente HTML.
+\textbf{BoilerpipeR} \cite{boilerpipeR-cran} en R, y \textbf{BoilerPy3} \cite{boilerpy} en Python, son 
+paquetes que proporcionan una interfaz para una biblioteca Java. Soportan la extracción genérica del 
+contenido del texto principal de los archivos HTML y, por tanto, elimina los anuncios, las barras laterales 
+y cabeceras del contenido fuente HTML.
 
 En cuanto a la heurística, el algoritmo original se basa en separar el contenido boilerplate del contenido
 valioso. Para ello se emplean algoritmos de apoyo con el fin de detectar y eliminar el exceso de desorden
@@ -991,3 +991,215 @@ que se produzcan durante la extracción y devolver cualquier texto que haya sido
 
 \section{Paquetes de R encontrados durante el proceso de búsqueda}
 \label{sec:paquetes de r encontrados durante el proceso de busqueda}
+
+Además de la introducción de aquellas bibliotecas de Python destinadas al \emph{web scraping}, se incluye 
+en la evaluación paquetes con la misma funcionalidad desarrollados en R. Por ello, se realizará una 
+sinopsis de aquellos paquetes de R que realicen \emph{web scraping} y puedan ser incluidos en el proceso 
+de evaluación.
+
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{| c | c | c | c | c | c |} \hline 
+    \textbf{rvest} & \textbf{rcrawler} & \textbf{htm2txt} & \textbf{rselenium} & \textbf{scraper} & \textbf{boilerpiper} \\ \hline
+    xml2 & xml2 & N/A & XML & XML & XML \\ \hline
+  \end{tabular}
+  \caption{Emparejamientos paquete-analizador}
+  \label{tab:emparejamientos paquete-analizador}
+  \end{center}
+\end{table}
+
+Antes de comenzar con la sinopsis de paquetes, es conveniente revisar el apéndice \ref{cha:analizadores 
+empleados en los paquetes de web scraping}, donde se realiza una breve introducción de aquellos analizadores 
+empleados en los mismos. Los ’emparejamientos’ entre paquete-analizador se recogen en la tabla 
+\ref{tab:emparejamientos paquete-analizador} a modo de resumen.
+
+Se puede observar que \textbf{htm2txt} no emplea ningún tipo de analizador. En contrapartida hace uso de 
+expresiones regulares para eliminar las etiquetas html.
+
+\subsection{rvest}
+\label{subsec:rvest}
+
+Inspirada en otras bibliotecas como \textbf{Beautiful Soup} \ref{subsec:beautiful soup}, \textbf{rvest} 
+\cite{rvest-cran} es una de las herramientas mas comunes de minado web. Este paquete esta diseñado para 
+trabajar con \emph{magrittr}, para facilitar tareas comunes del \emph{web scraping}, y con \emph{polite}, 
+para garantizar que se respete el archivo \emph{robots.txt} y no saturar el sitio web con multiples 
+peticiones.
+
+En el apéndice \ref{cha:funcionamiento basico de un web scraper} se puede comprobar el funcionamiento del
+paquete durante la extracción de parte de un documento HTML. Ademas, se observa que el paquete actúa como 
+\emph{wrapper} entre los paquetes \emph{xml2} y \emph{httr}, facilitando así la descarga y manipulación 
+de un fichero HTML.
+
+\subsubsection{Elementos a nivel de bloque vs elementos en línea}
+\label{subsubsec:elementos a nivel de bloque vs elementos en linea}
+
+El objetivo de \textbf{rvest} es que a partir de una determinada entrada, ya sea una URL o un documento
+HTML, extraer el texto principal emulando a un navegador con el fín de que el texto extraído se acerque 
+lo máximo posible a la realidad. Para ello el algoritmo se basa en lo que se conoce como elementos a nivel 
+de bloque.
+
+Los elementos de un documento HTML se clasifican como elementos de nivel de bloque o de nivel de línea. Un 
+elemento de nivel de bloque ocupa todo el espacio horizontal de su contenedor, y un espacio vertical igual 
+a la altura de su contenido, creando así lo que se conoce como bloque. Se muestra un ejemplo a continuación.
+
+\begin{Schunk}
+  \begin{Soutput}
+    <p>This paragraph is a block-level element; its background has been 
+    colored to display the paragraph's container element.</p>
+  \end{Soutput}
+\end{Schunk}
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=4.5in]{rvest-block-elements.jpg}
+  \caption{rvest - Elementos a nivel de bloque}
+  \label{img:rvest - elementos a nivel de bloque}
+\end{figure}
+
+Los elementos de nivel de bloque pueden contener elementos en línea y otros elementos de nivel de bloque. 
+Esta distinción estructural lleva implícita la idea de que los elementos de bloque crean estructuras más 
+grandes que los elementos en línea. Ademas, los elementos de nivel de bloque comienzan en líneas nuevas, 
+pero los elementos en línea pueden empezar en cualquier parte de una línea. Los elementos que \textbf{rvest}
+determina a nivel de bloque son los siguientes:
+
+\begin{Schunk}
+  \begin{Soutput}
+    block_tag <- c( "address", "article", "aside", "blockquote", "details", 
+      "dialog", "dd", "div", "dl", "dt", "fieldset", "figcaption", "figure", 
+      "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "header", ...")
+  \end{Soutput}
+\end{Schunk}
+
+\subsection{Rcrawler}
+\label{subsec:rcrawler}
+
+\textbf{Rcrawler} \cite{rcrawler-cran} tiene como objetivo el rastreo y la extracción de datos estructurados
+de forma paralela. Está diseñado para rastrear, parsear y almacenar páginas web para producir datos que
+puede ser utilizados con posterioridad para aplicaciones de análisis.
+
+Entre las características de \textbf{RCrawler} se destaca, el rastreo multihilo, la extracción de contenidos
+y la detección de contenidos duplicados. Además, incluye funcionalidades como el filtrado de URL's y tipos
+de contenido, el control del nivel de profundidad y un analizador de \emph{robot.txt}.
+
+La principal diferencia entre \textbf{Rcrawler} y otros paquetes de \emph{web scraping} como \textbf{rvest},
+es que mientras \textbf{rvest} extrae datos de un documento HTML navegando a través de selectores,
+\textbf{Rcrawler} recorre, analiza y extrae todos los datos de todas las páginas web con un solo comando.
+
+\subsubsection{Arquitectura y proceso de extracción en Rcrawler}
+\label{subsubsec:arquitectura y proceso de extraccion en rcrawler}
+
+Inspirado en otros paquetes como \textbf{Mercator} o \textbf{Ubicrawler}, y con el objetivo evitar una
+sobrecarga del entorno, la arquitectura de \textbf{Rcrawler} es lo más óptima y simple posible. En la
+figura \ref{img:rcrawler - arquitectura y componentes principales de rcrawler} se muestra la propia
+arquitectura de la herramienta \cite{rcrawler}.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=4.5in]{rcrawler-arquitecture.jpg}
+  \caption{Rcrawler - Arquitectura y componentes principales de Rcrawler}
+  \label{img:rcrawler - arquitectura y componentes principales de rcrawler}
+\end{figure}
+
+En primer lugar, el rastreador pone en marcha el entorno de trabajo, es decir, la estructura del índice, 
+el repositorio de documentos web y los nodos del clúster para la computación en paralelo. Una vez puesto 
+en marcha el entorno de trabajo, se procede con el rastreo el cual es realizado por múltiples hilos de 
+trabajo. Por otro lado, el componente \emph{work-pool-handler} prepara un \emph{pool} de URL's para procesar 
+en paralelo, donde cada nodo ejecuta las siguientes funciones para cada URL:
+
+\begin{enumerate}
+  \item Descargar el documento correspondiente y su cabecera HTTP mediante una petición GET.
+  \item Analizar y extraer todos los enlaces contenidos en el documento.
+  \item Proceder a la canonización y normalización de URL's.
+  \item Aplicar un filtro de URL's, manteniendo sólo aquellas que coincidan con la configuración 
+  proporcionada por el usuario, el tipo de archivo y las URL's específicas del dominio.
+\end{enumerate}
+
+Tras la descarga del documento a través de la petición GET, se determina si este ya ha sido analizado 
+previamente. En caso de que el documento no esté duplicado se procede con el rastreo y la extracción de
+datos, con el objetivo de indexar y almacenar los documentos encontrados.
+
+Como resultado, para cada URL cada nodo devuelve su documento HTML, los detalles de la cabecera HTTP y la 
+lista de enlaces externos descubiertos. La función \emph{URL-seen} comprueba si la URL ya ha sido procesada.
+
+\subsection{htm2txt}
+\label{subsec:htm2txt}
+
+Otro de los paquetes propios de R que se encargan de realizar \emph{web scraping} es \textbf{htm2txt} 
+\cite{htm2txt-cran}. Convierte un documento html en textos simples eliminando todas las etiquetas html. 
+Este paquete utiliza expresiones regulares para eliminar las etiquetas html. También ofrece las funciones 
+\emph{gettxt()} y \emph{browse()}, que permiten obtener o navegar por los textos de una determinada página 
+web.
+
+El uso de estas expresiones regulares se hacen notar durante la limpieza del texto extraído, donde la
+función \emph{gsub} toma una notable relevancia. Una vez el texto ha sido 'limpiado' se retorna el mismo.
+
+\subsection{scrapeR}
+\label{subsec:scraper}
+
+\textbf{scrapeR} \cite{scraper-cran} es otro paquete software que pretende hacer \emph{web scraping} sobre 
+documentos basados en la web. El paquete en sí es bastante simple, pues consta de una única función 
+encargada de la obtención y creación del árbol DOM para su posterior iteración.
+
+Puesto que no dispone de funciones propias de recorrido del DOM, \textbf{scrapeR} recurre a funciones y
+métodos del paquete \emph{XML} para realizar su labor. Esto tiene una ventaja significativa, y es que
+permite ejecutar la petición de varias URL's de forma paralela.
+
+\subsection{RSelenium}
+\label{subsec:rselenium}
+
+\textbf{RSelenium} \cite{rselenium-cran} es un paquete que tiene como objetivo facilitar la conexión a un 
+servidor de Selenium. Además de \emph{web scraping}, \textbf{RSelenium} también permite hacer pruebas de 
+unidad y de regresión en las aplicaciones web que se desarrollen utilizando un gran rango de navegadores 
+y de sistemas operativos \cite{tfg-daniel-francisco-lopez}. Gracias a esto permite realizar entre otras 
+las siguientes tareas:
+
+\begin{enumerate}
+  \item Navegar a través de cualquier documento HTML.
+  \item Acceder a los elementos del DOM utilizando selectores de id, de clase, de nombre de etiqueta, 
+  selectores XPath o CSS.
+  \item Enviar eventos de teclado y de ratón a los elementos de la página que se determinen.
+  \item Inyectar JavaScript en la página.
+  \item Utilizar marcos y ventanas diferenciadas.
+\end{enumerate}
+
+A modo de anécdota, cabe destacar que mediante el uso de \textbf{RSelenium} es posible automatizar los
+navegadores tanto de forma local como remota. Permite manejar un navegador web nativamente como lo haría
+un usuario, lo que supone un salto adelante en términos de automatización del \emph{web scraping}.
+
+\section{Paquetes descartados para el proceso de evaluación}
+\label{sec:paquetes descartados para el proceso de evaluacion}
+
+A lo largo de las secciones \ref{sec:bibliotecas de python encontradas durante el proceso de busqueda} y
+\ref{sec:paquetes de r encontrados durante el proceso de busqueda} se han introducido y desarrollado
+aquellas herramientas de \emph{web scraping} más comunes en el entorno de programación. Con el punto de 
+mira en los siguientes capítulos, se pretende enumerar aquellos paquetes descartados para el proceso de 
+evaluación.
+
+Ya sea por la simpleza de su heurística, por la similitud con otras herramientas, o por la dificultad en 
+la instalación y uso de las mismas, las bibliotecas seleccionadas para el descarte son las siguientes:
+
+\begin{itemize}
+  \item \textbf{Dragnet}: Uno de los principales motivos por el que Dragnet a sido descartado es por su 
+  complejidad en la instalación. La necesidad de un Docker hace que la mayoría de usuarios no programadores 
+  hagan uso de otras herramientas en su lugar.
+  \item \textbf{news-please}: El descarte de \textbf{news-please} tiene que ver con el uso de otras
+  herramientas para el proceso de \emph{web scraping}. La ausencia de heurística propia y el empleo de otros 
+  algoritmos como \textbf{Readability} hace que la evaluación de \textbf{news-please} no tenga sentido.
+  \item \textbf{Libextract}: Durante el desarrollo de la herramienta de evaluación, se ha detectado que en
+  este caso no se cumplían los requisitos mínimos para la misma. La extracción resultaba errónea para
+  ciertos documentos HTML.
+  \item \textbf{Newspaper3k}: Tal y como se ha indicado en la sinopsis, el algoritmo emplea gran parte de
+  la heurística de \textbf{Goose3} para la extracción de contenido. A falta de heurística propia no tendría
+  sentido realizar una evolución del mismo.
+  \item \textbf{scrapeR}: La sencillez de la herramienta, y su falta de heurística hace que el descarte 
+  de la misma sea necesario. Su única función necesita herramientas XPath para la búsqueda de información
+  a través del DOM.
+  \item \textbf{RSelenium}: Ademas del necesario emplea de un Docker para su uso, al igual que 
+  \textbf{scrapeR}, \textbf{RSelenium} carece de heurística propia, ya que para la extracción de texto 
+  emplea expresiones XPath y selectores CSS únicamente.
+\end{itemize}
+
+Por último, es notable la falta de algoritmos de R en la herramienta de evaluación. Durante el proceso de
+búsqueda e investigación, la mayoría de ellos no poseen ni siquiera heurística. Trabajar unicamente a 
+partir de un analizador y expresiones XPath, hace que la evaluación de los mismos no tenga sentido alguno.
+
