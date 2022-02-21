@@ -19,7 +19,6 @@ from readability import Document
 import trafilatura
 import lxml.html
 
-
 def mostrar_tabla_metricas():
     '''se muestra pro pantalla la tabla de metricas de cada algoritmo'''
     documento_base = cargar_json(Path('documento_base.json'))
@@ -42,8 +41,6 @@ def mostrar_tabla_metricas():
                                
     print(tabla_metricas)
     
-    
-
 def evaluar_algoritmo(documento_base, documento_extraido):
     '''evaluacion de cada algoritmo a partir de su documento de extraccion'''
     #las claves entre json no coinciden, falta algun json, o la clave correspondiente al texto no coincide

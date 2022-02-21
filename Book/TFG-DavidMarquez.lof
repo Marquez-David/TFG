@@ -12,7 +12,20 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces rvest - Elementos a nivel de bloque\relax }}{28}{figure.caption.227}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Rcrawler - Arquitectura y componentes principales de Rcrawler\relax }}{29}{figure.caption.230}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Estructura genérica del proceso de evaluación\relax }}{34}{figure.caption.250}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Artículo web tradicional\relax }}{35}{figure.caption.252}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Contenido boilerplate de un artículo web tradicional\relax }}{36}{figure.caption.253}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de Venn: Texto base vs texto extraído\relax }}{38}{figure.caption.259}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Estructura especifica del proceso de evaluación\relax }}{39}{figure.caption.261}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparación de textos empleando el método palabra por posición\relax }}{40}{figure.caption.264}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparación de textos empleando el método palabra por posición\relax }}{40}{figure.caption.265}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparación de textos empleando el método palabra por detección\relax }}{41}{figure.caption.267}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparación de textos empleando el método palabra por detección\relax }}{41}{figure.caption.268}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparación de textos empleando el método palabra por detección\relax }}{41}{figure.caption.269}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Creación de n-gramas\relax }}{42}{figure.caption.271}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Comparación de textos empleando n-gramas\relax }}{42}{figure.caption.272}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{45}{figure.caption.291}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{57}{figure.caption.382}%

@@ -210,6 +210,24 @@ J.~Harrison, \emph{RSelenium: R Bindings for 'Selenium WebDriver'}, 2020, r
   \url{https://CRAN.R-project.org/package=RSelenium}
 \BIBentrySTDinterwordspacing
 
+\bibitem{selectr}
+\BIBentryALTinterwordspacing
+S.~Potter, ``Introducing the selectr package,'' The University of Auckland,
+  Auckland, New Zealand, Tech. Rep., 2012. [Online]. Available:
+  \url{http://stattech.wordpress.fos.auckland.ac.nz/2012-10-introducing-the-selectr-package/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{boilerplate-removal}
+\BIBentryALTinterwordspacing
+P.~E. San, ``Boilerplate removal and content extraction from dynamic web
+  pages,'' \emph{International Journal of Computer Science}, vol.~4, no.~6,
+  December 2014. [Online]. Available: \url{https://ssrn.com/abstract=3882476}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ngrams-thesis}
+P.~Jan, ``Removing boilerplate and duplicate content from web corpora,''
+  Master's thesis, Masaryk University, Faculty of Informatics, 2011.
+
 \bibitem{robotstxt-cran}
 \BIBentryALTinterwordspacing
 P.~Meissner and K.~Ren, \emph{robotstxt: A 'robots.txt' Parser and

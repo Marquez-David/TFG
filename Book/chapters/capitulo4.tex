@@ -1,2 +1,533 @@
-\chapter{Selección de variables de análisis y proceso de estudio}
-\label{cha:seleccion de variables de analisis y proceso de estudio}
+
+\chapter{Selección de variables y proceso de evaluación}
+\label{cha:seleccion de variables y proceso de evaluacion}
+
+Tras la sinopsis de herramientas de \emph{web scraping} de código abierto, se pretende realizar una 
+introducción al proceso de evaluación de las mismas. El capítulo se dividirá en tres secciones claramente 
+diferenciadas las cuales se especifican con más detalle a continuación:
+
+\begin{enumerate}
+  \item En primer lugar se realiza una introducción sobre el proceso de evaluación a realizar. ¿Cuáles
+  son los aspectos más importantes en la evaluación de herramientas de minería web? ¿Es posible realizar 
+  una valoración objetiva entre bibliotecas de diferentes lenguajes de programación?
+  \item La segunda sección trata sobre el proceso de comparación, así como una introducción al código
+  desarrollado para este. El proceso de tokenización y la creación/comparación de n-gramas o bloques son 
+  algunos de los aspectos a destacar. ¿Cuál es el tamaño óptimo de cada n-grama o bloque? ¿Cómo se determina 
+  si la extracción ha sido exitosa?
+  \item Por último, se especifican las variables de comparación y los test preparados de cada algoritmo.
+  Se determina el proceso seguido para calcular la precisión, velocidad de extracción, uso de memoria
+  y demás características de cada algoritmo.
+\end{enumerate}
+
+Cabe destacar que la evaluación será conjunta, las herramientas de los diferentes lenguajes de programación 
+serán sometidas a los mismos test con el fin de ver aquellas bibliotecas o paquetes más involucrados en el 
+proceso de minado web. 
+
+A lo largo del capítulo será posible comprobar en los diferentes fragmentos de código como se ha realizado
+la integración de las diversas herramientas, y sobre como es posible construir una valoración objetiva para
+cualquier herramienta de minado web desarrollada sobre cualquier lenguaje de programación convencional.
+
+\section{Introducción al proceso de evaluación}
+\label{sec:introduccion al proceso de evaluacion}
+
+Cuando cualquier usuario entra en un sitio web lo que busca es obtener la información requerida lo más
+rápido y preciso posible. La calidad del texto extraído es prioritaria, para ello el uso de heurísticas o
+la eliminación de contenido boilerplate es crucial en cualquier algoritmo de \emph{web scraping}.
+
+Muchos de los algoritmos descartados para el proceso de evaluación como \textbf{scrapeR}, o ni si quiera 
+mencionados en la sinopsis de paquetes como \textbf{selectr} \cite{selectr}, emplean únicamente expresiones 
+regulares para la extracción de contenido. Esto provoca que la extracción de texto no sea 'limpia', puesto 
+que siempre van a existir resultados donde se extraiga contenido no deseado.
+
+El objetivo de este proyecto concierne la evaluación del proceso heurístico de las diferentes herramientas
+de minado web. La inclusión de algoritmos que emplean únicamente expresiones XPath o selectores CSS no
+tiene sentido para la herramienta desarrollada, pues cualquier analizador de los ya mencionados en el
+apéndice \ref{cha:analizadores empleados en los paquetes de web scraping} podría realizar el mismo trabajo.
+
+\subsection{Aspectos generales a considerar}
+\label{subsec:aspectos generales a considerar}
+
+La gran mayoría de los \emph{web scrapers} son capaces de extraer fragmentos de información de un sitio
+web, ya sea el precio de un determinado producto en venta, el autor de un ensayo o el resultado de un 
+partido de fútbol. Pero además, se espera que estas herramientas de minado puedan ser una solución fiable 
+y de calidad con respecto a la extracción tradicional, ¿es posible medir de algún modo la calidad del texto 
+extraído de estas herramientas?
+
+La respuesta es si, y para ello, los algoritmos se centrarán en la extracción de artículos de prensa en su
+mayoría, con el objetivo de que estos sean comparados con un texto base. Se define como texto base aquellos 
+fragmentos de texto principal de cualquier sitio web que el usuario visualizaría al entrar. Se muestra en 
+la figura \ref{img:estructura generica del proceso de evaluacion} la estructura general del proceso de 
+evaluación.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=5in]{estructura-generica-proceso-evaluacion.jpg}
+  \caption{Estructura genérica del proceso de evaluación}
+  \label{img:estructura generica del proceso de evaluacion}
+\end{figure}
+
+Tanto los textos obtenidos por los algoritmos de \emph{web scraping}, como los textos producidos por la 
+extracción manual, se almacenan de forma ordenada en archivos JSON con el objetivo de que su acceso sea 
+sencillo para cualquier lenguaje de programación.
+
+\subsection{Cuerpo principal del sitio web como objetivo de la evaluación}
+\label{subsec:cuerpo principal del sitio web como objetivo de la evaluacion}
+
+Como ya se ha mencionado anteriormente, una de las características más importantes de un \emph{web scraper}
+es la capacidad de extraer de texto de calidad. Por lo tanto, comparar el texto extraído de diferentes
+algoritmos será el cometido de la herramienta de evaluación. Ahora la principal pregunta es, ¿qué fragmentos
+de texto son considerados como principales?
+
+Imaginemos un artículo web de noticias tradicional o una entrada de blog, algo parecido a lo mostrado en
+la figura \ref{img:articulo web tradicional}, del que se pretende extraer
+información de valor. En la imagen se reflejan varias secciones claramente diferenciadas, anuncios de
+contenidos relacionados, información de autor e incluso elementos de navegación.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6in]{pagina-web.jpeg}
+  \caption{Artículo web tradicional}
+  \label{img:articulo web tradicional}
+\end{figure}
+
+La tarea de extracción puede parecer sencilla, pero dependiendo del sitio web puede ser sorprendentemente
+complicada y llena de matices \cite{boilerplate-removal}. La selección del cuerpo principal del sitio web 
+será el objetivo de cada algoritmo. Para conseguir un cuerpo de artículo no solo será necesario saber dónde 
+empieza o termina este, también se deberán conocer las partes a excluir. 
+
+Con el fin de la que la evaluación sea lo más justa posible, se debe definir qué compone el cuerpo del
+artículo, y estar seguros de que todas las herramientas siguen los mismos objetivos. El principio subyacente 
+es que el cuerpo del artículo debe ser un texto limpio, sin campos adicionales, elementos de navegación o 
+anuncios. En la siguiente lista se determina el conjunto de elementos o secciones de un sitio web no 
+contemplados en la evaluación:
+
+\begin{itemize}
+  \item Campos de información sobre autor/es, fechas de publicación, palabras clave o títulos de imágenes 
+  y vídeos.
+  \item Botones para compartir y sugerencias para compartir un artículo, artículos relacionados, enlaces 
+  'leer a continuación', 'recomendado para usted'...
+  \item Comentarios e interfaz de usuario relacionada con los mismos. Elementos de navegación propios del
+  sitio web.
+  \item Elementos de control alrededor de las imágenes que producen texto innecesario, número de imágenes
+  en una galería, botones superpuestos a una imagen/vídeo...
+  \item Código JavaScript. Aunque esta no sea una sección específica de un sitio web, muchas herramientas
+  extraen estos fragmentos de código pensado que pertenece como parte del contenido principal del propio 
+  artículo.
+\end{itemize}
+
+Se muestra a continuación la lista de elementos que serán extraídos por las diferentes herramientas como
+parte del contenido principal, ademas del propio contenido principal.
+
+\begin{itemize}
+  \item Título principal de artículo.
+  \item Enlaces para leer con más detalle, a la fuente u otros contenidos directamente relacionados. Estos 
+  enlaces pueden requerir un conocimiento mucho más profundo y complejo del contenido principal del sitio 
+  web.
+  \item Avisos de copyright.
+\end{itemize}
+
+En definitiva, todo fragmento que pueda ser extraído y comparado con el original y del que se puedan obtener 
+conclusiones firmes, será incluido como parte del contenido principal. Véase la figura 
+\ref{img:contenido boilerplate de un articulo web tradicional} en la que se determinan las secciones 
+descartadas y definidas como contenido boilerplate o 'basura'.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6.1in]{pagina-web2.jpeg}
+  \caption{Contenido boilerplate de un artículo web tradicional}
+  \label{img:contenido boilerplate de un articulo web tradicional}
+\end{figure}
+
+\subsection{Recopilación del conjunto de datos}
+\label{subsec:recopilacion del conjunto de datos}
+
+Una vez definido en que consiste el cuerpo principal de cada artículo, el siguiente paso consiste en la
+recolección del conjunto de datos de prueba para la herramienta. Se pretende que este conjunto sea diverso, 
+representativo e imparcial. Es por ello que en el \emph{dataset} no solo se compone artículos de noticias 
+relevantes, también hay un conjunto muy variado de artículos no informativos como entradas de blog, 
+comunicados de prensa...
+
+El proceso de recolección del conjunto de datos consiste en tomar una muestra aleatoria del millón de
+sitios web escritos en inglés. Para cada sitio, se comprueba si contiene algún artículo, en cuyo caso, se
+añaden dos de ellos al azar. En una primera instancia, el conjunto que compone el \emph{dataset} suponía
+cerca de 200 sitios web listos para analizar.
+
+Antes de comenzar con el proceso de evaluación se deben asegurar una serie de conceptos relacionados con
+posibles errores de acceso, análisis o extracción de la información de algunas de las páginas incluidas:
+
+\begin{enumerate}
+  \item Se debe asegurar que las páginas no cambian durante el análisis. Minimizar las posibilidades de 
+  obtener un artículo actualizado durante la extracción.
+  \item Se deben excluir aquellas páginas que las herramientas no sean capaces de descargar.
+  \item Se deben descartar aquellas paginas cuyo contenido no sea explícitamente escrito en inglés.
+\end{enumerate}
+
+Tras tener en cuenta todas estas consideraciones, el grupo inicial de 200 páginas se redujo a 101 casos
+listos para el análisis. Aún realizada la reducción, el \emph{dataset} es lo suficientemente amplio como
+para sacar conclusiones claras de los algoritmos a analizar.
+
+Por último, como ya se ha mencionado anteriormente, tanto la información extraída de forma manual, como
+aquella extraída por los algoritmos de minado web, es almacenada en archivos JSON. Esto hace mucho más
+cómodo el análisis, pues el acceso a cada texto es mucho más sencillo. Se muestra a continuación un ejemplo
+de como se almacenan los diferentes textos extraídos por \textbf{BeautifulSoup}.
+
+\begin{Schunk}
+  \begin{Soutput}
+  {
+    "0000test": {
+        "texto": "Nadal keeps Spain alive against Russia in Davis Cup Finals..."
+    },
+    ...
+    "0100test": {
+        "texto": "CNN - Breaking News, Latest News and Videos CNN | 11/25/2021..."
+    }
+  }
+  \end{Soutput}
+\end{Schunk}
+
+De la misma forma se almacenan los textos extraídos de forma manual. En este caso, se guarda información
+adicional del sitio web. Como se puede observar, el orden de almacenamiento es clave, pues de él depende
+que el análisis sea correcto.
+
+\begin{Schunk}
+  \begin{Soutput}
+  {
+    "0000test": {
+        "texto": "MADRID — Rafael Nadal kept Spain’s hopes alive, then Marcel...",
+        "url": "https://www.sportsnet.ca/tennis/..."
+    },
+    ...
+    "0100test": {
+      "texto": "Groups of thieves target two high-end stores in California...",
+      "url": "http://lite.cnn.com/en/article/..."
+    }
+  }
+  \end{Soutput}
+\end{Schunk}
+
+Esta forma de almacenamiento es aplicada a todos los algoritmos de minado, no solo a aquellos desarrollados
+en Python, las herramientas codificadas en R también lo aplican. Esto permite incluir en la evaluación a
+cualquier algoritmo de minado web desarrollado sobre un lenguaje de programación que permita trabajar con
+documentos JSON.
+
+\section{Análisis de la herramienta de evaluación}
+\label{sec:analisis de la herramienta de evaluacion}
+
+Una vez se dispone del \emph{dataset} al completo, el objetivo es comparar cada uno de los textos obtenidos
+por las herramientas de extracción con el texto base. La exposición de las diferentes soluciones aportadas
+será clave para comprender el resultado final.
+
+Uno de los aspectos fundamentales de la herramienta de evaluación es su heurística. Se debe pensar en un
+algoritmo que sea capaz de comparar diferentes tipos de textos minimizando la probabilidad de fallo. A lo
+largo de la sección se mostrará como el proceso no es sencillo pues muchos algoritmos de extracción
+presentan diferentes soluciones a un mismo problema.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=5in]{diagrama-venn.jpg}
+  \caption{Diagrama de Venn: Texto base vs texto extraído}
+  \label{img:diagrama venn: texto base vs texto extraido}
+\end{figure}
+
+La principal preocupación subyace por la forma en la que los diferentes algoritmos consideran como parte
+de contenido principal de un sitio web. En algunas ocasiones es posible configurar la manera de extracción
+de los mismos, pero en otra no. Es por ello que se debe pensar en un método lo suficientemente justo como
+para comparar múltiples textos de diversas procedencias que pueden ser ligeramente diferentes.
+
+\subsection{Aspectos específicos a considerar}
+\label{subsec:aspectos especificos a considerar}
+
+En la figura \ref{img:estructura generica del proceso de evaluacion} se definía de forma genérica como se
+gestionaba la información recogida por los diferentes algoritmos de \emph{web scraping}. Veamos ahora como
+se trata y se compara dicha información con la extraída manualmente con el objetivo de conocer aquellos
+algoritmos que más se acercan a un resultado real.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=7.1in]{estructura-especifica-proceso-evaluacion.jpg}
+  \caption{Estructura especifica del proceso de evaluación}
+  \label{img:estructura específica del proceso de evaluacion}
+\end{figure}
+
+Se puede observar en la figura \ref{img:estructura específica del proceso de evaluacion} la solución
+adoptada por la herramienta de evaluación. Tras la obtención de texto base y texto extraído, se pretende
+realizar un proceso de tokenización y creación de n-gramas, clave a la hora de realizar el posterior cálculo
+de métricas. En cuanto a la evaluación y análisis de métricas obtenidas, se abordará en el próximo capítulo.
+
+\subsection{Heurística basada en n-gramas}
+\label{subsec:heuristica basada en n-gramas}
+
+A lo largo de la sección se aborda el problema de comparar diferentes fragmentos de texto. Se presentan
+diferentes soluciones, una de ellas podría ser la comparación de palabras en la misma posición, otra podría
+ser la búsqueda de palabras pertenecientes a ambos textos. Veamos porque la división en n-gramas es un
+buen método para este propósito.
+
+\subsubsection{Comparación de texto empleando el método palabra por posición}
+\label{subsubsec:comparacion de textos empleando el metodo palabra por posicion}
+
+Imaginemos que se disponen dos textos a comparar como los siguientes. El primero de ellos se considera como
+texto base, pues ha sido obtenido de forma manual del propio sitio web. El segundo surge como resultado 
+de la ejecución de cualquiera de las herramientas de \emph{web scraping} expuestas en el capítulo anterior.
+
+\begin{Schunk}
+  \begin{Soutput}
+      MADRID — Top-ranked Rafael Nadal has arrived in Madrid to
+      lead Spain in the new-look Davis Cup Finals.\n\n\"It’s a
+      new competition and we must be focused,\" Nadal said Sunday.
+
+      MADRID \u2014 Top-ranked Rafael Nadal has arrived in Madrid to 
+      lead Spain in the new-look Davis Cup Finals.\"It\u2019s a 
+      new competition and we must be focused,\" Nadal said Sunday.
+  \end{Soutput}
+\end{Schunk}
+
+Veamos el funcionamiento de los diferentes métodos de comparación pensados. En primer lugar, se aplica la
+comparación palabra por palabra, donde se prepara un fragmento de código que recorra ambos textos al mismo
+tiempo y determine si las palabras dispuestas en la misma posición son idénticas.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6.5in]{text-comparison1.jpg}
+  \caption{Comparación de textos empleando el método palabra por posición}
+  \label{img:comparacion de textos empleando el metodo palabra por posicion}
+\end{figure}
+
+Como se muestra en la figura \ref{img:comparacion de textos empleando el metodo palabra por posicion} la 
+comparación no ha sido tan desastrosa como se esperaba. Los únicos errores han sido producidos por espacios 
+en blanco y caracteres Unicode que la herramienta de minado web no ha sido capaz de detectar.
+
+El problema con esta solución viene cuando la disposición de los mismos no es exacta, o incluso cuando 
+ambos fragmentos no tienen el mismo tamaño. Imaginemos que la herramienta de minado no ha sido capaz de 
+detectar la palabra \textbf{MADRID} como parte del contenido principal. En este caso, ninguna palabra 
+coincidiría con la original pues las posiciones no están dispuestas del mismo modo.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6.5in]{text-comparison2.jpg}
+  \caption{Comparación de textos empleando el método palabra por posición}
+  \label{img:comparacion de textos empleando el metodo palabra por posicion p2}
+\end{figure}
+
+Esta forma de comparación no funcionaria, y menos en artículos donde los fragmentos de textos son amplios
+y las posibilidades de fallo aumentan. Además, el \emph{dataset} es de gran volumen por lo que la posibilidad 
+de que existan fragmentos de texto con disposiciones totalmente distintas a la original tiene una alta 
+probabilidad.
+
+\subsubsection{Comparación de texto empleando el método palabra por detección}
+\label{subsubsec:comparacion de textos empleando el metodo palabra por deteccion}
+
+Es necesario encontrar entonces en una nueva heurística que minimice la probabilidad de fallo, donde la 
+posición de cada palabra no sea un aspecto a tener en cuenta. Una solución podría darse con el recorrido 
+de uno de los fragmentos de texto, donde se busquen palabras coincidentes con el otro. Se selecciona una 
+palabra pivote, por ejemplo \textbf{Spain}, y se recorre el segundo texto hasta encontrar la palabra 
+indicada.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6.5in]{text-comparison3.jpg}
+  \caption{Comparación de textos empleando el método palabra por detección}
+  \label{img:comparacion de textos empleando el metodo palabra por deteccion}
+\end{figure}
+
+En realidad, si se realiza un análisis profundo sobre esta solución, surgen nuevas problemáticas. ¿Qué
+ocurriría si apareciesen dos palabras idénticas sobre el mismo texto? Imaginemos que durante el recorrido
+del primer texto, se debe analizar una palabra pivote repetida varias veces a lo largo del segundo texto. 
+La heurística anterior no sería correcta, veamos un ejemplo.
+
+Comienza el algoritmo seleccionando pivotes y realizando la heurística correspondiente para cada uno, 
+primero con \textbf{MADRID}, luego con \textbf{'--'}, y así sucesivamente hasta llegar a \textbf{Nadal} 
+que es el que nos interesa en este ejemplo. Se recorre el segundo fragmento buscado dicha palabra y se 
+encuentran dos apariciones de la misma. Para ambas apariciones se calcula y se suma una puntuación 
+determinada.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6.5in]{text-comparison4.jpg}
+  \caption{Comparación de textos empleando el método palabra por detección}
+  \label{img:comparacion de textos empleando el metodo palabra por deteccion p2}
+\end{figure}
+
+El algoritmo sigue realizando el bucle y nuevamente emplea la palabra \textbf{Nadal} como pivote, pero en
+este caso en su segunda aparición. Se volvería a efectuar un calculo y la posterior suma de su puntuación.
+La implementación de esta heurística forzaría un resultado irreal, pues este error se acrecentaría sobre
+\emph{datasets} extensos que contengan fragmentos de texto prolongados, como es el caso.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6.5in]{text-comparison5.jpg}
+  \caption{Comparación de textos empleando el método palabra por detección}
+  \label{img:comparacion de textos empleando el metodo palabra por deteccion p3}
+\end{figure}
+
+\subsubsection{Comparación de texto empleando la creacion de n-gramas}
+\label{subsubsec:comparacion de textos empleando la creacion de n-gramas}
+
+Se debe pensar entonces en una nueva heurística que nuevamente minimice la probabilidad de fallo, la cual
+tenga en cuenta que la posición de cada palabra debe ser irrelevante y que cuide la posible repetición de
+palabras. Se utilizan bloques como estructuras de datos, veamos como funciona.
+
+Los bloques o n-gramas se consideran conjuntos de secuencias alfanuméricas, en las que se descartan los
+espacios en blanco y se separan los signos de puntuación \cite{ngrams-thesis}. Esto funciona bien en la 
+mayoría de los casos, ya que normalmente el texto a excluir se encuentra en bloques separados por nuevas 
+líneas o espacios en blanco. Siguiendo con el ejemplo anterior, la división de texto en n-gramas donde 
+\emph{n = 3} sería:
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6in]{text-comparison6.jpg}
+  \caption{Creación de n-gramas}
+  \label{img:creacion de n-gramas}
+\end{figure}
+
+El objetivo ahora es separar ambos textos en n-gramas de tamaño \emph{n} y realizar la comparación entre
+ellos. La posición ya no es relevante pues la comparación no se va a ejecutar en torno a la posición de cada
+n-grama. Además, la repetición de n-gramas no es preocupante pues existe una baja probabilidad de que esto
+ocurra a lo largo del texto.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6in]{text-comparison7.jpg}
+  \caption{Comparación de textos empleando n-gramas}
+  \label{img:comparacion de textos empleando n-gramas p2}
+\end{figure}
+
+El algoritmo procede del mismo modo que antes, se selecciona un n-grama pivote y se buscan n-gramas
+coincidentes en el texto extraído. Tras el recorrido completo del texto se determina una cierta puntuación.
+En la figura \ref{img:comparacion de textos empleando n-gramas p2} se muestra el resultado de ejecución
+del algoritmo.
+
+Si observamos de nuevo la figura anterior, el n-grama en séptima posición del texto base no coincide con 
+el n-grama del texto extraído, a pesar de que la mayor parte de las palabras sí que son coincidentes. Es 
+posible realizar una mejora dividiendo el texto en el mayor número de n-gramas posibles. Este aumento de 
+divisiones se efectúa con el objetivo de recuperar la mayor cantidad de palabras mejorando así la precisión 
+de la herramienta desarrollada.
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-tokenizar.py}
+  \inputencoding{utf8}
+  \caption{Proceso de tokenización}
+  \label{cod:proceso de tokenizacion}
+\end{codefloat}
+
+En los fragmentos de código \ref{cod:proceso de tokenizacion} y
+\ref{cod:creacion de n-gramas a partir de los tokens resultantes} se muestra el proceso de tokenización y
+creación de n-gramas usado en la herramienta de evaluación. Para el desarrollo de la herramienta se ha
+decidido emplear n-gramas donde \emph{n = 4} con el objetivo de aumentar la precisión del resultado dado.
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-ngramas.py}
+  \inputencoding{utf8}
+  \caption{Creación de n-gramas a partir de los tokens resultantes}
+  \label{cod:creacion de n-gramas a partir de los tokens resultantes}
+\end{codefloat}
+
+Aplicando esta metodología al ejemplo anterior se obtienen una cantidad bastante mayor de n-gramas. Este
+mismo proceso se realiza tanto en el texto base, como en el texto extraído, para poder realizar el cálculo
+posterior de la puntuación.
+
+\begin{Schunk}
+  \begin{Soutput}
+(MADRID -- Top-ranked Rafael), (-- Top-ranked Rafael Nadal), 
+(Top-ranked Rafael Nadal has), (Rafael Nadal has arrived), 
+(Nadal has arrived in), (has arrived in Madrid), (arrived in Madrid to), 
+(in Madrid to lead), (Madrid to lead Spain), (to lead Spain in), 
+(lead Spain in the), (Spain in the new-look), (in the new-look Davis), 
+(the new-look Davis Cup), (new-look Davis Cup Finals.), (Davis Cup Finals. It’s),
+(Cup Finals. It’s a), (Finals. It’s a new), (It’s a new competition),
+(a new competition and), (new competition and we), (competition and we must), 
+(and we must be), (we must be focused,), (must be focused, Nadal),
+(be focused, Nadal said), (focused, Nadal said Sunday.)
+  \end{Soutput}
+\end{Schunk}
+
+\subsection{Cálculo y puntuación de n-gramas}
+\label{subsec:calculo y puntuacion de n-gramas}
+
+Una vez que ambos fragmentos de texto han sido convertidos en n-gramas, se debe realizar el cálculo del
+texto extraído para poder conocer la calidad del mismo. Para comprender como se ha desarrollado dicho
+cálculo, debemos recordar la figura \ref{img:diagrama venn: texto base vs texto extraido}, donde el 
+diagrama de Venn expuesto representa los tres posibles tipos de puntuaciones.
+
+La herramienta guarda una puntuación específica para cada tipo de extracción, por ejemplo los n-gramas que 
+coinciden en el texto base y en el texto extraído se conoce como true positives. Se muestra en el fragmento 
+de código \ref{cod:calculo de true positives} como se realiza dicho cálculo.
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-true-positives.py}
+  \inputencoding{utf8}
+  \caption{Cálculo de true positives}
+  \label{cod:calculo de true positives}
+\end{codefloat}
+
+Por otro lado, los n-gramas que aparecen en el texto extraído, pero no en el texto base se conoce como 
+false positives. Se muestra en el fragmento de código \ref{cod:calculo de false positives} como se realiza 
+dicho cálculo.
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-false-positives.py}
+  \inputencoding{utf8}
+  \caption{Cálculo de false positives}
+  \label{cod:calculo de false positives}
+\end{codefloat}
+
+Por ultimo, los n-gramas que aparecen en el texto base pero no en el texto extraído se conoce como false 
+negatives. Se muestra en el fragmento de código \ref{cod:calculo de false negatives} como se realiza dicho 
+cálculo.
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-false-negatives.py}
+  \inputencoding{utf8}
+  \caption{Cálculo de false negatives}
+  \label{cod:calculo de false negatives}
+\end{codefloat}
+
+Una vez conocidas estas tres posibles puntuaciones, lo único que se debe hacer es recorrer el texto base
+y texto extraído, haciendo una comparación de n-gramas. El código fragmento de código mostrado en
+\ref{cod:calculo de puntuaciones} se encarga de retornar una tupla con las puntuaciones calculadas.
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-puntuacion.py}
+  \inputencoding{utf8}
+  \caption{Cálculo de puntuaciones}
+  \label{cod:calculo de puntuaciones}
+\end{codefloat}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
