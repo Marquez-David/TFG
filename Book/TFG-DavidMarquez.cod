@@ -10,11 +10,16 @@
 \contentsline {codefloat}{\numberline {3.10}{\ignorespaces Newspaper3k - Heurística en el árabe\relax }}{26}{codefloat.220}%
 \contentsline {codefloat}{\numberline {4.1}{\ignorespaces Proceso de tokenización\relax }}{42}{codefloat.278}%
 \contentsline {codefloat}{\numberline {4.2}{\ignorespaces Creación de n-gramas a partir de los tokens resultantes\relax }}{43}{codefloat.291}%
-\contentsline {codefloat}{\numberline {4.3}{\ignorespaces Cálculo de true positives\relax }}{43}{codefloat.297}%
-\contentsline {codefloat}{\numberline {4.4}{\ignorespaces Cálculo de false positives\relax }}{44}{codefloat.302}%
-\contentsline {codefloat}{\numberline {4.5}{\ignorespaces Cálculo de false negatives\relax }}{44}{codefloat.307}%
-\contentsline {codefloat}{\numberline {4.6}{\ignorespaces Cálculo de puntuaciones\relax }}{44}{codefloat.334}%
-\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{53}{codefloat.347}%
-\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{54}{codefloat.355}%
-\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{55}{codefloat.374}%
-\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{55}{codefloat.380}%
+\contentsline {codefloat}{\numberline {4.3}{\ignorespaces Cálculo de true positives\relax }}{44}{codefloat.299}%
+\contentsline {codefloat}{\numberline {4.4}{\ignorespaces Cálculo de false positives\relax }}{44}{codefloat.304}%
+\contentsline {codefloat}{\numberline {4.5}{\ignorespaces Cálculo de false negatives\relax }}{44}{codefloat.309}%
+\contentsline {codefloat}{\numberline {4.6}{\ignorespaces Cálculo de puntuaciones\relax }}{45}{codefloat.331}%
+\contentsline {codefloat}{\numberline {4.7}{\ignorespaces Cálculo de la métrica \emph {precision}\relax }}{47}{codefloat.345}%
+\contentsline {codefloat}{\numberline {4.8}{\ignorespaces Cálculo de la métrica \emph {recall}\relax }}{48}{codefloat.354}%
+\contentsline {codefloat}{\numberline {4.9}{\ignorespaces Cálculo de la métrica \emph {accuracy}\relax }}{48}{codefloat.363}%
+\contentsline {codefloat}{\numberline {4.10}{\ignorespaces Función de ejecución de Boilerpy\relax }}{49}{codefloat.378}%
+\contentsline {codefloat}{\numberline {4.11}{\ignorespaces Función de ejecución de BoilerpipeR\relax }}{49}{codefloat.394}%
+\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{61}{codefloat.409}%
+\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{62}{codefloat.417}%
+\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{63}{codefloat.436}%
+\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{63}{codefloat.442}%

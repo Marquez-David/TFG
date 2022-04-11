@@ -17,45 +17,45 @@ Warning--missing publisher in web-scraping-bozhao
 Warning--missing publisher in web-scraping-seppe
 
 Done.
-You've used 46 entries,
+You've used 49 entries,
             4087 wiz_defined-function locations,
-            1058 strings with 14069 characters,
-and the built_in function-call counts, 21160 in all, are:
-= -- 1759
-> -- 346
+            1073 strings with 14451 characters,
+and the built_in function-call counts, 22260 in all, are:
+= -- 1864
+> -- 358
 < -- 67
-+ -- 181
-- -- 70
-* -- 868
-:= -- 3742
-add.period$ -- 78
-call.type$ -- 46
-change.case$ -- 52
++ -- 187
+- -- 73
+* -- 910
+:= -- 3977
+add.period$ -- 82
+call.type$ -- 49
+change.case$ -- 55
 chr.to.int$ -- 150
-cite$ -- 48
-duplicate$ -- 1668
-empty$ -- 1834
-format.name$ -- 84
-if$ -- 4747
+cite$ -- 51
+duplicate$ -- 1754
+empty$ -- 1919
+format.name$ -- 87
+if$ -- 4982
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 369
-newline$ -- 201
-num.names$ -- 44
-pop$ -- 866
+int.to.str$ -- 49
+missing$ -- 391
+newline$ -- 214
+num.names$ -- 47
+pop$ -- 907
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1687
+skip$ -- 1780
 stack$ -- 0
-substring$ -- 431
-swap$ -- 1126
+substring$ -- 436
+swap$ -- 1181
 text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 46
+type$ -- 49
 warning$ -- 2
-while$ -- 72
-width$ -- 48
-write$ -- 457
+while$ -- 75
+width$ -- 51
+write$ -- 488
 (There were 2 warnings)

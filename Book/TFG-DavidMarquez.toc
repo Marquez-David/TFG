@@ -70,7 +70,7 @@
 \contentsline {subsection}{\numberline {3.3.4}scrapeR}{30}{subsection.236}%
 \contentsline {subsection}{\numberline {3.3.5}RSelenium}{30}{subsection.237}%
 \contentsline {section}{\numberline {3.4}Paquetes descartados para el proceso de evaluación}{30}{section.243}%
-\contentsline {chapter}{\numberline {4}Selección de variables y proceso de evaluación}{33}{chapter.244}%
+\contentsline {chapter}{\numberline {4}Selección de variables de análisis y proceso de estudio}{33}{chapter.244}%
 \contentsline {section}{\numberline {4.1}Introducción al proceso de evaluación}{33}{section.248}%
 \contentsline {subsection}{\numberline {4.1.1}Aspectos generales a considerar}{34}{subsection.249}%
 \contentsline {subsection}{\numberline {4.1.2}Cuerpo principal del sitio web como objetivo de la evaluación}{35}{subsection.251}%
@@ -82,18 +82,21 @@
 \contentsline {subsubsection}{\numberline {4.2.2.2}Comparación de texto empleando el método palabra por detección}{41}{subsubsection.266}%
 \contentsline {subsubsection}{\numberline {4.2.2.3}Comparación de texto empleando la creacion de n-gramas}{42}{subsubsection.270}%
 \contentsline {subsection}{\numberline {4.2.3}Cálculo y puntuación de n-gramas}{43}{subsection.292}%
-\contentsline {chapter}{\numberline {5}cap5}{45}{chapter.335}%
-\contentsline {chapter}{\numberline {6}Futuras lineas de trabajo...}{47}{chapter.336}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{49}{chapter*.337}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{53}{Appendix.338}%
-\contentsline {section}{\numberline {A.1}Fase de búsqueda}{53}{section.339}%
-\contentsline {section}{\numberline {A.2}Fase de extracción}{54}{section.356}%
-\contentsline {section}{\numberline {A.3}Fase de transformación}{55}{section.375}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Analizadores empleados en los paquetes de web scraping}{57}{Appendix.381}%
-\contentsline {section}{\numberline {B.1}lxml}{57}{section.383}%
-\contentsline {subsection}{\numberline {B.1.1}lxml.html}{58}{subsection.384}%
-\contentsline {subsection}{\numberline {B.1.2}soupparser}{58}{subsection.385}%
-\contentsline {section}{\numberline {B.2}html5lib}{59}{section.386}%
-\contentsline {section}{\numberline {B.3}html.parser}{59}{section.387}%
-\contentsline {section}{\numberline {B.4}XML}{59}{section.388}%
-\contentsline {section}{\numberline {B.5}xml2}{60}{section.389}%
+\contentsline {subsection}{\numberline {4.2.4}Introducción a las métricas de evaluación}{46}{subsection.334}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Métricas independientes del entorno de ejecución}{46}{subsubsection.335}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Métricas dependientes del entorno de ejecución}{49}{subsubsection.364}%
+\contentsline {chapter}{\numberline {5}Análisis y comparativa de paquetes}{53}{chapter.397}%
+\contentsline {chapter}{\numberline {6}Futuras lineas de trabajo...}{55}{chapter.398}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{57}{chapter*.399}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{61}{Appendix.400}%
+\contentsline {section}{\numberline {A.1}Fase de búsqueda}{61}{section.401}%
+\contentsline {section}{\numberline {A.2}Fase de extracción}{62}{section.418}%
+\contentsline {section}{\numberline {A.3}Fase de transformación}{63}{section.437}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Analizadores empleados en los paquetes de web scraping}{65}{Appendix.443}%
+\contentsline {section}{\numberline {B.1}lxml}{65}{section.445}%
+\contentsline {subsection}{\numberline {B.1.1}lxml.html}{66}{subsection.446}%
+\contentsline {subsection}{\numberline {B.1.2}soupparser}{66}{subsection.447}%
+\contentsline {section}{\numberline {B.2}html5lib}{67}{section.448}%
+\contentsline {section}{\numberline {B.3}html.parser}{67}{section.449}%
+\contentsline {section}{\numberline {B.4}XML}{67}{section.450}%
+\contentsline {section}{\numberline {B.5}xml2}{68}{section.451}%

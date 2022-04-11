@@ -1,6 +1,6 @@
 
-\chapter{Selección de variables y proceso de evaluación}
-\label{cha:seleccion de variables y proceso de evaluacion}
+\chapter{Selección de variables de análisis y proceso de estudio}
+\label{cha:seleccion de variables de analisis y proceso de estudio}
 
 Tras la sinopsis de herramientas de \emph{web scraping} de código abierto, se pretende realizar una 
 introducción al proceso de evaluación de las mismas. El capítulo se dividirá en tres secciones claramente 
@@ -32,7 +32,7 @@ cualquier herramienta de minado web desarrollada sobre cualquier lenguaje de pro
 
 Cuando cualquier usuario entra en un sitio web lo que busca es obtener la información requerida lo más
 rápido y preciso posible. La calidad del texto extraído es prioritaria, para ello el uso de heurísticas o
-la eliminación de contenido boilerplate es crucial en cualquier algoritmo de \emph{web scraping}.
+la eliminación de contenido \emph{boilerplate} es crucial en cualquier algoritmo de \emph{web scraping}.
 
 Muchos de los algoritmos descartados para el proceso de evaluación como \textbf{scrapeR}, o ni si quiera 
 mencionados en la sinopsis de paquetes como \textbf{selectr} \cite{selectr}, emplean únicamente expresiones 
@@ -129,12 +129,12 @@ parte del contenido principal, ademas del propio contenido principal.
 En definitiva, todo fragmento que pueda ser extraído y comparado con el original y del que se puedan obtener 
 conclusiones firmes, será incluido como parte del contenido principal. Véase la figura 
 \ref{img:contenido boilerplate de un articulo web tradicional} en la que se determinan las secciones 
-descartadas y definidas como contenido boilerplate o 'basura'.
+descartadas y definidas como contenido \emph{boilerplate} o 'basura'.
 
 \begin{figure}[tphb]
   \centering
   \includegraphics[width=6.1in]{pagina-web2.jpeg}
-  \caption{Contenido boilerplate de un artículo web tradicional}
+  \caption{Contenido \emph{boilerplate} de un artículo web tradicional}
   \label{img:contenido boilerplate de un articulo web tradicional}
 \end{figure}
 
@@ -396,11 +396,11 @@ coincidentes en el texto extraído. Tras el recorrido completo del texto se dete
 En la figura \ref{img:comparacion de textos empleando n-gramas p2} se muestra el resultado de ejecución
 del algoritmo.
 
-Si observamos de nuevo la figura anterior, el n-grama en séptima posición del texto base no coincide con 
-el n-grama del texto extraído, a pesar de que la mayor parte de las palabras sí que son coincidentes. Es 
-posible realizar una mejora dividiendo el texto en el mayor número de n-gramas posibles. Este aumento de 
-divisiones se efectúa con el objetivo de recuperar la mayor cantidad de palabras mejorando así la precisión 
-de la herramienta desarrollada.
+Si observamos de nuevo la figura anterior, los n-gramas en séptima y primera posición del texto base no 
+coincide con los n-gramas del texto extraído, a pesar de que la mayor parte de las palabras sí que son 
+coincidentes. Es posible realizar una mejora dividiendo el texto en el mayor número de n-gramas posibles. 
+Este aumento de divisiones se efectúa con el objetivo de recuperar la mayor cantidad de palabras mejorando 
+así la precisión de la herramienta desarrollada.
 
 \begin{codefloat}
   \inputencoding{latin1}
@@ -450,9 +450,56 @@ texto extraído para poder conocer la calidad del mismo. Para comprender como se
 cálculo, debemos recordar la figura \ref{img:diagrama venn: texto base vs texto extraido}, donde el 
 diagrama de Venn expuesto representa los tres posibles tipos de puntuaciones.
 
-La herramienta guarda una puntuación específica para cada tipo de extracción, por ejemplo los n-gramas que 
-coinciden en el texto base y en el texto extraído se conoce como true positives. Se muestra en el fragmento 
-de código \ref{cod:calculo de true positives} como se realiza dicho cálculo.
+Para realizar el cálculo y puntuación de n-gramas, se desarrolla un clasificador binario, encargado de 
+realizar una clasificación de instancias positivas y negativas:
+
+\begin{itemize}
+  \item Positivo: La instancia se clasifica como miembro de la clase que el clasificador está tratando de 
+  identificar. Por ejemplo, un clasificador que busque fotos de gatos clasificará las fotos con gatos como 
+  positivas cuando sean correctas.
+  \item Negativo: La instancia se clasifica como no perteneciente a la clase que se intenta identificar. 
+  Por ejemplo, un clasificador que busque fotos de gatos debería clasificar las fotos con perros como 
+  negativas.
+\end{itemize}
+
+Las bases de las métricas independientes del entorno de ejecución especificadas en la sección
+\ref{subsubsec:metricas independientes del entorno de ejecucion}, provienen de los conceptos de 
+\textbf{True Positive}, \textbf{False Positive} y \textbf{False Negative}. La tabla 
+\ref{tab:ejemplos de instancias positivas y negativas} ilustra estos conceptos, donde se considera el 
+valor '1' como una predicción positiva.
+
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \textbf{Predicción} & \textbf{Valor actual} & \textbf{Tipo} & \textbf{Explicación}\\ \hline
+  1 & 1 & True Positive & La predicción coincidió con el valor resultante \\ \hline
+  1 & 0 & False Positive & La predicción no coincidió con el valor resultante \\ \hline
+  0 & 1 & False Negative & La predicción no coincidió con el valor resultante \\ \hline
+  \end{tabular}
+  \caption{Ejemplos de instancias positivas y negativas}
+  \label{tab:ejemplos de instancias positivas y negativas}
+  \end{center}
+\end{table}
+
+Una instancia que no se tiene en cuenta en el clasificador desarrollado para el cálculo de métricas es 
+\textbf{True Negative}. Esta instancia determinaría la capacidad de la herramienta para clasificar contenido 
+que no se ha predicho. Se muestran algunos ejemplos en la tabla \ref{tab:ejemplos de true negative}.
+
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{| c | c | c | c |} \hline
+  \textbf{Predicción} & \textbf{Valor actual} & \textbf{Tipo} & \textbf{Explicación}\\ \hline
+  0 & 0 & True Negative & La predicción coincidió con el valor resultante \\ \hline
+  No Gato & No Gato & True Negative & Se predijo que no había gato y no era un gato \\ \hline
+  (Nadal Rafael has) & (Nadal Rafael has) & True Negative & Se predijo n-grama erróneo y era erróneo \\ \hline
+  \end{tabular}
+  \caption{Ejemplos de True Negative}
+  \label{tab:ejemplos de true negative}
+  \end{center}
+\end{table}
+
+Los n-gramas que coinciden en el texto base y en el texto extraído se conoce como \textbf{True Positives}.
+Se muestra en el fragmento de código \ref{cod:calculo de true positives} como se realiza dicho cálculo.
 
 \begin{codefloat}
   \inputencoding{latin1}
@@ -463,8 +510,8 @@ de código \ref{cod:calculo de true positives} como se realiza dicho cálculo.
 \end{codefloat}
 
 Por otro lado, los n-gramas que aparecen en el texto extraído, pero no en el texto base se conoce como 
-false positives. Se muestra en el fragmento de código \ref{cod:calculo de false positives} como se realiza 
-dicho cálculo.
+\textbf{False Positives}. Se muestra en el fragmento de código \ref{cod:calculo de false positives} como 
+se realiza dicho cálculo.
 
 \begin{codefloat}
   \inputencoding{latin1}
@@ -474,9 +521,9 @@ dicho cálculo.
   \label{cod:calculo de false positives}
 \end{codefloat}
 
-Por ultimo, los n-gramas que aparecen en el texto base pero no en el texto extraído se conoce como false 
-negatives. Se muestra en el fragmento de código \ref{cod:calculo de false negatives} como se realiza dicho 
-cálculo.
+Por ultimo, los n-gramas que aparecen en el texto base pero no en el texto extraído se conoce como 
+\textbf{False Negatives}. Se muestra en el fragmento de código \ref{cod:calculo de false negatives} como 
+se realiza dicho cálculo.
 
 \begin{codefloat}
   \inputencoding{latin1}
@@ -497,6 +544,236 @@ y texto extraído, haciendo una comparación de n-gramas. El código fragmento d
   \caption{Cálculo de puntuaciones}
   \label{cod:calculo de puntuaciones}
 \end{codefloat}
+
+Con el objetivo de esclarecer como funciona el cálculo de la puntuación, se emplea el ejemplo anterior
+como sujeto de pruebas. Se muestra a continuación el texto base y extraído convertidos en n-gramas donde 
+\emph{n = 4}.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6.3in]{text-comparison8.jpg}
+  \includegraphics[width=6.3in]{text-comparison9.jpg}
+  \caption{Comparación de textos empleando n-gramas mejorados}
+  \label{img:comparacion de textos empleando n-gramas mejorados}
+\end{figure}
+
+Una vez aplicada la heurística habitual del algoritmo, se procede con el cálculo de la puntuación. Se
+realiza el recorrido de n-gramas de ambos textos y se va realizando el cálculo. Se muestran las puntuaciones 
+calculadas la matriz de confusión \ref{img:matriz de confusion de las instancias calculadas}.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=4.5in]{matriz-confusion.jpg}
+  \caption{Matriz de confusión de las instancias calculadas}
+  \label{img:matriz de confusion de las instancias calculadas}
+\end{figure}
+
+Una vez realizado el cálculo de las diferentes instancias, se procede con las métricas. Algunos términos 
+básicos son \textbf{Precision}, \textbf{Recall} y \textbf{F1-Score}. Estos términos están relacionados con 
+lo bien que funciona un clasificador, en lugar de limitarse a observar la precisión general.
+
+\subsection{Introducción a las métricas de evaluación}
+\label{subsec:introduccion a las metricas de evaluacion}
+
+Una vez realizado todo el proceso heurístico y el posterior cálculo de puntuaciones, se debe medir como de
+buenos son los diferentes algoritmos de extracción. Se propone efectuar una división de métricas, por un
+lado, se determinarán métricas que dependan del entorno en el que se ejecute el programa, por otro lado
+se definirán otras métricas no dependientes de dicho entorno.
+
+\subsubsection{Métricas independientes del entorno de ejecución}
+\label{subsubsec:metricas independientes del entorno de ejecucion}
+
+En esta sección, se determinan las diferentes métricas que definirán la calidad de extracción de cada 
+algoritmo. Se definen como métricas independientes del entorno, porque no dependen del medio de ejecución, 
+ni del lenguaje de programación usado para dicho procedimiento.
+
+En la figura \ref{img:jerarquia de metricas} se muestra la jerarquía existente entre el cálculo de instancias
+y métricas. A primera vista, es una red un poco desordenada. Las métricas forman una jerarquía que comienza
+con las negativas/positivas, y que llega hasta la puntuación F1 para unirlas todas.
+
+Estas métricas son dependientes de las instancias previamente calculadas. También, se definen métricas
+dependientes de instancias no incluidas en el clasificador, como \emph{specifity}. Pero medir la cantidad 
+de predicciones negativas realizadas que son correctas, es algo que no se aborda en la herramienta de
+evaluación pero viene bien su inclusión en el proceso jerárquico.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=6.5in]{estructura-metricas.jpg}
+  \caption{Jerarquía de métricas}
+  \label{img:jerarquia de metricas}
+\end{figure}
+
+La primera métrica se conoce como \emph{precision}, y mide el número de predicciones positivas realizadas
+que son correctas. En otras palabras, mide la eficacia de los sistemas para excluir contenido
+\emph{boilerplate} de un sitio web. A continuación se determina tanto la formula para su cálculo, como el
+fragmento de código incluido en la herramienta de evaluación.
+
+\begin{equation*}
+  Precision = \frac{True\;Positives}{True\;Positives + False\;Positives} = 
+  \frac{N.\;of\;Correctly\;Predicted\;Positive\;Instances}{N.\;of\;Total\;Positives\;Predictions\;you\;Made}
+\end{equation*}
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-precision.py}
+  \inputencoding{utf8}
+  \caption{Cálculo de la métrica \emph{precision}}
+  \label{cod:calculo de la metrica precision}
+\end{codefloat}
+
+Otra de las métricas obligadas a calcular es lo que se conoce como \emph{recall}. Esta característica mide
+el número de casos positivos que el clasificador predijo correctamente, sobre todos los casos positivos del
+\emph{dataset}. A veces también se denomina \emph{sensitivity}. En términos generales, mide la eficacia de
+los sistemas para captar las partes deseadas del cuerpo del artículo. En el fragmento de código
+\ref{cod:calculo de la metrica recall} se muestra como se realiza el cálculo.
+
+\begin{equation*}
+  Precision = \frac{True\;Positives}{True\;Positives + False\;Negatives} = 
+  \frac{N.\;of\;Correctly\;Predicted\;Positive\;Instances}{N.\;of\;Total\;Positives\;Intances\;in\;the\;Dataset}
+\end{equation*}
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-recall.py}
+  \inputencoding{utf8}
+  \caption{Cálculo de la métrica \emph{recall}}
+  \label{cod:calculo de la metrica recall}
+\end{codefloat}
+
+Tanto la \emph{precision} como \emph{recall} son métricas importantes de analizar, puesto que miden como
+de bien diferencian el contenido importante del contenido \emph{boilerplate} los diferentes algoritmos de
+\emph{web scraping}. Estas métricas definen la manera en la que los algoritmos siguen lo especificado en
+la sección \ref{subsec:cuerpo principal del sitio web como objetivo de la evaluacion}.
+
+Combinando ambas métricas es posible determinar la calidad en general de la extracción. Esta característica
+se denomina F1, y funciona bien en los casos en los que los conjuntos de datos están desequilibrados,
+ya que requiere que tanto las métricas de \emph{precision} como \emph{recall} tengan un valor razonable.
+
+\begin{equation*}
+  F1 = 2 * \frac{precision * recall}{precision + recall}
+\end{equation*}
+
+Por último, se realiza el cálculo de lo que se conoce como \emph{accuracy}, la cual mide la proporción de
+predicciones correctas sobre el número total de predicciones. A continuación se muestra tanto la fórmula
+de cálculo, como su implementación en el entorno de evaluación.
+
+\begin{equation*}
+  Accuracy = \frac{True\;Positives}{True\;Positives + False\;Negatives + False\;Positives} = 
+  \frac{N.\;of\;Correct\;Predictions}{N.\;of\;All\;Predictions}
+\end{equation*}
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/evaluacion-accuracy.py}
+  \inputencoding{utf8}
+  \caption{Cálculo de la métrica \emph{accuracy}}
+  \label{cod:calculo de la metrica accuracy}
+\end{codefloat}
+
+\subsubsection{Métricas dependientes del entorno de ejecución}
+\label{subsubsec:metricas dependientes del entorno de ejecucion}
+
+A lo largo de esta sección, se especificarán aspectos relativos al rendimiento a la hora de utilizar 
+\emph{web scraping} como un posible sustituto de la extracción tradicional. Aspectos como la gestión de 
+recursos no se tienen en cuenta en un principio, pero pueden ser cruciales a la hora de realizar minado web 
+sobre múltiples documentos \cite{emil-persson}.
+
+Antes de comenzar con el cálculo de métricas, es conveniente asegurar la integridad de la evaluación. Al
+trabajar con múltiples lenguajes de programación pueden existir conflictos, ya sean relacionados con la 
+complejidad de los algoritmos o con las bibliotecas empleadas.
+
+El primer aspecto a considerar tiene que ver con el diseño de los algoritmos. Aquellos algoritmos escritos 
+en diferentes lenguajes de programación deben presentar similitudes estructurales en su código. En los 
+fragmentos \ref{cod:funcion de ejecucion de boilerpy} y \ref{cod:funcion de ejecucion de boilerpiper} 
+se refleja claramente este aspecto.
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-boilerpy.py}
+  \inputencoding{utf8}
+  \caption{Función de ejecución de Boilerpy}
+  \label{cod:funcion de ejecucion de boilerpy}
+\end{codefloat}
+
+\begin{codefloat}
+  \inputencoding{latin1}
+  \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-boilerpiper.R}
+  \inputencoding{utf8}
+  \caption{Función de ejecución de BoilerpipeR}
+  \label{cod:funcion de ejecucion de boilerpiper}
+\end{codefloat}
+
+En términos referentes a la complejidad, ambos algoritmos presentan una complejidad lineal. El número de
+ejecuciones de ambos fragmentos de código dependerá del conjunto de elementos del \emph{dataset} de prueba,
+pero siempre será finito.
+
+Otro aspecto importante corresponde con el uso de herramientas referentes al cálculo de métricas. El empleo
+de múltiples bibliotecas para abordar este aspecto afectaría negativamente a la integridad de la evaluación. 
+Por ello se propone la utilización de una única interfaz entre lenguajes que unifique el proceso.
+
+Para abordar esta problemática se pretende emplear la biblioteca \textbf{rpy2} \cite{rpy2} como interfaz 
+entre ambos lenguajes. Esto permitirá que el compilador de Python ejecute líneas de código escritas en R. 
+De esta forma, una misma biblioteca podrá monitorear algoritmos escritos en ambos lenguajes.
+
+Resueltas ambas cuestiones, se procede con el cálculo. Para este propósito se emplean dos bibliotecas, por
+un lado, \textbf{psutil} \cite{psutil} encargada de la supervisión del sistema y limitación de recursos, 
+entre otros, y por otro \textbf{time} que permite el registro del tiempo de ejecución, pues retorna el 
+número de segundos transcurridos desde un cierto instante.
+
+\begin{figure}[tphb]
+  \centering
+  \includegraphics[width=3in]{estructura-interfaz-rpy2.jpg}
+  \caption{Estructura del entorno de ejecución}
+  \label{img:estructura del entorno de ejecucion}
+\end{figure}
+
+Se determinan a continuación las métricas seleccionadas, puesto que estas son dependientes del entorno de 
+ejecución, los resultados diferirán según el medio en el que se realicen las pruebas. Se muestra en la
+tabla \ref{tab:caracteristicas del entorno de ejecucion} las características del entorno empleado.
+
+\begin{table}[h]
+  \begin{center}
+    \begin{tabular}{| c | c | c |} \hline 
+     \textbf{Procesador (CPU)} & \textbf{Memoria RAM} & \textbf{Tarjeta Gráfica (GPU)} \\ \hline
+     AMD Ryzen 7 2700 Eight-Core 3.20 GHz & 16,0 GB & NVIDIA GeForce RTX 2060 SUPER \\ \hline
+    \end{tabular}
+    \caption{Características del entorno de ejecución}
+    \label{tab:caracteristicas del entorno de ejecucion}
+  \end{center}
+\end{table} 
+
+\textbf{Tiempo de ejecución:}
+
+La primera de las mediciones tiene que ver con el tiempo en realizar el proceso completo de minado. En el 
+momento en el que el algoritmo comienza a extraer información se activa el contador, y este para cuando 
+finaliza el proceso.
+
+Cabe destacar que el cálculo de dicho tiempo abarca el proceso de minado al completo, desde el acceso al
+contenido, hasta la transformación del mismo.
+
+\textbf{Uso de CPU(\%):}
+
+El uso de CPU es la cantidad total cantidad de procesador que consume la tarea a realizar. Permite valores 
+por encima del 100\%, lo que indica que el proceso se ejecuta en múltiples hilos en diferentes núcleos de 
+la CPU. La máquina que realizó las pruebas tiene un total de ocho núcleos, por lo que el 800\% significaría
+que todos los núcleos trabajan al máximo en el proceso.
+
+Para el cálculo del uso de CPU se emplea la función \emph{cpu\_percent(interval)}, que devuelve un número 
+que representa la utilización actual de la CPU en todo el sistema en forma de porcentaje. Cuando la variable 
+\emph{interval} es mayor que cero, compara los tiempos de CPU del sistema transcurridos antes y después de 
+dicho intervalo.
+
+\textbf{Uso de de memoria física o RAM(\%):}
+
+La memoria real también conocida como memoria física o RAM, es la tercera métrica registrada. Simplemente 
+mide la cantidad de memoria física que el proceso está empleando. Como recordatorio, la máquina en la que 
+se realiza la evaluación tiene un total de 16GB de memoria física.
+
+Para el cálculo del uso de memoria RAM se emplea la función \emph{virtual\_memory()}, que devuelve 
+estadísticas sobre el uso de la memoria física total.
+
+
+
 
 
 

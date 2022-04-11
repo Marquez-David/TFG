@@ -228,6 +228,23 @@ P.~E. San, ``Boilerplate removal and content extraction from dynamic web
 P.~Jan, ``Removing boilerplate and duplicate content from web corpora,''
   Master's thesis, Masaryk University, Faculty of Informatics, 2011.
 
+\bibitem{emil-persson}
+E.~Persson, ``Evaluating tools and techniques for web scraping,'' Master's
+  thesis, School of Electrical Engineering and Computer Science, 2019.
+
+\bibitem{rpy2}
+\BIBentryALTinterwordspacing
+L.~Gautier, \emph{rpy2-doc-zh CN Documentation}, 2011, 2.3.0-dev. [Online].
+  Available:
+  \url{https://buildmedia.readthedocs.org/media/pdf/rpy2-doc-zh_cn/latest/rpy2-doc-zh_cn.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{psutil}
+\BIBentryALTinterwordspacing
+G.~Rodola, \emph{psutil Documentation}, 2022, release 5.9.1. [Online].
+  Available: \url{https://psutil.readthedocs.io/_/downloads/en/latest/pdf/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{robotstxt-cran}
 \BIBentryALTinterwordspacing
 P.~Meissner and K.~Ren, \emph{robotstxt: A 'robots.txt' Parser and
