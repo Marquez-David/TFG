@@ -84,17 +84,21 @@
 \BOOKMARK [3][-]{subsubsection.335}{4.2.4.1 M\351tricas independientes del entorno de ejecuci\363n}{subsection.334}% 84
 \BOOKMARK [3][-]{subsubsection.364}{4.2.4.2 M\351tricas dependientes del entorno de ejecuci\363n}{subsection.334}% 85
 \BOOKMARK [0][-]{chapter.397}{5 An\341lisis y comparativa de paquetes}{}% 86
-\BOOKMARK [0][-]{chapter.398}{6 Futuras lineas de trabajo...}{}% 87
-\BOOKMARK [0][-]{chapter*.399}{Bibliograf\355a}{}% 88
-\BOOKMARK [0][-]{Appendix.400}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 89
-\BOOKMARK [1][-]{section.401}{A.1 Fase de b\372squeda}{Appendix.400}% 90
-\BOOKMARK [1][-]{section.418}{A.2 Fase de extracci\363n}{Appendix.400}% 91
-\BOOKMARK [1][-]{section.437}{A.3 Fase de transformaci\363n}{Appendix.400}% 92
-\BOOKMARK [0][-]{Appendix.443}{Ap\351ndice B Analizadores empleados en los paquetes de web scraping}{}% 93
-\BOOKMARK [1][-]{section.445}{B.1 lxml}{Appendix.443}% 94
-\BOOKMARK [2][-]{subsection.446}{B.1.1 lxml.html}{section.445}% 95
-\BOOKMARK [2][-]{subsection.447}{B.1.2 soupparser}{section.445}% 96
-\BOOKMARK [1][-]{section.448}{B.2 html5lib}{Appendix.443}% 97
-\BOOKMARK [1][-]{section.449}{B.3 html.parser}{Appendix.443}% 98
-\BOOKMARK [1][-]{section.450}{B.4 XML}{Appendix.443}% 99
-\BOOKMARK [1][-]{section.451}{B.5 xml2}{Appendix.443}% 100
+\BOOKMARK [1][-]{section.398}{5.1 Evaluaci\363n individual de paquetes}{chapter.397}% 87
+\BOOKMARK [0][-]{chapter.497}{6 Futuras lineas de trabajo...}{}% 88
+\BOOKMARK [0][-]{chapter*.498}{Bibliograf\355a}{}% 89
+\BOOKMARK [0][-]{Appendix.499}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 90
+\BOOKMARK [1][-]{section.500}{A.1 Fase de b\372squeda}{Appendix.499}% 91
+\BOOKMARK [1][-]{section.517}{A.2 Fase de extracci\363n}{Appendix.499}% 92
+\BOOKMARK [1][-]{section.536}{A.3 Fase de transformaci\363n}{Appendix.499}% 93
+\BOOKMARK [0][-]{Appendix.542}{Ap\351ndice B Analizadores empleados en los paquetes de web scraping}{}% 94
+\BOOKMARK [1][-]{section.544}{B.1 lxml}{Appendix.542}% 95
+\BOOKMARK [2][-]{subsection.545}{B.1.1 lxml.html}{section.544}% 96
+\BOOKMARK [2][-]{subsection.546}{B.1.2 soupparser}{section.544}% 97
+\BOOKMARK [1][-]{section.547}{B.2 html5lib}{Appendix.542}% 98
+\BOOKMARK [1][-]{section.548}{B.3 html.parser}{Appendix.542}% 99
+\BOOKMARK [1][-]{section.549}{B.4 XML}{Appendix.542}% 100
+\BOOKMARK [1][-]{section.550}{B.5 xml2}{Appendix.542}% 101
+\BOOKMARK [0][-]{Appendix.554}{Ap\351ndice C M\351tricas descartadas del proceso de evaluaci\363n}{}% 102
+\BOOKMARK [1][-]{section.556}{C.1 Perfect accuracy}{Appendix.554}% 103
+\BOOKMARK [1][-]{section.562}{C.2 Specificity}{Appendix.554}% 104

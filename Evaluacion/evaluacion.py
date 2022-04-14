@@ -21,8 +21,7 @@ import lxml.html
 
 def mostrar_tabla_metricas():
     '''se muestra pro pantalla la tabla de metricas de cada algoritmo'''
-    documento_base = cargar_json(Path('documento_base.json'))
-    tabla_metricas = PrettyTable(['N. del paquete', 'Accuracy', 'Precision', 'Recall', 'F1', 'RAM Usage(%)', 'COU Usage(%)', 'Execution Time'])
+    tabla_metricas = PrettyTable(['N. del paquete', 'Accuracy', 'Precision', 'Recall', 'F1', 'RAM Usage(%)', 'CPU Usage(%)', 'Execution Time'])
 
     '''
     #ejecucion de todos los algoritmos de extraccion programados en python
@@ -30,8 +29,8 @@ def mostrar_tabla_metricas():
         print("Ejecutando: ", path.stem)
         exec(open(path).read())
     '''
-
-    #carga los textos extraidos de cada algoritmo y evalua los mismos
+    
+    documento_base = cargar_json(Path('documento_base.json'))
     for path in Path('archivos_salida').glob('*.json'):
         documento_extraido = cargar_json(path)
         estadisticas = cargar_json('./archivos_estadisticas/' + str(path.stem) + '_stats.json')
@@ -39,7 +38,7 @@ def mostrar_tabla_metricas():
         tabla_metricas.add_row([path.stem, metricas['accuracy'], metricas['precision'], metricas['recall'], metricas['f1'],
                                 estadisticas[path.stem].get('RAM % Usage'), estadisticas[path.stem].get('CPU % Usage'), estadisticas[path.stem].get('Execution time')])
                                
-    print(tabla_metricas)
+    print(tabla_metricas[5])
     
 def evaluar_algoritmo(documento_base, documento_extraido):
     '''evaluacion de cada algoritmo a partir de su documento de extraccion'''
@@ -151,7 +150,7 @@ def crear_ngramas(text, n):
             ngramas.append(ngrama) #si el ngrama existe se añade a la lista de ngramas
     return ngramas
 
-def cargar_json(path):
+def cargar_json(path: Path):
     '''carga un determinado json dado por parametro'''
     with open(path, 'rt', encoding='utf8') as file:
         return json.load(file)

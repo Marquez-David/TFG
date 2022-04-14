@@ -577,8 +577,12 @@ lo bien que funciona un clasificador, en lugar de limitarse a observar la precis
 
 Una vez realizado todo el proceso heurístico y el posterior cálculo de puntuaciones, se debe medir como de
 buenos son los diferentes algoritmos de extracción. Se propone efectuar una división de métricas, por un
-lado, se determinarán métricas que dependan del entorno en el que se ejecute el programa, por otro lado
-se definirán otras métricas no dependientes de dicho entorno.
+lado, se determinarán métricas que dependan del entorno en el que se ejecute el programa, por otro lado,
+se definirán otras métricas no dependientes de dicho entorno. 
+
+Por otro lado, es conveniente revisar el apéndice \ref{cha:metricas descartadas del proceso de evaluacion},
+donde se especifican métricas adicionales que finalmente han sido descartadas. Su descarte, es debido a su 
+poca implicación en la evaluación o por el reemplazo de otras métricas más desarrolladas.
 
 \subsubsection{Métricas independientes del entorno de ejecución}
 \label{subsubsec:metricas independientes del entorno de ejecucion}
@@ -589,12 +593,8 @@ ni del lenguaje de programación usado para dicho procedimiento.
 
 En la figura \ref{img:jerarquia de metricas} se muestra la jerarquía existente entre el cálculo de instancias
 y métricas. A primera vista, es una red un poco desordenada. Las métricas forman una jerarquía que comienza
-con las negativas/positivas, y que llega hasta la puntuación F1 para unirlas todas.
-
-Estas métricas son dependientes de las instancias previamente calculadas. También, se definen métricas
-dependientes de instancias no incluidas en el clasificador, como \emph{specifity}. Pero medir la cantidad 
-de predicciones negativas realizadas que son correctas, es algo que no se aborda en la herramienta de
-evaluación pero viene bien su inclusión en el proceso jerárquico.
+con las negativas/positivas, y que llega hasta la puntuación F1 para unirlas todas. Estas métricas son 
+dependientes de las instancias previamente calculadas.
 
 \begin{figure}[tphb]
   \centering
@@ -628,7 +628,7 @@ los sistemas para captar las partes deseadas del cuerpo del artículo. En el fra
 \ref{cod:calculo de la metrica recall} se muestra como se realiza el cálculo.
 
 \begin{equation*}
-  Precision = \frac{True\;Positives}{True\;Positives + False\;Negatives} = 
+  Recall = \frac{True\;Positives}{True\;Positives + False\;Negatives} = 
   \frac{N.\;of\;Correctly\;Predicted\;Positive\;Instances}{N.\;of\;Total\;Positives\;Intances\;in\;the\;Dataset}
 \end{equation*}
 

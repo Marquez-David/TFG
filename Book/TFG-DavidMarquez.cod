@@ -19,7 +19,14 @@
 \contentsline {codefloat}{\numberline {4.9}{\ignorespaces Cálculo de la métrica \emph {accuracy}\relax }}{48}{codefloat.363}%
 \contentsline {codefloat}{\numberline {4.10}{\ignorespaces Función de ejecución de Boilerpy\relax }}{49}{codefloat.378}%
 \contentsline {codefloat}{\numberline {4.11}{\ignorespaces Función de ejecución de BoilerpipeR\relax }}{49}{codefloat.394}%
-\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{61}{codefloat.409}%
-\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{62}{codefloat.417}%
-\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{63}{codefloat.436}%
-\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{63}{codefloat.442}%
+\contentsline {codefloat}{\numberline {5.1}{\ignorespaces Función de ejecución de inscriptis\relax }}{53}{codefloat.414}%
+\contentsline {codefloat}{\numberline {5.2}{\ignorespaces Función de ejecución de Beautiful Soup\relax }}{55}{codefloat.433}%
+\contentsline {codefloat}{\numberline {5.3}{\ignorespaces Función de ejecución de jusText\relax }}{57}{codefloat.456}%
+\contentsline {codefloat}{\numberline {5.4}{\ignorespaces Función de ejecución de html\_text\relax }}{58}{codefloat.474}%
+\contentsline {codefloat}{\numberline {5.5}{\ignorespaces Función de ejecución de html2text\relax }}{60}{codefloat.493}%
+\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{69}{codefloat.508}%
+\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{70}{codefloat.516}%
+\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{71}{codefloat.535}%
+\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{71}{codefloat.541}%
+\contentsline {codefloat}{\numberline {C.1}{\ignorespaces Cálculo de la métrica \emph {perfect accuracy}\relax }}{78}{codefloat.561}%
+\contentsline {codefloat}{\numberline {C.2}{\ignorespaces Cálculo de la métrica \emph {specificity}\relax }}{78}{codefloat.571}%

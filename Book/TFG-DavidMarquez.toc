@@ -86,17 +86,21 @@
 \contentsline {subsubsection}{\numberline {4.2.4.1}Métricas independientes del entorno de ejecución}{46}{subsubsection.335}%
 \contentsline {subsubsection}{\numberline {4.2.4.2}Métricas dependientes del entorno de ejecución}{49}{subsubsection.364}%
 \contentsline {chapter}{\numberline {5}Análisis y comparativa de paquetes}{53}{chapter.397}%
-\contentsline {chapter}{\numberline {6}Futuras lineas de trabajo...}{55}{chapter.398}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{57}{chapter*.399}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{61}{Appendix.400}%
-\contentsline {section}{\numberline {A.1}Fase de búsqueda}{61}{section.401}%
-\contentsline {section}{\numberline {A.2}Fase de extracción}{62}{section.418}%
-\contentsline {section}{\numberline {A.3}Fase de transformación}{63}{section.437}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Analizadores empleados en los paquetes de web scraping}{65}{Appendix.443}%
-\contentsline {section}{\numberline {B.1}lxml}{65}{section.445}%
-\contentsline {subsection}{\numberline {B.1.1}lxml.html}{66}{subsection.446}%
-\contentsline {subsection}{\numberline {B.1.2}soupparser}{66}{subsection.447}%
-\contentsline {section}{\numberline {B.2}html5lib}{67}{section.448}%
-\contentsline {section}{\numberline {B.3}html.parser}{67}{section.449}%
-\contentsline {section}{\numberline {B.4}XML}{67}{section.450}%
-\contentsline {section}{\numberline {B.5}xml2}{68}{section.451}%
+\contentsline {section}{\numberline {5.1}Evaluación individual de paquetes}{53}{section.398}%
+\contentsline {chapter}{\numberline {6}Futuras lineas de trabajo...}{63}{chapter.497}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{65}{chapter*.498}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{69}{Appendix.499}%
+\contentsline {section}{\numberline {A.1}Fase de búsqueda}{69}{section.500}%
+\contentsline {section}{\numberline {A.2}Fase de extracción}{70}{section.517}%
+\contentsline {section}{\numberline {A.3}Fase de transformación}{71}{section.536}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Analizadores empleados en los paquetes de web scraping}{73}{Appendix.542}%
+\contentsline {section}{\numberline {B.1}lxml}{73}{section.544}%
+\contentsline {subsection}{\numberline {B.1.1}lxml.html}{74}{subsection.545}%
+\contentsline {subsection}{\numberline {B.1.2}soupparser}{74}{subsection.546}%
+\contentsline {section}{\numberline {B.2}html5lib}{75}{section.547}%
+\contentsline {section}{\numberline {B.3}html.parser}{75}{section.548}%
+\contentsline {section}{\numberline {B.4}XML}{75}{section.549}%
+\contentsline {section}{\numberline {B.5}xml2}{76}{section.550}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {C}Métricas descartadas del proceso de evaluación}{77}{Appendix.554}%
+\contentsline {section}{\numberline {C.1}\emph {Perfect accuracy}}{77}{section.556}%
+\contentsline {section}{\numberline {C.2}\emph {Specificity}}{78}{section.562}%

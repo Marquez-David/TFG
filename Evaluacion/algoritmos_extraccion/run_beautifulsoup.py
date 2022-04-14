@@ -25,7 +25,7 @@ def run_beautifulsoup():
         with open(path, 'r', encoding = "utf-8") as file:
             html_to_string = file.read()
 
-        bs = BeautifulSoup(html_to_string, 'html.parser')
+        bs = BeautifulSoup(html_to_string, 'html.parse')
         output[path.stem] = {'texto': bs.get_text(separator=' ', strip=True)}
 
     return output
