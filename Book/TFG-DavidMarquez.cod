@@ -24,9 +24,13 @@
 \contentsline {codefloat}{\numberline {5.3}{\ignorespaces Función de ejecución de jusText\relax }}{57}{codefloat.456}%
 \contentsline {codefloat}{\numberline {5.4}{\ignorespaces Función de ejecución de html\_text\relax }}{58}{codefloat.474}%
 \contentsline {codefloat}{\numberline {5.5}{\ignorespaces Función de ejecución de html2text\relax }}{60}{codefloat.493}%
-\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{69}{codefloat.508}%
-\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{70}{codefloat.516}%
-\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{71}{codefloat.535}%
-\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{71}{codefloat.541}%
-\contentsline {codefloat}{\numberline {C.1}{\ignorespaces Cálculo de la métrica \emph {perfect accuracy}\relax }}{78}{codefloat.561}%
-\contentsline {codefloat}{\numberline {C.2}{\ignorespaces Cálculo de la métrica \emph {specificity}\relax }}{78}{codefloat.571}%
+\contentsline {codefloat}{\numberline {5.6}{\ignorespaces Función de ejecución de Readability\relax }}{61}{codefloat.513}%
+\contentsline {codefloat}{\numberline {5.7}{\ignorespaces Función de ejecución de Trafilatura\relax }}{62}{codefloat.533}%
+\contentsline {codefloat}{\numberline {5.8}{\ignorespaces Función de ejecución de Trafilatura \emph {(precision)}\relax }}{63}{codefloat.552}%
+\contentsline {codefloat}{\numberline {5.9}{\ignorespaces Función de ejecución de Trafilatura \emph {(recall)}\relax }}{64}{codefloat.571}%
+\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{75}{codefloat.589}%
+\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{76}{codefloat.597}%
+\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{77}{codefloat.616}%
+\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{77}{codefloat.622}%
+\contentsline {codefloat}{\numberline {C.1}{\ignorespaces Cálculo de la métrica \emph {perfect accuracy}\relax }}{84}{codefloat.642}%
+\contentsline {codefloat}{\numberline {C.2}{\ignorespaces Cálculo de la métrica \emph {specificity}\relax }}{84}{codefloat.652}%

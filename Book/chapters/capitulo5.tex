@@ -154,9 +154,9 @@ de CPU, es similar en todos los analizadores. Véase \ref{img:grafica - resultad
 
 \section*{jusText}
 
-El siguiente paquete sometido a análisis será \textbf{jusText}, el cual debemos instalar e importar en el
-fragmento de código respectivo. En cuanto a su instalación, es muy sencilla, simplemente se debe ejecutar
-la siguiente instrucción en la línea de comandos: \emph{\$ pip install justext}.
+Continuamos con el análisis de \textbf{jusText}, el cual debemos instalar e importar en el fragmento de 
+código respectivo. En cuanto a su instalación, es muy sencilla, simplemente se debe ejecutar la siguiente 
+instrucción en la línea de comandos: \emph{\$ pip install justext}.
 
 Como se observa en el fragmento de código \ref{cod:funcion de ejecucion de jusText}, la forma en la que
 se extrae texto de documentos HTML es muy similar a las vistas anteriormente. La principal diferencia es
@@ -264,7 +264,7 @@ sección, cuando comparemos la \emph{performance} de todos los paquetes.
 
 \section*{html2text}
 
-El siguiente paquete sometido a análisis será \textbf{html2text}, el cual debemos instalar e importar en 
+Otro de los paquetes sometidos a análisis será \textbf{html2text}, el cual debemos instalar e importar en 
 el fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente 
 instrucción en la línea de comandos: \emph{\$ pip install html2text}.
 
@@ -304,6 +304,222 @@ de su heurística. A pesar de todo ello, la calidad en general de la extracción
 \end{figure}
 
 \section*{Readability}
+
+El siguiente paquete sometido a análisis será \textbf{Readability}, el cual debemos instalar e importar 
+en el fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente 
+instrucción en la línea de comandos: \emph{\$ pip install readability-lxml}.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-readability.py}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de Readability}
+    \label{cod:funcion de ejecucion de readability}
+\end{codefloat}
+
+En el fragmento de código \ref{cod:funcion de ejecucion de readability} se muestra como \textbf{Readability}
+extrae texto de los diferentes documentos HTML. El algoritmo es muy simple y similar a los algoritmos de
+otros paquetes. Veamos los resultados de las métricas calculadas.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Readability & 0.8880 & 0.9101 & 0.937 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de Readability}
+      \label{tab:tabla - resultados de la evaluacion de readability}
+    \end{center}
+\end{table}
+
+Por otro lado, si recordamos la heurística del paquete, este empleaba la selección del nodo candidato para
+encontrar nodos de valor. Tras una primera selección se buscaban nodos adyacentes con el mismo propósito.
+Se puede observar tanto en la tabla \ref{tab:tabla - resultados de la evaluacion de readability} como en
+la gráfica \ref{img:grafica - resultados de la evaluacion de readability}, que la heurística parece funcionar.
+El algoritmo presenta una buena calidad en la extracción, los cálculos de \emph{accuracy} y \emph{precision}
+son muy buenos con respecto a los paquetes ya evaluados.
+
+Además de \textbf{Readability}, \textbf{Goose3} empleaba la misma técnica de nodo candidato para encontrar
+nodos de valor. Se muestra en la tabla \ref{tab:tabla - comparacion entre readability y goose3} una pequeña
+comparación entre ambos paquetes, donde los resultados referentes a la calidad de la extracción, son muy
+parejos.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Readability & 0.8880 & 0.9101 & 0.937 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+       Goose3 & 0.8658 & 0.9273 & 0.8913 & 0.9089 & 32.2 & 6.1 & 25.9731 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Comparación entre Readability y Goose3}
+      \label{tab:tabla - comparacion entre readability y goose3}
+    \end{center}
+\end{table}
+
+Además de la comparación vista, más adelante se realizará una evaluación individual de \textbf{Goose3} el
+cual hasta entonces, al igual que \textbf{Readability}, parece un algoritmo bastante completo.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-readability.jpg}
+    \caption{Gráfica - Resultados de la evaluación de Readability}
+    \label{img:grafica - resultados de la evaluacion de readability}
+\end{figure}
+
+En cuanto a las métricas dependientes del entorno, tanto los resultados de uso de memoria RAM, como el uso
+de CPU y el tiempo de ejecución del algoritmo entran dentro de lo estándar. La calidad de la información
+extraída y los resultados obtenidos en tiempo de ejecución y empleo de recursos, reflejan una muy buena
+optimización del paquete.
+
+\section*{Trafilatura}
+
+Otro paquete sometido a análisis será \textbf{Trafilatura}, el cual debemos instalar e importar 
+en el fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente 
+instrucción en la línea de comandos: \emph{\$ pip install trafilatura}.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-trafilatura.py}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de Trafilatura}
+    \label{cod:funcion de ejecucion de trafilatura}
+\end{codefloat}
+
+En cuanto a la función de extracción, debemos recordar que \textbf{Trafilatura} dispone de diferentes
+configuraciones con las que poder determinar la forma en la que se va a realizar el minado. En el fragmento
+de código \ref{cod:funcion de ejecucion de trafilatura} se muestra la función más genérica.
+
+Tanto en la tabla \ref{tab:tabla - resultados de la evaluacion de trafilatura} como en la correspondiente
+gráfica \ref{img:grafica - resultados de la evaluacion de trafilatura} se pueden observar los resultados
+de ejecutar \textbf{Trafilatura} en su versión más genérica. Las métricas calculadas determinan que la
+heurística empleada por el algoritmo es muy completa.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Trafilatura & 0.9124 & 0.9196 & 0.9707 & 0.9444 & 45.7 & 1.4 & 4.3919 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de Trafilatura}
+      \label{tab:tabla - resultados de la evaluacion de trafilatura}
+    \end{center}
+\end{table}
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=4.6in]{resultados-trafilatura.jpg}
+    \caption{Gráfica - Resultados de la evaluación de Trafilatura}
+    \label{img:grafica - resultados de la evaluacion de trafilatura}
+\end{figure}
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-trafilatura-precision.py}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de Trafilatura \emph{(precision)}}
+    \label{cod:funcion de ejecucion de trafilatura precision}
+\end{codefloat}
+
+Veamos las diferentes configuraciones de \textbf{Trafilatura} para potenciar la calidad del texto extraído.
+En primer lugar, vamos a mejorar la precisión del algoritmo. Como se puede observar en el fragmento de
+código \ref{cod:funcion de ejecucion de trafilatura precision}, se activan además los algoritmos de respaldo.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Tra. precision & 0.9129 & 0.9208 & 0.9699 & 0.9447 & 45.9 & 1.4 & 4.4590 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de Trafilatura \emph{precision}}
+      \label{tab:tabla - resultados de la evaluacion de trafilatura precision}
+    \end{center}
+\end{table}
+
+Podemos observar en la tabla \ref{tab:tabla - resultados de la evaluacion de trafilatura precision}, que
+los resultados obtenidos reflejan una mínima mejora en lo referido a la \emph{precision}. Algo sorprendente
+es que la inclusión de los algoritmos de respaldo no aumentan el uso de recursos ni el tiempo de ejecución.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=4.5in]{resultados-trafilatura-precision.jpg}
+    \caption{Gráfica - Resultados de la evaluación de Trafilatura \emph{precision}}
+    \label{img:grafica - resultados de la evaluacion de trafilatura precision}
+\end{figure}
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-trafilatura-recall.py}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de Trafilatura \emph{(recall)}}
+    \label{cod:funcion de ejecucion de trafilatura recall}
+\end{codefloat}
+
+Otra de las configuraciones permite mejorar la capacidad de captar las partes deseadas del documento, es
+decir, permite aumentar el valor de la métrica \emph{recall}. Como podemos observar en el fragmento de
+código \ref{cod:funcion de ejecucion de trafilatura recall} los algoritmos de respaldo siguen activos. 
+Veamos los resultados obtenidos.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Tra. recall & 0.9188 & 0.9287 & 0.9776 & 0.9525 & 46.3 & 0.5 & 3.0888 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de Trafilatura \emph{recall}}
+      \label{tab:tabla - resultados de la evaluacion de trafilatura recall}
+    \end{center}
+\end{table}
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-trafilatura-recall.jpg}
+    \caption{Gráfica - Resultados de la evaluación de Trafilatura \emph{recall}}
+    \label{img:grafica - resultados de la evaluacion de trafilatura recall}
+\end{figure}
+
+En los resultados mostrados en la tabla \ref{tab:tabla - resultados de la evaluacion de trafilatura recall}
+y en la gráfica \ref{img:grafica - resultados de la evaluacion de trafilatura recall}, se puede observar
+que nuevamente la mejora es mínima. La calidad de la información extraída es prácticamente la misma que la
+ofrecida por la heurística anterior.
+
+Haciendo una comparación más amplia entre los tres tipos de configuraciones para \textbf{Trafilatura},
+podemos observar que la heurística dedicada a seleccionar las partes deseadas de un documento es la más
+refinada. Esta supera incluso el valor de la métrica \emph{precision} de la propia heurística dedicada a 
+ello. Véase \ref{img:grafica - comparacion entre los tres algoritmos de trafilatura}.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Trafilatura & 0.9124 & 0.9196 & 0.9707 & 0.9444 & 45.7 & 1.4 & 4.3919 \\ \hline
+       Tra. precision & 0.9129 & 0.9208 & 0.9699 & 0.9447 & 45.9 & 1.4 & 4.4590 \\ \hline
+       Tra. recall & 0.9188 & 0.9287 & 0.9776 & 0.9525 & 46.3 & 0.5 & 3.0888 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Comparación entre los tres algoritmos de Trafilatura}
+      \label{tab:tabla - comparacion entre los tres algoritmos de trafilatura}
+    \end{center}
+\end{table}
+
+Por otra parte, los valores de referidos al uso de recursos del entorno de ejecución también se ven
+reducidos en la configuración para \emph{recall}. Al parecer la ejecución de los algoritmos de respaldo no
+afecta al consumo de recursos del entorno de ejecución. Véase 
+\ref{img:grafica - comparacion entre los tres algoritmos de trafilatura 2}.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-trafilatura-comparacion.jpg}
+    \caption{Gráfica - Comparación entre los tres algoritmos de Trafilatura}
+    \label{img:grafica - comparacion entre los tres algoritmos de trafilatura}
+\end{figure}
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-trafilatura-comparacion2.jpg}
+    \caption{Gráfica - Comparación entre los tres algoritmos de Trafilatura 2}
+    \label{img:grafica - comparacion entre los tres algoritmos de trafilatura 2}
+\end{figure}
+
+\section*{Goose3}
 
 
 

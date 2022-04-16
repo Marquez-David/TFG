@@ -85,20 +85,20 @@
 \BOOKMARK [3][-]{subsubsection.364}{4.2.4.2 M\351tricas dependientes del entorno de ejecuci\363n}{subsection.334}% 85
 \BOOKMARK [0][-]{chapter.397}{5 An\341lisis y comparativa de paquetes}{}% 86
 \BOOKMARK [1][-]{section.398}{5.1 Evaluaci\363n individual de paquetes}{chapter.397}% 87
-\BOOKMARK [0][-]{chapter.497}{6 Futuras lineas de trabajo...}{}% 88
-\BOOKMARK [0][-]{chapter*.498}{Bibliograf\355a}{}% 89
-\BOOKMARK [0][-]{Appendix.499}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 90
-\BOOKMARK [1][-]{section.500}{A.1 Fase de b\372squeda}{Appendix.499}% 91
-\BOOKMARK [1][-]{section.517}{A.2 Fase de extracci\363n}{Appendix.499}% 92
-\BOOKMARK [1][-]{section.536}{A.3 Fase de transformaci\363n}{Appendix.499}% 93
-\BOOKMARK [0][-]{Appendix.542}{Ap\351ndice B Analizadores empleados en los paquetes de web scraping}{}% 94
-\BOOKMARK [1][-]{section.544}{B.1 lxml}{Appendix.542}% 95
-\BOOKMARK [2][-]{subsection.545}{B.1.1 lxml.html}{section.544}% 96
-\BOOKMARK [2][-]{subsection.546}{B.1.2 soupparser}{section.544}% 97
-\BOOKMARK [1][-]{section.547}{B.2 html5lib}{Appendix.542}% 98
-\BOOKMARK [1][-]{section.548}{B.3 html.parser}{Appendix.542}% 99
-\BOOKMARK [1][-]{section.549}{B.4 XML}{Appendix.542}% 100
-\BOOKMARK [1][-]{section.550}{B.5 xml2}{Appendix.542}% 101
-\BOOKMARK [0][-]{Appendix.554}{Ap\351ndice C M\351tricas descartadas del proceso de evaluaci\363n}{}% 102
-\BOOKMARK [1][-]{section.556}{C.1 Perfect accuracy}{Appendix.554}% 103
-\BOOKMARK [1][-]{section.562}{C.2 Specificity}{Appendix.554}% 104
+\BOOKMARK [0][-]{chapter.578}{6 Futuras lineas de trabajo...}{}% 88
+\BOOKMARK [0][-]{chapter*.579}{Bibliograf\355a}{}% 89
+\BOOKMARK [0][-]{Appendix.580}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 90
+\BOOKMARK [1][-]{section.581}{A.1 Fase de b\372squeda}{Appendix.580}% 91
+\BOOKMARK [1][-]{section.598}{A.2 Fase de extracci\363n}{Appendix.580}% 92
+\BOOKMARK [1][-]{section.617}{A.3 Fase de transformaci\363n}{Appendix.580}% 93
+\BOOKMARK [0][-]{Appendix.623}{Ap\351ndice B Analizadores empleados en los paquetes de web scraping}{}% 94
+\BOOKMARK [1][-]{section.625}{B.1 lxml}{Appendix.623}% 95
+\BOOKMARK [2][-]{subsection.626}{B.1.1 lxml.html}{section.625}% 96
+\BOOKMARK [2][-]{subsection.627}{B.1.2 soupparser}{section.625}% 97
+\BOOKMARK [1][-]{section.628}{B.2 html5lib}{Appendix.623}% 98
+\BOOKMARK [1][-]{section.629}{B.3 html.parser}{Appendix.623}% 99
+\BOOKMARK [1][-]{section.630}{B.4 XML}{Appendix.623}% 100
+\BOOKMARK [1][-]{section.631}{B.5 xml2}{Appendix.623}% 101
+\BOOKMARK [0][-]{Appendix.635}{Ap\351ndice C M\351tricas descartadas del proceso de evaluaci\363n}{}% 102
+\BOOKMARK [1][-]{section.637}{C.1 Perfect accuracy}{Appendix.635}% 103
+\BOOKMARK [1][-]{section.643}{C.2 Specificity}{Appendix.635}% 104

@@ -20,6 +20,12 @@
 \contentsline {table}{\numberline {5.5}{\ignorespaces Tabla - Resultados de la evaluación de jusText\relax }}{57}{table.caption.457}%
 \contentsline {table}{\numberline {5.6}{\ignorespaces Tabla - Resultados de la evaluación de html\_text\relax }}{59}{table.caption.475}%
 \contentsline {table}{\numberline {5.7}{\ignorespaces Tabla - Resultados de la evaluación de html2text\relax }}{60}{table.caption.494}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Tabla - Resultados de la evaluación de Readability\relax }}{61}{table.caption.514}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Tabla - Comparación entre Readability y Goose3\relax }}{61}{table.caption.515}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura\relax }}{63}{table.caption.534}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {precision}\relax }}{64}{table.caption.553}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {recall}\relax }}{65}{table.caption.572}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces Tabla - Comparación entre los tres algoritmos de Trafilatura\relax }}{65}{table.caption.574}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

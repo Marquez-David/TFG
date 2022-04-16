@@ -35,9 +35,15 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Gráfica - Resultados de la evaluación de jusText\relax }}{58}{figure.caption.458}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Gráfica - Resultados de la evaluación de html\_text\relax }}{59}{figure.caption.476}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Gráfica - Resultados de la evaluación de html2text\relax }}{60}{figure.caption.495}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Gráfica - Resultados de la evaluación de Readability\relax }}{62}{figure.caption.516}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura\relax }}{63}{figure.caption.535}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {precision}\relax }}{64}{figure.caption.554}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {recall}\relax }}{65}{figure.caption.573}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Gráfica - Comparación entre los tres algoritmos de Trafilatura\relax }}{66}{figure.caption.575}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Gráfica - Comparación entre los tres algoritmos de Trafilatura 2\relax }}{66}{figure.caption.576}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{73}{figure.caption.543}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{79}{figure.caption.624}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Jerarquía de métricas descartadas\relax }}{77}{figure.caption.555}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Jerarquía de métricas descartadas\relax }}{83}{figure.caption.636}%
