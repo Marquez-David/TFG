@@ -11,21 +11,27 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Ejemplos de instancias positivas y negativas\relax }}{44}{table.caption.293}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Ejemplos de True Negative\relax }}{44}{table.caption.294}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Características del entorno de ejecución\relax }}{50}{table.caption.396}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Características del entorno de ejecución\relax }}{50}{table.caption.400}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla - Resultados de la evaluación de inscriptis\relax }}{54}{table.caption.415}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Tabla - Resultados de la evaluación de Beautiful Soup \emph {(html.parse)}\relax }}{55}{table.caption.434}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Tabla - Resultados de la evaluación de Beautiful Soup \emph {(lxml)}\relax }}{55}{table.caption.435}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Tabla - Resultados de la evaluación de Beautiful Soup \emph {(html5lib)}\relax }}{55}{table.caption.436}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Tabla - Resultados de la evaluación de jusText\relax }}{57}{table.caption.457}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Tabla - Resultados de la evaluación de html\_text\relax }}{59}{table.caption.475}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces Tabla - Resultados de la evaluación de html2text\relax }}{60}{table.caption.494}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces Tabla - Resultados de la evaluación de Readability\relax }}{61}{table.caption.514}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces Tabla - Comparación entre Readability y Goose3\relax }}{61}{table.caption.515}%
-\contentsline {table}{\numberline {5.10}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura\relax }}{63}{table.caption.534}%
-\contentsline {table}{\numberline {5.11}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {precision}\relax }}{64}{table.caption.553}%
-\contentsline {table}{\numberline {5.12}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {recall}\relax }}{65}{table.caption.572}%
-\contentsline {table}{\numberline {5.13}{\ignorespaces Tabla - Comparación entre los tres algoritmos de Trafilatura\relax }}{65}{table.caption.574}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla - Resultados de la evaluación de inscriptis\relax }}{54}{table.caption.419}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Tabla - Resultados de la evaluación de Beautiful Soup \emph {(html.parse)}\relax }}{55}{table.caption.438}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tabla - Resultados de la evaluación de Beautiful Soup \emph {(lxml)}\relax }}{55}{table.caption.439}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Tabla - Resultados de la evaluación de Beautiful Soup \emph {(html5lib)}\relax }}{55}{table.caption.440}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Tabla - Resultados de la evaluación de jusText\relax }}{57}{table.caption.461}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Tabla - Resultados de la evaluación de html\_text\relax }}{59}{table.caption.479}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Tabla - Resultados de la evaluación de html2text\relax }}{60}{table.caption.498}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Tabla - Resultados de la evaluación de Readability\relax }}{61}{table.caption.518}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Tabla - Comparación de resultados entre Readability \& Goose3\relax }}{61}{table.caption.519}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura\relax }}{63}{table.caption.538}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {precision}\relax }}{64}{table.caption.557}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {recall}\relax }}{65}{table.caption.576}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces Tabla - Comparación entre los tres algoritmos de Trafilatura\relax }}{65}{table.caption.578}%
+\contentsline {table}{\numberline {5.14}{\ignorespaces Tabla - Resultados de la evaluación de Goose3\relax }}{67}{table.caption.600}%
+\contentsline {table}{\numberline {5.15}{\ignorespaces Tabla - Resultados de la evaluación de Boilerpy\relax }}{69}{table.caption.619}%
+\contentsline {table}{\numberline {5.16}{\ignorespaces Tabla - Resultados de la evaluación de BoilerpipeR\relax }}{70}{table.caption.647}%
+\contentsline {table}{\numberline {5.17}{\ignorespaces Tabla - Comparación de resultados entre Boilerpy \& BoilerpipeR\relax }}{70}{table.caption.648}%
+\contentsline {table}{\numberline {5.18}{\ignorespaces Tabla - Resultados de la evaluación de rvest\relax }}{72}{table.caption.678}%
+\contentsline {table}{\numberline {5.19}{\ignorespaces Tabla - Resultados de la evaluación de Rcrawler\relax }}{74}{table.caption.706}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

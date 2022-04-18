@@ -1,14 +1,13 @@
-library(rvest)
+library(Rcrawler)
 
-run_rvest <- function() {
-    ###extraccion de texto empleando rvest###
+run_rcrawler <- function() {
+    ###extraccion de texto empleando rcrawler###
+
     output <- c() #diccionario salida
-
     files <- list.files(path = "./archivos_html", pattern = ".html")
     index <- 0
     for (key in fromJSON(file = "./documento_base.json")) {
-        html_to_string <- read_html(key$url, encoding = "UTF-8") %>% 
-                        html_nodes(xpath = '//body') %>% html_text()
+        html_to_string <- ContentScraper(Url = key$url, XpathPatterns = "//body")
         lista_texto <- list('xxxxtest' = list("texto" = html_to_string))
 
         names(lista_texto) <- str_remove(files[index + 1], ".html")

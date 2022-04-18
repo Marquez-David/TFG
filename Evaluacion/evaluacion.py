@@ -38,7 +38,7 @@ def mostrar_tabla_metricas():
         tabla_metricas.add_row([path.stem, metricas['accuracy'], metricas['precision'], metricas['recall'], metricas['f1'],
                                 estadisticas[path.stem].get('RAM % Usage'), estadisticas[path.stem].get('CPU % Usage'), estadisticas[path.stem].get('Execution time')])
                                
-    print(tabla_metricas[14])
+    print(tabla_metricas[9])
     
 def evaluar_algoritmo(documento_base, documento_extraido):
     '''evaluacion de cada algoritmo a partir de su documento de extraccion'''

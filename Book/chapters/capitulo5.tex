@@ -340,9 +340,9 @@ El algoritmo presenta una buena calidad en la extracción, los cálculos de \emp
 son muy buenos con respecto a los paquetes ya evaluados.
 
 Además de \textbf{Readability}, \textbf{Goose3} empleaba la misma técnica de nodo candidato para encontrar
-nodos de valor. Se muestra en la tabla \ref{tab:tabla - comparacion entre readability y goose3} una pequeña
-comparación entre ambos paquetes, donde los resultados referentes a la calidad de la extracción, son muy
-parejos.
+nodos de valor. Se muestra en la tabla \ref{tab:tabla - comparacion de resultados entre readability y goose3} 
+una pequeña comparación entre ambos paquetes, donde los resultados referentes a la calidad de la extracción, 
+son muy parejos.
 
 \begin{table}[h]
     \begin{center}
@@ -351,8 +351,8 @@ parejos.
        Readability & 0.8880 & 0.9101 & 0.937 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
        Goose3 & 0.8658 & 0.9273 & 0.8913 & 0.9089 & 32.2 & 6.1 & 25.9731 \\ \hline
       \end{tabular}
-      \caption{Tabla - Comparación entre Readability y Goose3}
-      \label{tab:tabla - comparacion entre readability y goose3}
+      \caption{Tabla - Comparación de resultados entre Readability \& Goose3}
+      \label{tab:tabla - comparacion de resultados entre readability y goose3}
     \end{center}
 \end{table}
 
@@ -521,6 +521,279 @@ afecta al consumo de recursos del entorno de ejecución. Véase
 
 \section*{Goose3}
 
+El siguiente paquete sometido a análisis es \textbf{Goose3}, el cual debemos instalar e importar en el 
+fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente 
+instrucción en la línea de comandos: \emph{\$ pip install goose3}.
 
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-goose3.py}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de Goose3}
+    \label{cod:funcion de ejecucion de goose3}
+\end{codefloat}
 
+Al igual que otros algoritmos ya vistos, \textbf{Goose3} permite modificar parte de su configuración con el
+objetivo de personalizar la salida obtenida. Hay dos formas de pasar la configuración. La primera consiste
+en pasarle al algoritmo un objeto \emph{Configuration()}, la segunda es a través de un diccionario de 
+configuración.
+
+\begin{Schunk}
+    \begin{Soutput}
+    >>> g = Goose({'browser_user_agent': 'Mozilla'})
+    >>> g = Goose({'browser_user_agent': 'Mozilla', 'parser_class':'soup'})
+    ...
+    >>> g = Goose({'strict': False})
+    \end{Soutput}
+\end{Schunk}
+
+En el fragmento de código \ref{cod:funcion de ejecucion de goose3} se muestra las líneas de código empleadas
+para que \textbf{Goose3} pueda extraer la información deseada de documentos HTML. Se observa que la forma
+de actuar es la misma que en el resto de algoritmos ya vistos. 
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Goose3 & 0.8658 & 0.9273 & 0.8913 & 0.9089 & 32.2 & 6.1 & 25.9731 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de Goose3}
+      \label{tab:tabla - resultados de la evaluacion de goose3}
+    \end{center}
+\end{table}
+
+En cuanto a calidad de extracción, en la tabla \ref{tab:tabla - resultados de la evaluacion de goose3}
+podemos observar que los valores son buenos. La mayor parte del texto extraído son partes deseadas y la 
+exclusión de contenido \emph{boilerplate} también es muy buena.
+
+En contrapartida, los valores referentes a la optimización de recursos y tiempo de ejecución, dejan algo
+que desear. Además del exagerado tiempo que tarda el algoritmo en ejecutar, el uso de CPU es elevado
+respecto a otros algoritmos.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-goose3.jpg}
+    \caption{Gráfica - Resultados de la evaluación de Goose3}
+    \label{img:grafica - resultados de la evaluacion de goose3}
+\end{figure}
+
+\section*{Boilerpy}
+
+Otro de los paquetes sometidos a análisis es \textbf{Boilerpy}, el cual debemos instalar e importar en el 
+fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente 
+instrucción en la línea de comandos: \emph{\$ pip install boilerpy3}.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-boilerpy.py}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de Boilerpy}
+    \label{cod:funcion de ejecucion de boilerpy 2}
+\end{codefloat}
+
+En el fragmento de código \ref{cod:funcion de ejecucion de boilerpy 2} se muestra como \textbf{Boilerpy}
+extrae texto de diferentes documentos HTML. Recordemos que el algoritmo disponía de múltiples extractores
+que se usaban dependiendo del tipo de información a obtener. En este caso se emplea \emph{ArticleExtractor()}
+el cual extrae el texto de artículos.
+
+En cuanto a los resultados obtenidos, entran dentro de lo estándar. La calidad del texto que se extrae es
+buena y el uso de recursos es reducido. Véase \ref{tab:tabla - resultados de la evaluacion de boilerpy} y 
+\ref{img:grafica - resultados de la evaluacion de boilerpy}.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Boilerpy & 0.7947 & 0.8544 & 0.8803 & 0.8672 & 43.9 & 1.9 & 2.5412 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de Boilerpy}
+      \label{tab:tabla - resultados de la evaluacion de boilerpy}
+    \end{center}
+\end{table}
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-boilerpy.jpg}
+    \caption{Gráfica - Resultados de la evaluación de Boilerpy}
+    \label{img:grafica - resultados de la evaluacion de boilerpy}
+\end{figure}
+
+\section*{BoilerpipeR}
+
+La version en \textbf{R} de \textbf{Boilerpy} es \textbf{BoilerpipeR}, el cual debemos instalar e importar 
+en el fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente 
+instrucción en la línea de comandos de R: \emph{install.packages("boilerpipeR")}.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-boilerpiper.py}
+    \inputencoding{utf8}
+    \caption{Ejecución de BoilerpipeR desde Python}
+    \label{cod:ejecucion de boilerpiper desde python}
+\end{codefloat}
+
+Al ser este un paquete propio de R, es necesaria una interfaz que nos permita ejecutarlo en Python. En el
+fragmento de código \ref{cod:ejecucion de boilerpiper desde python} se muestra el proceso.
+
+Por otro lado, en cuanto a la propia función de ejecución, se puede observar en el fragmento de código
+\ref{cod:funcion de ejecucion de boilerpiper 2} como está programado el algoritmo. Podemos observar que la 
+forma de proceder es similar a la ya propuesta por los algoritmos de otras herramientas de minado.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-boilerpiper.R}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de BoilerpipeR}
+    \label{cod:funcion de ejecucion de boilerpiper 2}
+\end{codefloat}
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       BoilerpipeR & 0.7830 & 0.8486 & 0.8696 & 0.8590 & 47.9 & 2.6 & 39.9543 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de BoilerpipeR}
+      \label{tab:tabla - resultados de la evaluacion de boilerpiper}
+    \end{center}
+\end{table}
+
+Realizando una apreciación general sobre los datos obtenidos, podemos observar que \textbf{BoilerpipeR}
+realiza un buen trabajo de minado, véase \ref{tab:tabla - resultados de la evaluacion de boilerpiper}.
+Comparemos ahora los resultados obtenidos, con los calculados anteriormente para \textbf{Boilerpy}.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Boilerpy & 0.7947 & 0.8544 & 0.8803 & 0.8672 & 43.9 & 1.9 & 2.5412 \\ \hline
+       BoilerpipeR & 0.7830 & 0.8486 & 0.8696 & 0.8590 & 47.9 & 2.6 & 39.9543 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Comparación de resultados entre Boilerpy \& BoilerpipeR}
+      \label{tab:tabla - comparacion de resultados entre boilerpy y boilerpiper}
+    \end{center}
+\end{table}
+
+Se muestra en la tabla \ref{tab:tabla - comparacion de resultados entre boilerpy y boilerpiper} los datos
+obtenidos para ambas herramientas. En ambos algoritmos se ha empleado \emph{ArticleExtractor} como extractor
+estándar. Podemos observar que apenas existen claras diferencias entre ambos resultados, respecto a la
+calidad del texto extraído, las dos herramientas reflejan unos resultados muy parejos.
+
+En contrapartida, los resultados obtenidos con respecto a empleo de recursos del entorno de ejecución son
+algo diferentes. El tiempo que tarda en ejecutarse \textbf{BoilerpipeR} se aleja demasiado de la media de
+algoritmos visto hasta ahora. Veamos una comparación gráfica.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-boilerpiper.jpg}
+    \caption{Gráfica - Resultados de la evaluación de BoilerpipeR}
+    \label{img:grafica - resultados de la evaluacion de boilerpiper}
+\end{figure}
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-boilerpiper2.jpg}
+    \caption{Gráfica - Resultados de la evaluación de BoilerpipeR 2}
+    \label{img:grafica - resultados de la evaluacion de boilerpiper 2}
+\end{figure}
+
+\section*{rvest}
+
+El siguiente paquete sometido a análisis es \textbf{rvest}, el cual debemos instalar e importar en el
+fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente
+instrucción en la línea de comandos de R: \emph{install.packages("rvest")}.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-rvest.py}
+    \inputencoding{utf8}
+    \caption{Ejecución de rvest desde Python}
+    \label{cod:ejecucion de rvest desde python}
+\end{codefloat}
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-rvest.R}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de rvest}
+    \label{cod:funcion de ejecucion de rvest}
+\end{codefloat}
+
+En el fragmento de código \ref{cod:funcion de ejecucion de rvest} se muestra la función empleada para
+ejecutar \textbf{rvest}. Se puede observar el empleo del operador tubería \emph{\%>\%} el cual se encarga
+de facilitar la transferencia de resultados de las diferentes funciones implicadas.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       rvest & 0.1347 & 0.1371 & 0.8974 & 0.2378 & 44.1 & 8.9 & 60.3245 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de rvest}
+      \label{tab:tabla - resultados de la evaluacion de rvest}
+    \end{center}
+\end{table}
+
+En cuanto a las métricas, los datos reflejados en \ref{tab:tabla - resultados de la evaluacion de rvest}
+dejan bastante claro que la calidad de \textbf{rvest} en la extracción de contenido no es buena. Uno de
+los principales motivos es el uso necesario de expresiones \emph{xPath}. En este caso \emph{xpath = //body} 
+permite al algoritmo trabajar con la etiqueta \emph{body} del documento HTML en cuestión.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-rvest.jpg}
+    \caption{Gráfica - Resultados de la evaluación de rvest}
+    \label{img:grafica - resultados de la evaluacion de rvest}
+\end{figure}
+
+\section*{Rcrawler}
+
+Otro paquete propio de R sometido a análisis será \textbf{Rcrawler}, el cual debemos instalar e importar
+en el fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente
+instrucción en la línea de comandos: \emph{install.packages("Rcrawler", dependencies = TRUE)}.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-rcrawler.R}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de Rcrawler}
+    \label{cod:funcion de ejecucion de rcrawler}
+\end{codefloat}
+
+En referencia al fragmento de código mostrado en \ref{cod:funcion de ejecucion de rcrawler}, es muy similar
+al resto de códigos ya mostrados anteriormente. En este caso se deben emplear nuevamente expresiones
+\emph{xPath} para trabajar sobre la etiqueta HTML requerida, \emph{XpathPatterns = "//body"}.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-rcrawler.py}
+    \inputencoding{utf8}
+    \caption{Ejecución de Rcrawler desde Python}
+    \label{cod:ejecucion de rcrawler desde python}
+\end{codefloat}
+
+Sobre los datos obtenidos, se muestran en la tabla \ref{tab:tabla - resultados de la evaluacion de rcrawler}.
+Estos reflejan una pobre calidad de la información extraída por parte de \textbf{Rcrawler}. Al igual que
+sucedía con \textbf{rvest}, el empleo de expresiones \emph{xPath} limita la información a extraer. Por otro 
+lado, ni el empleo de recursos, ni el tiempo de ejecución son buenos.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Rcrawler & 0.4540 & 0.4628 & 0.9310 & 0.6181 & 46.7 & 3.4 & 158.0663 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de Rcrawler}
+      \label{tab:tabla - resultados de la evaluacion de rcrawler}
+    \end{center}
+\end{table}
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-rcrawler.jpg}
+    \caption{Gráfica - Resultados de la evaluación de Rcrawler}
+    \label{img:grafica - resultados de la evaluacion de rcrawler}
+\end{figure}
+
+\section*{htm2txt}
 

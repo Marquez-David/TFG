@@ -1,14 +1,14 @@
 from turtle import color
 import matplotlib.pyplot as plt
 
-'''
+
 plt.ylim(0, 1)
  
 ## Declaramos valores para el eje x
 eje_x = ['Accuracy', 'Precision', 'Recall', 'F1']
  
 ## Declaramos valores para el eje y
-eje_y = [0.9188, 0.9287, 0.9776, 0.9525]
+eje_y = [0.454, 0.4628, 0.9310, 0.6181]
  
 ## Creamos Gráfica
 plt.bar(eje_x, eje_y, color='orange')
@@ -24,12 +24,12 @@ plt.bar(eje_x, eje_y, color='orange')
  
 ## Mostramos Gráfica
 plt.show()
-'''
+
 '''
 # Los datos de entrada 
-green_data = [0.9124, 0.9196, 0.9707, 0.9444]
-blue_data = [0.9129, 0.9208, 0.9699, 0.9447]
-red_data = [0.9188, 0.9287, 0.9776, 0.9525]
+green_data = [0.7947, 0.8544, 0.8803, 0.8672]
+blue_data = [0.7830, 0.8486, 0.8696, 0.8590]
+#red_data = [0.9188, 0.9287, 0.9776, 0.9525]
 labels = ['Accuracy', 'Precision', 'Recall', 'F1']
  
  # Establecer la posición y el ancho del gráfico de barras
@@ -49,10 +49,10 @@ plt.bar([p + width for p in pos], blue_data, width,
                  color='b',
                  label=labels[1])
 
-plt.bar([p + width*2 for p in pos], red_data, width,
-                 alpha=0.5,
-                 color='r',
-                 label=labels[2])
+#plt.bar([p + width*2 for p in pos], red_data, width,
+                 #alpha=0.5,
+                 #color='r',
+                 #label=labels[2])
 
 
  # Establecer etiqueta y distancia
@@ -66,14 +66,14 @@ plt.xlim(min(pos)-width, max(pos)+width*3)
 plt.ylim([0, 1])
  
  # Dibujar
-plt.legend(['Trafilatura', 'Trafilatura precision', 'Trafilatura recall'], loc='upper right')
+plt.legend(['Boilerpy', 'BoilerpipeR',], loc='upper right')
 plt.show()
 '''
-
+'''
 # Los datos de entrada 
-green_data = [45.7, 1.4]
-blue_data = [45.9, 1.4]
-red_data = [46.3, 0.5]
+green_data = [43.9, 1.9]
+blue_data = [47.9, 2.6]
+#red_data = [46.3, 0.5]
 labels = ['Uso RAM', 'Uso CPU']
  
  # Establecer la posición y el ancho del gráfico de barras
@@ -93,10 +93,10 @@ plt.barh([p + width for p in pos], blue_data, width,
                  color='b',
                  label=labels[1])
 
-plt.barh([p + width*2 for p in pos], red_data, width,
-                 alpha=0.5,
-                 color='r',
-                 label=labels[1])
+#plt.barh([p + width*2 for p in pos], red_data, width,
+                 #alpha=0.5,
+                 #color='r',
+                 #label=labels[1])
 
 
  # Establecer etiqueta y distancia
@@ -110,8 +110,6 @@ plt.ylim(min(pos)-width, max(pos)+width*3)
 plt.xlim([0, 100])
  
  # Dibujar
-plt.legend(['Trafilatura', 'Trafilatura precision', 'Trafilatura recall'], loc='upper right')
+plt.legend(['Boilerpy', 'BoilerpipeR'], loc='upper right')
 plt.show()
-
-
-
+'''

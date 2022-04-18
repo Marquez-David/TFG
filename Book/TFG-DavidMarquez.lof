@@ -27,23 +27,29 @@
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Comparación de textos empleando n-gramas mejorados\relax }}{45}{figure.caption.332}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Matriz de confusión de las instancias calculadas\relax }}{46}{figure.caption.333}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Jerarquía de métricas\relax }}{47}{figure.caption.336}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Estructura del entorno de ejecución\relax }}{50}{figure.caption.395}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Estructura del entorno de ejecución\relax }}{50}{figure.caption.399}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Gráfica - Resultados de la evaluación de inscriptis\relax }}{54}{figure.caption.416}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfica - Resultados de la evaluación de Beautiful Soup\relax }}{56}{figure.caption.437}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Gráfica - Resultados de la evaluación de Beautiful Soup 2\relax }}{56}{figure.caption.438}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Gráfica - Resultados de la evaluación de jusText\relax }}{58}{figure.caption.458}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Gráfica - Resultados de la evaluación de html\_text\relax }}{59}{figure.caption.476}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Gráfica - Resultados de la evaluación de html2text\relax }}{60}{figure.caption.495}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Gráfica - Resultados de la evaluación de Readability\relax }}{62}{figure.caption.516}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura\relax }}{63}{figure.caption.535}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {precision}\relax }}{64}{figure.caption.554}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {recall}\relax }}{65}{figure.caption.573}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Gráfica - Comparación entre los tres algoritmos de Trafilatura\relax }}{66}{figure.caption.575}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Gráfica - Comparación entre los tres algoritmos de Trafilatura 2\relax }}{66}{figure.caption.576}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Gráfica - Resultados de la evaluación de inscriptis\relax }}{54}{figure.caption.420}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfica - Resultados de la evaluación de Beautiful Soup\relax }}{56}{figure.caption.441}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Gráfica - Resultados de la evaluación de Beautiful Soup 2\relax }}{56}{figure.caption.442}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Gráfica - Resultados de la evaluación de jusText\relax }}{58}{figure.caption.462}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Gráfica - Resultados de la evaluación de html\_text\relax }}{59}{figure.caption.480}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Gráfica - Resultados de la evaluación de html2text\relax }}{60}{figure.caption.499}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Gráfica - Resultados de la evaluación de Readability\relax }}{62}{figure.caption.520}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura\relax }}{63}{figure.caption.539}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {precision}\relax }}{64}{figure.caption.558}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {recall}\relax }}{65}{figure.caption.577}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Gráfica - Comparación entre los tres algoritmos de Trafilatura\relax }}{66}{figure.caption.579}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Gráfica - Comparación entre los tres algoritmos de Trafilatura 2\relax }}{66}{figure.caption.580}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Gráfica - Resultados de la evaluación de Goose3\relax }}{68}{figure.caption.601}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Gráfica - Resultados de la evaluación de Boilerpy\relax }}{69}{figure.caption.620}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Gráfica - Resultados de la evaluación de BoilerpipeR\relax }}{71}{figure.caption.649}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Gráfica - Resultados de la evaluación de BoilerpipeR 2\relax }}{71}{figure.caption.650}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Gráfica - Resultados de la evaluación de rvest\relax }}{73}{figure.caption.679}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Gráfica - Resultados de la evaluación de Rcrawler\relax }}{74}{figure.caption.707}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{79}{figure.caption.624}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{85}{figure.caption.755}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Jerarquía de métricas descartadas\relax }}{83}{figure.caption.636}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Jerarquía de métricas descartadas\relax }}{89}{figure.caption.767}%

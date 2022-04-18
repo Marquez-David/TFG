@@ -1,6 +1,8 @@
+library(boilerpipeR)
+
 run_boilerpipeR <- function() {
     ###extraccion de texto empleando boilepipeR###
-    output <- c()
+    output <- c() #diccionario salida
 
     files <- list.files(path = "./archivos_html", pattern = ".html")
     index <- 0

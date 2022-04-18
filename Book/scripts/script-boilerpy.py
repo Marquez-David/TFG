@@ -1,6 +1,8 @@
+from boilerpy3 import extractors
+
 def run_boilerpy():
     '''extraccion de texto empleando boilerpipe'''
-    output = {}
+    output = {} #diccionario salida
 
     for path in Path('archivos_html').glob('*.html'):
         with open(path, 'r', encoding = "utf-8") as file:
