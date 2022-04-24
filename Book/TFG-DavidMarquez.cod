@@ -36,9 +36,12 @@
 \contentsline {codefloat}{\numberline {5.15}{\ignorespaces Función de ejecución de rvest\relax }}{72}{codefloat.677}%
 \contentsline {codefloat}{\numberline {5.16}{\ignorespaces Función de ejecución de Rcrawler\relax }}{73}{codefloat.698}%
 \contentsline {codefloat}{\numberline {5.17}{\ignorespaces Ejecución de Rcrawler desde Python\relax }}{74}{codefloat.705}%
-\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{81}{codefloat.720}%
-\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{82}{codefloat.728}%
-\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{83}{codefloat.747}%
-\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{83}{codefloat.753}%
-\contentsline {codefloat}{\numberline {C.1}{\ignorespaces Cálculo de la métrica \emph {perfect accuracy}\relax }}{90}{codefloat.773}%
-\contentsline {codefloat}{\numberline {C.2}{\ignorespaces Cálculo de la métrica \emph {specificity}\relax }}{90}{codefloat.783}%
+\contentsline {codefloat}{\numberline {5.18}{\ignorespaces Función de ejecución de htm2txt\relax }}{75}{codefloat.727}%
+\contentsline {codefloat}{\numberline {5.19}{\ignorespaces Ejecución de htm2txt desde Python\relax }}{75}{codefloat.734}%
+\contentsline {codefloat}{\numberline {5.20}{\ignorespaces Función de ejecución de \emph {xPath}\relax }}{76}{codefloat.758}%
+\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{85}{codefloat.773}%
+\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{86}{codefloat.781}%
+\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{87}{codefloat.800}%
+\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{87}{codefloat.806}%
+\contentsline {codefloat}{\numberline {C.1}{\ignorespaces Cálculo de la métrica \emph {perfect accuracy}\relax }}{94}{codefloat.826}%
+\contentsline {codefloat}{\numberline {C.2}{\ignorespaces Cálculo de la métrica \emph {specificity}\relax }}{94}{codefloat.836}%

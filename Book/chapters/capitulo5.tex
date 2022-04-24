@@ -2,15 +2,17 @@
 \label{cha:analisis y comparativa de paquetes}
 
 Tras la exposición de las diferentes variables y métricas que conformaran la evaluación, se realiza el
-correspondiente análisis y comparación de paquetes. Inicialmente, el análisis será individual de cada 
-paquete, para finalmente hacer una comparativa conjunta.
+correspondiente análisis y comparación de paquetes. Inicialmente, el análisis será individual de cada
+paquete, señalando aspectos relativos a otros paquetes si fuese necesario. En la segunda sección, se 
+realizará una comparación conjunta de todos los paquetes analizados.
 
 \section{Evaluación individual de paquetes}
 \label{sec:evaluacion individual de paquetes}
 
-A continuación se realiza un análisis individual de los resultados obtenidos de cada paquete. Adicionalmente, 
-se incluyen resultados de otros paquetes con el objetivo de efectuar una pequeña comparación entre los 
-mismos.
+Tal y como se ha especificado en la introducción, se procede con el análisis individual de cada paquete.
+A lo largo de la misma, se introducirán aspectos relativos a ciertos paquetes, como el tipo de analizador
+y los resultados obtenidos empleando distintos tipos de herramientas. Para cada paquete se especificará 
+una tabla de resultados y una imagen de los mismos resultados dispuestos gráficamente.
 
 \section*{inscriptis}
 
@@ -32,7 +34,8 @@ Dicha información se almacena posteriormente de forma ordenada sobre un diccion
 
 Para conservar la información obtenida y no ejecutar el algoritmo múltiples veces, el diccionario obtenido
 se almacena en un archivo \emph{json} propio del paquete. De esta forma, el archivo \emph{inscriptis.json} 
-conserva todos los fragmentos de texto obtenidos del minado web anterior.
+conserva todos los fragmentos de texto obtenidos del minado web anterior. Este mismo procedimiento se 
+realiza para el resto de paquetes.
 
 Una vez ejecutado el algoritmo, se realizan todos los cálculos pertinentes y se determinan las puntuaciones
 obtenidas. En el caso de \textbf{inscriptis}, se muestran en la tabla
@@ -69,8 +72,8 @@ analizar 101 documentos HTML en únicamente dos segundos.
 \section*{Beautiful Soup}
 
 El segundo paquete sometido a análisis será \textbf{Beautiful Soup}, el cual debemos instalar e importar 
-en el fragmento de código respectivo. En cuanto a su instalación, es muy sencilla, simplemente se debe 
-ejecutar la siguiente instrucción en la línea de comandos: \emph{\$ pip install beautifulsoup4}.
+en el fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente 
+instrucción en la línea de comandos: \emph{\$ pip install beautifulsoup4}.
 
 Como se observa en el fragmento de código \ref{cod:funcion de ejecucion beautiful soup}, la función es muy
 similar a la vista con \textbf{inscriptis}. Se itera sobre los documentos HTML a analizar y se aplica la
@@ -155,8 +158,8 @@ de CPU, es similar en todos los analizadores. Véase \ref{img:grafica - resultad
 \section*{jusText}
 
 Continuamos con el análisis de \textbf{jusText}, el cual debemos instalar e importar en el fragmento de 
-código respectivo. En cuanto a su instalación, es muy sencilla, simplemente se debe ejecutar la siguiente 
-instrucción en la línea de comandos: \emph{\$ pip install justext}.
+código respectivo. En cuanto a su instalación, simplemente se debe ejecutar la siguiente instrucción en la 
+línea de comandos: \emph{\$ pip install justext}.
 
 Como se observa en el fragmento de código \ref{cod:funcion de ejecucion de jusText}, la forma en la que
 se extrae texto de documentos HTML es muy similar a las vistas anteriormente. La principal diferencia es
@@ -797,3 +800,101 @@ lado, ni el empleo de recursos, ni el tiempo de ejecución son buenos.
 
 \section*{htm2txt}
 
+Veamos como funciona el paquete \textbf{htm2txt}, para ello primero debemos realizar la instalación e
+importación en el fragmento de código respectivo. En cuanto a su instalación, simplemente se debe ejecutar
+la siguiente instrucción en la línea de comandos de R: \emph{install.packages('htm2txt')}.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-htm2txt.R}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de htm2txt}
+    \label{cod:funcion de ejecucion de htm2txt}
+\end{codefloat}
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-htm2txt.py}
+    \inputencoding{utf8}
+    \caption{Ejecución de htm2txt desde Python}
+    \label{cod:ejecucion de htm2txt desde python}
+\end{codefloat}
+
+En cuanto al fragmento de código mostrado en \ref{cod:funcion de ejecucion de htm2txt}, es muy similar al
+resto de códigos ya vistos anteriormente. En este caso no entran en juego expresiones \emph{xPath}, sino
+que es directamente la propia heurística del algoritmo la que se encarga de seleccionar el contenido válido.
+
+Si recordamos la heurística de \textbf{htm2txt}, esta se encargaba de utilizar expresiones regulares para
+eliminar las etiquetas de los documentos HTML pertinentes. En esta heurística tan simple, funciones como 
+\emph{gsub()} tomaban mucha relevancia.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       htm2txt & 0.4547 & 0.4714 & 0.8885 & 0.6160 & 46.7 & 2.0 & 80.5288 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de htm2txt}
+      \label{tab:tabla - resultados de la evaluacion de htm2txt}
+    \end{center}
+\end{table}
+
+Los resultados mostrados en la tabla \ref{tab:tabla - resultados de la evaluacion de htm2txt} reflejan la
+simplicidad del algoritmo. El uso único de expresiones regulares hace que la calidad del texto extraído
+no sea buena. Por otro lado, el tiempo de ejecución es demasiado alto.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-htm2txt.jpg}
+    \caption{Gráfica - Resultados de la evaluación de htm2txt}
+    \label{img:grafica - resultados de la evaluacion de htm2txt}
+\end{figure}
+
+\section*{Expresiones xPath}
+
+¿Qué ocurre si solo empleamos expresiones \emph{xPath} sin ningún tipo de heurística? Lo obvio seria que
+los resultados obtenidos fuesen peores de los ya calculados. Por otro lado, para analizar el documento se 
+usara \emph{lxml}, veamos.
+
+\begin{codefloat}
+    \inputencoding{latin1}
+    \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-xpath.py}
+    \inputencoding{utf8}
+    \caption{Función de ejecución de \emph{xPath}}
+    \label{cod:funcion de ejecucion de xpath}
+\end{codefloat}
+
+En cuanto al fragmento de código \ref{cod:funcion de ejecucion de xpath}, lo único a destacar es la expresión
+\emph{xPath} usada. Para cada artículo queremos obtenemos obtener el cuerpo del mismo, por ello se accede
+a la etiqueta \emph{body} del mismo. Por otro lado, para refinar la solución obtenida, eliminamos las
+expresiones propias de la estructuración del texto.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       xPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Resultados de la evaluación de \emph{xPath}}
+      \label{tab:tabla - resultados de la evaluacion de xpath}
+    \end{center}
+\end{table}
+
+Si observamos la tabla \ref{tab:tabla - resultados de la evaluacion de xpath} podemos comprobar que los
+resultados obtenidos reflejan unas métricas muy pobres. La calidad del texto extraído es muy inferior a la
+media del resto de algoritmos. Por otro lado, como era de esperar, el tiempo de ejecución es muy bajo, pues
+al no disponer de heurística propia la cantidad de ejecuciones a realizar es menor.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5in]{resultados-xpath.jpg}
+    \caption{Gráfica - Resultados de la evaluación de \emph{xPath}}
+    \label{img:grafica - resultados de la evaluacion de xpath}
+\end{figure}
+
+Este tipo de paquetes o algoritmos que emplean expresiones \emph{xPath}, ya sea como parte de su heurística,
+o como única fuente de obtención de información, se emplean mayoritariamente para obtener partes reducidas
+de un documento HTML.
+
+\section{Comparación de paquetes}
+\label{sec:comparacion de paquetes}

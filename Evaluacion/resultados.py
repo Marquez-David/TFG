@@ -8,7 +8,7 @@ plt.ylim(0, 1)
 eje_x = ['Accuracy', 'Precision', 'Recall', 'F1']
  
 ## Declaramos valores para el eje y
-eje_y = [0.454, 0.4628, 0.9310, 0.6181]
+eje_y = [0.2421, 0.2401, 0.9915, 0.3866]
  
 ## Creamos Gráfica
 plt.bar(eje_x, eje_y, color='orange')

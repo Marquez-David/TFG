@@ -9,7 +9,7 @@ run_rvest <- function() {
     for (key in fromJSON(file = "./documento_base.json")) {
         html_to_string <- read_html(key$url, encoding = "UTF-8") %>% 
                         html_nodes(xpath = '//body') %>% html_text()
-        lista_texto <- list('xxxxtest' = list("texto" = html_to_string))
+        lista_texto <- list('test' = list("texto" = html_to_string))
 
         names(lista_texto) <- str_remove(files[index + 1], ".html")
         output <- c(output, lista_texto)
