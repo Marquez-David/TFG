@@ -245,6 +245,15 @@ G.~Rodola, \emph{psutil Documentation}, 2022, release 5.9.1. [Online].
   Available: \url{https://psutil.readthedocs.io/_/downloads/en/latest/pdf/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{uzun}
+E.~Uzun, T.~Yerlikaya, and O.~Kirat, ``Comparison of python libraries used for
+  web data extraction,'' vol.~24, pp. 87--92, 01 2018.
+
+\bibitem{regex}
+B.~Indig, {\'A}.~Knap, Z.~S{\'a}rk{\"o}zi-Lindner, M.~Tim{\'a}ri, and
+  G.~Palk{\'o}, ``The elte.dh pilot corpus - creating a handcrafted gigaword
+  web corpus with metadata,'' in \emph{WAC}, 2020.
+
 \bibitem{robotstxt-cran}
 \BIBentryALTinterwordspacing
 P.~Meissner and K.~Ren, \emph{robotstxt: A 'robots.txt' Parser and

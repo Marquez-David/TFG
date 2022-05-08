@@ -241,7 +241,7 @@ obtenidas. En el caso de \textbf{html\_text}, los resultados obtenidos se muestr
     \begin{center}
       \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
        \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
-       html\_text & 0.5166 & 0.513 & 0.9928 & 0.6765 & 44.9 & 0.5 & 1.1800 \\ \hline
+       html\_text & 0.5166 & 0.5130 & 0.9928 & 0.6765 & 44.9 & 0.5 & 1.1800 \\ \hline
       \end{tabular}
       \caption{Tabla - Resultados de la evaluación de html\_text}
       \label{tab:tabla - resultados de la evaluacion de htmltext}
@@ -328,7 +328,7 @@ otros paquetes. Veamos los resultados de las métricas calculadas.
     \begin{center}
       \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
        \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
-       Readability & 0.8880 & 0.9101 & 0.937 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+       Readability & 0.8880 & 0.9101 & 0.9370 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
       \end{tabular}
       \caption{Tabla - Resultados de la evaluación de Readability}
       \label{tab:tabla - resultados de la evaluacion de readability}
@@ -351,7 +351,7 @@ son muy parejos.
     \begin{center}
       \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
        \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
-       Readability & 0.8880 & 0.9101 & 0.937 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+       Readability & 0.8880 & 0.9101 & 0.9370 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
        Goose3 & 0.8658 & 0.9273 & 0.8913 & 0.9089 & 32.2 & 6.1 & 25.9731 \\ \hline
       \end{tabular}
       \caption{Tabla - Comparación de resultados entre Readability \& Goose3}
@@ -865,9 +865,9 @@ usara \emph{lxml}, veamos.
 \end{codefloat}
 
 En cuanto al fragmento de código \ref{cod:funcion de ejecucion de xpath}, lo único a destacar es la expresión
-\emph{xPath} usada. Para cada artículo queremos obtenemos obtener el cuerpo del mismo, por ello se accede
-a la etiqueta \emph{body} del mismo. Por otro lado, para refinar la solución obtenida, eliminamos las
-expresiones propias de la estructuración del texto.
+\emph{xPath} usada. Para cada artículo queremos obtener el cuerpo del mismo, por ello se accede a la 
+etiqueta \emph{body} del mismo. Por otro lado, para refinar la solución obtenida, eliminamos las expresiones 
+propias de la estructuración del texto.
 
 \begin{table}[h]
     \begin{center}
@@ -898,3 +898,212 @@ de un documento HTML.
 
 \section{Comparación de paquetes}
 \label{sec:comparacion de paquetes}
+
+Una vez vistos los resultados individuales de cada paquete, veamos una comparación de los mismos desde
+diferentes puntos de vista. El objetivo de esta comparación es obtener de una manera más clara cuáles son
+los causantes de los diferentes resultados obtenidos. En muchos casos, el analizador empleado, la heurística,
+o el propio lenguaje de programación se convierten en un factor fundamental.
+
+\subsection{Comparación de paquetes que usan expresiones \emph{xPath}}
+\label{subsec:comparacion de paquetes que usan expresiones xpath}
+
+El uso de expresiones regulares es una técnica conocida que puede utilizarse en el proceso de extracción,
+se determina un cierto patrón y se buscan etiquetas a lo largo del documento que coincidan. Sin embargo,
+pueden existir problemas cuando el número de etiquetas internas es ambiguo \cite{uzun}. Para una regla de 
+extracción, existen dos técnicas. Se puede buscar en el documento todos los registros encontrados de la 
+expresión regular, o el proceso de extracción puede finalizar con la búsqueda del primer registro \cite{regex}.
+
+En este caso, la comparación abordará aquellos paquetes que basen su heurística a partir del uso de este
+tipo de expresiones. Paquetes como \emph{Rcrawler} y \emph{rvest} serán los seleccionados, entre otros.
+Cabe mencionar que la comparación se realizará a partir de las métricas calculadas en la sección anterior.
+Además, será interesante ver una comparación con el simple empleo de expresiones \emph{xPath}.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       rvest & 0.1347 & 0.1371 & 0.8974 & 0.2378 & 44.1 & 8.9 & 60.3245 \\ \hline
+       Rcrawler & 0.4540 & 0.4628 & 0.9310 & 0.6181 & 46.7 & 3.4 & 158.0663 \\ \hline
+       xPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Comparación de paquetes que usan expresiones \emph{xPath}}
+      \label{tab:tabla - comparacion de paquetes que usan expresiones xpath}
+    \end{center}
+\end{table}
+
+Podemos observar en la tabla \ref{tab:tabla - comparacion de paquetes que usan expresiones xpath} los
+resultados obtenidos por los paquetes que emplean expresiones \emph{xPath}. De manera general podemos decir
+que los resultados dejan bastante que desear. Resultados muy pobres para el tiempo de ejecución empleado.
+Veamos ahora una comparación más minuciosa, observando las diferencias entre las métricas de forma individual.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5.3in]{resultados-comparacion-xpath.jpg}
+    \caption{Gráfica - Comparación de paquetes que usan expresiones \emph{xPath}}
+    \label{img:grafica - comparacion de paquetes que usan expresiones xpath}
+\end{figure}
+
+En la gráfica \ref{img:grafica - comparacion de paquetes que usan expresiones xpath} podemos observar de 
+manera más visual los resultados obtenidos. Sorprende que \textbf{rvest} tenga unos resultados tan pobres, 
+siendo superado incluso por expresiones regulares. Por otro lado, \textbf{Rcrawler} sin tener resultados 
+buenos, es el único que realiza un decente proceso de \emph{web scraping}.
+
+¿Cómo es posible que se haya captado la mayor parte del contenido principal y los resultados del resto de
+métricas sean tan malos? La razón es que además de captar contenido principal, el algoritmo ha captado
+contenido no deseado, esto empeora la calidad de la solución. Si observamos la relación entre la variable
+\emph{recall} y la variable \emph{precision}, nos damos cuenta de que captación de contenido principal es
+buena, pero la exclusión de contenido \emph{boilerplate} no lo es tanto.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5.3in]{eficacia-general-xpath.jpg}
+    \caption{Comparación de la eficacia en los paquetes que usan expresiones \emph{xPath}}
+    \label{img:comparacion de la eficacia en los paquetes que usan expresiones xPath}
+\end{figure}
+
+Vistos los diferentes resultados obtenidos, y observando la imagen 
+\ref{img:comparacion de la eficacia en los paquetes que usan expresiones xPath} podemos concluir que los 
+algoritmos sometidos a evaluación que emplean expresiones \emph{xPath} no realizan un minado web de calidad. 
+Por otro lado, los resultados referentes al rendimiento y optimización de los mismos tampoco son buenos.
+
+Si estos algoritmos no ofrecen un resultado de calidad y su rendimiento no es bueno, ¿por qué son tan
+utilizados? La respuesta es que este tipo de algoritmos son buenos cuando deseas encontrar determinadas
+etiquetas dentro de un documento HTML y la calidad de la solución no es importante. Imaginemos que se desea
+conocer el precio de un determinado producto en diferentes páginas web. Puesto que dicho precio estará
+dentro de una cierta etiqueta HTML, el empleo de una heurística compleja no tendría mucho sentido, además
+de que reduciría tiempos de ejecución.
+
+\subsection{Comparación de paquetes según el analizador empleado}
+\label{subsec:comparacion de paquetes segun el analizador empleado}
+
+El uso de expresiones regulares es una técnica conocida que puede utilizarse en el proceso de extracción.
+Sin embargo, puede causar problemas cuando el número de etiquetas internas es ambiguo. En esta situación
+el empleo de analizadores pueden usarse como una posible solución.
+
+A lo largo del apéndice \ref{cha:analizadores empleados en los paquetes de web scraping}, ya se realizó una 
+breve introducción de los analizadores empleados en los algoritmos de \emph{web scraping}. Veamos ahora la
+importancia de cada uno en la eficacia de los mismos.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Boilerpy & 0.7947 & 0.8544 & 0.8803 & 0.8672 & 43.9 & 1.9 & 2.5412 \\ \hline
+       Goose3 & 0.8658 & 0.9273 & 0.8913 & 0.9089 & 32.2 & 6.1 & 25.9731 \\ \hline
+       html2text & 0.5105 & 0.5107 & 0.9804 & 0.6715 & 44.6 & 1.8 & 4.4020 \\ \hline
+       Beau. Soup & 0.5165 & 0.5129 & 0.9928 & 0.6764 & 47.0 & 4.3 & 4.0882 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Paquetes que emplean \emph{html.parser} como analizador}
+      \label{tab:tabla - paquetes que emplean html.parser como analizador}
+    \end{center}
+\end{table}
+
+Empecemos primero con aquellos algoritmos de que emplean \emph{html.parse} como parte de su heurística.
+Podemos observar en la tabla \ref{tab:tabla - paquetes que emplean html.parser como analizador} los
+resultados obtenidos para los cuatro diferentes algoritmos. Si recordamos como funcionaba \emph{html.parse},
+trabaja con etiquetas, además no es un algoritmo excesivamente rápido y es indulgente en su análisis.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5.5in]{resultados-comparacion-htmlparse.jpg}
+    \caption{Gráfica - Comparación de paquetes que usan \emph{html.parser} como analizador}
+    \label{img:grafica - comparacion de paquetes que usan html.parser como analizador}
+\end{figure}
+
+Si observamos la gráfica \ref{img:grafica - comparacion de paquetes que usan html.parser como analizador},
+y ponemos atención en las variables \emph{accuracy} y \emph{precision}, nos damos cuenta de que los valores
+mostrados son muy dispares. Al tratar con un analizador tan permisivo, es necesario crear una heurística
+elaborada para excluir la mayor cantidad de contenido \emph{boilerplate}.
+
+Siguiendo este aspecto, en cuanto a la captación de contenido principal, todos los algoritmos retornan
+buenos resultados. Sorprende incluso ver que los datos mostrados para \textbf{Beautiful Soup} y 
+\textbf{html2txt}. Entonces, ¿a qué pueden deberse estas diferencias en las métricas? La explicación es
+que \textbf{Boilerpy} y \textbf{Goose3} presentan una heurística más compleja y elaborada.
+
+En cuanto a las métricas dependientes del entorno de ejecución, los valores relativos al uso de memoria
+RAM, CPU y tiempo de ejecución empleado son bastante estándar. El único paquete que presenta valores que
+difieren del resto es \textbf{Goose3}.
+
+Acabamos de ver el rendimiento de aquellos paquetes que emplean \emph{html.parse} como analizador. Veamos
+ahora como se comportan los paquetes que usan \emph{lxml} como parte de su heurística. Podemos observar en 
+la tabla \ref{tab:tabla - paquetes que emplean lxml como analizador} los resultados obtenidos para los 
+cuatro diferentes algoritmos.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       inscriptis & 0.5414 & 0.5404 & 0.9875 & 0.6985 & 45.0 & 0.2 & 2.1009 \\ \hline
+       Beau. Soup & 0.5165 & 0.5129 & 0.9928 & 0.6764 & 42.0 & 1.2 & 3.1778 \\ \hline
+       html\_text & 0.5166 & 0.5130 & 0.9928 & 0.6765 & 44.9 & 0.5 & 1.1800 \\ \hline
+       jusText & 0.7668 & 0.8649 & 0.8573 & 0.8610 & 45.1 & 0.5 & 2.9546 \\ \hline
+       readability & 0.8880 & 0.9101 & 0.9370 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+       trafilatura & 0.9124 & 0.9196 & 0.9928 & 0.9444 & 45.7 & 1.4 & 4.3919 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Paquetes que emplean \emph{lxml} como analizador}
+      \label{tab:tabla - paquetes que emplean lxml como analizador}
+    \end{center}
+\end{table}
+
+Recordemos que para analizar los diferentes documentos, \emph{lxml} convertía el texto de entrada en una 
+estructura de tipo árbol. Esto le permite navegar y encontrar la información requerida de forma más sencilla.
+Al igual que \emph{html.parse}, este es un analizador permisivo, por lo que el trabajo de eliminación de 
+contenido \emph{boilerplate} será delegado a la heurística determinada.
+
+En cuanto a la comparación de algoritmos, si observamos las variables de \emph{accuracy} y \emph{precision}
+en la gráfica \ref{img:grafica - comparacion de paquetes que usan lxml como analizador}, nos damos cuenta
+de la disparidad de resultados entre los algoritmos. Mientras que algoritmos como \textbf{inscriptis},
+\textbf{Beautiful Soup} o \textbf{html\_text} presentan unos resultados mediocres, el resto se acercan un 
+poco más a lo que un usuario final pretendería obtener.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=6.5in]{resultados-comparacion-lxml.jpg}
+    \caption{Gráfica - Comparación de paquetes que usan \emph{lxml} como analizador}
+    \label{img:grafica - comparacion de paquetes que usan lxml como analizador}
+\end{figure}
+
+La complejidad de cada algoritmo, también, se ve reflejada en el uso de recursos del medio de ejecución.
+Los dos algoritmos más complejos, computacionalmente, son los que más uso hacen de la CPU y que más tardan
+en obtener el resultado final.
+
+Veamos por último aquellos paquetes que emplean \emph{XML} o \emph{xml2} como analizador. Ambas librerías
+emplean la jerarquía de clases para realizar un análisis. La principal diferencia entre los dos tiene que
+ver con la gestión de memoria.
+
+Obsérvese la tabla \ref{tab:tabla - paquetes que emplean xml o xml2 como analizador}, donde se aprecia la
+inmensa diferencia entre los tres paquetes. Mientras que \textbf{rvest} y \textbf{Rcrawler} presentan datos
+muy pobres, \textbf{boilerpipeR} retorna buenas métricas. Debemos mencionar también la multiplicidad de
+extractores que este último presenta, parte de su objetivo es el análisis de este tipo de documentos.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       rvest & 0.1347 & 0.1371 & 0.8974 & 0.2378 & 44.1 & 8.9 & 60.3245 \\ \hline
+       Rcrawler & 0.4540 & 0.4628 & 0.9310 & 0.6181 & 46.7 & 3.4 & 158.0663 \\ \hline
+       boilerpipeR & 0.7830 & 0.8486 & 0.8696 & 0.8590 & 47.9 & 2.6 & 39.9543 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Paquetes que emplean \emph{XML} o \emph{xml2} como analizador}
+      \label{tab:tabla - paquetes que emplean xml o xml2 como analizador}
+    \end{center}
+\end{table}
+
+Aun recopilando menos cantidad de contenido principal que \textbf{rvest} o \textbf{Rcrawler}, 
+\textbf{boilerpipeR} es capaz de obtener la información requerida de forma precisa. De hecho, la efectividad 
+del algoritmo es asombrosa, solo hace falta ver la poca diferencia entre puntuación entre \emph{recall} 
+con el resto de métricas.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5.5in]{resultados-comparacion-xml-xml2.jpg}
+    \caption{Gráfica - Comparación de paquetes que usan \emph{XML} o \emph{xml2} como analizador}
+    \label{img:grafica - comparacion de paquetes que usan xml o xml2 como analizador}
+\end{figure}
+
+En cuanto al uso de recursos \emph{boilerpipeR} también muestra un uso más óptimo de los mismos. Aunque el
+tiempo de ejecución sigue siendo alto para lo que se pretende, es mucho menor que el de \textbf{rvest} o
+\textbf{Rcrawler}.
+
+
+ 
