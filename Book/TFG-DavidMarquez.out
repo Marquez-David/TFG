@@ -85,23 +85,28 @@
 \BOOKMARK [3][-]{subsubsection.364}{4.2.4.2 M\351tricas dependientes del entorno de ejecuci\363n}{subsection.334}% 85
 \BOOKMARK [0][-]{chapter.401}{5 An\341lisis y comparativa de paquetes}{}% 86
 \BOOKMARK [1][-]{section.402}{5.1 Evaluaci\363n individual de paquetes}{chapter.401}% 87
-\BOOKMARK [1][-]{section.761}{5.2 Comparaci\363n de paquetes}{chapter.401}% 88
-\BOOKMARK [2][-]{subsection.762}{5.2.1 Comparaci\363n de paquetes que usan expresiones xPath}{section.761}% 89
-\BOOKMARK [2][-]{subsection.766}{5.2.2 Comparaci\363n de paquetes seg\372n el analizador empleado}{section.761}% 90
-\BOOKMARK [0][-]{chapter.773}{6 Futuras lineas de trabajo...}{}% 91
-\BOOKMARK [0][-]{chapter*.774}{Bibliograf\355a}{}% 92
-\BOOKMARK [0][-]{Appendix.775}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 93
-\BOOKMARK [1][-]{section.776}{A.1 Fase de b\372squeda}{Appendix.775}% 94
-\BOOKMARK [1][-]{section.793}{A.2 Fase de extracci\363n}{Appendix.775}% 95
-\BOOKMARK [1][-]{section.812}{A.3 Fase de transformaci\363n}{Appendix.775}% 96
-\BOOKMARK [0][-]{Appendix.818}{Ap\351ndice B Analizadores empleados en los paquetes de web scraping}{}% 97
-\BOOKMARK [1][-]{section.820}{B.1 lxml}{Appendix.818}% 98
-\BOOKMARK [2][-]{subsection.821}{B.1.1 lxml.html}{section.820}% 99
-\BOOKMARK [2][-]{subsection.822}{B.1.2 soupparser}{section.820}% 100
-\BOOKMARK [1][-]{section.823}{B.2 html5lib}{Appendix.818}% 101
-\BOOKMARK [1][-]{section.824}{B.3 html.parser}{Appendix.818}% 102
-\BOOKMARK [1][-]{section.825}{B.4 XML}{Appendix.818}% 103
-\BOOKMARK [1][-]{section.826}{B.5 xml2}{Appendix.818}% 104
-\BOOKMARK [0][-]{Appendix.830}{Ap\351ndice C M\351tricas descartadas del proceso de evaluaci\363n}{}% 105
-\BOOKMARK [1][-]{section.832}{C.1 Perfect accuracy}{Appendix.830}% 106
-\BOOKMARK [1][-]{section.838}{C.2 Specificity}{Appendix.830}% 107
+\BOOKMARK [1][-]{section.758}{5.2 Comparaci\363n de paquetes}{chapter.401}% 88
+\BOOKMARK [2][-]{subsection.759}{5.2.1 Comparaci\363n de resultados entre paquetes que usan expresiones xPath}{section.758}% 89
+\BOOKMARK [2][-]{subsection.763}{5.2.2 Comparaci\363n de resultados entre paquetes seg\372n el analizador empleado}{section.758}% 90
+\BOOKMARK [2][-]{subsection.771}{5.2.3 Comparaci\363n de paquetes seg\372n la heur\355stica empleada}{section.758}% 91
+\BOOKMARK [3][-]{subsubsection.772}{5.2.3.1 Comparaci\363n entre Readability y Goose3}{subsection.771}% 92
+\BOOKMARK [3][-]{subsubsection.775}{5.2.3.2 Comparaci\363n entre Trafilatura, Readability y jusText}{subsection.771}% 93
+\BOOKMARK [3][-]{subsubsection.778}{5.2.3.3 Comparaci\363n entre Beautiful Soup y rvest}{subsection.771}% 94
+\BOOKMARK [2][-]{subsection.781}{5.2.4 Comparaci\363n gen\351rica de paquetes}{section.758}% 95
+\BOOKMARK [0][-]{chapter.786}{6 Futuras lineas de trabajo...}{}% 96
+\BOOKMARK [0][-]{chapter*.787}{Bibliograf\355a}{}% 97
+\BOOKMARK [0][-]{Appendix.788}{Ap\351ndice A Funcionamiento b\341sico de un web scraper}{}% 98
+\BOOKMARK [1][-]{section.789}{A.1 Fase de b\372squeda}{Appendix.788}% 99
+\BOOKMARK [1][-]{section.806}{A.2 Fase de extracci\363n}{Appendix.788}% 100
+\BOOKMARK [1][-]{section.825}{A.3 Fase de transformaci\363n}{Appendix.788}% 101
+\BOOKMARK [0][-]{Appendix.831}{Ap\351ndice B Analizadores empleados en los paquetes de web scraping}{}% 102
+\BOOKMARK [1][-]{section.833}{B.1 lxml}{Appendix.831}% 103
+\BOOKMARK [2][-]{subsection.834}{B.1.1 lxml.html}{section.833}% 104
+\BOOKMARK [2][-]{subsection.835}{B.1.2 soupparser}{section.833}% 105
+\BOOKMARK [1][-]{section.836}{B.2 html5lib}{Appendix.831}% 106
+\BOOKMARK [1][-]{section.837}{B.3 html.parser}{Appendix.831}% 107
+\BOOKMARK [1][-]{section.838}{B.4 XML}{Appendix.831}% 108
+\BOOKMARK [1][-]{section.839}{B.5 xml2}{Appendix.831}% 109
+\BOOKMARK [0][-]{Appendix.843}{Ap\351ndice C M\351tricas descartadas del proceso de evaluaci\363n}{}% 110
+\BOOKMARK [1][-]{section.845}{C.1 Perfect accuracy}{Appendix.843}% 111
+\BOOKMARK [1][-]{section.851}{C.2 Specificity}{Appendix.843}% 112

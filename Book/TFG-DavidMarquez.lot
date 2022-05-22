@@ -21,23 +21,27 @@
 \contentsline {table}{\numberline {5.6}{\ignorespaces Tabla - Resultados de la evaluación de html\_text\relax }}{59}{table.caption.479}%
 \contentsline {table}{\numberline {5.7}{\ignorespaces Tabla - Resultados de la evaluación de html2text\relax }}{60}{table.caption.498}%
 \contentsline {table}{\numberline {5.8}{\ignorespaces Tabla - Resultados de la evaluación de Readability\relax }}{61}{table.caption.518}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces Tabla - Comparación de resultados entre Readability \& Goose3\relax }}{62}{table.caption.519}%
-\contentsline {table}{\numberline {5.10}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura\relax }}{63}{table.caption.538}%
-\contentsline {table}{\numberline {5.11}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {precision}\relax }}{64}{table.caption.557}%
-\contentsline {table}{\numberline {5.12}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {recall}\relax }}{66}{table.caption.576}%
-\contentsline {table}{\numberline {5.13}{\ignorespaces Tabla - Comparación entre los tres algoritmos de Trafilatura\relax }}{66}{table.caption.578}%
-\contentsline {table}{\numberline {5.14}{\ignorespaces Tabla - Resultados de la evaluación de Goose3\relax }}{68}{table.caption.600}%
-\contentsline {table}{\numberline {5.15}{\ignorespaces Tabla - Resultados de la evaluación de Boilerpy\relax }}{70}{table.caption.619}%
-\contentsline {table}{\numberline {5.16}{\ignorespaces Tabla - Resultados de la evaluación de BoilerpipeR\relax }}{71}{table.caption.647}%
-\contentsline {table}{\numberline {5.17}{\ignorespaces Tabla - Comparación de resultados entre Boilerpy \& BoilerpipeR\relax }}{71}{table.caption.648}%
-\contentsline {table}{\numberline {5.18}{\ignorespaces Tabla - Resultados de la evaluación de rvest\relax }}{73}{table.caption.678}%
-\contentsline {table}{\numberline {5.19}{\ignorespaces Tabla - Resultados de la evaluación de Rcrawler\relax }}{75}{table.caption.706}%
-\contentsline {table}{\numberline {5.20}{\ignorespaces Tabla - Resultados de la evaluación de htm2txt\relax }}{76}{table.caption.735}%
-\contentsline {table}{\numberline {5.21}{\ignorespaces Tabla - Resultados de la evaluación de \emph {xPath}\relax }}{78}{table.caption.759}%
-\contentsline {table}{\numberline {5.22}{\ignorespaces Tabla - Comparación de paquetes que usan expresiones \emph {xPath}\relax }}{79}{table.caption.763}%
-\contentsline {table}{\numberline {5.23}{\ignorespaces Tabla - Paquetes que emplean \emph {html.parser} como analizador\relax }}{81}{table.caption.767}%
-\contentsline {table}{\numberline {5.24}{\ignorespaces Tabla - Paquetes que emplean \emph {lxml} como analizador\relax }}{82}{table.caption.769}%
-\contentsline {table}{\numberline {5.25}{\ignorespaces Tabla - Paquetes que emplean \emph {XML} o \emph {xml2} como analizador\relax }}{83}{table.caption.771}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Tabla - Comparación de resultados entre Readability \& Goose3\relax }}{61}{table.caption.519}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura\relax }}{63}{table.caption.537}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {(precision)}\relax }}{64}{table.caption.555}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces Tabla - Resultados de la evaluación de Trafilatura \emph {(recall)}\relax }}{65}{table.caption.573}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces Tabla - Comparación de resultados entre los tres algoritmos de Trafilatura\relax }}{65}{table.caption.575}%
+\contentsline {table}{\numberline {5.14}{\ignorespaces Tabla - Resultados de la evaluación de Goose3\relax }}{67}{table.caption.597}%
+\contentsline {table}{\numberline {5.15}{\ignorespaces Tabla - Resultados de la evaluación de Boilerpy\relax }}{69}{table.caption.616}%
+\contentsline {table}{\numberline {5.16}{\ignorespaces Tabla - Resultados de la evaluación de BoilerpipeR\relax }}{70}{table.caption.644}%
+\contentsline {table}{\numberline {5.17}{\ignorespaces Tabla - Comparación de resultados entre Boilerpy \& BoilerpipeR\relax }}{70}{table.caption.645}%
+\contentsline {table}{\numberline {5.18}{\ignorespaces Tabla - Resultados de la evaluación de rvest\relax }}{72}{table.caption.675}%
+\contentsline {table}{\numberline {5.19}{\ignorespaces Tabla - Resultados de la evaluación de Rcrawler\relax }}{74}{table.caption.703}%
+\contentsline {table}{\numberline {5.20}{\ignorespaces Tabla - Resultados de la evaluación de htm2txt\relax }}{75}{table.caption.732}%
+\contentsline {table}{\numberline {5.21}{\ignorespaces Tabla - Resultados de la evaluación de \emph {xPath}\relax }}{77}{table.caption.756}%
+\contentsline {table}{\numberline {5.22}{\ignorespaces Tabla - Comparación de resultados entre paquetes que usan expresiones \emph {xPath}\relax }}{78}{table.caption.760}%
+\contentsline {table}{\numberline {5.23}{\ignorespaces Tabla - Comparación de resultados entre paquetes que emplean \emph {html.parser} como analizador\relax }}{80}{table.caption.764}%
+\contentsline {table}{\numberline {5.24}{\ignorespaces Tabla - Comparación de resultados entre paquetes que emplean \emph {lxml} como analizador\relax }}{81}{table.caption.766}%
+\contentsline {table}{\numberline {5.25}{\ignorespaces Tabla - Comparación de resultados entre paquetes que emplean \emph {XML} o \emph {xml2} como analizador\relax }}{82}{table.caption.768}%
+\contentsline {table}{\numberline {5.26}{\ignorespaces Tabla - Comparación de resultados entre Readability \& Goose3\relax }}{84}{table.caption.773}%
+\contentsline {table}{\numberline {5.27}{\ignorespaces Tabla - Comparación de resultados entre Trafilatura \& Readability \& jusText\relax }}{85}{table.caption.776}%
+\contentsline {table}{\numberline {5.28}{\ignorespaces Tabla - Comparación de resultados entre Beautiful Soup \& rvest\relax }}{86}{table.caption.779}%
+\contentsline {table}{\numberline {5.29}{\ignorespaces Tabla - Comparación de resultados entre algoritmos de \emph {web scraping}\relax }}{87}{table.caption.782}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

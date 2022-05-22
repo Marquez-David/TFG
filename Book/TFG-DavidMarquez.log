@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  8 MAY 2022 04:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.29)  22 MAY 2022 17:08
 entering extended mode
 **c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
 (c:/Users/Darks/Documents/GitHub/TFG/Book/TFG-DavidMarquez.tex
@@ -1146,7 +1146,7 @@ LaTeX Info: Redefining \selectfont on input line 126.
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 ) (cover/cover.tex (cover/portada-tfg-uah.tex
-<logos/logoEPS-UAH.jpg, id=434, 401.5pt x 292.09125pt>
+<logos/logoEPS-UAH.jpg, id=454, 401.5pt x 292.09125pt>
 File: logos/logoEPS-UAH.jpg Graphic file (type jpg)
 <use logos/logoEPS-UAH.jpg>
 Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 114.
@@ -1275,7 +1275,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [2]
 Cap\'{\i }tulo 2.
-<./images//web-scraping-phases.jpg, id=1160, 779.91376pt x 121.20282pt>
+<./images//web-scraping-phases.jpg, id=1223, 779.91376pt x 121.20282pt>
 File: ./images//web-scraping-phases.jpg Graphic file (type jpg)
 <use ./images//web-scraping-phases.jpg>
 Package pdftex.def Info: ./images//web-scraping-phases.jpg  used on input line 48.
@@ -1286,7 +1286,7 @@ Package pdftex.def Info: ./images//web-scraping-phases.jpg  used on input line 4
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
  [4 <./images//web-scraping-phases.jpg>]
-<./images//web-crawler-phases.jpg, id=1185, 520.19344pt x 325.215pt>
+<./images//web-crawler-phases.jpg, id=1248, 520.19344pt x 325.215pt>
 File: ./images//web-crawler-phases.jpg Graphic file (type jpg)
 <use ./images//web-crawler-phases.jpg>
 Package pdftex.def Info: ./images//web-crawler-phases.jpg  used on input line 130.
@@ -1332,7 +1332,7 @@ LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 19
  (D:\MikText\tex/latex/psnfss\ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-<./images//inscriptis-html-postprocessor.png, id=1243, 724.20563pt x 268.00125pt>
+<./images//inscriptis-html-postprocessor.png, id=1306, 724.20563pt x 268.00125pt>
 File: ./images//inscriptis-html-postprocessor.png Graphic file (type png)
 <use ./images//inscriptis-html-postprocessor.png>
 Package pdftex.def Info: ./images//inscriptis-html-postprocessor.png  used on input line 219.
@@ -1347,7 +1347,7 @@ Overfull \hbox (20.41154pt too wide) in paragraph at lines 242--249
 LaTeX Info: Redefining \. on input line 302.
 LaTeX Info: Redefining \% on input line 302.
 [13]
-<./images//bs-parse-tree.png, id=1271, 955.57pt x 473.77pt>
+<./images//bs-parse-tree.png, id=1334, 955.57pt x 473.77pt>
 File: ./images//bs-parse-tree.png Graphic file (type png)
 <use ./images//bs-parse-tree.png>
 Package pdftex.def Info: ./images//bs-parse-tree.png  used on input line 305.
@@ -1362,7 +1362,7 @@ File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 LaTeX Info: Redefining \. on input line 385.
 LaTeX Info: Redefining \% on input line 385.
  [15]
-<./images//justext-blocks-classification.jpg, id=1309, 304.13625pt x 285.31593pt>
+<./images//justext-blocks-classification.jpg, id=1372, 304.13625pt x 285.31593pt>
 File: ./images//justext-blocks-classification.jpg Graphic file (type jpg)
 <use ./images//justext-blocks-classification.jpg>
 Package pdftex.def Info: ./images//justext-blocks-classification.jpg  used on input line 417.
@@ -1370,7 +1370,7 @@ Package pdftex.def Info: ./images//justext-blocks-classification.jpg  used on in
 LaTeX Info: Redefining \. on input line 434.
 LaTeX Info: Redefining \% on input line 434.
  [16 <./images//justext-blocks-classification.jpg>]
-<./images//newsplease-processing.jpg, id=1315, 488.82625pt x 205.76875pt>
+<./images//newsplease-processing.jpg, id=1378, 488.82625pt x 205.76875pt>
 File: ./images//newsplease-processing.jpg Graphic file (type jpg)
 <use ./images//newsplease-processing.jpg>
 Package pdftex.def Info: ./images//newsplease-processing.jpg  used on input line 468.
@@ -1440,7 +1440,7 @@ LaTeX Info: Redefining \% on input line 969.
 LaTeX Info: Redefining \. on input line 1027.
 LaTeX Info: Redefining \% on input line 1027.
  [27]
-<./images//rvest-block-elements.jpg, id=1505, 438.63875pt x 46.1725pt>
+<./images//rvest-block-elements.jpg, id=1568, 438.63875pt x 46.1725pt>
 File: ./images//rvest-block-elements.jpg Graphic file (type jpg)
 <use ./images//rvest-block-elements.jpg>
 Package pdftex.def Info: ./images//rvest-block-elements.jpg  used on input line 1054.
@@ -1448,7 +1448,7 @@ Package pdftex.def Info: ./images//rvest-block-elements.jpg  used on input line 
 LaTeX Info: Redefining \. on input line 1088.
 LaTeX Info: Redefining \% on input line 1088.
  [28 <./images//rvest-block-elements.jpg>]
-<./images//rcrawler-arquitecture.jpg, id=1515, 368.1253pt x 252.945pt>
+<./images//rcrawler-arquitecture.jpg, id=1578, 368.1253pt x 252.945pt>
 File: ./images//rcrawler-arquitecture.jpg Graphic file (type jpg)
 <use ./images//rcrawler-arquitecture.jpg>
 Package pdftex.def Info: ./images//rcrawler-arquitecture.jpg  used on input line 1098.
@@ -1466,7 +1466,7 @@ LaTeX Info: Redefining \% on input line 2.
 ]
 Cap\'{\i }tulo 4.
 [33]
-<./images//estructura-generica-proceso-evaluacion.jpg, id=1562, 563.10374pt x 474.27188pt>
+<./images//estructura-generica-proceso-evaluacion.jpg, id=1625, 563.10374pt x 474.27188pt>
 File: ./images//estructura-generica-proceso-evaluacion.jpg Graphic file (type jpg)
 <use ./images//estructura-generica-proceso-evaluacion.jpg>
 Package pdftex.def Info: ./images//estructura-generica-proceso-evaluacion.jpg  used on input line 64.
@@ -1474,7 +1474,7 @@ Package pdftex.def Info: ./images//estructura-generica-proceso-evaluacion.jpg  u
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
  [34 <./images//estructura-generica-proceso-evaluacion.jpg>]
-<./images//pagina-web.jpeg, id=1569, 963.6pt x 624.83438pt>
+<./images//pagina-web.jpeg, id=1632, 963.6pt x 624.83438pt>
 File: ./images//pagina-web.jpeg Graphic file (type jpg)
 <use ./images//pagina-web.jpeg>
 Package pdftex.def Info: ./images//pagina-web.jpeg  used on input line 88.
@@ -1482,7 +1482,7 @@ Package pdftex.def Info: ./images//pagina-web.jpeg  used on input line 88.
 LaTeX Info: Redefining \. on input line 111.
 LaTeX Info: Redefining \% on input line 111.
  [35 <./images//pagina-web.jpeg>]
-<./images//pagina-web2.jpeg, id=1578, 963.6pt x 624.83438pt>
+<./images//pagina-web2.jpeg, id=1641, 963.6pt x 624.83438pt>
 File: ./images//pagina-web2.jpeg Graphic file (type jpg)
 <use ./images//pagina-web2.jpeg>
 Package pdftex.def Info: ./images//pagina-web2.jpeg  used on input line 136.
@@ -1493,12 +1493,12 @@ LaTeX Info: Redefining \% on input line 149.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
  [37]
-<./images//diagrama-venn.jpg, id=1590, 430.60875pt x 310.15875pt>
+<./images//diagrama-venn.jpg, id=1653, 430.60875pt x 310.15875pt>
 File: ./images//diagrama-venn.jpg Graphic file (type jpg)
 <use ./images//diagrama-venn.jpg>
 Package pdftex.def Info: ./images//diagrama-venn.jpg  used on input line 227.
 (pdftex.def)             Requested size: 361.34999pt x 260.28073pt.
-<./images//estructura-especifica-proceso-evaluacion.jpg, id=1592, 747.54282pt x 529.98pt>
+<./images//estructura-especifica-proceso-evaluacion.jpg, id=1655, 747.54282pt x 529.98pt>
 File: ./images//estructura-especifica-proceso-evaluacion.jpg Graphic file (type jpg)
 <use ./images//estructura-especifica-proceso-evaluacion.jpg>
 Package pdftex.def Info: ./images//estructura-especifica-proceso-evaluacion.jpg  used on input line 247.
@@ -1516,7 +1516,7 @@ Underfull \vbox (badness 4967) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 271.
 LaTeX Info: Redefining \% on input line 271.
  [39 <./images//estructura-especifica-proceso-evaluacion.jpg>]
-<./images//text-comparison1.jpg, id=1602, 561.59813pt x 106.14656pt>
+<./images//text-comparison1.jpg, id=1665, 561.59813pt x 106.14656pt>
 File: ./images//text-comparison1.jpg Graphic file (type jpg)
 <use ./images//text-comparison1.jpg>
 Package pdftex.def Info: ./images//text-comparison1.jpg  used on input line 290.
@@ -1526,7 +1526,7 @@ Overfull \hbox (14.51088pt too wide) in paragraph at lines 290--291
  [][] 
  []
 
-<./images//text-comparison2.jpg, id=1604, 572.89032pt x 106.14656pt>
+<./images//text-comparison2.jpg, id=1667, 572.89032pt x 106.14656pt>
 File: ./images//text-comparison2.jpg Graphic file (type jpg)
 <use ./images//text-comparison2.jpg>
 Package pdftex.def Info: ./images//text-comparison2.jpg  used on input line 306.
@@ -1539,7 +1539,7 @@ Overfull \hbox (14.51088pt too wide) in paragraph at lines 306--307
 LaTeX Info: Redefining \. on input line 324.
 LaTeX Info: Redefining \% on input line 324.
 [40 <./images//text-comparison1.jpg> <./images//text-comparison2.jpg>]
-<./images//text-comparison3.jpg, id=1609, 538.26094pt x 105.39375pt>
+<./images//text-comparison3.jpg, id=1672, 538.26094pt x 105.39375pt>
 File: ./images//text-comparison3.jpg Graphic file (type jpg)
 <use ./images//text-comparison3.jpg>
 Package pdftex.def Info: ./images//text-comparison3.jpg  used on input line 327.
@@ -1549,7 +1549,7 @@ Overfull \hbox (14.51088pt too wide) in paragraph at lines 327--328
  [][] 
  []
 
-<./images//text-comparison4.jpg, id=1610, 542.77782pt x 109.91063pt>
+<./images//text-comparison4.jpg, id=1673, 542.77782pt x 109.91063pt>
 File: ./images//text-comparison4.jpg Graphic file (type jpg)
 <use ./images//text-comparison4.jpg>
 Package pdftex.def Info: ./images//text-comparison4.jpg  used on input line 345.
@@ -1559,7 +1559,7 @@ Overfull \hbox (14.51088pt too wide) in paragraph at lines 345--346
  [][] 
  []
 
-<./images//text-comparison5.jpg, id=1611, 537.50812pt x 103.88812pt>
+<./images//text-comparison5.jpg, id=1674, 537.50812pt x 103.88812pt>
 File: ./images//text-comparison5.jpg Graphic file (type jpg)
 <use ./images//text-comparison5.jpg>
 Package pdftex.def Info: ./images//text-comparison5.jpg  used on input line 357.
@@ -1572,12 +1572,12 @@ Overfull \hbox (14.51088pt too wide) in paragraph at lines 357--358
 LaTeX Info: Redefining \. on input line 369.
 LaTeX Info: Redefining \% on input line 369.
 [41 <./images//text-comparison3.jpg> <./images//text-comparison4.jpg> <./images//text-comparison5.jpg>]
-<./images//text-comparison6.jpg, id=1618, 451.6875pt x 68.50594pt>
+<./images//text-comparison6.jpg, id=1681, 451.6875pt x 68.50594pt>
 File: ./images//text-comparison6.jpg Graphic file (type jpg)
 <use ./images//text-comparison6.jpg>
 Package pdftex.def Info: ./images//text-comparison6.jpg  used on input line 377.
 (pdftex.def)             Requested size: 433.62pt x 65.76912pt.
-<./images//text-comparison7.jpg, id=1619, 472.76625pt x 151.3153pt>
+<./images//text-comparison7.jpg, id=1682, 472.76625pt x 151.3153pt>
 File: ./images//text-comparison7.jpg Graphic file (type jpg)
 <use ./images//text-comparison7.jpg>
 Package pdftex.def Info: ./images//text-comparison7.jpg  used on input line 389.
@@ -1621,17 +1621,17 @@ File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 LaTeX Info: Redefining \. on input line 546.
 LaTeX Info: Redefining \% on input line 546.
  [44]
-<./images//text-comparison8.jpg, id=1674, 633.86812pt x 153.57375pt>
+<./images//text-comparison8.jpg, id=1737, 633.86812pt x 153.57375pt>
 File: ./images//text-comparison8.jpg Graphic file (type jpg)
 <use ./images//text-comparison8.jpg>
 Package pdftex.def Info: ./images//text-comparison8.jpg  used on input line 554.
 (pdftex.def)             Requested size: 455.30121pt x 110.3129pt.
-<./images//text-comparison9.jpg, id=1675, 633.86812pt x 155.07938pt>
+<./images//text-comparison9.jpg, id=1738, 633.86812pt x 155.07938pt>
 File: ./images//text-comparison9.jpg Graphic file (type jpg)
 <use ./images//text-comparison9.jpg>
 Package pdftex.def Info: ./images//text-comparison9.jpg  used on input line 555.
 (pdftex.def)             Requested size: 455.30121pt x 111.39438pt.
-<./images//matriz-confusion.jpg, id=1677, 271.76532pt x 261.97874pt>
+<./images//matriz-confusion.jpg, id=1740, 271.76532pt x 261.97874pt>
 File: ./images//matriz-confusion.jpg Graphic file (type jpg)
 <use ./images//matriz-confusion.jpg>
 Package pdftex.def Info: ./images//matriz-confusion.jpg  used on input line 566.
@@ -1645,7 +1645,7 @@ LaTeX Info: Redefining \% on input line 569.
 LaTeX Info: Redefining \. on input line 598.
 LaTeX Info: Redefining \% on input line 598.
  [46 <./images//matriz-confusion.jpg>]
-<./images//estructura-metricas.jpg, id=1709, 621.07031pt x 393.72093pt>
+<./images//estructura-metricas.jpg, id=1772, 621.07031pt x 393.72093pt>
 File: ./images//estructura-metricas.jpg Graphic file (type jpg)
 <use ./images//estructura-metricas.jpg>
 Package pdftex.def Info: ./images//estructura-metricas.jpg  used on input line 601.
@@ -1687,7 +1687,7 @@ File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 LaTeX Info: Redefining \. on input line 710.
 LaTeX Info: Redefining \% on input line 710.
  [49]
-<./images//estructura-interfaz-rpy2.jpg, id=1790, 356.0803pt x 450.18187pt>
+<./images//estructura-interfaz-rpy2.jpg, id=1853, 356.0803pt x 450.18187pt>
 File: ./images//estructura-interfaz-rpy2.jpg Graphic file (type jpg)
 <use ./images//estructura-interfaz-rpy2.jpg>
 Package pdftex.def Info: ./images//estructura-interfaz-rpy2.jpg  used on input line 725.
@@ -1714,7 +1714,7 @@ File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-inscriptis.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 ) [53]
-<./images//resultados-inscriptis.jpg, id=1829, 408.77719pt x 307.90031pt>
+<./images//resultados-inscriptis.jpg, id=1892, 408.77719pt x 307.90031pt>
 File: ./images//resultados-inscriptis.jpg Graphic file (type jpg)
 <use ./images//resultados-inscriptis.jpg>
 Package pdftex.def Info: ./images//resultados-inscriptis.jpg  used on input line 62.
@@ -1746,12 +1746,12 @@ Overfull \hbox (9.77602pt too wide) in paragraph at lines 126--130
 LaTeX Info: Redefining \. on input line 140.
 LaTeX Info: Redefining \% on input line 140.
 [55]
-<./images//resultados-beautifulsoup.jpg, id=1859, 502.87875pt x 378.66469pt>
+<./images//resultados-beautifulsoup.jpg, id=1922, 502.87875pt x 378.66469pt>
 File: ./images//resultados-beautifulsoup.jpg Graphic file (type jpg)
 <use ./images//resultados-beautifulsoup.jpg>
 Package pdftex.def Info: ./images//resultados-beautifulsoup.jpg  used on input line 143.
 (pdftex.def)             Requested size: 332.44243pt x 250.32391pt.
-<./images//resultados-beautifulsoup2.jpg, id=1861, 533.74406pt x 369.63094pt>
+<./images//resultados-beautifulsoup2.jpg, id=1924, 533.74406pt x 369.63094pt>
 File: ./images//resultados-beautifulsoup2.jpg Graphic file (type jpg)
 <use ./images//resultados-beautifulsoup2.jpg>
 Package pdftex.def Info: ./images//resultados-beautifulsoup2.jpg  used on input line 153.
@@ -1766,7 +1766,7 @@ File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-justext.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-<./images//resultados-justext.jpg, id=1869, 407.27156pt x 308.65312pt>
+<./images//resultados-justext.jpg, id=1932, 407.27156pt x 308.65312pt>
 File: ./images//resultados-justext.jpg Graphic file (type jpg)
 <use ./images//resultados-justext.jpg>
 Package pdftex.def Info: ./images//resultados-justext.jpg  used on input line 209.
@@ -1785,7 +1785,7 @@ Overfull \hbox (5.19342pt too wide) in paragraph at lines 242--246
  [] 
  []
 
-<./images//resultados-htmltext.jpg, id=1914, 408.02437pt x 309.40594pt>
+<./images//resultados-htmltext.jpg, id=1977, 408.02437pt x 309.40594pt>
 File: ./images//resultados-htmltext.jpg Graphic file (type jpg)
 <use ./images//resultados-htmltext.jpg>
 Package pdftex.def Info: ./images//resultados-htmltext.jpg  used on input line 258.
@@ -1802,55 +1802,48 @@ Overfull \hbox (2.69342pt too wide) in paragraph at lines 289--293
  [] 
  []
 
-<./images//resultados-html2text.jpg, id=1924, 405.01312pt x 308.65312pt>
+<./images//resultados-html2text.jpg, id=1987, 405.01312pt x 308.65312pt>
 File: ./images//resultados-html2text.jpg Graphic file (type jpg)
 <use ./images//resultados-html2text.jpg>
 Package pdftex.def Info: ./images//resultados-html2text.jpg  used on input line 304.
-(pdftex.def)             Requested size: 339.66878pt x 258.86182pt.
+(pdftex.def)             Requested size: 332.44243pt x 253.35152pt.
 (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-readability.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 322.
-LaTeX Info: Redefining \% on input line 322.
- [60]
+LaTeX Info: Redefining \. on input line 321.
+LaTeX Info: Redefining \% on input line 321.
+ [60 <./images//resultados-html2text.jpg>]
 Overfull \hbox (10.05441pt too wide) in paragraph at lines 329--333
  [] 
  []
 
 
-Underfull \vbox (badness 6445) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 344.
-LaTeX Info: Redefining \% on input line 344.
- [61 <./images//resultados-html2text.jpg>]
 Overfull \hbox (10.05441pt too wide) in paragraph at lines 352--357
  [] 
  []
 
-<./images//resultados-readability.jpg, id=1969, 405.01312pt x 309.40594pt>
+<./images//resultados-readability.jpg, id=2011, 405.01312pt x 309.40594pt>
 File: ./images//resultados-readability.jpg Graphic file (type jpg)
 <use ./images//resultados-readability.jpg>
 Package pdftex.def Info: ./images//resultados-readability.jpg  used on input line 367.
 (pdftex.def)             Requested size: 361.34999pt x 276.05498pt.
-(D:\MikText\tex/latex/base\latin1.def
+LaTeX Info: Redefining \. on input line 376.
+LaTeX Info: Redefining \% on input line 376.
+[61] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-trafilatura.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 389.
-LaTeX Info: Redefining \% on input line 389.
+LaTeX Info: Redefining \. on input line 395.
+LaTeX Info: Redefining \% on input line 395.
  [62 <./images//resultados-readability.jpg>]
 Overfull \hbox (6.9152pt too wide) in paragraph at lines 402--406
  [] 
  []
 
-<./images//resultados-trafilatura.jpg, id=1977, 405.01312pt x 307.1475pt>
+<./images//resultados-trafilatura.jpg, id=2055, 405.01312pt x 307.1475pt>
 File: ./images//resultados-trafilatura.jpg Graphic file (type jpg)
 <use ./images//resultados-trafilatura.jpg>
 Package pdftex.def Info: ./images//resultados-trafilatura.jpg  used on input line 413.
@@ -1860,26 +1853,19 @@ File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-trafilatura-precision.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 425.
-LaTeX Info: Redefining \% on input line 425.
- [63]
 Overfull \hbox (19.74854pt too wide) in paragraph at lines 432--436
  [] 
  []
 
-<./images//resultados-trafilatura-precision.jpg, id=2000, 406.51875pt x 306.39468pt>
+LaTeX Info: Redefining \. on input line 439.
+LaTeX Info: Redefining \% on input line 439.
+[63 <./images//resultados-trafilatura.jpg>]
+<./images//resultados-trafilatura-precision.jpg, id=2077, 406.51875pt x 306.39468pt>
 File: ./images//resultados-trafilatura-precision.jpg Graphic file (type jpg)
 <use ./images//resultados-trafilatura-precision.jpg>
 Package pdftex.def Info: ./images//resultados-trafilatura-precision.jpg  used on input line 447.
 (pdftex.def)             Requested size: 325.215pt x 245.12543pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 450.
-LaTeX Info: Redefining \% on input line 450.
- [64 <./images//resultados-trafilatura.jpg>] (D:\MikText\tex/latex/base\latin1.def
+ (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-trafilatura-recall.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
@@ -1888,27 +1874,25 @@ Overfull \hbox (4.69305pt too wide) in paragraph at lines 467--471
  [] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images//resultados-trafilatura-recall.jpg, id=2022, 406.51875pt x 307.90031pt>
+LaTeX Info: Redefining \. on input line 474.
+LaTeX Info: Redefining \% on input line 474.
+[64 <./images//resultados-trafilatura-precision.jpg>]
+<./images//resultados-trafilatura-recall.jpg, id=2098, 406.51875pt x 307.90031pt>
 File: ./images//resultados-trafilatura-recall.jpg Graphic file (type jpg)
 <use ./images//resultados-trafilatura-recall.jpg>
 Package pdftex.def Info: ./images//resultados-trafilatura-recall.jpg  used on input line 478.
 (pdftex.def)             Requested size: 361.34999pt x 273.69684pt.
-LaTeX Info: Redefining \. on input line 492.
-LaTeX Info: Redefining \% on input line 492.
-[65 <./images//resultados-trafilatura-precision.jpg>]
+
 Overfull \hbox (19.74854pt too wide) in paragraph at lines 495--501
  [] 
  []
 
-<./images//resultados-trafilatura-comparacion.jpg, id=2048, 502.87875pt x 384.6872pt>
+<./images//resultados-trafilatura-comparacion.jpg, id=2103, 502.87875pt x 384.6872pt>
 File: ./images//resultados-trafilatura-comparacion.jpg Graphic file (type jpg)
 <use ./images//resultados-trafilatura-comparacion.jpg>
 Package pdftex.def Info: ./images//resultados-trafilatura-comparacion.jpg  used on input line 513.
 (pdftex.def)             Requested size: 361.34999pt x 276.42279pt.
-<./images//resultados-trafilatura-comparacion2.jpg, id=2049, 532.99126pt x 369.63094pt>
+<./images//resultados-trafilatura-comparacion2.jpg, id=2104, 532.99126pt x 369.63094pt>
 File: ./images//resultados-trafilatura-comparacion2.jpg Graphic file (type jpg)
 <use ./images//resultados-trafilatura-comparacion2.jpg>
 Package pdftex.def Info: ./images//resultados-trafilatura-comparacion2.jpg  used on input line 520.
@@ -1918,13 +1902,13 @@ File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-goose3.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-LaTeX Info: Redefining \. on input line 538.
-LaTeX Info: Redefining \% on input line 538.
- [66 <./images//resultados-trafilatura-recall.jpg>]
-LaTeX Info: Redefining \. on input line 538.
-LaTeX Info: Redefining \% on input line 538.
- [67 <./images//resultados-trafilatura-comparacion.jpg> <./images//resultados-trafilatura-comparacion2.jpg>]
-<./images//resultados-goose3.jpg, id=2061, 405.01312pt x 309.40594pt>
+LaTeX Info: Redefining \. on input line 537.
+LaTeX Info: Redefining \% on input line 537.
+ [65 <./images//resultados-trafilatura-recall.jpg>]
+LaTeX Info: Redefining \. on input line 537.
+LaTeX Info: Redefining \% on input line 537.
+ [66 <./images//resultados-trafilatura-comparacion.jpg> <./images//resultados-trafilatura-comparacion2.jpg>]
+<./images//resultados-goose3.jpg, id=2116, 405.01312pt x 309.40594pt>
 File: ./images//resultados-goose3.jpg Graphic file (type jpg)
 <use ./images//resultados-goose3.jpg>
 Package pdftex.def Info: ./images//resultados-goose3.jpg  used on input line 578.
@@ -1934,15 +1918,13 @@ File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-boilerpy.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-Underfull \vbox (badness 3118) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 595.
 LaTeX Info: Redefining \% on input line 595.
- [68]
+ [67]
 LaTeX Info: Redefining \. on input line 615.
 LaTeX Info: Redefining \% on input line 615.
- [69 <./images//resultados-goose3.jpg>]
-<./images//resultados-boilerpy.jpg, id=2106, 403.5075pt x 305.64188pt>
+ [68 <./images//resultados-goose3.jpg>]
+<./images//resultados-boilerpy.jpg, id=2162, 403.5075pt x 305.64188pt>
 File: ./images//resultados-boilerpy.jpg Graphic file (type jpg)
 <use ./images//resultados-boilerpy.jpg>
 Package pdftex.def Info: ./images//resultados-boilerpy.jpg  used on input line 619.
@@ -1958,7 +1940,7 @@ File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
 LaTeX Info: Redefining \. on input line 651.
 LaTeX Info: Redefining \% on input line 651.
- [70 <./images//resultados-boilerpy.jpg>]
+ [69 <./images//resultados-boilerpy.jpg>]
 Overfull \hbox (11.88716pt too wide) in paragraph at lines 655--659
  [] 
  []
@@ -1968,12 +1950,12 @@ Overfull \hbox (11.88716pt too wide) in paragraph at lines 670--675
  [] 
  []
 
-<./images//resultados-boilerpiper.jpg, id=2122, 500.62032pt x 380.17032pt>
+<./images//resultados-boilerpiper.jpg, id=2178, 500.62032pt x 380.17032pt>
 File: ./images//resultados-boilerpiper.jpg Graphic file (type jpg)
 <use ./images//resultados-boilerpiper.jpg>
 Package pdftex.def Info: ./images//resultados-boilerpiper.jpg  used on input line 691.
 (pdftex.def)             Requested size: 361.34999pt x 274.41853pt.
-<./images//resultados-boilerpiper2.jpg, id=2123, 539.76656pt x 379.4175pt>
+<./images//resultados-boilerpiper2.jpg, id=2179, 539.76656pt x 379.4175pt>
 File: ./images//resultados-boilerpiper2.jpg Graphic file (type jpg)
 <use ./images//resultados-boilerpiper2.jpg>
 Package pdftex.def Info: ./images//resultados-boilerpiper2.jpg  used on input line 698.
@@ -1987,10 +1969,10 @@ Underfull \vbox (badness 5331) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 715.
 LaTeX Info: Redefining \% on input line 715.
- [71]
+ [70]
 LaTeX Info: Redefining \. on input line 715.
 LaTeX Info: Redefining \% on input line 715.
- [72 <./images//resultados-boilerpiper.jpg> <./images//resultados-boilerpiper2.jpg>] (D:\MikText\tex/latex/base\latin1.def
+ [71 <./images//resultados-boilerpiper.jpg> <./images//resultados-boilerpiper2.jpg>] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-rvest.R
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1998,7 +1980,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-<./images//resultados-rvest.jpg, id=2152, 403.5075pt x 306.39468pt>
+<./images//resultados-rvest.jpg, id=2208, 403.5075pt x 306.39468pt>
 File: ./images//resultados-rvest.jpg Graphic file (type jpg)
 <use ./images//resultados-rvest.jpg>
 Package pdftex.def Info: ./images//resultados-rvest.jpg  used on input line 747.
@@ -2010,7 +1992,7 @@ File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
 LaTeX Info: Redefining \. on input line 764.
 LaTeX Info: Redefining \% on input line 764.
- [73] (D:\MikText\tex/latex/base\latin1.def
+ [72] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-rcrawler.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
@@ -2019,8 +2001,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 776.
 LaTeX Info: Redefining \% on input line 776.
- [74 <./images//resultados-rvest.jpg>]
-<./images//resultados-rcrawler.jpg, id=2206, 405.01312pt x 308.65312pt>
+ [73 <./images//resultados-rvest.jpg>]
+<./images//resultados-rcrawler.jpg, id=2262, 405.01312pt x 308.65312pt>
 File: ./images//resultados-rcrawler.jpg Graphic file (type jpg)
 <use ./images//resultados-rcrawler.jpg>
 Package pdftex.def Info: ./images//resultados-rcrawler.jpg  used on input line 796.
@@ -2034,12 +2016,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 813.
 LaTeX Info: Redefining \% on input line 813.
- [75 <./images//resultados-rcrawler.jpg>] (D:\MikText\tex/latex/base\latin1.def
+ [74 <./images//resultados-rcrawler.jpg>] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/script-htm2txt.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
-<./images//resultados-htm2txt.jpg, id=2219, 402.75468pt x 307.90031pt>
+<./images//resultados-htm2txt.jpg, id=2275, 402.75468pt x 307.90031pt>
 File: ./images//resultados-htm2txt.jpg Graphic file (type jpg)
 <use ./images//resultados-htm2txt.jpg>
 Package pdftex.def Info: ./images//resultados-htm2txt.jpg  used on input line 848.
@@ -2051,11 +2033,11 @@ File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )
 LaTeX Info: Redefining \. on input line 865.
 LaTeX Info: Redefining \% on input line 865.
- [76]
+ [75]
 LaTeX Info: Redefining \. on input line 881.
 LaTeX Info: Redefining \% on input line 881.
- [77 <./images//resultados-htm2txt.jpg>]
-<./images//resultados-xpath.jpg, id=2277, 403.5075pt x 307.90031pt>
+ [76 <./images//resultados-htm2txt.jpg>]
+<./images//resultados-xpath.jpg, id=2332, 403.5075pt x 307.90031pt>
 File: ./images//resultados-xpath.jpg Graphic file (type jpg)
 <use ./images//resultados-xpath.jpg>
 Package pdftex.def Info: ./images//resultados-xpath.jpg  used on input line 890.
@@ -2065,16 +2047,16 @@ Underfull \vbox (badness 1005) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 915.
 LaTeX Info: Redefining \% on input line 915.
- [78 <./images//resultados-xpath.jpg>]
-<./images//resultados-comparacion-xpath.jpg, id=2285, 502.12593pt x 383.93437pt>
+ [77 <./images//resultados-xpath.jpg>]
+<./images//resultados-comparacion-xpath.jpg, id=2341, 502.12593pt x 383.93437pt>
 File: ./images//resultados-comparacion-xpath.jpg Graphic file (type jpg)
 <use ./images//resultados-comparacion-xpath.jpg>
 Package pdftex.def Info: ./images//resultados-comparacion-xpath.jpg  used on input line 941.
 (pdftex.def)             Requested size: 383.03122pt x 292.88866pt.
 LaTeX Info: Redefining \. on input line 956.
 LaTeX Info: Redefining \% on input line 956.
- [79 <./images//resultados-comparacion-xpath.jpg>]
-<./images//eficacia-general-xpath.jpg, id=2294, 371.88937pt x 323.70938pt>
+ [78 <./images//resultados-comparacion-xpath.jpg>]
+<./images//eficacia-general-xpath.jpg, id=2350, 371.88937pt x 323.70938pt>
 File: ./images//eficacia-general-xpath.jpg Graphic file (type jpg)
 <use ./images//eficacia-general-xpath.jpg>
 Package pdftex.def Info: ./images//eficacia-general-xpath.jpg  used on input line 959.
@@ -2086,21 +2068,21 @@ Overfull \hbox (9.77602pt too wide) in paragraph at lines 989--996
 
 LaTeX Info: Redefining \. on input line 999.
 LaTeX Info: Redefining \% on input line 999.
-[80 <./images//eficacia-general-xpath.jpg>]
-<./images//resultados-comparacion-htmlparse.jpg, id=2302, 499.11469pt x 375.65344pt>
+[79 <./images//eficacia-general-xpath.jpg>]
+<./images//resultados-comparacion-htmlparse.jpg, id=2358, 499.11469pt x 375.65344pt>
 File: ./images//resultados-comparacion-htmlparse.jpg Graphic file (type jpg)
 <use ./images//resultados-comparacion-htmlparse.jpg>
 Package pdftex.def Info: ./images//resultados-comparacion-htmlparse.jpg  used on input line 1008.
 (pdftex.def)             Requested size: 397.48499pt x 299.1704pt.
 
-Overfull \hbox (9.77602pt too wide) in paragraph at lines 1034--1043
+Overfull \hbox (10.05441pt too wide) in paragraph at lines 1034--1043
  [] 
  []
 
 LaTeX Info: Redefining \. on input line 1046.
 LaTeX Info: Redefining \% on input line 1046.
-[81 <./images//resultados-comparacion-htmlparse.jpg>]
-<./images//resultados-comparacion-lxml.jpg, id=2310, 616.55344pt x 383.93437pt>
+[80 <./images//resultados-comparacion-htmlparse.jpg>]
+<./images//resultados-comparacion-lxml.jpg, id=2366, 616.55344pt x 383.93437pt>
 File: ./images//resultados-comparacion-lxml.jpg Graphic file (type jpg)
 <use ./images//resultados-comparacion-lxml.jpg>
 Package pdftex.def Info: ./images//resultados-comparacion-lxml.jpg  used on input line 1061.
@@ -2112,40 +2094,120 @@ Overfull \hbox (14.51088pt too wide) in paragraph at lines 1061--1062
 
 LaTeX Info: Redefining \. on input line 1074.
 LaTeX Info: Redefining \% on input line 1074.
-[82 <./images//resultados-comparacion-lxml.jpg>]
-Overfull \hbox (10.63745pt too wide) in paragraph at lines 1081--1087
+[81 <./images//resultados-comparacion-lxml.jpg>]
+Overfull \hbox (10.63745pt too wide) in paragraph at lines 1082--1088
  [] 
  []
 
-<./images//resultados-comparacion-xml-xml2.jpg, id=2316, 502.87875pt x 383.18156pt>
+<./images//resultados-comparacion-xml-xml2.jpg, id=2372, 502.87875pt x 383.18156pt>
 File: ./images//resultados-comparacion-xml-xml2.jpg Graphic file (type jpg)
 <use ./images//resultados-comparacion-xml-xml2.jpg>
-Package pdftex.def Info: ./images//resultados-comparacion-xml-xml2.jpg  used on input line 1099.
-(pdftex.def)             Requested size: 397.48499pt x 302.87383pt.
+Package pdftex.def Info: ./images//resultados-comparacion-xml-xml2.jpg  used on input line 1100.
+(pdftex.def)             Requested size: 419.16621pt x 319.39124pt.
+
+Underfull \vbox (badness 1331) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 1114.
+LaTeX Info: Redefining \% on input line 1114.
+ [82 <./images//resultados-comparacion-xml-xml2.jpg>]
+<./images//eficacia-general-analizador.jpg, id=2378, 544.28343pt x 394.47375pt>
+File: ./images//eficacia-general-analizador.jpg Graphic file (type jpg)
+<use ./images//eficacia-general-analizador.jpg>
+Package pdftex.def Info: ./images//eficacia-general-analizador.jpg  used on input line 1117.
+(pdftex.def)             Requested size: 469.75499pt x 340.45668pt.
+
+Overfull \hbox (14.51088pt too wide) in paragraph at lines 1117--1118
+ [][] 
+ []
+
+
+Overfull \hbox (10.05441pt too wide) in paragraph at lines 1148--1153
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1156.
+LaTeX Info: Redefining \% on input line 1156.
+[83 <./images//eficacia-general-analizador.jpg>]
+<./images//resultados-comparacion-readability-goose3.jpg, id=2386, 501.37312pt x 380.17032pt>
+File: ./images//resultados-comparacion-readability-goose3.jpg Graphic file (type jpg)
+<use ./images//resultados-comparacion-readability-goose3.jpg>
+Package pdftex.def Info: ./images//resultados-comparacion-readability-goose3.jpg  used on input line 1169.
+(pdftex.def)             Requested size: 411.93877pt x 312.36818pt.
+LaTeX Info: Redefining \. on input line 1185.
+LaTeX Info: Redefining \% on input line 1185.
+ [84 <./images//resultados-comparacion-readability-goose3.jpg>]
+Overfull \hbox (10.05441pt too wide) in paragraph at lines 1192--1198
+ [] 
+ []
+
+<./images//resultados-comparacion-trafilatura-readability-justext.jpg, id=2392, 500.62032pt x 376.40625pt>
+File: ./images//resultados-comparacion-trafilatura-readability-justext.jpg Graphic file (type jpg)
+<use ./images//resultados-comparacion-trafilatura-readability-justext.jpg>
+Package pdftex.def Info: ./images//resultados-comparacion-trafilatura-readability-justext.jpg  used on input line 1213.
+(pdftex.def)             Requested size: 383.03122pt x 288.00726pt.
+
+Overfull \hbox (9.77602pt too wide) in paragraph at lines 1231--1236
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1239.
+LaTeX Info: Redefining \% on input line 1239.
+[85 <./images//resultados-comparacion-trafilatura-readability-justext.jpg>]
+<./images//resultados-comparacion-beautifulsoup-rvest.jpg, id=2399, 500.62032pt x 385.44pt>
+File: ./images//resultados-comparacion-beautifulsoup-rvest.jpg Graphic file (type jpg)
+<use ./images//resultados-comparacion-beautifulsoup-rvest.jpg>
+Package pdftex.def Info: ./images//resultados-comparacion-beautifulsoup-rvest.jpg  used on input line 1258.
+(pdftex.def)             Requested size: 383.03122pt x 294.91945pt.
+
+Overfull \hbox (10.63745pt too wide) in paragraph at lines 1277--1293
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1296.
+LaTeX Info: Redefining \% on input line 1296.
+[86 <./images//resultados-comparacion-beautifulsoup-rvest.jpg>]
+<./images//tiempo-general.jpg, id=2408, 545.03625pt x 328.97906pt>
+File: ./images//tiempo-general.jpg Graphic file (type jpg)
+<use ./images//tiempo-general.jpg>
+Package pdftex.def Info: ./images//tiempo-general.jpg  used on input line 1310.
+(pdftex.def)             Requested size: 426.39255pt x 257.36565pt.
+<./images//eficacia-general.jpg, id=2409, 543.53062pt x 400.49625pt>
+File: ./images//eficacia-general.jpg Graphic file (type jpg)
+<use ./images//eficacia-general.jpg>
+Package pdftex.def Info: ./images//eficacia-general.jpg  used on input line 1317.
+(pdftex.def)             Requested size: 433.62pt x 319.52354pt.
+<./images//eficiencia-general.jpg, id=2410, 529.22719pt x 392.96812pt>
+File: ./images//eficiencia-general.jpg Graphic file (type jpg)
+<use ./images//eficiencia-general.jpg>
+Package pdftex.def Info: ./images//eficiencia-general.jpg  used on input line 1324.
+(pdftex.def)             Requested size: 433.62pt x 321.97809pt.
 ) (presupuesto/presupuesto.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [83 <./images//resultados-comparacion-xml-xml2.jpg>] [84
-
-]
+ [87 <./images//tiempo-general.jpg>]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [88 <./images//eficacia-general.jpg> <./images//eficiencia-general.jpg>]
 Cap\'{\i }tulo 6.
 ) (biblio/bibliography.tex (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
-) (TFG-DavidMarquez.bbl [85] [86
+) (TFG-DavidMarquez.bbl [89
 
-] [87]
+] [90
+
+] [91]
 Underfull \hbox (badness 2608) in paragraph at lines 154--156
 []\T1/lmr/m/n/10 M. La-ba-bi-di, ``Goo-se3,'' [][]$https : / / goose3 . readthedocs . io / en / latest / .$[][] [Ul-ti-mo ac-ce-so 11/di-ciem-
  []
 
 LaTeX Info: Redefining \. on input line 212.
 LaTeX Info: Redefining \% on input line 212.
-[88]) (D:\MikText\tex/latex/base\utf8.def
+[92]) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )) (appendix/apendiceA.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [89] [90
+ [93] [94
 
 ]
 Ap\'{e}ndice A.
@@ -2153,7 +2215,7 @@ Ap\'{e}ndice A.
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/ejemplo-basico-web-scraping-1.R) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-) [91] (D:\MikText\tex/latex/base\latin1.def
+) [95] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/ejemplo-basico-web-scraping-2.R
 Overfull \hbox (5.40488pt too wide) in paragraph at lines 5--6
@@ -2171,34 +2233,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 90.
 LaTeX Info: Redefining \% on input line 90.
- [92] (D:\MikText\tex/latex/base\latin1.def
+ [96] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/ejemplo-basico-web-scraping-4.R) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 )) (appendix/apendiceB.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [93] [94
+ [97] [98
 
 ]
 Ap\'{e}ndice B.
-<./images//parser-structure.jpg, id=2458, 631.60968pt x 241.65282pt>
+<./images//parser-structure.jpg, id=2552, 631.60968pt x 241.65282pt>
 File: ./images//parser-structure.jpg Graphic file (type jpg)
 <use ./images//parser-structure.jpg>
 Package pdftex.def Info: ./images//parser-structure.jpg  used on input line 18.
 (pdftex.def)             Requested size: 397.48499pt x 152.07983pt.
-[95 <./images//parser-structure.jpg>]
+[99 <./images//parser-structure.jpg>]
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
- [96]
+ [100]
 LaTeX Info: Redefining \. on input line 162.
 LaTeX Info: Redefining \% on input line 162.
- [97]) (appendix/apendiceC.tex
+ [101]) (appendix/apendiceC.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [98]
+ [102]
 Ap\'{e}ndice C.
-<./images//estructura-metricas2.jpg, id=2489, 781.41937pt x 388.45125pt>
+<./images//estructura-metricas2.jpg, id=2583, 781.41937pt x 388.45125pt>
 File: ./images//estructura-metricas2.jpg Graphic file (type jpg)
 <use ./images//estructura-metricas2.jpg>
 Package pdftex.def Info: ./images//estructura-metricas2.jpg  used on input line 12.
@@ -2212,7 +2274,7 @@ Overfull \hbox (50.64589pt too wide) in paragraph at lines 12--13
 File: latin1.def 2020/08/01 v1.3d Input encoding file
 ) (scripts/evaluacion-perfect-accuracy.py) (D:\MikText\tex/latex/base\utf8.def
 File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
-) [99
+) [103
 
  <./images//estructura-metricas2.jpg>] (D:\MikText\tex/latex/base\latin1.def
 File: latin1.def 2020/08/01 v1.3d Input encoding file
@@ -2221,11 +2283,11 @@ File: utf8.def 2019/11/14 v1.2k UTF-8 support for inputenc
 ))
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
- [100] (cover/backpage.tex (cover/backpage-tfg-uah.tex [101
+ [104] (cover/backpage.tex (cover/backpage-tfg-uah.tex [105
 
 
 ]
-<./logos//uah/01_logo-vA_pant293.pdf, id=2519, 607.48354pt x 209.12729pt>
+<./logos//uah/01_logo-vA_pant293.pdf, id=2612, 607.48354pt x 209.12729pt>
 File: ./logos//uah/01_logo-vA_pant293.pdf Graphic file (type pdf)
 <use ./logos//uah/01_logo-vA_pant293.pdf>
 Package pdftex.def Info: ./logos//uah/01_logo-vA_pant293.pdf  used on input line 40.
@@ -2240,27 +2302,27 @@ File: logos/logoEPS-UAH.jpg Graphic file (type jpg)
 <use logos/logoEPS-UAH.jpg>
 Package pdftex.def Info: logos/logoEPS-UAH.jpg  used on input line 125.
 (pdftex.def)             Requested size: 418.25368pt x 304.29808pt.
-[102
+[106
 
  <./logos//uah/01_logo-vA_pant293.pdf>] (TFG-DavidMarquez.aux
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
 )
 Package rerunfilecheck Info: File `TFG-DavidMarquez.out' has not changed.
-(rerunfilecheck)             Checksum: D600B93CC08172B86201F7F398C0B997;8937.
+(rerunfilecheck)             Checksum: D9DD191A5E32B71DED6A6324AD15180A;9528.
  ) 
 Here is how much of TeX's memory you used:
- 34463 strings out of 480236
- 608028 string characters out of 2896605
- 1262060 words of memory out of 3000000
- 48769 multiletter control sequences out of 15000+200000
+ 34543 strings out of 480236
+ 611643 string characters out of 2896605
+ 1263960 words of memory out of 3000000
+ 48825 multiletter control sequences out of 15000+200000
  634607 words of font info for 99 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,12n,124p,1069b,2000s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/MikText/fonts/enc/dvips/lm/lm-ec.enc}{D:/MikText/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/MikText/fonts/enc/dvips/lm/lm-rm.enc}{D:/MikText/fonts/enc/dvips/lm/lm-mathit.enc}{D:/MikText/fonts/enc/dvips/lm/lm-ts1.enc}{D:/MikText/fonts/enc/dvips/base/8r.enc}<D:/MikText/fonts/type1/public/lm/lmbx10.pfb><D:/MikText/fonts/type1/public/lm/lmbx12.pfb><D:/MikText/fonts/type1/public/lm/lmbx9.pfb><D:/MikText/fonts/type1/public/lm/lmbxi10.pfb><D:/MikText/fonts/type1/public/lm/lmmi10.pfb><D:/MikText/fonts/type1/public/lm/lmr10.pfb><D:/MikText/fonts/type1/public/lm/lmr12.pfb><D:/MikText/fonts/type1/public/lm/lmr17.pfb><D:/MikText/fonts/type1/public/lm/lmr6.pfb><D:/MikText/fonts/type1/public/lm/lmr7.pfb><D:/MikText/fonts/type1/public/lm/lmr8.pfb><D:/MikText/fonts/type1/public/lm/lmr9.pfb><D:/MikText/fonts/type1/public/lm/lmri10.pfb><D:/MikText/fonts/type1/public/lm/lmsy10.pfb><D:/MikText/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on TFG-DavidMarquez.pdf (122 pages, 3122329 bytes).
+Output written on TFG-DavidMarquez.pdf (126 pages, 3383661 bytes).
 PDF statistics:
- 2800 PDF objects out of 2984 (max. 8388607)
- 1020 named destinations out of 1200 (max. 500000)
- 1139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2896 PDF objects out of 2984 (max. 8388607)
+ 1037 named destinations out of 1200 (max. 500000)
+ 1214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

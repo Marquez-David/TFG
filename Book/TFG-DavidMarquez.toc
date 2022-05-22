@@ -87,23 +87,28 @@
 \contentsline {subsubsection}{\numberline {4.2.4.2}Métricas dependientes del entorno de ejecución}{49}{subsubsection.364}%
 \contentsline {chapter}{\numberline {5}Análisis y comparativa de paquetes}{53}{chapter.401}%
 \contentsline {section}{\numberline {5.1}Evaluación individual de paquetes}{53}{section.402}%
-\contentsline {section}{\numberline {5.2}Comparación de paquetes}{78}{section.761}%
-\contentsline {subsection}{\numberline {5.2.1}Comparación de paquetes que usan expresiones \emph {xPath}}{79}{subsection.762}%
-\contentsline {subsection}{\numberline {5.2.2}Comparación de paquetes según el analizador empleado}{80}{subsection.766}%
-\contentsline {chapter}{\numberline {6}Futuras lineas de trabajo...}{85}{chapter.773}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{87}{chapter*.774}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{91}{Appendix.775}%
-\contentsline {section}{\numberline {A.1}Fase de búsqueda}{91}{section.776}%
-\contentsline {section}{\numberline {A.2}Fase de extracción}{92}{section.793}%
-\contentsline {section}{\numberline {A.3}Fase de transformación}{93}{section.812}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Analizadores empleados en los paquetes de web scraping}{95}{Appendix.818}%
-\contentsline {section}{\numberline {B.1}lxml}{95}{section.820}%
-\contentsline {subsection}{\numberline {B.1.1}lxml.html}{96}{subsection.821}%
-\contentsline {subsection}{\numberline {B.1.2}soupparser}{96}{subsection.822}%
-\contentsline {section}{\numberline {B.2}html5lib}{97}{section.823}%
-\contentsline {section}{\numberline {B.3}html.parser}{97}{section.824}%
-\contentsline {section}{\numberline {B.4}XML}{97}{section.825}%
-\contentsline {section}{\numberline {B.5}xml2}{98}{section.826}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {C}Métricas descartadas del proceso de evaluación}{99}{Appendix.830}%
-\contentsline {section}{\numberline {C.1}\emph {Perfect accuracy}}{99}{section.832}%
-\contentsline {section}{\numberline {C.2}\emph {Specificity}}{100}{section.838}%
+\contentsline {section}{\numberline {5.2}Comparación de paquetes}{77}{section.758}%
+\contentsline {subsection}{\numberline {5.2.1}Comparación de resultados entre paquetes que usan expresiones \emph {xPath}}{78}{subsection.759}%
+\contentsline {subsection}{\numberline {5.2.2}Comparación de resultados entre paquetes según el analizador empleado}{79}{subsection.763}%
+\contentsline {subsection}{\numberline {5.2.3}Comparación de paquetes según la heurística empleada}{83}{subsection.771}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}Comparación entre Readability y Goose3}{83}{subsubsection.772}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}Comparación entre Trafilatura, Readability y jusText}{84}{subsubsection.775}%
+\contentsline {subsubsection}{\numberline {5.2.3.3}Comparación entre Beautiful Soup y rvest}{85}{subsubsection.778}%
+\contentsline {subsection}{\numberline {5.2.4}Comparación genérica de paquetes}{87}{subsection.781}%
+\contentsline {chapter}{\numberline {6}Futuras lineas de trabajo...}{89}{chapter.786}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{91}{chapter*.787}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Funcionamiento básico de un web scraper}{95}{Appendix.788}%
+\contentsline {section}{\numberline {A.1}Fase de búsqueda}{95}{section.789}%
+\contentsline {section}{\numberline {A.2}Fase de extracción}{96}{section.806}%
+\contentsline {section}{\numberline {A.3}Fase de transformación}{97}{section.825}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Analizadores empleados en los paquetes de web scraping}{99}{Appendix.831}%
+\contentsline {section}{\numberline {B.1}lxml}{99}{section.833}%
+\contentsline {subsection}{\numberline {B.1.1}lxml.html}{100}{subsection.834}%
+\contentsline {subsection}{\numberline {B.1.2}soupparser}{100}{subsection.835}%
+\contentsline {section}{\numberline {B.2}html5lib}{101}{section.836}%
+\contentsline {section}{\numberline {B.3}html.parser}{101}{section.837}%
+\contentsline {section}{\numberline {B.4}XML}{101}{section.838}%
+\contentsline {section}{\numberline {B.5}xml2}{102}{section.839}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {C}Métricas descartadas del proceso de evaluación}{103}{Appendix.843}%
+\contentsline {section}{\numberline {C.1}\emph {Perfect accuracy}}{103}{section.845}%
+\contentsline {section}{\numberline {C.2}\emph {Specificity}}{104}{section.851}%

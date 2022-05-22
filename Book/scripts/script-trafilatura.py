@@ -1,4 +1,4 @@
-import trafilatura
+import trafilatura as tf
 
 def run_trafilatura():
     '''extraccion de texto empleando trafilatura'''
@@ -8,7 +8,6 @@ def run_trafilatura():
         with open(path, 'r', encoding = "utf-8") as file:
             html_to_string = file.read()
             
-        output[path.stem] = {'texto': trafilatura.extract(html_to_string, 
-            include_comments = False)}
+        output[path.stem] = {'texto': tf.extract(html_to_string)}
 
     return output

@@ -30,33 +30,40 @@
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Estructura del entorno de ejecución\relax }}{50}{figure.caption.399}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Gráfica - Resultados de la evaluación de inscriptis\relax }}{54}{figure.caption.420}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfica - Resultados de la evaluación de Beautiful Soup\relax }}{56}{figure.caption.441}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Gráfica - Resultados de la evaluación de Beautiful Soup 2\relax }}{56}{figure.caption.442}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfica - Comparación de resultados entre las tres variantes de Beautiful Soup\relax }}{56}{figure.caption.441}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Gráfica - Comparación de resultados entre las tres variantes de Beautiful Soup 2\relax }}{56}{figure.caption.442}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Gráfica - Resultados de la evaluación de jusText\relax }}{58}{figure.caption.462}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Gráfica - Resultados de la evaluación de html\_text\relax }}{59}{figure.caption.480}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Gráfica - Resultados de la evaluación de html2text\relax }}{61}{figure.caption.499}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Gráfica - Resultados de la evaluación de html2text\relax }}{60}{figure.caption.499}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Gráfica - Resultados de la evaluación de Readability\relax }}{62}{figure.caption.520}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura\relax }}{64}{figure.caption.539}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {precision}\relax }}{65}{figure.caption.558}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {recall}\relax }}{66}{figure.caption.577}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Gráfica - Comparación entre los tres algoritmos de Trafilatura\relax }}{67}{figure.caption.579}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Gráfica - Comparación entre los tres algoritmos de Trafilatura 2\relax }}{67}{figure.caption.580}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Gráfica - Resultados de la evaluación de Goose3\relax }}{69}{figure.caption.601}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Gráfica - Resultados de la evaluación de Boilerpy\relax }}{70}{figure.caption.620}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Gráfica - Resultados de la evaluación de BoilerpipeR\relax }}{72}{figure.caption.649}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Gráfica - Resultados de la evaluación de BoilerpipeR 2\relax }}{72}{figure.caption.650}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Gráfica - Resultados de la evaluación de rvest\relax }}{74}{figure.caption.679}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Gráfica - Resultados de la evaluación de Rcrawler\relax }}{75}{figure.caption.707}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Gráfica - Resultados de la evaluación de htm2txt\relax }}{77}{figure.caption.736}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Gráfica - Resultados de la evaluación de \emph {xPath}\relax }}{78}{figure.caption.760}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Gráfica - Comparación de paquetes que usan expresiones \emph {xPath}\relax }}{79}{figure.caption.764}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Comparación de la eficacia en los paquetes que usan expresiones \emph {xPath}\relax }}{80}{figure.caption.765}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Gráfica - Comparación de paquetes que usan \emph {html.parser} como analizador\relax }}{81}{figure.caption.768}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Gráfica - Comparación de paquetes que usan \emph {lxml} como analizador\relax }}{82}{figure.caption.770}%
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Gráfica - Comparación de paquetes que usan \emph {XML} o \emph {xml2} como analizador\relax }}{83}{figure.caption.772}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura\relax }}{63}{figure.caption.538}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {(precision)}\relax }}{64}{figure.caption.556}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Gráfica - Resultados de la evaluación de Trafilatura \emph {(recall)}\relax }}{65}{figure.caption.574}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Gráfica - Comparación de resultados entre los tres algoritmos de Trafilatura\relax }}{66}{figure.caption.576}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Gráfica - Comparación de resultados entre los tres algoritmos de Trafilatura 2\relax }}{66}{figure.caption.577}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Gráfica - Resultados de la evaluación de Goose3\relax }}{68}{figure.caption.598}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Gráfica - Resultados de la evaluación de Boilerpy\relax }}{69}{figure.caption.617}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Gráfica - Comparación de resultados entre Boilerpy \& BoilerpipeR\relax }}{71}{figure.caption.646}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Gráfica - Comparación de resultados entre Boilerpy \& BoilerpipeR 2\relax }}{71}{figure.caption.647}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Gráfica - Resultados de la evaluación de rvest\relax }}{73}{figure.caption.676}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Gráfica - Resultados de la evaluación de Rcrawler\relax }}{74}{figure.caption.704}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Gráfica - Resultados de la evaluación de htm2txt\relax }}{76}{figure.caption.733}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Gráfica - Resultados de la evaluación de \emph {xPath}\relax }}{77}{figure.caption.757}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan expresiones \emph {xPath}\relax }}{78}{figure.caption.761}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Comparación de la eficacia en los paquetes que usan expresiones \emph {xPath}\relax }}{79}{figure.caption.762}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan \emph {html.parser} como analizador\relax }}{80}{figure.caption.765}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan \emph {lxml} como analizador\relax }}{81}{figure.caption.767}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan \emph {XML} o \emph {xml2} como analizador\relax }}{82}{figure.caption.769}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Comparación de la eficacia en los paquetes según el analizador empleado\relax }}{83}{figure.caption.770}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Figura - Comparación de resultados entre Readability \& Goose3\relax }}{84}{figure.caption.774}%
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Figura - Comparación de resultados entre Trafilatura \& Readability \& jusText\relax }}{85}{figure.caption.777}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Figura - Comparación de resultados entre Beautiful Soup \& rvest\relax }}{86}{figure.caption.780}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Comparación del tiempo de ejecución en los paquetes de \emph {web scraping}\relax }}{87}{figure.caption.783}%
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Comparación de la eficacia en los paquetes de \emph {web scraping}\relax }}{88}{figure.caption.784}%
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Comparación de la eficiencia en los paquetes de \emph {web scraping}\relax }}{88}{figure.caption.785}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{95}{figure.caption.819}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Estructura basica de un analizador\relax }}{99}{figure.caption.832}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Jerarquía de métricas descartadas\relax }}{99}{figure.caption.831}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Jerarquía de métricas descartadas\relax }}{103}{figure.caption.844}%

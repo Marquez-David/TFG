@@ -25,23 +25,23 @@
 \contentsline {codefloat}{\numberline {5.4}{\ignorespaces Función de ejecución de html\_text\relax }}{58}{codefloat.478}%
 \contentsline {codefloat}{\numberline {5.5}{\ignorespaces Función de ejecución de html2text\relax }}{60}{codefloat.497}%
 \contentsline {codefloat}{\numberline {5.6}{\ignorespaces Función de ejecución de Readability\relax }}{61}{codefloat.517}%
-\contentsline {codefloat}{\numberline {5.7}{\ignorespaces Función de ejecución de Trafilatura\relax }}{63}{codefloat.537}%
-\contentsline {codefloat}{\numberline {5.8}{\ignorespaces Función de ejecución de Trafilatura \emph {(precision)}\relax }}{64}{codefloat.556}%
-\contentsline {codefloat}{\numberline {5.9}{\ignorespaces Función de ejecución de Trafilatura \emph {(recall)}\relax }}{65}{codefloat.575}%
-\contentsline {codefloat}{\numberline {5.10}{\ignorespaces Función de ejecución de Goose3\relax }}{68}{codefloat.599}%
-\contentsline {codefloat}{\numberline {5.11}{\ignorespaces Función de ejecución de Boilerpy\relax }}{69}{codefloat.618}%
-\contentsline {codefloat}{\numberline {5.12}{\ignorespaces Ejecución de BoilerpipeR desde Python\relax }}{70}{codefloat.628}%
-\contentsline {codefloat}{\numberline {5.13}{\ignorespaces Función de ejecución de BoilerpipeR\relax }}{71}{codefloat.646}%
-\contentsline {codefloat}{\numberline {5.14}{\ignorespaces Ejecución de rvest desde Python\relax }}{73}{codefloat.658}%
-\contentsline {codefloat}{\numberline {5.15}{\ignorespaces Función de ejecución de rvest\relax }}{73}{codefloat.677}%
-\contentsline {codefloat}{\numberline {5.16}{\ignorespaces Función de ejecución de Rcrawler\relax }}{74}{codefloat.698}%
-\contentsline {codefloat}{\numberline {5.17}{\ignorespaces Ejecución de Rcrawler desde Python\relax }}{75}{codefloat.705}%
-\contentsline {codefloat}{\numberline {5.18}{\ignorespaces Función de ejecución de htm2txt\relax }}{76}{codefloat.727}%
-\contentsline {codefloat}{\numberline {5.19}{\ignorespaces Ejecución de htm2txt desde Python\relax }}{76}{codefloat.734}%
-\contentsline {codefloat}{\numberline {5.20}{\ignorespaces Función de ejecución de \emph {xPath}\relax }}{77}{codefloat.758}%
-\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{91}{codefloat.784}%
-\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{92}{codefloat.792}%
-\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{93}{codefloat.811}%
-\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{93}{codefloat.817}%
-\contentsline {codefloat}{\numberline {C.1}{\ignorespaces Cálculo de la métrica \emph {perfect accuracy}\relax }}{100}{codefloat.837}%
-\contentsline {codefloat}{\numberline {C.2}{\ignorespaces Cálculo de la métrica \emph {specificity}\relax }}{100}{codefloat.847}%
+\contentsline {codefloat}{\numberline {5.7}{\ignorespaces Función de ejecución de Trafilatura\relax }}{62}{codefloat.536}%
+\contentsline {codefloat}{\numberline {5.8}{\ignorespaces Función de ejecución de Trafilatura \emph {(precision)}\relax }}{63}{codefloat.554}%
+\contentsline {codefloat}{\numberline {5.9}{\ignorespaces Función de ejecución de Trafilatura \emph {(recall)}\relax }}{64}{codefloat.572}%
+\contentsline {codefloat}{\numberline {5.10}{\ignorespaces Función de ejecución de Goose3\relax }}{67}{codefloat.596}%
+\contentsline {codefloat}{\numberline {5.11}{\ignorespaces Función de ejecución de Boilerpy\relax }}{68}{codefloat.615}%
+\contentsline {codefloat}{\numberline {5.12}{\ignorespaces Ejecución de BoilerpipeR desde Python\relax }}{69}{codefloat.625}%
+\contentsline {codefloat}{\numberline {5.13}{\ignorespaces Función de ejecución de BoilerpipeR\relax }}{70}{codefloat.643}%
+\contentsline {codefloat}{\numberline {5.14}{\ignorespaces Ejecución de rvest desde Python\relax }}{72}{codefloat.655}%
+\contentsline {codefloat}{\numberline {5.15}{\ignorespaces Función de ejecución de rvest\relax }}{72}{codefloat.674}%
+\contentsline {codefloat}{\numberline {5.16}{\ignorespaces Función de ejecución de Rcrawler\relax }}{73}{codefloat.695}%
+\contentsline {codefloat}{\numberline {5.17}{\ignorespaces Ejecución de Rcrawler desde Python\relax }}{74}{codefloat.702}%
+\contentsline {codefloat}{\numberline {5.18}{\ignorespaces Función de ejecución de htm2txt\relax }}{75}{codefloat.724}%
+\contentsline {codefloat}{\numberline {5.19}{\ignorespaces Ejecución de htm2txt desde Python\relax }}{75}{codefloat.731}%
+\contentsline {codefloat}{\numberline {5.20}{\ignorespaces Función de ejecución de \emph {xPath}\relax }}{76}{codefloat.755}%
+\contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{95}{codefloat.797}%
+\contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{96}{codefloat.805}%
+\contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{97}{codefloat.824}%
+\contentsline {codefloat}{\numberline {A.4}{\ignorespaces Transformación de datos en un data frame\relax }}{97}{codefloat.830}%
+\contentsline {codefloat}{\numberline {C.1}{\ignorespaces Cálculo de la métrica \emph {perfect accuracy}\relax }}{104}{codefloat.850}%
+\contentsline {codefloat}{\numberline {C.2}{\ignorespaces Cálculo de la métrica \emph {specificity}\relax }}{104}{codefloat.860}%

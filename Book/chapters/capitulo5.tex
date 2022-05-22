@@ -132,7 +132,7 @@ resultados obtenidos se muestran en la tabla
     \end{center}
 \end{table}
 
-En forma de gráfica, se muestra en \ref{img:grafica - resultados de la evaluacion de beautiful soup} los 
+En forma de gráfica, se muestra en \ref{img:grafica - comparacion de resultados entre las variantes de beautiful soup} los 
 cálculos obtenidos en referencia a las métricas independientes del entorno de ejecución. Realizando un
 análisis, podemos determinar que el uso de \emph{html.parse} o \emph{lxml} no altera la calidad de la 
 información obtenida. Por el contrario cuando se emplea \emph{html5lib} tanto la cantidad de predicciones 
@@ -141,18 +141,18 @@ correctas, como la exclusión de contenido \emph{boilerplate} se reduce drástic
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=4.6in]{resultados-beautifulsoup.jpg}
-    \caption{Gráfica - Resultados de la evaluación de Beautiful Soup}
-    \label{img:grafica - resultados de la evaluacion de beautiful soup}
+    \caption{Gráfica - Comparación de resultados entre las tres variantes de Beautiful Soup}
+    \label{img:grafica - comparacion de resultados entre las variantes de beautiful soup}
 \end{figure}
 
 Por otro lado, respecto a las métricas dependientes del entorno, el uso de memoria RAM, al igual que el uso
-de CPU, es similar en todos los analizadores. Véase \ref{img:grafica - resultados de la evaluacion de beautiful soup 2}.
+de CPU, es similar en todos los analizadores. Véase \ref{img:grafica - comparacion de resultados entre las variantes de beautiful soup 2}.
 
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=4.6in]{resultados-beautifulsoup2.jpg}
-    \caption{Gráfica - Resultados de la evaluación de Beautiful Soup 2}
-    \label{img:grafica - resultados de la evaluacion de beautiful soup 2}
+    \caption{Gráfica - Comparación de resultados entre las tres variantes de Beautiful Soup 2}
+    \label{img:grafica - comparacion de resultados entre las variantes de beautiful soup 2}
 \end{figure}
 
 \section*{jusText}
@@ -301,7 +301,7 @@ de su heurística. A pesar de todo ello, la calidad en general de la extracción
 
 \begin{figure}[tphb]
     \centering
-    \includegraphics[width=4.7in]{resultados-html2text.jpg}
+    \includegraphics[width=4.6in]{resultados-html2text.jpg}
     \caption{Gráfica - Resultados de la evaluación de html2text}
     \label{img:grafica - resultados de la evaluacion de html2text}
 \end{figure}
@@ -433,7 +433,7 @@ código \ref{cod:funcion de ejecucion de trafilatura precision}, se activan adem
        \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
        Tra. precision & 0.9129 & 0.9208 & 0.9699 & 0.9447 & 45.9 & 1.4 & 4.4590 \\ \hline
       \end{tabular}
-      \caption{Tabla - Resultados de la evaluación de Trafilatura \emph{precision}}
+      \caption{Tabla - Resultados de la evaluación de Trafilatura \emph{(precision)}}
       \label{tab:tabla - resultados de la evaluacion de trafilatura precision}
     \end{center}
 \end{table}
@@ -445,7 +445,7 @@ es que la inclusión de los algoritmos de respaldo no aumentan el uso de recurso
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=4.5in]{resultados-trafilatura-precision.jpg}
-    \caption{Gráfica - Resultados de la evaluación de Trafilatura \emph{precision}}
+    \caption{Gráfica - Resultados de la evaluación de Trafilatura \emph{(precision)}}
     \label{img:grafica - resultados de la evaluacion de trafilatura precision}
 \end{figure}
 
@@ -468,7 +468,7 @@ Veamos los resultados obtenidos.
        \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
        Tra. recall & 0.9188 & 0.9287 & 0.9776 & 0.9525 & 46.3 & 0.5 & 3.0888 \\ \hline
       \end{tabular}
-      \caption{Tabla - Resultados de la evaluación de Trafilatura \emph{recall}}
+      \caption{Tabla - Resultados de la evaluación de Trafilatura \emph{(recall)}}
       \label{tab:tabla - resultados de la evaluacion de trafilatura recall}
     \end{center}
 \end{table}
@@ -476,7 +476,7 @@ Veamos los resultados obtenidos.
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5in]{resultados-trafilatura-recall.jpg}
-    \caption{Gráfica - Resultados de la evaluación de Trafilatura \emph{recall}}
+    \caption{Gráfica - Resultados de la evaluación de Trafilatura \emph{(recall)}}
     \label{img:grafica - resultados de la evaluacion de trafilatura recall}
 \end{figure}
 
@@ -488,7 +488,7 @@ ofrecida por la heurística anterior.
 Haciendo una comparación más amplia entre los tres tipos de configuraciones para \textbf{Trafilatura},
 podemos observar que la heurística dedicada a seleccionar las partes deseadas de un documento es la más
 refinada. Esta supera incluso el valor de la métrica \emph{precision} de la propia heurística dedicada a 
-ello. Véase \ref{img:grafica - comparacion entre los tres algoritmos de trafilatura}.
+ello. Véase \ref{img:grafica - comparacion de resultados entre los tres algoritmos de trafilatura}.
 
 \begin{table}[h]
     \begin{center}
@@ -498,28 +498,28 @@ ello. Véase \ref{img:grafica - comparacion entre los tres algoritmos de trafila
        Tra. precision & 0.9129 & 0.9208 & 0.9699 & 0.9447 & 45.9 & 1.4 & 4.4590 \\ \hline
        Tra. recall & 0.9188 & 0.9287 & 0.9776 & 0.9525 & 46.3 & 0.5 & 3.0888 \\ \hline
       \end{tabular}
-      \caption{Tabla - Comparación entre los tres algoritmos de Trafilatura}
-      \label{tab:tabla - comparacion entre los tres algoritmos de trafilatura}
+      \caption{Tabla - Comparación de resultados entre los tres algoritmos de Trafilatura}
+      \label{tab:tabla - comparacion de resultados entre los tres algoritmos de trafilatura}
     \end{center}
 \end{table}
 
 Por otra parte, los valores de referidos al uso de recursos del entorno de ejecución también se ven
 reducidos en la configuración para \emph{recall}. Al parecer la ejecución de los algoritmos de respaldo no
 afecta al consumo de recursos del entorno de ejecución. Véase 
-\ref{img:grafica - comparacion entre los tres algoritmos de trafilatura 2}.
+\ref{img:grafica - comparacion de resultados entre los tres algoritmos de trafilatura 2}.
 
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5in]{resultados-trafilatura-comparacion.jpg}
-    \caption{Gráfica - Comparación entre los tres algoritmos de Trafilatura}
-    \label{img:grafica - comparacion entre los tres algoritmos de trafilatura}
+    \caption{Gráfica - Comparación de resultados entre los tres algoritmos de Trafilatura}
+    \label{img:grafica - comparacion de resultados entre los tres algoritmos de trafilatura}
 \end{figure}
 
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5in]{resultados-trafilatura-comparacion2.jpg}
-    \caption{Gráfica - Comparación entre los tres algoritmos de Trafilatura 2}
-    \label{img:grafica - comparacion entre los tres algoritmos de trafilatura 2}
+    \caption{Gráfica - Comparación de resultados entre los tres algoritmos de Trafilatura 2}
+    \label{img:grafica - comparacion de resultados entre los tres algoritmos de trafilatura 2}
 \end{figure}
 
 \section*{Goose3}
@@ -689,15 +689,15 @@ algoritmos visto hasta ahora. Veamos una comparación gráfica.
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5in]{resultados-boilerpiper.jpg}
-    \caption{Gráfica - Resultados de la evaluación de BoilerpipeR}
-    \label{img:grafica - resultados de la evaluacion de boilerpiper}
+    \caption{Gráfica - Comparación de resultados entre Boilerpy \& BoilerpipeR}
+    \label{img:grafica - comparacion de resultados entre boilerpy y boilerpiper}
 \end{figure}
 
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5in]{resultados-boilerpiper2.jpg}
-    \caption{Gráfica - Resultados de la evaluación de BoilerpipeR 2}
-    \label{img:grafica - resultados de la evaluacion de boilerpiper 2}
+    \caption{Gráfica - Comparación de resultados entre Boilerpy \& BoilerpipeR 2}
+    \label{img:grafica - comparacion de resultados entre boilerpy y boilerpiper 2}
 \end{figure}
 
 \section*{rvest}
@@ -904,8 +904,8 @@ diferentes puntos de vista. El objetivo de esta comparación es obtener de una m
 los causantes de los diferentes resultados obtenidos. En muchos casos, el analizador empleado, la heurística,
 o el propio lenguaje de programación se convierten en un factor fundamental.
 
-\subsection{Comparación de paquetes que usan expresiones \emph{xPath}}
-\label{subsec:comparacion de paquetes que usan expresiones xpath}
+\subsection{Comparación de resultados entre paquetes que usan expresiones \emph{xPath}}
+\label{subsec:comparacion de resultados entre paquetes que usan expresiones xpath}
 
 El uso de expresiones regulares es una técnica conocida que puede utilizarse en el proceso de extracción,
 se determina un cierto patrón y se buscan etiquetas a lo largo del documento que coincidan. Sin embargo,
@@ -926,12 +926,12 @@ Además, será interesante ver una comparación con el simple empleo de expresio
        Rcrawler & 0.4540 & 0.4628 & 0.9310 & 0.6181 & 46.7 & 3.4 & 158.0663 \\ \hline
        xPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
       \end{tabular}
-      \caption{Tabla - Comparación de paquetes que usan expresiones \emph{xPath}}
-      \label{tab:tabla - comparacion de paquetes que usan expresiones xpath}
+      \caption{Tabla - Comparación de resultados entre paquetes que usan expresiones \emph{xPath}}
+      \label{tab:tabla - comparacion de resultados entre paquetes que usan expresiones xpath}
     \end{center}
 \end{table}
 
-Podemos observar en la tabla \ref{tab:tabla - comparacion de paquetes que usan expresiones xpath} los
+Podemos observar en la tabla \ref{tab:tabla - comparacion de resultados entre paquetes que usan expresiones xpath} los
 resultados obtenidos por los paquetes que emplean expresiones \emph{xPath}. De manera general podemos decir
 que los resultados dejan bastante que desear. Resultados muy pobres para el tiempo de ejecución empleado.
 Veamos ahora una comparación más minuciosa, observando las diferencias entre las métricas de forma individual.
@@ -939,14 +939,14 @@ Veamos ahora una comparación más minuciosa, observando las diferencias entre l
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5.3in]{resultados-comparacion-xpath.jpg}
-    \caption{Gráfica - Comparación de paquetes que usan expresiones \emph{xPath}}
-    \label{img:grafica - comparacion de paquetes que usan expresiones xpath}
+    \caption{Gráfica - Comparación de resultados entre paquetes que usan expresiones \emph{xPath}}
+    \label{img:grafica - comparacion de resultados entre paquetes que usan expresiones xpath}
 \end{figure}
 
-En la gráfica \ref{img:grafica - comparacion de paquetes que usan expresiones xpath} podemos observar de 
-manera más visual los resultados obtenidos. Sorprende que \textbf{rvest} tenga unos resultados tan pobres, 
-siendo superado incluso por expresiones regulares. Por otro lado, \textbf{Rcrawler} sin tener resultados 
-buenos, es el único que realiza un decente proceso de \emph{web scraping}.
+En la gráfica \ref{img:grafica - comparacion de resultados entre paquetes que usan expresiones xpath} 
+podemos observar de manera más visual los resultados obtenidos. Sorprende que \textbf{rvest} tenga unos 
+resultados tan pobres, siendo superado incluso por expresiones regulares. Por otro lado, \textbf{Rcrawler} 
+sin tener resultados buenos, es el único que realiza un decente proceso de \emph{web scraping}.
 
 ¿Cómo es posible que se haya captado la mayor parte del contenido principal y los resultados del resto de
 métricas sean tan malos? La razón es que además de captar contenido principal, el algoritmo ha captado
@@ -973,8 +973,8 @@ conocer el precio de un determinado producto en diferentes páginas web. Puesto 
 dentro de una cierta etiqueta HTML, el empleo de una heurística compleja no tendría mucho sentido, además
 de que reduciría tiempos de ejecución.
 
-\subsection{Comparación de paquetes según el analizador empleado}
-\label{subsec:comparacion de paquetes segun el analizador empleado}
+\subsection{Comparación de resultados entre paquetes según el analizador empleado}
+\label{subsec:comparacion de resultados entre paquetes segun el analizador empleado}
 
 El uso de expresiones regulares es una técnica conocida que puede utilizarse en el proceso de extracción.
 Sin embargo, puede causar problemas cuando el número de etiquetas internas es ambiguo. En esta situación
@@ -993,31 +993,31 @@ importancia de cada uno en la eficacia de los mismos.
        html2text & 0.5105 & 0.5107 & 0.9804 & 0.6715 & 44.6 & 1.8 & 4.4020 \\ \hline
        Beau. Soup & 0.5165 & 0.5129 & 0.9928 & 0.6764 & 47.0 & 4.3 & 4.0882 \\ \hline
       \end{tabular}
-      \caption{Tabla - Paquetes que emplean \emph{html.parser} como analizador}
-      \label{tab:tabla - paquetes que emplean html.parser como analizador}
+      \caption{Tabla - Comparación de resultados entre paquetes que emplean \emph{html.parser} como analizador}
+      \label{tab:tabla - comparacion de resultados entre paquetes que emplean html.parser como analizador}
     \end{center}
 \end{table}
 
 Empecemos primero con aquellos algoritmos de que emplean \emph{html.parse} como parte de su heurística.
-Podemos observar en la tabla \ref{tab:tabla - paquetes que emplean html.parser como analizador} los
+Podemos observar en la tabla \ref{tab:tabla - comparacion de resultados entre paquetes que emplean html.parser como analizador} los
 resultados obtenidos para los cuatro diferentes algoritmos. Si recordamos como funcionaba \emph{html.parse},
 trabaja con etiquetas, además no es un algoritmo excesivamente rápido y es indulgente en su análisis.
 
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5.5in]{resultados-comparacion-htmlparse.jpg}
-    \caption{Gráfica - Comparación de paquetes que usan \emph{html.parser} como analizador}
-    \label{img:grafica - comparacion de paquetes que usan html.parser como analizador}
+    \caption{Gráfica - Comparación de resultados entre paquetes que usan \emph{html.parser} como analizador}
+    \label{img:grafica - comparacion de resultados entre paquetes que usan html.parser como analizador}
 \end{figure}
 
-Si observamos la gráfica \ref{img:grafica - comparacion de paquetes que usan html.parser como analizador},
+Si observamos la gráfica \ref{img:grafica - comparacion de resultados entre paquetes que usan html.parser como analizador},
 y ponemos atención en las variables \emph{accuracy} y \emph{precision}, nos damos cuenta de que los valores
 mostrados son muy dispares. Al tratar con un analizador tan permisivo, es necesario crear una heurística
 elaborada para excluir la mayor cantidad de contenido \emph{boilerplate}.
 
 Siguiendo este aspecto, en cuanto a la captación de contenido principal, todos los algoritmos retornan
 buenos resultados. Sorprende incluso ver que los datos mostrados para \textbf{Beautiful Soup} y 
-\textbf{html2txt}. Entonces, ¿a qué pueden deberse estas diferencias en las métricas? La explicación es
+\textbf{html2text}. Entonces, ¿a qué pueden deberse estas diferencias en las métricas? La explicación es
 que \textbf{Boilerpy} y \textbf{Goose3} presentan una heurística más compleja y elaborada.
 
 En cuanto a las métricas dependientes del entorno de ejecución, los valores relativos al uso de memoria
@@ -1026,8 +1026,8 @@ difieren del resto es \textbf{Goose3}.
 
 Acabamos de ver el rendimiento de aquellos paquetes que emplean \emph{html.parse} como analizador. Veamos
 ahora como se comportan los paquetes que usan \emph{lxml} como parte de su heurística. Podemos observar en 
-la tabla \ref{tab:tabla - paquetes que emplean lxml como analizador} los resultados obtenidos para los 
-cuatro diferentes algoritmos.
+la tabla \ref{tab:tabla - comparacion de resultados entre paquetes que emplean lxml como analizador} los 
+resultados obtenidos para los cuatro diferentes algoritmos.
 
 \begin{table}[h]
     \begin{center}
@@ -1037,11 +1037,11 @@ cuatro diferentes algoritmos.
        Beau. Soup & 0.5165 & 0.5129 & 0.9928 & 0.6764 & 42.0 & 1.2 & 3.1778 \\ \hline
        html\_text & 0.5166 & 0.5130 & 0.9928 & 0.6765 & 44.9 & 0.5 & 1.1800 \\ \hline
        jusText & 0.7668 & 0.8649 & 0.8573 & 0.8610 & 45.1 & 0.5 & 2.9546 \\ \hline
-       readability & 0.8880 & 0.9101 & 0.9370 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
-       trafilatura & 0.9124 & 0.9196 & 0.9928 & 0.9444 & 45.7 & 1.4 & 4.3919 \\ \hline
+       Readability & 0.8880 & 0.9101 & 0.9370 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+       Trafilatura & 0.9124 & 0.9196 & 0.9928 & 0.9444 & 45.7 & 1.4 & 4.3919 \\ \hline
       \end{tabular}
-      \caption{Tabla - Paquetes que emplean \emph{lxml} como analizador}
-      \label{tab:tabla - paquetes que emplean lxml como analizador}
+      \caption{Tabla - Comparación de resultados entre paquetes que emplean \emph{lxml} como analizador}
+      \label{tab:tabla - comparacion de resultados entre paquetes que emplean lxml como analizador}
     \end{center}
 \end{table}
 
@@ -1051,16 +1051,16 @@ Al igual que \emph{html.parse}, este es un analizador permisivo, por lo que el t
 contenido \emph{boilerplate} será delegado a la heurística determinada.
 
 En cuanto a la comparación de algoritmos, si observamos las variables de \emph{accuracy} y \emph{precision}
-en la gráfica \ref{img:grafica - comparacion de paquetes que usan lxml como analizador}, nos damos cuenta
-de la disparidad de resultados entre los algoritmos. Mientras que algoritmos como \textbf{inscriptis},
-\textbf{Beautiful Soup} o \textbf{html\_text} presentan unos resultados mediocres, el resto se acercan un 
-poco más a lo que un usuario final pretendería obtener.
+en la gráfica \ref{img:grafica - comparacion de resultados entre paquetes que usan lxml como analizador}, 
+nos damos cuenta de la disparidad de resultados entre los algoritmos. Mientras que algoritmos como 
+\textbf{inscriptis}, \textbf{Beautiful Soup} o \textbf{html\_text} presentan unos resultados mediocres, el 
+resto se acercan un poco más a lo que un usuario final pretendería obtener.
 
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=6.5in]{resultados-comparacion-lxml.jpg}
-    \caption{Gráfica - Comparación de paquetes que usan \emph{lxml} como analizador}
-    \label{img:grafica - comparacion de paquetes que usan lxml como analizador}
+    \caption{Gráfica - Comparación de resultados entre paquetes que usan \emph{lxml} como analizador}
+    \label{img:grafica - comparacion de resultados entre paquetes que usan lxml como analizador}
 \end{figure}
 
 La complejidad de cada algoritmo, también, se ve reflejada en el uso de recursos del medio de ejecución.
@@ -1071,10 +1071,11 @@ Veamos por último aquellos paquetes que emplean \emph{XML} o \emph{xml2} como a
 emplean la jerarquía de clases para realizar un análisis. La principal diferencia entre los dos tiene que
 ver con la gestión de memoria.
 
-Obsérvese la tabla \ref{tab:tabla - paquetes que emplean xml o xml2 como analizador}, donde se aprecia la
-inmensa diferencia entre los tres paquetes. Mientras que \textbf{rvest} y \textbf{Rcrawler} presentan datos
-muy pobres, \textbf{boilerpipeR} retorna buenas métricas. Debemos mencionar también la multiplicidad de
-extractores que este último presenta, parte de su objetivo es el análisis de este tipo de documentos.
+Obsérvese la tabla \ref{tab:tabla - comparacion de resultados entre paquetes que emplean xml o xml2 como analizador}, 
+donde se aprecia la inmensa diferencia entre los tres paquetes. Mientras que \textbf{rvest} y 
+\textbf{Rcrawler} presentan datos muy pobres, \textbf{boilerpipeR} retorna buenas métricas. Debemos 
+mencionar también la multiplicidad de extractores que este último presenta, parte de su objetivo es el 
+análisis de este tipo de documentos.
 
 \begin{table}[h]
     \begin{center}
@@ -1084,8 +1085,8 @@ extractores que este último presenta, parte de su objetivo es el análisis de e
        Rcrawler & 0.4540 & 0.4628 & 0.9310 & 0.6181 & 46.7 & 3.4 & 158.0663 \\ \hline
        boilerpipeR & 0.7830 & 0.8486 & 0.8696 & 0.8590 & 47.9 & 2.6 & 39.9543 \\ \hline
       \end{tabular}
-      \caption{Tabla - Paquetes que emplean \emph{XML} o \emph{xml2} como analizador}
-      \label{tab:tabla - paquetes que emplean xml o xml2 como analizador}
+      \caption{Tabla - Comparación de resultados entre paquetes que emplean \emph{XML} o \emph{xml2} como analizador}
+      \label{tab:tabla - comparacion de resultados entre paquetes que emplean xml o xml2 como analizador}
     \end{center}
 \end{table}
 
@@ -1096,14 +1097,235 @@ con el resto de métricas.
 
 \begin{figure}[tphb]
     \centering
-    \includegraphics[width=5.5in]{resultados-comparacion-xml-xml2.jpg}
-    \caption{Gráfica - Comparación de paquetes que usan \emph{XML} o \emph{xml2} como analizador}
-    \label{img:grafica - comparacion de paquetes que usan xml o xml2 como analizador}
+    \includegraphics[width=5.8in]{resultados-comparacion-xml-xml2.jpg}
+    \caption{Gráfica - Comparación de resultados entre paquetes que usan \emph{XML} o \emph{xml2} como analizador}
+    \label{img:grafica - comparacion de resultados entre paquetes que usan xml o xml2 como analizador}
 \end{figure}
 
-En cuanto al uso de recursos \emph{boilerpipeR} también muestra un uso más óptimo de los mismos. Aunque el
-tiempo de ejecución sigue siendo alto para lo que se pretende, es mucho menor que el de \textbf{rvest} o
-\textbf{Rcrawler}.
+En cuanto al uso de recursos, \emph{boilerpipeR} también muestra un uso más óptimo de los mismos. Aunque 
+el tiempo de ejecución sigue siendo alto para lo que se pretende, es mucho menor que el de \textbf{rvest} 
+o \textbf{Rcrawler}.
 
+En la figura \ref{img:comparacion de la eficacia en los paquetes segun el analizador empleado}, se puede
+observar una comparación de paquetes sobre las variables \emph{recall} y \emph{precision}. Esta gráfica
+nos muestra la importancia de la heurística a la hora de eliminar contenido \emph{boilerplate}. En este
+sentido, \textbf{Trafilatura} es capaz de extraer la mayor cantidad posible de información valiosa del 
+texto principal de un documento HTML.
 
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=6.5in]{eficacia-general-analizador.jpg}
+    \caption{Comparación de la eficacia en los paquetes según el analizador empleado}
+    \label{img:comparacion de la eficacia en los paquetes segun el analizador empleado}
+\end{figure}
+
+A modo de conclusión, podemos determinar que el analizador es una herramienta fundamental en los algoritmos
+de \emph{web scraping}, pero es necesaria una idea que los respalde. Que un paquete ofrezca mejores
+resultados que otro no dependerá del analizador empleado, sino del objetivo del propio paquete y de la
+implicación de su heurística en el mismo.
+
+\subsection{Comparación de paquetes según la heurística empleada}
+\label{subsec:comparacion de paquetes segun la heuristica empleada}
+
+A lo largo del capítulo \ref{cha:bibliotecas de programacion orientadas al web scraping} vimos que algunas
+de las bibliotecas basaban parte de su heurística en otras bibliotecas relacionadas. En esta sección se
+realizará una comparación entre aquellos paquetes cuyo proceso de \emph{web scraping} esté relacionado.
  
+\subsubsection{Comparación entre Readability y Goose3}
+\label{subsec:comparacion entre readability y goose3}
+
+Tanto \textbf{Readability} como \textbf{Goose3} emplean la heurística del nodo candidato para obtener la
+mayor cantidad de información posible. Ambos algoritmos recorren un árbol y puntúan cada nodo del mismo
+según la información contenida. Una vez puntuados los nodos, se seleccionan aquellos cuya puntuación es
+máxima.
+
+El objetivo es evaluar y comparar los dos paquetes de \emph{web scraping} de forma que podamos determinar
+aquel cuyo rendimiento es más sólido. Recordemos que ambos paquetes emplean diferentes analizadores, deberá 
+ser algo a tener en cuenta.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Readability & 0.8880 & 0.9101 & 0.9370 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+       Goose3 & 0.8658 & 0.9273 & 0.8913 & 0.9089 & 32.2 & 6.1 & 25.9731 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Comparación de resultados entre Readability \& Goose3}
+      \label{tab:tabla - comparacion de resultados entre readability y goose3 2}
+    \end{center}
+\end{table}
+
+En la tabla \ref{tab:tabla - comparacion de resultados entre readability y goose3 2} se pueden observar los
+datos obtenidos para ambos paquetes. Los datos referentes a la calidad del texto extraído son muy similares,
+\textbf{Readability} aun capturando mayor cantidad de contenido principal, presenta mejores resultados que
+\textbf{Goose3}.
+
+Por otro lado, en cuanto a las métricas dependientes del entorno de ejecución, \textbf{Readability} refleja
+unos datos mucho mejores que \textbf{Goose3}. La optimización de \textbf{Readability} es mucho mejor en
+términos de uso de CPU y tiempo de ejecución. Esto es sorprendente pues usan la misma heurística.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5.7in]{resultados-comparacion-readability-goose3.jpg}
+    \caption{Figura - Comparación de resultados entre Readability \& Goose3}
+    \label{img:figura - comparacion de resultados entre readability y goose3 2}
+\end{figure}
+
+\subsubsection{Comparación entre Trafilatura, Readability y jusText}
+\label{subsec:comparacion entre trafilatura, readability y justext}
+
+En una de las fases de ejecución de \textbf{Trafilatura}, este empleaba tanto \textbf{Readability} como
+\textbf{jusText} como algoritmos de respaldo. Ambos se encargaban de servidor de redes de seguridad y
+\emph{fallbacks} en caso de la extracción previa resultase errónea. Una vez ejecutados los algoritmos, el
+resultado se comparaba con el inicial con el objetivo de determinar una solución final.
+
+Para poder realizar una comparación justa, se ejecutará el algoritmo de \textbf{Trafilatura} con la opción
+de \emph{fallbacks} activada. Esto forzará a que el algoritmo ejecute los algoritmos de respaldo. 
+
+Por otro lado, lo más lógico es pensar que \textbf{Trafilatura} va a mostrar mejores resultados tanto que
+\textbf{Readability} como \textbf{jusText} por el simple hecho de incluirlos dentro de su heurística. Se
+muestra en la tabla \ref{tab:tabla - comparacion de resultados entre trafilatura y readability y justext}
+los resultados obtenidos.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Trafilatura & 0.9129 & 0.9208 & 0.9699 & 0.9447 & 45.9 & 1.4 & 4.4590 \\ \hline
+       Readability & 0.8880 & 0.9101 & 0.9370 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+       jusText & 0.7668 & 0.8649 & 0.8573 & 0.8610 & 45.1 & 0.5 & 2.9546 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Comparación de resultados entre Trafilatura \& Readability \& jusText}
+      \label{tab:tabla - comparacion de resultados entre trafilatura y readability y justext}
+    \end{center}
+\end{table}
+
+Los resultados muestran como efectivamente \textbf{Trafilatura} presenta una mejor solución en calidad que
+el resto de algoritmos. Tanto la cantidad de contenido principal extraída, como la eliminación de contenido
+\emph{boilerplate} es ligeramente mejor. 
+
+Por otro lado, lo más normal sería pensar en el gran costo de recursos de \textbf{Trafilatura} durante su
+ejecución. Lejos de ser así, presenta unos resultados francamente buenos con respecto a \textbf{jusText}
+o \textbf{Readability}. Tanto el tiempo de ejecución, como el uso de memoria, RAM y CPU son óptimos.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5.3in]{resultados-comparacion-trafilatura-readability-justext.jpg}
+    \caption{Figura - Comparación de resultados entre Trafilatura \& Readability \& jusText}
+    \label{img:figura - comparacion de resultados entre trafilatura y readability y justext}
+\end{figure}
+
+A modo de conclusión, podemos determinar que \textbf{Trafilatura} es el mejor de los tres algoritmos. Tanto
+por la calidad ofrecida, como por la optimización del mismo.
+
+\subsubsection{Comparación entre Beautiful Soup y rvest}
+\label{subsec:comparacion entre beautiful soup y rvest}
+
+Tanto \textbf{rvest} como \textbf{Beautiful Soup} son dos de las herramientas de minado web más comunes en
+este ámbito. Es la propia heurística de \textbf{rvest} la que está basada en \textbf{Beautiful Soup} pues
+se incluyen aspectos como la división de elementos a nivel de bloque y en línea. Será interesante ver los
+distintos resultados retornados por ambos paquetes.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Beau. Soup & 0.5165 & 0.5129 & 0.9928 & 0.6764 & 42.0 & 1.2 & 3.1778 \\ \hline
+       rvest & 0.1347 & 0.1371 & 0.8974 & 0.2378 & 44.1 & 8.9 & 60.3245 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Comparación de resultados entre Beautiful Soup \& rvest}
+      \label{tab:tabla - comparacion de resultados entre beautiful soup y rvest}
+    \end{center}
+\end{table}
+
+Se observa tanto en la tabla \ref{tab:tabla - comparacion de resultados entre beautiful soup y rvest} como
+en la gráfica \ref{img:figura - comparacion de resultados entre beautiful soup y rvest}, los resultados
+retornados por ambos paquetes. Aunque ambos presentan una calidad del texto extraído que deja bastante que
+desear, los resultados no son nada parecidos.
+
+Por un lado, respecto a las métricas independientes del entorno, ambos paquetes son capaces de recoger una
+gran cantidad de contenido principal. El problema viene cuando la heurística que presentan no es capaz de
+eliminar el contenido \emph{'basura'} del mismo. Aunque los resultados de \textbf{Beautiful Soup} no son
+tan malos, siguen estando muy alejados de lo que pretende ser una herramienta de \emph{web scraping} de
+calidad.
+
+En cuanto a las métricas referentes a la optimización, si bien \textbf{Beautiful Soup} presenta unos datos
+bastante estándar, \textbf{rvest} es todo lo contrario. La optimización en cuanto a tiempo de ejecución y
+uso de CPU es bastante pobre en el paquete de R.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5.3in]{resultados-comparacion-beautifulsoup-rvest.jpg}
+    \caption{Figura - Comparación de resultados entre Beautiful Soup \& rvest}
+    \label{img:figura - comparacion de resultados entre beautiful soup y rvest}
+\end{figure}
+
+A modo de conclusión, podemos destacar que aunque la idea de realizar una heurística similar pro parte de
+\textbf{rvest} no es del todo mala, la ejecución de la misma deja bastante que desear. El propósito de ambos
+paquete es totalmente distinto y eso se ve reflejado en los resultados.
+
+\subsection{Comparación genérica de paquetes}
+\label{subsec:comparacion generica de paquetes}
+
+Veamos por último una comparación general entre los resultados de todos los paquetes. Al finalizar la
+misma podremos determinar aquella librería más preparada para el proceso de \emph{web scraping}. En primer
+lugar, podemos observar la tabla \ref{tab:tabla - comparacion de resultados entre algoritmos de web scraping}
+con los resultados conjuntos de todos los paquetes.
+
+\begin{table}[h]
+    \begin{center}
+      \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
+       \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
+       Trafilatura & 0.9129 & 0.9208 & 0.9699 & 0.9447 & 45.9 & 1.4 & 4.4590 \\ \hline
+       Readability & 0.8880 & 0.9101 & 0.9370 & 0.9233 & 45.3 & 1.6 & 3.5952 \\ \hline
+       Goose3 & 0.8658 & 0.9273 & 0.8913 & 0.9089 & 32.2 & 6.1 & 25.9731 \\ \hline
+       Boilerpy & 0.7947 & 0.8544 & 0.8803 & 0.8672 & 43.9 & 1.9 & 2.5412 \\ \hline
+       jusText & 0.7668 & 0.8649 & 0.8573 & 0.8610 & 45.1 & 0.5 & 2.9546 \\ \hline
+       boilerpipeR & 0.7830 & 0.8486 & 0.8696 & 0.8590 & 47.9 & 2.6 & 39.9543 \\ \hline
+       inscriptis & 0.5414 & 0.5404 & 0.9875 & 0.6985 & 45.0 & 0.2 & 2.1009 \\ \hline
+       html\_text & 0.5166 & 0.5130 & 0.9928 & 0.6765 & 44.9 & 0.5 & 1.1800 \\ \hline
+       Beau. Soup & 0.5165 & 0.5129 & 0.9928 & 0.6764 & 42.0 & 1.2 & 3.1778 \\ \hline
+       html2text & 0.5105 & 0.5107 & 0.9804 & 0.6715 & 44.6 & 1.8 & 4.4020 \\ \hline
+       Rcrawler & 0.4540 & 0.4628 & 0.9310 & 0.6181 & 46.7 & 3.4 & 158.0663 \\ \hline
+       xPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
+       rvest & 0.1347 & 0.1371 & 0.8974 & 0.2378 & 44.1 & 8.9 & 60.3245 \\ \hline
+      \end{tabular}
+      \caption{Tabla - Comparación de resultados entre algoritmos de \emph{web scraping}}
+      \label{tab:tabla - comparacion de resultados entre algoritmos de web scraping}
+    \end{center}
+\end{table}
+
+Se ha ordenado la tabla según la calidad del texto extraído resultante. En este caso, \textbf{Trafilatura}
+es el paquete cuya extracción resultante presenta una similitud más cercana a lo que un usuario vería en
+el documento HTML convencional. Véase \ref{img:comparacion de la eficacia en los paquetes de web scraping}.
+
+Por otro lado, la optimización del mismo es relativamente buena comparada con la del resto. El tiempo de
+ejecución del mismo es relativamente corto y el uso de recurso es reducido. Relativo a este aspecto, los
+algoritmos propios de R generalmente presentan unos datos muy inferiores a los de Python en cuanto a tiempo 
+de ejecución y empleo de CPU. Véase \ref{img:comparacion de la eficiencia en los paquetes de web scraping} 
+y \ref{img:comparacion del tiempo de ejecucion en los paquetes de web scraping}.
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=5.9in]{tiempo-general.jpg}
+    \caption{Comparación del tiempo de ejecución en los paquetes de \emph{web scraping}}
+    \label{img:comparacion del tiempo de ejecucion en los paquetes de web scraping}
+\end{figure}
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=6in]{eficacia-general.jpg}
+    \caption{Comparación de la eficacia en los paquetes de \emph{web scraping}}
+    \label{img:comparacion de la eficacia en los paquetes de web scraping}
+\end{figure}
+
+\begin{figure}[tphb]
+    \centering
+    \includegraphics[width=6in]{eficiencia-general.jpg}
+    \caption{Comparación de la eficiencia en los paquetes de \emph{web scraping}}
+    \label{img:comparacion de la eficiencia en los paquetes de web scraping}
+\end{figure}
+
+
+
+
