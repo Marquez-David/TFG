@@ -3,41 +3,42 @@ from turtle import color
 import matplotlib.pyplot as plt
 import pandas as pd
 from math import pi
-'''
-X = [43.9, 32.2, 44.6, 42.0] #ram
-Y = [1.9, 6.1, 1.8, 1.2] #cpu
 
-Z = [45.0, 44.9, 45.1, 45.3, 45.9] #ram
-W = [0.2, 0.5, 0.5, 1.6, 1.4] #cpu
+X = [0.8544, 0.9273, 0.5107, 0.5129] #precision
+Y = [0.8803, 0.8913, 0.9804, 0.9928] #recall
 
-A = [44.1, 46.7, 47.9, 44.4] #ram
-B = [8.9, 3.4, 2.6, 2.0] #cpu
+Z = [0.5404, 0.5130, 0.8649, 0.9101, 0.9208] #precision
+W = [0.9875, 0.9928, 0.8573, 0.9370, 0.9699] #recall
+
+A = [0.1371, 0.4628, 0.8486, 0.2401, 0.4714] #precision
+B = [0.8974, 0.9310, 0.8696, 0.9915, 0.8885] #recall
 
 annot1=["Boilerpy","Goose3","html2text","Beautiful Soup"]
 annot2=["inscriptis","html_text","jusText", "Readability", "Trafilatura"]
-annot3=["rvest","Rcrawler","boilerpipeR","xPath"]
+annot3=["rvest","Rcrawler","boilerpipeR","XPath", "htm2txt"]
+
 
 plt.figure(figsize=(8,6))
-plt.scatter(Y,X,s=100,color="black", alpha=.5)
-plt.scatter(W,Z,s=100,color="black", alpha=.5)
-plt.scatter(B,A,s=100,color="black", alpha=.5)
+plt.scatter(X,Y,s=100,color="black", alpha=.5)
+plt.scatter(Z,W,s=100,color="black", alpha=.5)
+plt.scatter(A,B,s=100,color="black", alpha=.5)
+
 
 for i, label in enumerate(annot1):
-    plt.annotate(label, (Y[i], X[i]))
+    plt.annotate(label, (X[i], Y[i]))
 
 for i, label in enumerate(annot2):
-    plt.annotate(label, (W[i], Z[i]))
+    plt.annotate(label, (Z[i], W[i]))
 
 for i, label in enumerate(annot3):
-    plt.annotate(label, (B[i], A[i]))   
+    plt.annotate(label, (A[i], B[i]))   
 
-plt.xlabel("Uso de RAM (%)")
-plt.ylabel("Uso de CPU (%)")
-plt.ylim(0, 100)
-plt.xlim(0, 10)
-plt.legend(loc="upper left")
+plt.xlabel("precision")
+plt.ylabel("recall")
+plt.ylim(0.8, 1)
+plt.xlim(0, 1)
 plt.show()
-'''
+
 
 '''
 plt.ylim(0, 1)
@@ -66,16 +67,19 @@ plt.bar('xPath', 0.9915, color='dimgrey')
 ## Mostramos Gráfica
 plt.show()
 '''
+
 '''
 # Los datos de entrada 
-a = [0.5165, 0.5129, 0.9928, 0.6764]
-b = [0.1347, 0.1371, 0.8974, 0.2378]
+a = [0.1347, 0.1371, 0.8974, 0.2378] #rvest
+b = [0.4540, 0.4628, 0.9310, 0.6181] #rcrawler
+c = [0.4547, 0.4714, 0.8885, 0.6160] #htm2txt
+d = [0.2421, 0.2401, 0.9915, 0.3866] #xpath
 
 labels = ['accuracy', 'precision', 'recall', 'f1']
  
  # Establecer la posición y el ancho del gráfico de barras
 pos = list(range(len(a)))
-width = 0.3
+width = 0.2
  
 # Dibujar
 fig, ax = plt.subplots(figsize=(8,6))
@@ -99,35 +103,26 @@ plt.bar([p + width*3 for p in pos], d, width,
                  alpha=0.5,
                  color='y',
                  label=labels[3])
-    
-plt.bar([p + width*4 for p in pos], e, width,
-                 alpha=0.5,
-                 color='grey',
-                 label=labels[3])
-
-plt.bar([p + width*5 for p in pos], f, width,
-                 alpha=0.5,
-                 color='purple',
-                 label=labels[3])
 
 # Establecer etiqueta y distancia
 #ax.set_ylabel('y-value')
 #ax.set_title('Grouped bar plot')
-ax.set_xticks([p + 1 * width for p in pos])
+ax.set_xticks([p + 1.5 * width for p in pos])
 ax.set_xticklabels(labels)
  
  # Establecer límites de los ejes x, y
-plt.xlim(min(pos)-width, max(pos)+width*2)
+plt.xlim(min(pos)-width, max(pos)+width*4)
 plt.ylim([0, 1])
  
  # Dibujar
-plt.legend(['Beautiful Soup', 'rvest'], loc='best')
+plt.legend(['rvest', 'Rcrawler', 'htm2txt', 'XPath'], loc='best')
 plt.show()
 '''
 
+'''
 # Los datos de entrada 
-green_data = [4.4590, 3.5952, 25.9731, 2.5412, 2.9546, 39.9543, 2.1009, 1.1800, 3.1778, 4.4020, 158.0663, 0.7476, 60.3245]
-labels = ['Trafilatura', 'Readability', 'Goose3', 'Boilerpy', 'jusText', 'boilerpipeR', 'inscriptis', 'html_text', 'Beau. Soup', 'html2text', 'Rcrawler', 'xPath', 'rvest']
+green_data = [4.4590, 3.5952, 25.9731, 2.5412, 2.9546, 39.9543, 2.1009, 1.1800, 3.1778, 4.4020, 158.0663, 80.5288, 0.7476, 60.3245]
+labels = ['Trafilatura', 'Readability', 'Goose3', 'Boilerpy', 'jusText', 'boilerpipeR', 'inscriptis', 'html_text', 'Beau. Soup', 'html2text', 'Rcrawler', 'htm2txt', 'xPath', 'rvest']
  
  # Establecer la posición y el ancho del gráfico de barras
 pos = list(range(len(green_data)))
@@ -159,29 +154,15 @@ plt.ylim(min(pos)-width, max(pos)+width)
  
  # Dibujar
 plt.show()
-
-
 '''
-#relacion entre precision y recall, es decir, exclusion de contenido boilerplate y captacion de contenido principal
-plt.ylim(0.8, 1)
-plt.xlim(0, 1)
 
-
-plt.plot(0.1371, 0.8974, "o", color = "orange")
-plt.plot(0.4628, 0.9310, "o", color = "green")
-plt.plot(0.2401, 0.9915, "o", color = "blue")
-plt.xlabel("Precision")
-plt.ylabel("Recall")
-plt.legend(['rvest', 'Rcrawler', 'xPath'], loc='upper right')
-plt.show()
-'''
 '''
 df = pd.DataFrame({
-'group': ['html.parser','lxml','XML/xml2'],
-'accuracy': [0.6718, 0.6902, 0.4570],
-'precision': [0.7013, 0.7109, 0.4828],
-'recall': [0.9362, 0.9600, 0.8993],
-'f1': [0.7810, 0.7966, 0.5716]
+'group': ['rvest','Rcrawler','htm2txt', 'XPath'],
+'accuracy': [0.1347, 0.4540, 0.4547, 0.2421],
+'precision': [0.1371, 0.4628, 0.4714, 0.2401],
+'recall': [0.8974, 0.9310, 0.8885, 0.9915],
+'f1': [0.2378, 0.6181, 0.6160, 0.3866]
 })
  
 # number of variable
@@ -210,20 +191,26 @@ plt.ylim(0,1)
 # Ind1
 values=df.loc[0].drop('group').values.flatten().tolist()
 values += values[:1]
-ax.plot(angles, values, 'o-', color='red', linewidth=1, label='html.parse')
-ax.fill(angles, values, 'red', alpha=0.1)
+ax.plot(angles, values, 'o-', color='green', linewidth=1, label='rvest')
+ax.fill(angles, values, 'green', alpha=0.1)
 
 # Ind2
 values=df.loc[1].drop('group').values.flatten().tolist()
 values += values[:1]
-ax.plot(angles, values, 'o-', color='green', linewidth=1, label='lxml')
-ax.fill(angles, values, 'green', alpha=0.2)
+ax.plot(angles, values, 'o-', color='blue', linewidth=1, label='Rcrawler')
+ax.fill(angles, values, 'blue', alpha=0.2)
 
 # Ind3
 values=df.loc[2].drop('group').values.flatten().tolist()
 values += values[:1]
-ax.plot(angles, values, 'o-', color='blue', linewidth=1, label='XML/xml2')
-ax.fill(angles, values, 'blue', alpha=0.1)
+ax.plot(angles, values, 'o-', color='red', linewidth=1, label='htm2txt')
+ax.fill(angles, values, 'red', alpha=0.1)
+
+# Ind4
+values=df.loc[3].drop('group').values.flatten().tolist()
+values += values[:1]
+ax.plot(angles, values, 'o-', color='yellow', linewidth=1, label='XPath')
+ax.fill(angles, values, 'yellow', alpha=0.1)
 
 ax.legend(loc='best', bbox_to_anchor=(0.9, 0.2))
 

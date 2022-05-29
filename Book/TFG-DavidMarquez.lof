@@ -48,9 +48,9 @@
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Gráfica - Resultados de la evaluación de rvest\relax }}{73}{figure.caption.676}%
 \contentsline {figure}{\numberline {5.18}{\ignorespaces Gráfica - Resultados de la evaluación de Rcrawler\relax }}{74}{figure.caption.704}%
 \contentsline {figure}{\numberline {5.19}{\ignorespaces Gráfica - Resultados de la evaluación de htm2txt\relax }}{76}{figure.caption.733}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Gráfica - Resultados de la evaluación de \emph {xPath}\relax }}{77}{figure.caption.757}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan expresiones \emph {xPath}\relax }}{78}{figure.caption.761}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Comparación de la eficacia en los paquetes que usan expresiones \emph {xPath}\relax }}{79}{figure.caption.762}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Gráfica - Resultados de la evaluación de XPath\relax }}{77}{figure.caption.757}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan expresiones XPath\relax }}{78}{figure.caption.761}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Comparación de la eficacia en los paquetes que usan expresiones XPath\relax }}{79}{figure.caption.762}%
 \contentsline {figure}{\numberline {5.23}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan \emph {html.parser} como analizador\relax }}{80}{figure.caption.765}%
 \contentsline {figure}{\numberline {5.24}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan \emph {lxml} como analizador\relax }}{81}{figure.caption.767}%
 \contentsline {figure}{\numberline {5.25}{\ignorespaces Gráfica - Comparación de resultados entre paquetes que usan \emph {XML} o \emph {xml2} como analizador\relax }}{82}{figure.caption.769}%

@@ -33,8 +33,8 @@
 \contentsline {table}{\numberline {5.18}{\ignorespaces Tabla - Resultados de la evaluación de rvest\relax }}{72}{table.caption.675}%
 \contentsline {table}{\numberline {5.19}{\ignorespaces Tabla - Resultados de la evaluación de Rcrawler\relax }}{74}{table.caption.703}%
 \contentsline {table}{\numberline {5.20}{\ignorespaces Tabla - Resultados de la evaluación de htm2txt\relax }}{75}{table.caption.732}%
-\contentsline {table}{\numberline {5.21}{\ignorespaces Tabla - Resultados de la evaluación de \emph {xPath}\relax }}{77}{table.caption.756}%
-\contentsline {table}{\numberline {5.22}{\ignorespaces Tabla - Comparación de resultados entre paquetes que usan expresiones \emph {xPath}\relax }}{78}{table.caption.760}%
+\contentsline {table}{\numberline {5.21}{\ignorespaces Tabla - Resultados de la evaluación de XPath\relax }}{77}{table.caption.756}%
+\contentsline {table}{\numberline {5.22}{\ignorespaces Tabla - Comparación de resultados entre paquetes que usan expresiones XPath\relax }}{78}{table.caption.760}%
 \contentsline {table}{\numberline {5.23}{\ignorespaces Tabla - Comparación de resultados entre paquetes que emplean \emph {html.parser} como analizador\relax }}{80}{table.caption.764}%
 \contentsline {table}{\numberline {5.24}{\ignorespaces Tabla - Comparación de resultados entre paquetes que emplean \emph {lxml} como analizador\relax }}{81}{table.caption.766}%
 \contentsline {table}{\numberline {5.25}{\ignorespaces Tabla - Comparación de resultados entre paquetes que emplean \emph {XML} o \emph {xml2} como analizador\relax }}{82}{table.caption.768}%

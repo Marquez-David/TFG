@@ -12,7 +12,7 @@ realizará una comparación conjunta de todos los paquetes analizados.
 Tal y como se ha especificado en la introducción, se procede con el análisis individual de cada paquete.
 A lo largo de la misma, se introducirán aspectos relativos a ciertos paquetes, como el tipo de analizador
 y los resultados obtenidos empleando distintos tipos de herramientas. Para cada paquete se especificará 
-una tabla de resultados y una imagen de los mismos resultados dispuestos gráficamente.
+una tabla de resultados y una ilustración de los mismos resultados dispuestos gráficamente.
 
 \section*{inscriptis}
 
@@ -231,7 +231,7 @@ instrucción en la línea de comandos: \emph{\$ pip install html-text}.
 
 En el fragmento de código \ref{cod:funcion de ejecucion de htmltext} se muestra como \textbf{html\_text} 
 extrae texto de los diferentes documentos HTML. La función \emph{extract\_text()} emplea expresiones 
-\emph{xPath} y normalizaciones de espacio para obtener una mejor calidad en los resultados.
+\emph{XPath} y normalizaciones de espacio para obtener una mejor calidad en los resultados.
 
 Una vez ejecutado el algoritmo, se realizan todos los cálculos pertinentes y se determinan las puntuaciones 
 obtenidas. En el caso de \textbf{html\_text}, los resultados obtenidos se muestran en la tabla 
@@ -262,7 +262,7 @@ entorno de ejecución.
 
 En cuanto a las métricas dependientes de entorno, es cierto que el algoritmo emplea pocos recursos, y su
 tiempo de ejecución es reducido. Esto se debe a que su heurística es simple, el uso único de expresiones
-\emph{xPath} optimiza los recursos. ¿Compensa sobre la calidad de la extracción? Lo veremos en al siguiente
+\emph{XPath} optimiza los recursos. ¿Compensa sobre la calidad de la extracción? Lo veremos en al siguiente
 sección, cuando comparemos la \emph{performance} de todos los paquetes.
 
 \section*{html2text}
@@ -739,7 +739,7 @@ de facilitar la transferencia de resultados de las diferentes funciones implicad
 
 En cuanto a las métricas, los datos reflejados en \ref{tab:tabla - resultados de la evaluacion de rvest}
 dejan bastante claro que la calidad de \textbf{rvest} en la extracción de contenido no es buena. Uno de
-los principales motivos es el uso necesario de expresiones \emph{xPath}. En este caso \emph{xpath = //body} 
+los principales motivos es el uso necesario de expresiones \emph{XPath}. En este caso \emph{xpath = //body} 
 permite al algoritmo trabajar con la etiqueta \emph{body} del documento HTML en cuestión.
 
 \begin{figure}[tphb]
@@ -765,7 +765,7 @@ instrucción en la línea de comandos: \emph{install.packages("Rcrawler", depend
 
 En referencia al fragmento de código mostrado en \ref{cod:funcion de ejecucion de rcrawler}, es muy similar
 al resto de códigos ya mostrados anteriormente. En este caso se deben emplear nuevamente expresiones
-\emph{xPath} para trabajar sobre la etiqueta HTML requerida, \emph{XpathPatterns = "//body"}.
+\emph{XPath} para trabajar sobre la etiqueta HTML requerida, \emph{XpathPatterns = "//body"}.
 
 \begin{codefloat}
     \inputencoding{latin1}
@@ -777,7 +777,7 @@ al resto de códigos ya mostrados anteriormente. En este caso se deben emplear n
 
 Sobre los datos obtenidos, se muestran en la tabla \ref{tab:tabla - resultados de la evaluacion de rcrawler}.
 Estos reflejan una pobre calidad de la información extraída por parte de \textbf{Rcrawler}. Al igual que
-sucedía con \textbf{rvest}, el empleo de expresiones \emph{xPath} limita la información a extraer. Por otro 
+sucedía con \textbf{rvest}, el empleo de expresiones \emph{XPath} limita la información a extraer. Por otro 
 lado, ni el empleo de recursos, ni el tiempo de ejecución son buenos.
 
 \begin{table}[h]
@@ -821,7 +821,7 @@ la siguiente instrucción en la línea de comandos de R: \emph{install.packages(
 \end{codefloat}
 
 En cuanto al fragmento de código mostrado en \ref{cod:funcion de ejecucion de htm2txt}, es muy similar al
-resto de códigos ya vistos anteriormente. En este caso no entran en juego expresiones \emph{xPath}, sino
+resto de códigos ya vistos anteriormente. En este caso no entran en juego expresiones \emph{XPath}, sino
 que es directamente la propia heurística del algoritmo la que se encarga de seleccionar el contenido válido.
 
 Si recordamos la heurística de \textbf{htm2txt}, esta se encargaba de utilizar expresiones regulares para
@@ -850,9 +850,9 @@ no sea buena. Por otro lado, el tiempo de ejecución es demasiado alto.
     \label{img:grafica - resultados de la evaluacion de htm2txt}
 \end{figure}
 
-\section*{Expresiones xPath}
+\section*{Expresiones XPath}
 
-¿Qué ocurre si solo empleamos expresiones \emph{xPath} sin ningún tipo de heurística? Lo obvio seria que
+¿Qué ocurre si solo empleamos expresiones \emph{XPath} sin ningún tipo de heurística? Lo obvio seria que
 los resultados obtenidos fuesen peores de los ya calculados. Por otro lado, para analizar el documento se 
 usara \emph{lxml}, veamos.
 
@@ -860,12 +860,12 @@ usara \emph{lxml}, veamos.
     \inputencoding{latin1}
     \lstinputlisting[style=CppExample, showstringspaces=false]{scripts/script-xpath.py}
     \inputencoding{utf8}
-    \caption{Función de ejecución de \emph{xPath}}
+    \caption{Función de ejecución de XPath}
     \label{cod:funcion de ejecucion de xpath}
 \end{codefloat}
 
 En cuanto al fragmento de código \ref{cod:funcion de ejecucion de xpath}, lo único a destacar es la expresión
-\emph{xPath} usada. Para cada artículo queremos obtener el cuerpo del mismo, por ello se accede a la 
+\emph{XPath} usada. Para cada artículo queremos obtener el cuerpo del mismo, por ello se accede a la 
 etiqueta \emph{body} del mismo. Por otro lado, para refinar la solución obtenida, eliminamos las expresiones 
 propias de la estructuración del texto.
 
@@ -873,9 +873,9 @@ propias de la estructuración del texto.
     \begin{center}
       \begin{tabular}{| c | c | c | c | c | c | c | c |} \hline 
        \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
-       xPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
+       XPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
       \end{tabular}
-      \caption{Tabla - Resultados de la evaluación de \emph{xPath}}
+      \caption{Tabla - Resultados de la evaluación de XPath}
       \label{tab:tabla - resultados de la evaluacion de xpath}
     \end{center}
 \end{table}
@@ -888,11 +888,11 @@ al no disponer de heurística propia la cantidad de ejecuciones a realizar es me
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5in]{resultados-xpath.jpg}
-    \caption{Gráfica - Resultados de la evaluación de \emph{xPath}}
+    \caption{Gráfica - Resultados de la evaluación de XPath}
     \label{img:grafica - resultados de la evaluacion de xpath}
 \end{figure}
 
-Este tipo de paquetes o algoritmos que emplean expresiones \emph{xPath}, ya sea como parte de su heurística,
+Este tipo de paquetes o algoritmos que emplean expresiones \emph{XPath}, ya sea como parte de su heurística,
 o como única fuente de obtención de información, se emplean mayoritariamente para obtener partes reducidas
 de un documento HTML.
 
@@ -904,7 +904,7 @@ diferentes puntos de vista. El objetivo de esta comparación es obtener de una m
 los causantes de los diferentes resultados obtenidos. En muchos casos, el analizador empleado, la heurística,
 o el propio lenguaje de programación se convierten en un factor fundamental.
 
-\subsection{Comparación de resultados entre paquetes que usan expresiones \emph{xPath}}
+\subsection{Comparación de resultados entre paquetes que usan expresiones XPath}
 \label{subsec:comparacion de resultados entre paquetes que usan expresiones xpath}
 
 El uso de expresiones regulares es una técnica conocida que puede utilizarse en el proceso de extracción,
@@ -914,9 +914,9 @@ extracción, existen dos técnicas. Se puede buscar en el documento todos los re
 expresión regular, o el proceso de extracción puede finalizar con la búsqueda del primer registro \cite{regex}.
 
 En este caso, la comparación abordará aquellos paquetes que basen su heurística a partir del uso de este
-tipo de expresiones. Paquetes como \emph{Rcrawler} y \emph{rvest} serán los seleccionados, entre otros.
+tipo de expresiones. Paquetes como \textbf{Rcrawler} y \textbf{rvest} serán los seleccionados, entre otros.
 Cabe mencionar que la comparación se realizará a partir de las métricas calculadas en la sección anterior.
-Además, será interesante ver una comparación con el simple empleo de expresiones \emph{xPath}.
+Además, será interesante ver una comparación con el simple empleo de expresiones \emph{XPath}.
 
 \begin{table}[h]
     \begin{center}
@@ -924,22 +924,23 @@ Además, será interesante ver una comparación con el simple empleo de expresio
        \textbf{Nombre} & \textbf{Accuracy} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1} & \textbf{RAM(\%)} & \textbf{CPU(\%)} & \textbf{Time Exec.(s)} \\ \hline
        rvest & 0.1347 & 0.1371 & 0.8974 & 0.2378 & 44.1 & 8.9 & 60.3245 \\ \hline
        Rcrawler & 0.4540 & 0.4628 & 0.9310 & 0.6181 & 46.7 & 3.4 & 158.0663 \\ \hline
-       xPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
+       htm2txt & 0.4547 & 0.4714 & 0.8885 & 0.6160 & 46.7 & 2.0 & 80.5288 \\ \hline
+       XPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
       \end{tabular}
-      \caption{Tabla - Comparación de resultados entre paquetes que usan expresiones \emph{xPath}}
+      \caption{Tabla - Comparación de resultados entre paquetes que usan expresiones XPath}
       \label{tab:tabla - comparacion de resultados entre paquetes que usan expresiones xpath}
     \end{center}
 \end{table}
 
 Podemos observar en la tabla \ref{tab:tabla - comparacion de resultados entre paquetes que usan expresiones xpath} los
-resultados obtenidos por los paquetes que emplean expresiones \emph{xPath}. De manera general podemos decir
+resultados obtenidos por los paquetes que emplean expresiones \emph{XPath}. De manera general podemos decir
 que los resultados dejan bastante que desear. Resultados muy pobres para el tiempo de ejecución empleado.
 Veamos ahora una comparación más minuciosa, observando las diferencias entre las métricas de forma individual.
 
 \begin{figure}[tphb]
     \centering
     \includegraphics[width=5.3in]{resultados-comparacion-xpath.jpg}
-    \caption{Gráfica - Comparación de resultados entre paquetes que usan expresiones \emph{xPath}}
+    \caption{Gráfica - Comparación de resultados entre paquetes que usan expresiones XPath}
     \label{img:grafica - comparacion de resultados entre paquetes que usan expresiones xpath}
 \end{figure}
 
@@ -956,25 +957,22 @@ buena, pero la exclusión de contenido \emph{boilerplate} no lo es tanto.
 
 \begin{figure}[tphb]
     \centering
-    \includegraphics[width=5.3in]{eficacia-general-xpath.jpg}
-    \caption{Comparación de la eficacia en los paquetes que usan expresiones \emph{xPath}}
-    \label{img:comparacion de la eficacia en los paquetes que usan expresiones xPath}
+    \includegraphics[width=5in]{eficacia-general-xpath.jpg}
+    \caption{Comparación de la eficacia en los paquetes que usan expresiones XPath}
+    \label{img:comparacion de la eficacia en los paquetes que usan expresiones xpath}
 \end{figure}
 
 Vistos los diferentes resultados obtenidos, y observando la imagen 
-\ref{img:comparacion de la eficacia en los paquetes que usan expresiones xPath} podemos concluir que los 
-algoritmos sometidos a evaluación que emplean expresiones \emph{xPath} no realizan un minado web de calidad. 
+\ref{img:comparacion de la eficacia en los paquetes que usan expresiones xpath} podemos concluir que los 
+algoritmos sometidos a evaluación que emplean expresiones \emph{XPath} no realizan un minado web de calidad. 
 Por otro lado, los resultados referentes al rendimiento y optimización de los mismos tampoco son buenos.
 
 Si estos algoritmos no ofrecen un resultado de calidad y su rendimiento no es bueno, ¿por qué son tan
 utilizados? La respuesta es que este tipo de algoritmos son buenos cuando deseas encontrar determinadas
-etiquetas dentro de un documento HTML y la calidad de la solución no es importante. Imaginemos que se desea
-conocer el precio de un determinado producto en diferentes páginas web. Puesto que dicho precio estará
-dentro de una cierta etiqueta HTML, el empleo de una heurística compleja no tendría mucho sentido, además
-de que reduciría tiempos de ejecución.
+etiquetas dentro de un documento HTML y la calidad de la solución no es importante. 
 
-\subsection{Comparación de resultados entre paquetes según el analizador empleado}
-\label{subsec:comparacion de resultados entre paquetes segun el analizador empleado}
+\subsection{Comparación de resultados entre paquetes según el analizador}
+\label{subsec:comparacion de resultados entre paquetes segun el analizador}
 
 El uso de expresiones regulares es una técnica conocida que puede utilizarse en el proceso de extracción.
 Sin embargo, puede causar problemas cuando el número de etiquetas internas es ambiguo. En esta situación
@@ -1287,7 +1285,8 @@ con los resultados conjuntos de todos los paquetes.
        Beau. Soup & 0.5165 & 0.5129 & 0.9928 & 0.6764 & 42.0 & 1.2 & 3.1778 \\ \hline
        html2text & 0.5105 & 0.5107 & 0.9804 & 0.6715 & 44.6 & 1.8 & 4.4020 \\ \hline
        Rcrawler & 0.4540 & 0.4628 & 0.9310 & 0.6181 & 46.7 & 3.4 & 158.0663 \\ \hline
-       xPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
+       htm2txt & 0.4547 & 0.4714 & 0.8885 & 0.6160 & 46.7 & 2.0 & 80.5288 \\ \hline
+       XPath & 0.2421 & 0.2401 & 0.9915 & 0.3866 & 44.4 & 2.0 & 0.7476 \\ \hline
        rvest & 0.1347 & 0.1371 & 0.8974 & 0.2378 & 44.1 & 8.9 & 60.3245 \\ \hline
       \end{tabular}
       \caption{Tabla - Comparación de resultados entre algoritmos de \emph{web scraping}}
@@ -1307,7 +1306,7 @@ y \ref{img:comparacion del tiempo de ejecucion en los paquetes de web scraping}.
 
 \begin{figure}[tphb]
     \centering
-    \includegraphics[width=5.9in]{tiempo-general.jpg}
+    \includegraphics[width=5.6in]{tiempo-general.jpg}
     \caption{Comparación del tiempo de ejecución en los paquetes de \emph{web scraping}}
     \label{img:comparacion del tiempo de ejecucion en los paquetes de web scraping}
 \end{figure}

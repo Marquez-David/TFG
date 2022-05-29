@@ -1,6 +1,6 @@
 INFO:  latexindent.pl version 3.12, 2021-09-16, a script to indent .tex files
        latexindent.pl lives here: D:/MikText/scripts/latexindent/
-       Tue Mar 15 21:06:19 2022
+       Wed May 25 23:16:12 2022
        Filename: c:/Users/Darks/Documents/GitHub/TFG/Book/chapters/__latexindent_temp.tex
 INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
@@ -23,8 +23,8 @@ INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml
        To specify user settings you would put indentconfig.yaml here: C:\Users\Darks/indentconfig.yaml
        Alternatively, you can use the hidden file .indentconfig.yaml as: C:\Users\Darks/.indentconfig.yaml
 INFO:  YAML settings read: -y switch
-       YAML setting: defaultIndent:'  '
-       Updating mainSettings with defaultIndent:   
+       YAML setting: defaultIndent:'      '
+       Updating mainSettings with defaultIndent:       
 INFO:  Phase 1: searching for objects
 INFO:  Phase 2: finding surrounding indentation
 INFO:  Phase 3: indenting objects

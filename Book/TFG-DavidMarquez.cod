@@ -38,7 +38,7 @@
 \contentsline {codefloat}{\numberline {5.17}{\ignorespaces Ejecución de Rcrawler desde Python\relax }}{74}{codefloat.702}%
 \contentsline {codefloat}{\numberline {5.18}{\ignorespaces Función de ejecución de htm2txt\relax }}{75}{codefloat.724}%
 \contentsline {codefloat}{\numberline {5.19}{\ignorespaces Ejecución de htm2txt desde Python\relax }}{75}{codefloat.731}%
-\contentsline {codefloat}{\numberline {5.20}{\ignorespaces Función de ejecución de \emph {xPath}\relax }}{76}{codefloat.755}%
+\contentsline {codefloat}{\numberline {5.20}{\ignorespaces Función de ejecución de XPath\relax }}{76}{codefloat.755}%
 \contentsline {codefloat}{\numberline {A.1}{\ignorespaces Solicitud del documento \emph {robots.txt}\relax }}{95}{codefloat.797}%
 \contentsline {codefloat}{\numberline {A.2}{\ignorespaces Acceso y descarga del archivo HTML\relax }}{96}{codefloat.805}%
 \contentsline {codefloat}{\numberline {A.3}{\ignorespaces Extracción de datos de interés del documento\relax }}{97}{codefloat.824}%

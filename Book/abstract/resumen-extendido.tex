@@ -1,25 +1,47 @@
-
-\ifthenelse{\equal{\mybooklanguage}{english}}
-{
-\chapter*{Extended Abstract}
-\label{cha:entended-abstract}
-\markboth{Extended Abstract}{Extended Abstract}
-
-\addcontentsline{toc}{chapter}{Extended Abstract}
-}
-{
 \chapter*{Resumen extendido}
 \label{cha:resumen-extendido}
 \markboth{Resumen extendido}{Resumen extendido}
 
-\addcontentsline{toc}{chapter}{Resumen extendido}
-}
+Cuando cualquier usuario entra en un sitio web, lo que busca es obtener una determinada información lo más
+rápido y preciso posible. El \emph{web scraping} trata, de precisamente eso, de extraer y recopilar datos 
+de uno o varios sitios web y disponerlos de manera ordenada en una determina estructura de datos.
 
-Con un máximo de cuatro o cinco páginas. Se supone que sólo está
-definido como obligatorio para los TFGs y PFCs de UAH.
+Dada su naturaleza, y con el avance y desarrollo de nuevas herramientas, la minería web ha ido cobrando 
+importancia sobre todo en el ámbito de la ciencia de los datos. Tanto multinacionales como instituciones 
+financieras hacen uso de este tipo de software con el objetivo de analizar a la competencia y para mejorar 
+su situación dentro del mercado. 
 
-%%% Local Variables:
-%%% TeX-master: "../book"
-%%% End:
+A pesar de que existen múltiples herramientas desarrolladas para este propósito, ya sea a través del uso 
+de \emph{frameworks} o bibliotecas de programación. El trabajo se centra en la minería web basada en 
+herramientas de programación, donde el objetivo de cada paquete y su heurística tomarán un papel fundamental.
 
+¿Qué herramientas de programación existen y como funcionan? ¿Qué diferencias hay con otras ya existentes?
+A lo largo del trabajo se realiza un análisis sobre las diferentes bibliotecas de \emph{web scraping}
+disponibles, con el objetivo de conocer y comparar el funcionamiento de las mismas.
+
+Puesto que se espera que estas herramientas de minado puedan ser una solución fiable y de calidad con
+respecto a la extracción tradicional, se realiza un proceso de estudio donde la información extraída sea
+comparada con la original. Los algoritmos a prueba serán evaluados en términos de cantidad y el contenido
+\emph{boilerplate} de la información extraída, uso de recursos del entorno y tiempo de ejecución empleado.
+
+Como posible metodología con las que poder comparar múltiples textos sin perjudicar la integridad de la
+herramienta se destaca la comparación basada en n-gramas. Esta división permite minimizar la probabilidad
+de fallo de manera de la posible repetición de palabras a lo largo del texto, o la posición de las mismas
+no sea un factor perjudicial. La eficacia en la exclusión de contenido \emph{boilerplate}, la capacidad de
+captación de contenido principal y la proporción de predicciones correctas del texto extraído, marcan la
+calidad del texto extraído.
+
+Por otro lado, además del análisis de la calidad del texto extraído de cada herramienta, se realiza un
+análisis de la optimización de la misma. El uso de recursos del entorno de ejecución, y el tiempo empleado
+para ejecutar el algoritmo determinan como de buenos son los algoritmos en términos de eficiencia.
+
+Los resultados obtenidos reflejan que la heurística de ciertas herramientas están muy elaboradas. En
+términos de calidad y optimización, bibliotecas como \textbf{Trafilatura} o \textbf{Readability} están muy
+cerca de la solución tradicional. Ambos algoritmos han sido capaces de detectar el 94\% del contenido
+principal de 101 documentos en tan solo 4 segundos y con un uso de recursos mínimo.
+
+Sin embargo, no todas las herramientas evaluadas han ido capaces de obtener los mismos resultados. Algunas
+como \textbf{rvest} o \textbf{Rcrawler} presentan resultados bastante pobres. Esto refleja que tanto el
+objetivo de cada paquete, como la implicación en el desarrollo del mismo, son fundamentales para obtener
+una herramienta software de calidad.
 

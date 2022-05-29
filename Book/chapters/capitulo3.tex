@@ -67,9 +67,9 @@ extracción, muchas de estas bibliotecas hacen uso de más de un analizador en s
 \subsection{inscriptis}
 \label{subsec:inscriptis}
 
-Además de ser una biblioteca de conversión de HTML a texto basada en Python, \textbf{inscriptis} 
-\cite{inscriptis} también tiene soporte como línea de comandos o como servicio web para tablas anidadas. 
-A pesar de sus múltiples funcionalidades esta sección se centra en \textbf{inscriptis} como biblioteca de 
+Además de ser una biblioteca de conversión de HTML a texto basada en Python, \textbf{inscriptis}
+\cite{inscriptis} también tiene soporte como línea de comandos o como servicio web para tablas anidadas.
+A pesar de sus múltiples funcionalidades, esta sección se centra en \textbf{inscriptis} como biblioteca de
 programación.
 
 \subsubsection{Estructura de la solución}
@@ -110,8 +110,8 @@ obtenida sería la siguiente:
   \end{Soutput}
 \end{Schunk}
 
-El algoritmo no solo admite construcciones tan simples como la anterior, también es posible analizar 
-construcciones mucho más complejas, como las tablas anidadas, y subconjuntos de atributos HTML o CSS donde 
+El algoritmo no solo admite construcciones tan simples como la anterior, también es posible analizar
+construcciones mucho más complejas, como las tablas anidadas, y subconjuntos de atributos HTML o CSS, donde
 es esencial una conversión precisa de HTML a texto.
 
 \subsubsection{Reglas de anotación}
@@ -251,9 +251,9 @@ los distintos analizadores disponibles, así como un pequeño resumen de las ven
   \end{center}
 \end{table}
 
-El empleo de distintos analizadores supondrá una importancia menor si se aplica sobre documentos bien 
-formados, pues la solución aportada presentará la misma estructura que el propio documento original. En 
-caso contrario, el uso de diferentes analizadores creará diferentes soluciones para un mismo documento. 
+El empleo de distintos analizadores supondrá una importancia menor si se aplica sobre documentos bien
+formados, pues la solución aportada presentará la misma estructura que el propio documento original. En
+caso contrario, el uso de múltiples analizadores creará diferentes soluciones para un mismo documento.
 
 Se emplea el analizador \emph{lxml} sobre un documento HTML sencillo pero con erratas. Vemos como la solución 
 aportada propone la inclusión de nuevas etiquetas \emph{<html>} y \emph{<body>}, sin embargo, ¿qué ha 
@@ -267,8 +267,8 @@ ocurrido con la etiqueta \emph{</p>}?.
 \end{Schunk}
 
 En lugar de ignorar la etiqueta \emph{</p>} como lo hace \emph{lxml}, el analizador html5lib la empareja 
-con una etiqueta \emph{<p>} de apertura. También añade una etiqueta <head> que el analizador \emph{lxml} 
-había obviado.
+con una etiqueta \emph{<p>} de apertura. También añade una etiqueta \emph{<head>} que el analizador 
+\emph{lxml} había obviado.
 
 \begin{Schunk}
   \begin{Soutput}
@@ -295,10 +295,10 @@ estructura, sería conveniente especificar el tipo de analizador con el fin del 
 \subsubsection{Sopa de objetos}
 \label{subsubsec:sopa de objetos}
 
-En cuanto al proceso de extracción que se emplea en este algoritmo es sencillo. En primer lugar, el 
-documento ya sea HTML o XML se convierte al completo en caracteres unicode. Tras ello se crea un árbol de 
-objetos donde cada uno de ellos representa una etiqueta o tag del propio documento. Finalmente, un 
-analizador especificado por parámetro, recorre el árbol buscando las partes del mismo que se desean.
+El proceso de extracción que se emplea en este algoritmo es sencillo. En primer lugar, el documento ya sea 
+HTML o XML se convierte por completo en caracteres unicode. Tras ello se crea un árbol de objetos donde 
+cada uno de ellos representa una etiqueta o \emph{tag} del propio documento. Finalmente, un analizador 
+especificado por parámetro, recorre el árbol buscando las partes del mismo que se desean.
 
 \begin{figure}[tphb]
   \centering
@@ -341,20 +341,20 @@ bloques circundantes.
 
 Aunque no sea habitual, puede ocurrir que el contenido de estos bloques no sea homogéneo, es decir, que
 dentro de un mismo bloque haya una mezcla de información importante con contenido basura, denominado
-\emph{'boilerplate'}. Se resumen a continuación algunos aspectos en relación.
+\emph{boilerplate}. Se resumen a continuación algunos aspectos en relación.
 
 \begin{itemize}
-  \item Los bloques cortos que contienen un enlace son casi siempre del tipo \emph{'boilerplate'}.
-  \item Los bloques que contienen muchos enlaces son casi siempre del tipo \emph{'boilerplate'}.
-  \item Tanto los bloques buenos como los bloques de tipo \emph{'boilerplate'} tienden a crear grupos, es 
-  decir, un bloque \emph{'boilerplate'} suele estar rodeado de otros bloques de su mismo tipo y viceversa.
+  \item Los bloques cortos que contienen un enlace son casi siempre del tipo \emph{boilerplate}.
+  \item Los bloques que contienen muchos enlaces son casi siempre del tipo \emph{boilerplate}.
+  \item Tanto los bloques buenos como los bloques de tipo \emph{boilerplate} tienden a crear grupos, es 
+  decir, un bloque \emph{boilerplate} suele estar rodeado de otros bloques de su mismo tipo y viceversa.
   \item Los bloques largos que contienen texto gramatical forman parte del contenido valioso, mientras que 
-  todos los demás bloques largos son casi siempre del tipo \emph{'boilerplate'}.
+  todos los demás bloques largos son casi siempre del tipo \emph{boilerplate}.
 \end{itemize}
 
 Con respecto al ultimo punto, decidir si un texto es gramatical o no puede ser complicado, \textbf{jusText} 
 emplea una simple heurística basada en el volumen de palabras con sentido gramatical. Mientras que un texto 
-gramatical suele contener un cierto porcentaje de estas palabras, los contenidos de tipo \emph{'boilerplate'} 
+gramatical suele contener un cierto porcentaje de estas palabras, los contenidos de tipo \emph{boilerplate} 
 suelen carecer de ellas.
 
 \subsubsection{Clasificación de bloques}
@@ -419,8 +419,8 @@ reclasificación se puede ver resumida en la figura \ref{img:justext - reclasifi
   \label{img:justext - reclasificacion de bloques}
 \end{figure}
 
-La idea que subyace a la reclasificación es que los bloques \emph{'boilerplate'} suelen estar rodeados de 
-otros bloques \emph{'boilerplate'} y viceversa. Los bloques casi buenos suelen contener datos útiles del 
+La idea que subyace a la reclasificación es que los bloques \emph{boilerplate} suelen estar rodeados de 
+otros bloques \emph{boilerplate} y viceversa. Los bloques casi buenos suelen contener datos útiles del 
 corpus si se encuentran cerca de bloques buenos. Los bloques cortos suelen ser útiles sólo si están rodeados 
 de bloques buenos por ambos lados.
 
@@ -519,7 +519,7 @@ archivos de forma que este pueda ser consultado posteriormente.
 \label{subsec:libextract}
 
 \textbf{Libextract} \cite{libextract} es una biblioteca de extracción de datos con capacidad estadística
-que funciona con documentos HTML y XML escrita en Python. En cuanto al algoritmo de extracción empleado,
+que funciona con documentos HTML y XML, escrita en Python. En cuanto al algoritmo de extracción empleado,
 \textbf{eatiht}, funciona en base a una simple suposición en la cual los datos aparecen como colecciones 
 de elementos repetitivos.
 
@@ -534,9 +534,9 @@ Se trabaja con dos supuestos, en primer lugar se determina que el texto consider
 mientras que los textos 'basura' suelen disponer de una menor cantidad de información. Por otro lado, se 
 determina que los textos de valor vienen agrupados.
 
-Imaginemos un documento HTML sencillo en el que aplicando una determinada expresión XPath como la siguiente,
-\emph{/text()[string-length(normalize-space()) > 20]}, se seleccionen todos los nodos de texto que tengan 
-una longitud de cadena superior a veinte.
+Imaginemos un documento HTML sencillo en el que aplicando una determinada expresión \emph{XPath} como la 
+siguiente, \emph{/text()[string-length(normalize-space()) > 20]}, se seleccionen todos los nodos de texto 
+que tengan una longitud de cadena superior a veinte.
 
 \begin{Schunk}
   \begin{Soutput}
@@ -574,14 +574,14 @@ no todos los nodos de texto que existen en el subárbol deseado. Veamos el funci
 \textbf{html\_text} \cite{html-text} es una biblioteca de Python encargada de convertir un documento HTML
 en texto plano. Las principales diferencias frente a algoritmos como \textbf{Beautiful Soup},
 \ref{subsec:beautiful soup} donde se emplean expresiones del tipo \emph{.get\_text()}, o frente a expresiones
-XPath como \emph{.xpath('//text()')}, son las siguientes:
+\emph{XPath} como \emph{.xpath('//text()')}, son las siguientes:
 
 \begin{enumerate}
   \item El texto extraído en este caso, no contiene código JavaScript del propio documento, así como 
   comentarios o cualquier contenido que no sea visible por el usuario.
   \item La normalización de espacios también se tiene en cuenta, pero de una manera más inteligente que
-  con el uso simple de expresiones XPath, \emph{.xpath('normalize-space())}, ya que añade espacios alrededor
-  de los elementos en línea, y evitar añadir espacios extra para la puntuación.
+  con el uso simple de expresiones \emph{XPath}, \emph{.xpath('normalize-space())}, ya que añade espacios 
+  alrededor de los elementos en línea, y evitar añadir espacios extra para la puntuación.
   \item Se añaden nuevas líneas de forma frecuente, por ejemplo después de los encabezados o párrafos, para 
   que el texto de salida se parezca más a cómo se presenta en los navegadores.
 \end{enumerate}
@@ -706,8 +706,8 @@ algoritmo para una extracción exitosa.
 \label{subsubsec:delimitacion de contenido}
 
 El objetivo de esta primera fase es separar el contenido con valor del contenido basura o
-\emph{'boilerplate'}. Para ello el algoritmo hace uso de expresiones XPath dirigidas tanto a atributos HTML,
-como al contenido principal del documento.
+\emph{boilerplate}. Para ello el algoritmo hace uso de expresiones \emph{XPath} dirigidas tanto a atributos 
+HTML, como al contenido principal del documento.
 
 \begin{Schunk}
   \begin{Soutput}
@@ -723,9 +723,9 @@ Inicialmente, el uso de expresiones como las mostradas se emplea para excluir pa
 del código HTML, por ejemplo la expresión \emph{<div class='nav'>} eliminaría todo el contenido que incluyese
 cualquier etiqueta \emph{<div>} de tipo \emph{'navigation'}.
 
-Tras esta exclusión de contenido \emph{'boilerplate'}, el algoritmo se centra nuevamente en el uso de 
-expresiones XPath, pero en este caso que abarquen todo el contenido de valor a extraer. Expresiones como
-\emph{<section id='entry-content'>} o como las mostradas a continuación, buscan partes de contenido
+Tras esta exclusión de contenido \emph{boilerplate}, el algoritmo se centra nuevamente en el uso de 
+expresiones \emph{XPath}, pero en este caso que abarquen todo el contenido de valor a extraer. Expresiones 
+como \emph{<section id='entry-content'>} o como las mostradas a continuación, buscan partes de contenido
 potencialmente valioso.
 
 \begin{Schunk}
@@ -820,7 +820,7 @@ estructura del propio documento. Para crear esta secuencia de bloques el algorit
 vez que se encuentra cierto tipo de etiqueta se crea un nuevo bloque.
 
 Una vez dividido el documento en bloques, se asocia un token con cada bloque del mismo. Estos tokens serán 
-útiles en un clasificador para separar el contenido con valor del contenido \emph{'boilerplate'} a nivel 
+útiles en un clasificador para separar el contenido con valor del contenido \emph{boilerplate} a nivel 
 de bloque. Cualquier bloque con más del 10\% de los tokens extraídos se etiqueta como contenido valioso.
 
 \subsubsection{Características del modelo}
@@ -849,11 +849,11 @@ para el programador, incorporan cierta información semántica sobre el contenid
 
 Otro conjunto de características se corresponde con la densidad de texto y densidad de enlaces. La intuición 
 es que los bloques de contenido tienen una mayor densidad de texto y una menor densidad de enlaces que los 
-bloques denominados \emph{'boilerplate'}, ya que muchos de estos últimos son bloques que consisten en breves
+bloques denominados \emph{boilerplate}, ya que muchos de estos últimos son bloques que consisten en breves
 fragmentos de palabras o son principalmente texto ancla.
 
 Por último, la tercera característica incluye varias ideas, por un lado, la relación entre la longitud del
-texto y el número de etiquetas HTML, y en segundo lugar la agrupación de bloques \emph{'boilerplate'}. La 
+texto y el número de etiquetas HTML, y en segundo lugar la agrupación de bloques \emph{boilerplate}. La 
 idea final es combinar la proporción de etiquetas de contenido valioso y la proporción de etiquetas de 
 contenido basura en un enfoque de agrupación de \emph{k-means} no supervisado, de modo que los bloques sin 
 contenido se agrupen naturalmente cerca del origen.
@@ -866,7 +866,7 @@ Otra biblioteca de programación cuyo objetivo es la extracción de texto en art
 surgiendo nuevas versiones en diferentes lenguajes de programación como Scala o Python.
 
 El objetivo del software es tomar cualquier documento de noticias o página web de tipo artículo y además
-del cuerpo principal, extraer la imagen, videos, descripción y meta tags del mismo.
+del cuerpo principal, extraer la imagen, videos, descripción y \emph{meta tags} del mismo.
 
 \subsubsection{Cálculo del mejor nodo}
 \label{subsubsec:calculo del mejor nodo}
@@ -877,7 +877,7 @@ mayor cantidad de información posible.
 
 El primer paso consiste en recorrer todo los posibles nodos del árbol para almacenar aquellos que posean 
 texto legible. En el fragmento de código \ref{cod:goose3 - calculo del mejor nodo 1} se muestra una primera 
-parte de como Goose realiza dicho recorrido.
+parte de como \textbf{Goose3} realiza dicho recorrido.
 
 \begin{codefloat}
   \inputencoding{latin1}
@@ -927,7 +927,7 @@ características que hacen destacar esta biblioteca sobre el resto se puede dest
   \item Trabajo con multiples idiomas.
 \end{itemize}
 
-En cuanto a la heurística de extracción, se usa gran parte del código fuente de \textbf{Goose} 
+En cuanto a la heurística de extracción, se usa gran parte del código fuente de \textbf{Goose3} 
 \ref{subsec:goose3}, por lo que la fuente de cálculo del mejor nodo, así como al selección del mismo a 
 través del número de palabras clave será esencial en este caso también.
 
@@ -946,8 +946,8 @@ clave.
 
 Para los idiomas no latinos, es necesario dividir las palabras en tokens de una manera diferente, puesto
 que la división por espacios en blanco no funciona para idiomas como el chino o el árabe. Para el idioma
-chino se emplea una nueva biblioteca de código abierto llamada \emph{jieba}, sin embargo, para el árabe
-se utiliza un tokenizador especial, \emph{nltk} que se encarga de hacer el mismo trabajo como se muestra 
+chino se emplea una nueva biblioteca de código abierto llamada \textbf{jieba}, sin embargo, para el árabe
+se utiliza un tokenizador especial, \textbf{nltk} que se encarga de hacer el mismo trabajo como se muestra 
 en el fragmento de código \ref{cod:newspaper3k - heuristica en el arabe}.
 
 \begin{codefloat}
@@ -966,9 +966,9 @@ paquetes que proporcionan una interfaz para una biblioteca Java. Soportan la ext
 contenido del texto principal de los archivos HTML y, por tanto, elimina los anuncios, las barras laterales 
 y cabeceras del contenido fuente HTML.
 
-En cuanto a la heurística, el algoritmo original se basa en separar el contenido boilerplate del contenido
-valioso. Para ello se emplean algoritmos de apoyo con el fin de detectar y eliminar el exceso de desorden
-alrededor del contenido principal de una página web.
+En cuanto a la heurística, el algoritmo original se basa en separar el contenido \emph{boilerplate} del 
+contenido valioso. Para ello se emplean algoritmos de apoyo con el fin de detectar y eliminar el exceso de 
+desorden alrededor del contenido principal de una página web.
 
 \subsubsection{Multiplicidad de extractores}
 \label{subsubsec:multiplicidad de extractores}
@@ -1156,7 +1156,7 @@ las siguientes tareas:
 \begin{enumerate}
   \item Navegar a través de cualquier documento HTML.
   \item Acceder a los elementos del DOM utilizando selectores de id, de clase, de nombre de etiqueta, 
-  selectores XPath o CSS.
+  selectores \emph{XPath} o CSS.
   \item Enviar eventos de teclado y de ratón a los elementos de la página que se determinen.
   \item Inyectar JavaScript en la página.
   \item Utilizar marcos y ventanas diferenciadas.
@@ -1192,14 +1192,15 @@ la instalación y uso de las mismas, las bibliotecas seleccionadas para el desca
   la heurística de \textbf{Goose3} para la extracción de contenido. A falta de heurística propia no tendría
   sentido realizar una evolución del mismo.
   \item \textbf{scrapeR}: La sencillez de la herramienta, y su falta de heurística hace que el descarte 
-  de la misma sea necesario. Su única función necesita herramientas XPath para la búsqueda de información
-  a través del DOM.
+  de la misma sea necesario. Su única función necesita herramientas \emph{XPath} para la búsqueda de 
+  información a través del DOM.
   \item \textbf{RSelenium}: Ademas del necesario emplea de un Docker para su uso, al igual que 
   \textbf{scrapeR}, \textbf{RSelenium} carece de heurística propia, ya que para la extracción de texto 
-  emplea expresiones XPath y selectores CSS únicamente.
+  emplea expresiones \emph{XPath} y selectores CSS únicamente.
 \end{itemize}
 
 Por último, es notable la falta de algoritmos de R en la herramienta de evaluación. Durante el proceso de
 búsqueda e investigación, la mayoría de ellos no poseen ni siquiera heurística. Trabajar unicamente a 
-partir de un analizador y expresiones XPath, hace que la evaluación de los mismos no tenga sentido alguno.
+partir de un analizador y expresiones \emph{XPath}, hace que la evaluación de los mismos no tenga sentido 
+alguno.
 

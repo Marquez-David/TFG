@@ -40,8 +40,8 @@ regulares para la extracción de contenido. Esto provoca que la extracción de t
 que siempre van a existir resultados donde se extraiga contenido no deseado.
 
 El objetivo de este proyecto concierne la evaluación del proceso heurístico de las diferentes herramientas
-de minado web. La inclusión de algoritmos que emplean únicamente expresiones XPath o selectores CSS no
-tiene sentido para la herramienta desarrollada, pues cualquier analizador de los ya mencionados en el
+de minado web. La inclusión de algoritmos que emplean únicamente expresiones \emph{XPath} o selectores CSS 
+no tiene sentido para la herramienta desarrollada, pues cualquier analizador de los ya mencionados en el
 apéndice \ref{cha:analizadores empleados en los paquetes de web scraping} podría realizar el mismo trabajo.
 
 \subsection{Aspectos generales a considerar}
@@ -282,7 +282,7 @@ de la ejecución de cualquiera de las herramientas de \emph{web scraping} expues
 \end{Schunk}
 
 Veamos el funcionamiento de los diferentes métodos de comparación pensados. En primer lugar, se aplica la
-comparación palabra por palabra, donde se prepara un fragmento de código que recorra ambos textos al mismo
+comparación palabra por posición, donde se prepara un fragmento de código que recorra ambos textos al mismo
 tiempo y determine si las palabras dispuestas en la misma posición son idénticas.
 
 \begin{figure}[tphb]
@@ -448,10 +448,10 @@ posterior de la puntuación.
 Una vez que ambos fragmentos de texto han sido convertidos en n-gramas, se debe realizar el cálculo del
 texto extraído para poder conocer la calidad del mismo. Para comprender como se ha desarrollado dicho
 cálculo, debemos recordar la figura \ref{img:diagrama venn: texto base vs texto extraido}, donde el 
-diagrama de Venn expuesto representa los tres posibles tipos de puntuaciones.
+diagrama expuesto representa los tres posibles tipos de puntuaciones.
 
-Para realizar el cálculo y puntuación de n-gramas, se desarrolla un clasificador binario, encargado de 
-realizar una clasificación de instancias positivas y negativas:
+Para realizar el cálculo y puntuación de n-gramas, se desarrolla un clasificador binario, encargado de
+realizar una división de instancias positivas y negativas:
 
 \begin{itemize}
   \item Positivo: La instancia se clasifica como miembro de la clase que el clasificador está tratando de 
@@ -575,14 +575,14 @@ lo bien que funciona un clasificador, en lugar de limitarse a observar la precis
 \subsection{Introducción a las métricas de evaluación}
 \label{subsec:introduccion a las metricas de evaluacion}
 
-Una vez realizado todo el proceso heurístico y el posterior cálculo de puntuaciones, se debe medir como de
-buenos son los diferentes algoritmos de extracción. Se propone efectuar una división de métricas, por un
-lado, se determinarán métricas que dependan del entorno en el que se ejecute el programa, por otro lado,
+Después de realizar todo el proceso heurístico y el posterior cálculo de puntuaciones, se debe medir como 
+de buenos son los diferentes algoritmos de extracción. Se propone efectuar una división de métricas, por 
+un lado, se determinarán métricas que dependan del entorno en el que se ejecute el programa, por otro lado,
 se definirán otras métricas no dependientes de dicho entorno. 
 
-Por otro lado, es conveniente revisar el apéndice \ref{cha:metricas descartadas del proceso de evaluacion},
-donde se especifican métricas adicionales que finalmente han sido descartadas. Su descarte, es debido a su 
-poca implicación en la evaluación o por el reemplazo de otras métricas más desarrolladas.
+Es conveniente revisar el apéndice \ref{cha:metricas descartadas del proceso de evaluacion}, donde se 
+especifican métricas adicionales que finalmente han sido descartadas. Su descarte, es debido a su poca 
+implicación en la evaluación o por el reemplazo de otras métricas más desarrolladas.
 
 \subsubsection{Métricas independientes del entorno de ejecución}
 \label{subsubsec:metricas independientes del entorno de ejecucion}

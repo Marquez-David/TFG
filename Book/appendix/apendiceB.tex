@@ -31,7 +31,7 @@ Como la gran mayoría de analizadores, \textbf{lxml} convierte el texto de entra
 sencilla. 
 
 En el caso del web scraping, la manera en la que \textbf{lxml} es capaz de encontrar información valiosa, 
-es decir texto, es a través de expresiones XPath. Se muestra un pequeño ejemplo a continuación.
+es decir texto, es a través de expresiones \emph{XPath}. Se muestra un pequeño ejemplo a continuación.
 
 \begin{Schunk}
     \begin{Soutput}
@@ -43,7 +43,7 @@ es decir texto, es a través de expresiones XPath. Se muestra un pequeño ejempl
     \end{Soutput}
 \end{Schunk}
 
-Cabe destacar que el resultado dado por una expresión XPath es un objeto especial que conoce parte de su
+Cabe destacar que el resultado dado por una expresión \emph{XPath} es un objeto especial que conoce parte de su
 estructura. Esto permite ejecutar operaciones sobre este elemento y saber de dónde proviene a través de
 diferentes métodos.
 
@@ -66,8 +66,8 @@ utilidades para tareas comunes de procesamiento de los mismos.
 \end{Schunk}
 
 Como se puede observar, incluso analizando documentos realmente mal formados, el analizador es capaz de
-crear una estructura propia de un documento HTML. A partir de ahí, es posible aplicar expresiones XPath con
-el fin de recorrer el árbol generado y recuperar información de valor.
+crear una estructura propia de un documento HTML. A partir de ahí, es posible aplicar expresiones 
+\emph{XPath} con el fin de recorrer el árbol generado y recuperar información de valor.
 
 \subsection{soupparser}
 \label{subsec:soupparser}
@@ -138,9 +138,9 @@ texto, sea sencilla.
 \label{sec:xml}
 
 \textbf{XML} \cite{xml-cran} es un paquete de R que se encarga de realizar el análisis de documentos XML
-y HTML. Además del proceso de análisis, también proporciona acceso a un intérprete de XPath que permite
-consultar nodos concretos de los documentos. Como contrapartida, no permite el uso de selectores CSS para
-consultar XML o HTML analizados.
+y HTML. Además del proceso de análisis, también proporciona acceso a un intérprete de \emph{XPath} que 
+permite consultar nodos concretos de los documentos. Como contrapartida, no permite el uso de selectores 
+CSS para examinar XML o HTML analizados.
 
 Adicionalmente, hay que destacar que tiene algunos problemas de liberación de memoria que no puede resolver
 adecuadamente el recolector de basura de R. Por ello, se han ido creando diferentes soluciones que abordan
