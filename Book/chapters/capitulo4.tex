@@ -67,8 +67,8 @@ evaluación.
 \end{figure}
 
 Tanto los textos obtenidos por los algoritmos de \emph{web scraping}, como los textos producidos por la 
-extracción manual, se almacenan de forma ordenada en archivos JSON con el objetivo de que su acceso sea 
-sencillo para cualquier lenguaje de programación.
+extracción manual, se almacenan de forma ordenada en archivos JSON. Esto se hace con el objetivo de que su 
+acceso sea sencillo para cualquier lenguaje de programación.
 
 \subsection{Cuerpo principal del sitio web como objetivo de la evaluación}
 \label{subsec:cuerpo principal del sitio web como objetivo de la evaluacion}
@@ -219,7 +219,7 @@ será clave para comprender el resultado final.
 
 Uno de los aspectos fundamentales de la herramienta de evaluación es su heurística. Se debe pensar en un
 algoritmo que sea capaz de comparar diferentes tipos de textos minimizando la probabilidad de fallo. A lo
-largo de la sección se mostrará como el proceso no es sencillo pues muchos algoritmos de extracción
+largo de la sección se mostrará como el proceso no es sencillo, pues muchos algoritmos de extracción
 presentan diferentes soluciones a un mismo problema.
 
 \begin{figure}[tphb]
@@ -239,7 +239,7 @@ para comparar múltiples textos de diversas procedencias que pueden ser ligerame
 
 En la figura \ref{img:estructura generica del proceso de evaluacion} se definía de forma genérica como se
 gestionaba la información recogida por los diferentes algoritmos de \emph{web scraping}. Veamos ahora como
-se trata y se compara dicha información con la extraída manualmente con el objetivo de conocer aquellos
+se trata y se compara dicha información con la extraída manualmente, con el objetivo de conocer aquellos
 algoritmos que más se acercan a un resultado real.
 
 \begin{figure}[tphb]
@@ -316,7 +316,7 @@ probabilidad.
 \subsubsection{Comparación de texto empleando el método palabra por detección}
 \label{subsubsec:comparacion de textos empleando el metodo palabra por deteccion}
 
-Es necesario encontrar entonces en una nueva heurística que minimice la probabilidad de fallo, donde la 
+Es necesario encontrar entonces una nueva heurística que minimice la probabilidad de fallo, donde la 
 posición de cada palabra no sea un aspecto a tener en cuenta. Una solución podría darse con el recorrido 
 de uno de los fragmentos de texto, donde se busquen palabras coincidentes con el otro. Se selecciona una 
 palabra pivote, por ejemplo \textbf{Spain}, y se recorre el segundo texto hasta encontrar la palabra 
@@ -727,9 +727,9 @@ número de segundos transcurridos desde un cierto instante.
   \label{img:estructura del entorno de ejecucion}
 \end{figure}
 
-Se determinan a continuación las métricas seleccionadas, puesto que estas son dependientes del entorno de 
-ejecución, los resultados diferirán según el medio en el que se realicen las pruebas. Se muestra en la
-tabla \ref{tab:caracteristicas del entorno de ejecucion} las características del entorno empleado.
+Determinadas las métricas dependientes del entorno de ejecución, los resultados diferirán según el medio 
+en el que se realicen las pruebas. Se muestra en la tabla \ref{tab:caracteristicas del entorno de ejecucion} 
+las características del entorno empleado.
 
 \begin{table}[h]
   \begin{center}

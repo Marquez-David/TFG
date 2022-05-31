@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from math import pi
 
+'''
 X = [0.8544, 0.9273, 0.5107, 0.5129] #precision
 Y = [0.8803, 0.8913, 0.9804, 0.9928] #recall
 
@@ -38,7 +39,7 @@ plt.ylabel("recall")
 plt.ylim(0.8, 1)
 plt.xlim(0, 1)
 plt.show()
-
+'''
 
 '''
 plt.ylim(0, 1)
@@ -68,12 +69,10 @@ plt.bar('xPath', 0.9915, color='dimgrey')
 plt.show()
 '''
 
-'''
 # Los datos de entrada 
-a = [0.1347, 0.1371, 0.8974, 0.2378] #rvest
-b = [0.4540, 0.4628, 0.9310, 0.6181] #rcrawler
-c = [0.4547, 0.4714, 0.8885, 0.6160] #htm2txt
-d = [0.2421, 0.2401, 0.9915, 0.3866] #xpath
+a = [0.5165, 0.5129, 0.9928, 0.6764] #html.parse
+b = [0.5165, 0.5129, 0.9928, 0.6764] #lxml
+c = [0.1327, 0.1315, 0.9921, 0.2323] #htm2txt
 
 labels = ['accuracy', 'precision', 'recall', 'f1']
  
@@ -99,25 +98,19 @@ plt.bar([p + width*2 for p in pos], c, width,
                  color='r',
                  label=labels[2])
 
-plt.bar([p + width*3 for p in pos], d, width,
-                 alpha=0.5,
-                 color='y',
-                 label=labels[3])
-
 # Establecer etiqueta y distancia
 #ax.set_ylabel('y-value')
 #ax.set_title('Grouped bar plot')
-ax.set_xticks([p + 1.5 * width for p in pos])
+ax.set_xticks([p + 1 * width for p in pos])
 ax.set_xticklabels(labels)
  
  # Establecer límites de los ejes x, y
-plt.xlim(min(pos)-width, max(pos)+width*4)
+plt.xlim(min(pos)-width, max(pos)+width*3)
 plt.ylim([0, 1])
  
  # Dibujar
-plt.legend(['rvest', 'Rcrawler', 'htm2txt', 'XPath'], loc='best')
+plt.legend(['html.parse', 'lxml', 'html5lib'], loc='best')
 plt.show()
-'''
 
 '''
 # Los datos de entrada 

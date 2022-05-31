@@ -1,2 +1,33 @@
 \chapter{Conclusiones y futuras líneas de trabajo}
 \label{cha:conclusiones y futuras lineas de trabajo}
+
+Una vez realizado el proceso de evaluación, es posible determinar una serie de conclusiones firmes sobre
+los resultados obtenidos:
+
+\begin{itemize}
+
+    \item Aquellas librerías o paquetes cuya heurística está más desarrollada presentan unos resultados
+    mejores que herramientas menos cuidadas. El simple uso de expresiones \emph{XPath} dificulta un proceso
+    de extracción de calidad.
+    \item La calidad de la extracción, no dependen del analizador ni del tipo de lenguaje. La heurística
+    y optimización del mismo son los únicos aspectos relevantes en este sentido.
+    \item Además de la heurística, el objetivo que se quiera conseguir con el paquete es muy importante 
+    para obtener buenos resultados. Paquetes como \textbf{rvest} demuestran que el objetivo de algunas 
+    herramientas es simplemente ser capaces de acceder a ciertas etiquetas de documentos HTML.
+    \item \textbf{Trafilatura} es el paquete cuya extracción resultante presenta una similitud más cercana
+    a lo que un usuario vería en el documento HTML convencional.
+    \item El uso de \emph{web scraping} facilita y optimiza el uso tradicional de extracción y almacenado
+    de información. Conseguir extraer el 94\% del contenido principal de 101 documentos HTML en tan solo 
+    4.4590 segundos, hace que el empleo de herramientas similares a \textbf{Trafilatura} sean buenas 
+    opciones para sustituir la extracción tradicional.
+
+\end{itemize}
+
+Como futuras líneas de trabajo a seguir, podrían añadirse nuevas librerías o paquetes de minado web. Sería
+interesante la ampliación del proyecto a otros lenguajes de programación como Go, NodeJS, JavaScript...
+Además, esto permitiría descubrir nuevas heurísticas que sean comparadas a las ya analizadas.
+
+Otra posible mejora que interesante a introducir, sería la de ampliar la evaluación hacia nuevos idiomas 
+en los documentos de prueba. Hasta ahora, las herramientas han sido evaluadas sobre documentos HTML escritos 
+en inglés. Podría ser un aspecto positivo para la integridad de la evaluación, evaluar librerías de minado 
+que extraigan texto de documentos escritos en diferentes idiomas.

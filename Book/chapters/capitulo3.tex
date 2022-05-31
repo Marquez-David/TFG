@@ -20,7 +20,7 @@ distintas fuentes de información mostradas a continuación:
 \begin{enumerate}
   \item GitHub \cite{github}. Gran parte de los desarrolladores de estos programas, publican su trabajo en
   estos repositorios de código abierto.
-  \item CRAN \cite{cran}. The Comprehensive R Archive Network es una red de servidores ftp y web que
+  \item CRAN \cite{cran}. The Comprehensive R Archive Network es una red de servidores FTP y web que
   almacena versiones idénticas de código y documentación para R.
   \item PyPi \cite{pypi}. Python Package Index es un repositorio de software para Python, útil para la
   búsqueda de paquetes de un determinado propósito.
@@ -211,8 +211,8 @@ documento XML convencional.
 \end{Schunk}
 
 Por último, el postprocesamiento en tipo html crea un documento HTML que contiene el texto convertido y 
-resalta todas las anotaciones. Se muestra en la figura \ref{img: inscriptis - postprocesamiento html} un 
-ejemplo de la salida obtenida.
+resalta todas las anotaciones. Se muestra en la ilustración \ref{img: inscriptis - postprocesamiento html} 
+un ejemplo de la salida obtenida.
 
 \begin{figure}[tphb]
   \centering
@@ -352,10 +352,10 @@ dentro de un mismo bloque haya una mezcla de información importante con conteni
   todos los demás bloques largos son casi siempre del tipo \emph{boilerplate}.
 \end{itemize}
 
-Con respecto al ultimo punto, decidir si un texto es gramatical o no puede ser complicado, \textbf{jusText} 
-emplea una simple heurística basada en el volumen de palabras con sentido gramatical. Mientras que un texto 
-gramatical suele contener un cierto porcentaje de estas palabras, los contenidos de tipo \emph{boilerplate} 
-suelen carecer de ellas.
+Con respecto al ultimo punto, decidir si un texto es gramatical o no puede ser complicado. Por eso
+\textbf{jusText} emplea una simple heurística basada en el volumen de palabras con sentido gramatical. 
+Mientras que un texto gramatical suele contener un cierto porcentaje de estas palabras, los contenidos de 
+tipo \emph{boilerplate} suelen carecer de ellas.
 
 \subsubsection{Clasificación de bloques}
 \label{subsubsec:clasificacion de bloques}
@@ -639,7 +639,7 @@ A partir de la gestión de espacio según el tipo de etiqueta, se determina la s
 \subsection{html2text}
 \label{subsec:html2text}
 
-\textbf{html2ext} \cite{html2text} es un script de Python que convierte un documento HTML a texto ASCII, 
+\textbf{html2text} \cite{html2text} es un script de Python que convierte un documento HTML a texto ASCII, 
 el cual también resulta ser un formato de texto válido a HTML. Imaginemos que se dispone de un documento 
 HTML sencillo como el siguiente, \emph{'<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>'}, 
 veamos la salida obtenida:
@@ -947,7 +947,7 @@ clave.
 Para los idiomas no latinos, es necesario dividir las palabras en tokens de una manera diferente, puesto
 que la división por espacios en blanco no funciona para idiomas como el chino o el árabe. Para el idioma
 chino se emplea una nueva biblioteca de código abierto llamada \textbf{jieba}, sin embargo, para el árabe
-se utiliza un tokenizador especial, \textbf{nltk} que se encarga de hacer el mismo trabajo como se muestra 
+se utiliza un tokenizador especial, \textbf{nltk}. Este se encarga de hacer el mismo trabajo que se muestra 
 en el fragmento de código \ref{cod:newspaper3k - heuristica en el arabe}.
 
 \begin{codefloat}
@@ -1028,7 +1028,7 @@ peticiones.
 En el apéndice \ref{cha:funcionamiento basico de un web scraper} se puede comprobar el funcionamiento del
 paquete durante la extracción de parte de un documento HTML. Ademas, se observa que el paquete actúa como 
 \emph{wrapper} entre los paquetes \emph{xml2} y \emph{httr}, facilitando así la descarga y manipulación 
-de un fichero HTML.
+del fichero HTML.
 
 \subsubsection{Elementos a nivel de bloque vs elementos en línea}
 \label{subsubsec:elementos a nivel de bloque vs elementos en linea}
@@ -1118,17 +1118,16 @@ Tras la descarga del documento a través de la petición GET, se determina si es
 previamente. En caso de que el documento no esté duplicado se procede con el rastreo y la extracción de
 datos, con el objetivo de indexar y almacenar los documentos encontrados.
 
-Como resultado, para cada URL cada nodo devuelve su documento HTML, los detalles de la cabecera HTTP y la 
+Como resultado, para cada URL el nodo devuelve su documento HTML, los detalles de la cabecera HTTP y la 
 lista de enlaces externos descubiertos. La función \emph{URL-seen} comprueba si la URL ya ha sido procesada.
 
 \subsection{htm2txt}
 \label{subsec:htm2txt}
 
 Otro de los paquetes propios de R que se encargan de realizar \emph{web scraping} es \textbf{htm2txt} 
-\cite{htm2txt-cran}. Convierte un documento html en textos simples eliminando todas las etiquetas html. 
-Este paquete utiliza expresiones regulares para eliminar las etiquetas html. También ofrece las funciones 
-\emph{gettxt()} y \emph{browse()}, que permiten obtener o navegar por los textos de una determinada página 
-web.
+\cite{htm2txt-cran}. Convierte un documento HTML en textos simples eliminando todas las etiquetas html 
+usando expresiones regulares. También ofrece las funciones \emph{gettxt()} y \emph{browse()}, que permiten 
+obtener o navegar por los textos de una determinada página web.
 
 El uso de estas expresiones regulares se hacen notar durante la limpieza del texto extraído, donde la
 función \emph{gsub} toma una notable relevancia. Una vez el texto ha sido 'limpiado' se retorna el mismo.
@@ -1170,7 +1169,7 @@ un usuario, lo que supone un salto adelante en términos de automatización del 
 \label{sec:paquetes descartados para el proceso de evaluacion}
 
 A lo largo de las secciones \ref{sec:bibliotecas de python encontradas durante el proceso de busqueda} y
-\ref{sec:paquetes de r encontrados durante el proceso de busqueda} se han introducido y desarrollado
+\ref{sec:paquetes de r encontrados durante el proceso de busqueda} se han introducido y analizado
 aquellas herramientas de \emph{web scraping} más comunes en el entorno de programación. Con el punto de 
 mira en los siguientes capítulos, se pretende enumerar aquellos paquetes descartados para el proceso de 
 evaluación.
@@ -1179,9 +1178,9 @@ Ya sea por la simpleza de su heurística, por la similitud con otras herramienta
 la instalación y uso de las mismas, las bibliotecas seleccionadas para el descarte son las siguientes:
 
 \begin{itemize}
-  \item \textbf{Dragnet}: Uno de los principales motivos por el que Dragnet a sido descartado es por su 
-  complejidad en la instalación. La necesidad de un Docker hace que la mayoría de usuarios no programadores 
-  hagan uso de otras herramientas en su lugar.
+  \item \textbf{Dragnet}: Uno de los principales motivos por el que \textbf{Dragnet} a sido descartado es 
+  por su complejidad en la instalación. La necesidad de un \emph{docker} hace que la mayoría de usuarios 
+  no programadores hagan uso de otras herramientas en su lugar.
   \item \textbf{news-please}: El descarte de \textbf{news-please} tiene que ver con el uso de otras
   herramientas para el proceso de \emph{web scraping}. La ausencia de heurística propia y el empleo de otros 
   algoritmos como \textbf{Readability} hace que la evaluación de \textbf{news-please} no tenga sentido.
@@ -1194,13 +1193,13 @@ la instalación y uso de las mismas, las bibliotecas seleccionadas para el desca
   \item \textbf{scrapeR}: La sencillez de la herramienta, y su falta de heurística hace que el descarte 
   de la misma sea necesario. Su única función necesita herramientas \emph{XPath} para la búsqueda de 
   información a través del DOM.
-  \item \textbf{RSelenium}: Ademas del necesario emplea de un Docker para su uso, al igual que 
+  \item \textbf{RSelenium}: Ademas del necesario uso de un \emph{docker} para su uso, al igual que 
   \textbf{scrapeR}, \textbf{RSelenium} carece de heurística propia, ya que para la extracción de texto 
   emplea expresiones \emph{XPath} y selectores CSS únicamente.
 \end{itemize}
 
 Por último, es notable la falta de algoritmos de R en la herramienta de evaluación. Durante el proceso de
-búsqueda e investigación, la mayoría de ellos no poseen ni siquiera heurística. Trabajar unicamente a 
-partir de un analizador y expresiones \emph{XPath}, hace que la evaluación de los mismos no tenga sentido 
+búsqueda e investigación, la mayoría de ellos no poseen ni siquiera heurística propia. Trabajar unicamente 
+a partir de un analizador y expresiones \emph{XPath}, hace que la evaluación de los mismos no tenga sentido 
 alguno.
 
